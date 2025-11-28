@@ -6065,7 +6065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 76.962 100.33 90)
 			(effects
 				(font
@@ -6135,7 +6135,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 51.562 100.33 90)
 			(effects
 				(font
@@ -6202,7 +6202,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 185.42 105.918 90)
 			(effects
 				(font
@@ -6270,7 +6270,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 30.48 123.19 0)
 			(effects
 				(font
@@ -6346,7 +6346,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 62.23 175.26 0)
 			(effects
 				(font
@@ -6423,7 +6423,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
 			(at 189.23 125.73 0)
 			(effects
 				(font
@@ -6493,7 +6493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 28.702 100.33 90)
 			(effects
 				(font
@@ -6561,7 +6561,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 62.23 143.51 0)
 			(effects
 				(font
@@ -6637,7 +6637,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 157.48 163.83 0)
 			(effects
 				(font
@@ -6714,7 +6714,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 74.93 104.14 0)
 			(effects
 				(font
@@ -6790,7 +6790,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 125.73 163.83 0)
 			(effects
 				(font
@@ -6866,7 +6866,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 62.23 163.83 0)
 			(effects
 				(font
@@ -6942,7 +6942,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 197.612 146.05 90)
 			(effects
 				(font
@@ -7009,7 +7009,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 125.73 148.59 0)
 			(effects
 				(font
@@ -7086,7 +7086,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
 			(at 189.23 147.32 0)
 			(effects
 				(font
@@ -7156,7 +7156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 102.362 100.33 90)
 			(effects
 				(font
@@ -7223,7 +7223,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 30.48 143.51 0)
 			(effects
 				(font
@@ -7299,7 +7299,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 30.48 163.83 0)
 			(effects
 				(font
@@ -7375,7 +7375,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 157.48 186.69 0)
 			(effects
 				(font
@@ -7451,7 +7451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 93.98 175.26 0)
 			(effects
 				(font
@@ -7527,7 +7527,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 125.73 175.26 0)
 			(effects
 				(font
@@ -7604,7 +7604,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 49.53 104.14 0)
 			(effects
 				(font
@@ -7683,7 +7683,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 127.762 100.33 90)
 			(effects
 				(font
@@ -7750,7 +7750,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 62.23 186.69 0)
 			(effects
 				(font
@@ -7826,7 +7826,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 93.98 128.27 0)
 			(effects
 				(font
@@ -7902,7 +7902,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 125.73 123.19 0)
 			(effects
 				(font
@@ -7979,7 +7979,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 26.67 104.14 0)
 			(effects
 				(font
@@ -8055,7 +8055,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 30.48 186.69 0)
 			(effects
 				(font
@@ -8131,7 +8131,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 125.73 186.69 0)
 			(effects
 				(font
@@ -8207,7 +8207,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 93.98 163.83 0)
 			(effects
 				(font
@@ -8284,7 +8284,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 125.73 104.14 0)
 			(effects
 				(font
@@ -8360,7 +8360,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 30.48 175.26 0)
 			(effects
 				(font
@@ -8436,7 +8436,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_HC49-4H_Vertical"
 			(at 22.86 52.07 90)
 			(effects
 				(font
@@ -8503,7 +8503,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 30.48 128.27 0)
 			(effects
 				(font
@@ -8580,7 +8580,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 62.23 123.19 0)
 			(effects
 				(font
@@ -8656,7 +8656,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 158.75 124.46 0)
 			(effects
 				(font
@@ -8732,7 +8732,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 158.75 135.89 0)
 			(effects
 				(font
@@ -8809,7 +8809,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 125.73 143.51 0)
 			(effects
 				(font
@@ -8886,7 +8886,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 93.98 123.19 0)
 			(effects
 				(font
@@ -8963,7 +8963,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 100.33 104.14 0)
 			(effects
 				(font
@@ -9039,7 +9039,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 185.42 104.902 90)
 			(effects
 				(font
@@ -9106,7 +9106,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 157.48 175.26 0)
 			(effects
 				(font
@@ -9314,7 +9314,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 62.23 148.59 0)
 			(effects
 				(font
@@ -9374,7 +9374,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d826e6ca-efaa-4e5f-a613-a78822e45d20")
-		(property "Reference" "RAM"
+		(property "Reference" "RAM1"
 			(at 100.33 45.3546 90)
 			(effects
 				(font
@@ -9504,7 +9504,7 @@
 		(instances
 			(project ""
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "RAM")
+					(reference "RAM1")
 					(unit 1)
 				)
 			)
@@ -9535,7 +9535,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 125.73 128.27 0)
 			(effects
 				(font
@@ -9611,7 +9611,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 93.98 186.69 0)
 			(effects
 				(font
@@ -9687,7 +9687,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 93.98 148.59 0)
 			(effects
 				(font
@@ -9763,7 +9763,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 185.42 103.378 90)
 			(effects
 				(font
@@ -9830,7 +9830,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 158.75 147.32 0)
 			(effects
 				(font
@@ -9907,7 +9907,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 93.98 143.51 0)
 			(effects
 				(font
@@ -9983,7 +9983,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 62.23 128.27 0)
 			(effects
 				(font
@@ -10059,7 +10059,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 30.48 148.59 0)
 			(effects
 				(font
@@ -10138,7 +10138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 153.162 100.33 90)
 			(effects
 				(font
@@ -10389,7 +10389,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 197.612 124.46 90)
 			(effects
 				(font
@@ -10457,7 +10457,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 151.13 104.14 0)
 			(effects
 				(font
