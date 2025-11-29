@@ -1,6 +1,8 @@
 # Z80DevBoard
 An advanced development board for the Z80 (Specific model: Z8400).
 
+<img src="./images/screenshot_circuits.png" alt="Scheme image">
+
 ## Author
 Gianluca Rainis (gianluca-rainis on GitHub)
 
@@ -31,3 +33,13 @@ The whole project is under the MIT License.
 - Capacitors 1uF
 - Capacitors 10uF
 - Fuse 500mA
+
+## Images
+### Scheme (A2 format)
+<img src="./images/screenshot_circuits.png" alt="Scheme image">
+
+### Z80 scheme
+<img src="./images/screenshot_circuits_z80.png" alt="Z80 scheme image">
+
+### RP2040 scheme
+<img src="./images/screenshot_circuits_rp2040.png" alt="RP2040 scheme image">
