@@ -1,6 +1,11 @@
 # Z80DevBoard
 An advanced development board for the Z80 (Specific model: Z8400).
 
+It's powered by an RP2040.
+It have a flash memory where you can write the RP2040 firmware and the Z80 program.
+The RP2040 load in the RAM the Z80 program and the Z80 run it.
+The leds allow you to see the real time actions of the Z80.
+
 <img src="./images/screenshot_circuits.png" alt="Scheme image">
 
 ## Author
