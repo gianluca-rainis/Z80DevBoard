@@ -14032,7 +14032,7 @@
 		(property "Reference" "O1"
 			(at 2.44 -3.52 0)
 			(layer "F.SilkS")
-			(uuid "a3d41384-f015-4fb4-8791-0962ba45f71a")
+			(uuid "096ad168-db17-4698-841d-c31921b62116")
 			(effects
 				(font
 					(size 1 1)
@@ -14043,7 +14043,7 @@
 		(property "Value" "6MHz"
 			(at 2.44 3.52 0)
 			(layer "F.Fab")
-			(uuid "0c2e15e3-125a-4943-8b2b-e5c5ae743c8c")
+			(uuid "16e75bfc-0b87-4efa-9578-3ba804af806b")
 			(effects
 				(font
 					(size 1 1)
@@ -14055,7 +14055,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7f6691a4-df09-4a51-8260-c0e63ab1c3c6")
+			(uuid "39bf7432-6d11-4bb3-9e8f-61053ff29462")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14067,7 +14067,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "442041ab-f27f-4b08-bd66-b408d2b3051b")
+			(uuid "4cd78d5a-3d97-4c62-abbe-2862d9e9bd87")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28105,7 +28105,7 @@
 	(footprint "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm"
 		(layer "F.Cu")
 		(uuid "c1ff063d-9b40-4f11-9591-d0f1e23ac060")
-		(at 109.68 60.895)
+		(at 156.0625 73.2)
 		(descr "QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=607), generated with kicad-footprint-generator ipc_noLead_generator.py")
 		(tags "QFN NoLead")
 		(property "Reference" "RP2040_1"
@@ -40852,28 +40852,12 @@
 		(uuid "6b5a951e-2a58-4171-88d1-8214066bd1ad")
 	)
 	(segment
-		(start 105.717 138.358)
-		(end 102.075 142)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 37)
-		(uuid "a08827d2-946f-4b49-a9ef-a3fac995e241")
-	)
-	(segment
 		(start 231.443 151.355)
 		(end 201.76795 151.355)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 37)
 		(uuid "d28d1614-4720-4524-92dd-c307f822e65b")
-	)
-	(segment
-		(start 102.075 142)
-		(end 74.5 142)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 37)
-		(uuid "d4afea2b-22d6-4835-9a05-0930c336ef30")
 	)
 	(segment
 		(start 199 157)
