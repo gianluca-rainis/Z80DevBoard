@@ -6,7 +6,11 @@ It have a flash memory where you can write the RP2040 firmware and the Z80 progr
 The RP2040 load in the RAM the Z80 program and the Z80 run it.
 The leds allow you to see the real time actions of the Z80.
 
-<img src="./images/screenshot_circuits.png" alt="Scheme image">
+<img src="./images/Z80DevBoard.png" alt="Z80DevBoard Logo" style="background-color: white;">
+
+---
+
+<img src="./images/screenshot_3d_front.png" alt="Front view of the dev board">
 
 ## Author
 Gianluca Rainis (gianluca-rainis on GitHub)
@@ -48,3 +52,12 @@ The whole project is under the MIT License.
 
 ### RP2040 scheme
 <img src="./images/screenshot_circuits_rp2040.png" alt="RP2040 scheme image">
+
+### Pcb view
+<img src="./images/screenshot_pcb.png" alt="Image of the pcb">
+
+### 3D Front view
+<img src="./images/screenshot_3d_front.png" alt="Front view of the dev board">
+
+### 3D Back view
+<img src="./images/screenshot_3d_back.png" alt="Back view of the dev board">
