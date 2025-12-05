@@ -37044,15 +37044,15 @@
 		)
 	)
 	(gr_rect
-		(start 37.83395 38.184)
-		(end 257.33395 146.184)
+		(start 38 38.5)
+		(end 257 146)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
 		(fill no)
-		(layer "Margin")
-		(uuid "086ed1b6-f5ae-4c44-bd8a-2c53d8d2a3ae")
+		(layer "Edge.Cuts")
+		(uuid "2ab09670-eb55-4a8d-b291-de95096ba9d1")
 	)
 	(segment
 		(start 82.6725 81)
