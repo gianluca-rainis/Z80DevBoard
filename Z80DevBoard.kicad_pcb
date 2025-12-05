@@ -20748,7 +20748,7 @@
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=7.3mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW3"
-			(at 10 2.55 0)
+			(at -3.33395 2.55 0)
 			(layer "F.SilkS")
 			(uuid "181bd455-8d94-4244-8dae-86c3ab72aaa0")
 			(effects
@@ -20759,7 +20759,7 @@
 			)
 		)
 		(property "Value" "Z80BOOT"
-			(at -5.5 2.55 0)
+			(at -5.33395 0.316 0)
 			(layer "F.Fab")
 			(uuid "1456f465-3778-4ed3-b162-433a988b8854")
 			(effects
@@ -22792,7 +22792,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R13"
-			(at 5.08 -2.37 90)
+			(at 5.08 2.7415 90)
 			(layer "F.SilkS")
 			(uuid "856f94dc-c252-4d7c-ab47-15fa12ea7a83")
 			(effects
@@ -27250,7 +27250,7 @@
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=7.3mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW4"
-			(at 10 2.5 0)
+			(at -3.33395 2.5 0)
 			(layer "F.SilkS")
 			(uuid "ebcd5b10-1fb2-4e5b-ad35-8212854d577d")
 			(effects
@@ -27261,7 +27261,7 @@
 			)
 		)
 		(property "Value" "RPBOOT"
-			(at -5 2.5 0)
+			(at -4.83395 0.266 0)
 			(layer "F.Fab")
 			(uuid "1b898953-f434-4db8-80c7-99991c0014ee")
 			(effects
@@ -37090,6 +37090,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Z80WAIT"
+		(at 237.5 105.5 0)
+		(layer "F.SilkS")
+		(uuid "0e2bf335-c47e-4f87-9bad-1fd430e49eed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "220"
 		(at 145 82.5 0)
 		(layer "F.SilkS")
@@ -37118,6 +37130,18 @@
 		(at 162 54.5 0)
 		(layer "F.SilkS")
 		(uuid "11235f46-461c-4614-91f3-3192a2bbd139")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Z80RESET"
+		(at 236.5 97 0)
+		(layer "F.SilkS")
+		(uuid "133d4d00-9403-4cf1-a452-a570e2618dd9")
 		(effects
 			(font
 				(size 1 1)
@@ -37334,6 +37358,18 @@
 		(at 147 117 0)
 		(layer "F.SilkS")
 		(uuid "4fcbcdcf-86f9-4af2-9721-b00e7b1208ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "RP2040BOOT"
+		(at 236.5 50.5 0)
+		(layer "F.SilkS")
+		(uuid "5b4260bd-1187-43e9-bd45-23c5357f4ea1")
 		(effects
 			(font
 				(size 1 1)
@@ -37574,6 +37610,18 @@
 		(at 105.5 87.5 0)
 		(layer "F.SilkS")
 		(uuid "bd849b25-64e2-4ae9-b776-f6b17fe43423")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Z80BOOT"
+		(at 239 42 0)
+		(layer "F.SilkS")
+		(uuid "c0662e41-66b7-40c4-b651-4e3b278a4d47")
 		(effects
 			(font
 				(size 1 1)
