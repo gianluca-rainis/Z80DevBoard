@@ -24,23 +24,24 @@ The whole project is under the MIT License.
 ## Components
 - Z8400
 - RP2040
+- USB C 2.0 port
 - HM62256BLP (RAM)
 - W25Q32JVSS (Flash)
 - Crystal oscillator
 - AMS1117-3.3 (5V to 3v3)
-- 74HC595 (Serial to 8 bit)
+- 3 74HC595 (Serial to 8 bit)
 - 74HC165 (8 bit to Serial)
-- SN74LVC245APW (Bus to handle the voltage differences)
-- USB C 2.0 port
-- Buttons
-- Leds
-- Resistors 0 ohm
-- Resistors 220 ohm
-- Resistors 5k ohm
-- Resistors 10k ohm
-- Capacitors 0.1uF
-- Capacitors 1uF
-- Capacitors 10uF
+- 3 SN74LVC245APW (Bus to handle the voltage differences)
+- 4 Buttons
+- 40 Leds
+- 24 Diods
+- Resistor 0 ohm
+- 40 Resistors 220 ohm
+- 2 Resistors 5k ohm
+- 9 Resistors 10k ohm
+- 5 Capacitors 0.1uF
+- Capacitor 1uF
+- 2 Capacitors 10uF
 - Fuse 500mA
 
 ## Images
