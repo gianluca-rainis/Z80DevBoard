@@ -37822,6 +37822,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Z80DevBoard\n\nAuthor: Gianluca Rainis\nGitHub: gianluca-rainis\nRepo: https://github.com/gianluca-rainis/Z80DevBoard"
+		(at 82.5 145 0)
+		(layer "B.SilkS")
+		(uuid "8bde889a-142c-4e10-bdc5-e1e0a1961ef2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(segment
 		(start 82.6725 81)
 		(end 78.1725 76.5)
