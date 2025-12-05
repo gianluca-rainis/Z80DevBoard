@@ -18714,7 +18714,7 @@
 		(descr "USB TYPE C Receptacle, USB2.0, Waterproof, Dual Row SMT, IPX8, https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/c12401977-3.pdf")
 		(tags "USB C Type-C Waterproof")
 		(property "Reference" "USB_C1"
-			(at 0 -6 0)
+			(at -8.3915 -3.086 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "c891e80e-9433-4100-91f0-ce07c6b2559a")
