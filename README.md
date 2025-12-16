@@ -13,7 +13,11 @@ This development board combines the classic Z8400 (Z80) microprocessor with a mo
 **Gianluca Rainis** - [gianluca-rainis](https://github.com/gianluca-rainis)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Hardware design files (schematics, PCB, BOM):
+Licensed under [CERN-OHL-W v2.0](LICENSE-CERN-OHL-W.md)
+
+Software and firmware:
+Licensed under the [MIT License](LICENSE-MIT.md)
 
 ## AI Disclaimer
 No AI was used in this project. Everything was designed by the author.
