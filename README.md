@@ -1,10 +1,7 @@
 # Z80DevBoard
-An advanced development board for the Z80 (Specific model: Z8400).
+An advanced development board for the Z80 microprocessor (Specific model: Z8400), powered by an RP2040.
 
-It's powered by an RP2040.
-It have a flash memory where you can write the RP2040 firmware and the Z80 program.
-The RP2040 load in the RAM the Z80 program and the Z80 run it.
-The leds allow you to see the real time actions of the Z80.
+This development board combines the classic Z8400 (Z80) microprocessor with a modern RP2040 microcontroller. The RP2040 manages flash memory storage and loads programs into RAM for the Z80 to execute. Real-time LED indicators provide visual feedback of the Z80's operations, making it an excellent educational and development tool.
 
 <img src="./images/Z80DevBoard.png" alt="Z80DevBoard Logo" style="background-color: white;">
 
@@ -13,52 +10,93 @@ The leds allow you to see the real time actions of the Z80.
 <img src="./images/screenshot_3d_front.png" alt="Front view of the dev board">
 
 ## Author
-Gianluca Rainis (gianluca-rainis on GitHub)
+**Gianluca Rainis** - [gianluca-rainis](https://github.com/gianluca-rainis)
 
 ## License
-The whole project is under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Developing tools
-- KiCad
+## AI Disclaimer
+No AI was used in this project. Everything was designed by the author.
+
+## Development Tools
+- **PCB Design:** KiCad
+
+## PCB Manufacturing
+The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/) directory.
 
 ## Components
+### Microprocessors
 - Z8400
 - RP2040
-- USB C 2.0 port
+
+### Memory
 - HM62256BLP (RAM)
 - W25Q32JVSS (Flash)
-- Crystal oscillator
+
+### Power Management
 - AMS1117-3.3 (5V to 3v3)
+
+### Data Bus
+- USB C 2.0 port
 - 3 74HC595 (Serial to 8 bit)
 - 74HC165 (8 bit to Serial)
 - 3 SN74LVC245APW (Bus to handle the voltage differences)
-- 4 Buttons
-- 40 Leds
-- 24 Diods
+
+### Support components
+- Crystal oscillator
+
+### Resistors
 - Resistor 0 ohm
 - 40 Resistors 220 ohm
 - 2 Resistors 5k ohm
 - 9 Resistors 10k ohm
+
+### Capacitors
 - 5 Capacitors 0.1uF
 - Capacitor 1uF
 - 2 Capacitors 10uF
+
+### Other
+- 4 Buttons
+- 40 LEDs
+- 24 Diodes
 - Fuse 500mA
 
+## Project Structure
+```
+Z80DevBoard/
+├── gerber/                 # PCB manufacturing files (Gerber format)
+├── images/                 # Documentation images and KiCad symbols
+├── .gitattributes          # Gitattributes file
+├── .gitignore              # Gitignore file
+├── Z80DevBoard.kicad_pcb   # PCB layout file
+├── Z80DevBoard.kicad_pro   # KiCad project file
+├── Z80DevBoard.kicad_sch   # Schematic file
+├── LICENSE                 # MIT License
+└── README.md               # This file
+```
+
 ## Images
-### Scheme (A2 format)
-<img src="./images/screenshot_circuits.png" alt="Scheme image">
+### Schematic Diagrams
+#### Complete Schematic (A2 format)
+<img src="./images/screenshot_circuits.png" alt="Complete schematic">
 
-### Z80 scheme
-<img src="./images/screenshot_circuits_z80.png" alt="Z80 scheme image">
+#### Z80 Section
+<img src="./images/screenshot_circuits_z80.png" alt="Z80 subsystem schematic">
 
-### RP2040 scheme
-<img src="./images/screenshot_circuits_rp2040.png" alt="RP2040 scheme image">
+#### RP2040 Section
+<img src="./images/screenshot_circuits_rp2040.png" alt="RP2040 subsystem schematic">
 
-### Pcb view
-<img src="./images/screenshot_pcb.png" alt="Image of the pcb">
+### PCB Layout
+#### Without Silkscreen
+<img src="./images/screenshot_pcb_no_drawings.png" alt="PCB layout without silkscreen">
 
-### 3D Front view
-<img src="./images/screenshot_3d_front.png" alt="Front view of the dev board">
+#### With Silkscreen
+<img src="./images/screenshot_pcb.png" alt="PCB layout with silkscreen">
 
-### 3D Back view
-<img src="./images/screenshot_3d_back.png" alt="Back view of the dev board">
+### 3D Renders
+#### Front View
+<img src="./images/screenshot_3d_front.png" alt="3D render - front view">
+
+#### Back View
+<img src="./images/screenshot_3d_back.png" alt="3D render - back view">
