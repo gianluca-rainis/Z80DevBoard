@@ -45,18 +45,21 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - 3 74HC595 (Serial to 8 bit)
 - 74HC165 (8 bit to Serial)
 - 3 SN74LVC245APW (Bus to handle the voltage differences)
+- Connector 2 pins
 
 ### Support components
-- Crystal oscillator
+- Crystal 12MHz
+- 2 oscillators 10KHz
 
 ### Resistors
 - Resistor 0 ohm
 - 40 Resistors 220 ohm
 - 2 Resistors 5k ohm
-- 9 Resistors 10k ohm
+- 8 Resistors 10k ohm
 
 ### Capacitors
-- 5 Capacitors 0.1uF
+- 2 Capacitors 12pF
+- 7 Capacitors 0.1uF
 - Capacitor 1uF
 - 2 Capacitors 10uF
 
