@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2025-12-19")
+		(date "2025-12-21")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -6058,6 +6058,191 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Nidec_CAS-120A1"
+			(pin_names
+				(offset 1)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_Nidec_CAS-120A1"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Button_Switch_SMD:Nidec_Copal_CAS-120A"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cas.pdf"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Nidec?Copal?CAS?120A*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Nidec_CAS-120A1_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Nidec_CAS-120A1_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -6398,8 +6583,8 @@
 		(uuid e1b7609f-8264-4f0f-a138-4d55a8273ab0)
 	)
 	(rectangle
-		(start 93.98 31.75)
-		(end 143.51 109.22)
+		(start 87.63 15.24)
+		(end 149.86 113.03)
 		(stroke
 			(width 0)
 			(type default)
@@ -6500,7 +6685,7 @@
 	)
 	(text "Clock"
 		(exclude_from_sim no)
-		(at 97.028 33.528 0)
+		(at 90.678 17.018 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6662,7 +6847,7 @@
 		(uuid "2816a77c-8178-4137-84e5-163f8ced8605")
 	)
 	(junction
-		(at 113.03 91.44)
+		(at 113.03 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b07cf60-66ee-4f29-bb69-094d7f81d504")
@@ -6680,10 +6865,16 @@
 		(uuid "48a7efe1-6e95-4f8c-a48e-f2ea76800e58")
 	)
 	(junction
-		(at 123.19 41.91)
+		(at 121.92 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ca9d15f-b264-4b5c-82e7-214077026f5b")
+	)
+	(junction
+		(at 121.92 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60e3b03d-e75c-4eb9-880d-4d3c82b5e80a")
 	)
 	(junction
 		(at 292.1 370.84)
@@ -6722,7 +6913,7 @@
 		(uuid "7d9c3e64-3ca5-4b17-8983-2dc4965cd2b7")
 	)
 	(junction
-		(at 113.03 41.91)
+		(at 111.76 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8241c156-bb01-426d-8e31-8acb2a10ae5a")
@@ -6824,7 +7015,7 @@
 		(uuid "f6810926-4640-43ac-9d1b-7a51d58b06cb")
 	)
 	(junction
-		(at 113.03 67.31)
+		(at 102.87 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd183ed9-0b97-40e1-8549-4777951f0d41")
@@ -6861,7 +7052,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 41.91) (xy 113.03 41.91)
+			(xy 110.49 25.4) (xy 111.76 25.4)
 		)
 		(stroke
 			(width 0)
@@ -6918,6 +7109,16 @@
 			(type default)
 		)
 		(uuid "0d8ebf7a-59e8-4440-ab31-3979b55947b5")
+	)
+	(wire
+		(pts
+			(xy 121.92 71.12) (xy 119.38 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "128f4d5b-1e33-4907-8b37-c90bf8398654")
 	)
 	(wire
 		(pts
@@ -7071,7 +7272,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 91.44) (xy 114.3 91.44)
+			(xy 113.03 96.52) (xy 114.3 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7111,6 +7312,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 50.8) (xy 123.19 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4009036f-d810-4aa2-8310-b44a9b891fd0")
+	)
+	(wire
+		(pts
 			(xy 245.11 337.82) (xy 240.03 337.82)
 		)
 		(stroke
@@ -7128,6 +7339,16 @@
 			(type default)
 		)
 		(uuid "452382f5-0453-461a-8e4c-0a3fa6732835")
+	)
+	(wire
+		(pts
+			(xy 121.92 55.88) (xy 123.19 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48515e8c-72fa-489a-9dcb-c1c3ac232f2b")
 	)
 	(wire
 		(pts
@@ -7291,7 +7512,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 91.44) (xy 113.03 91.44)
+			(xy 111.76 96.52) (xy 113.03 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7401,6 +7622,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 55.88) (xy 121.92 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e0a6017-43aa-4b7b-b8d0-5d90712439d2")
+	)
+	(wire
+		(pts
 			(xy 490.22 195.58) (xy 537.21 195.58)
 		)
 		(stroke
@@ -7451,7 +7682,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 41.91) (xy 124.46 41.91)
+			(xy 121.92 25.4) (xy 123.19 25.4)
 		)
 		(stroke
 			(width 0)
@@ -7631,7 +7862,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 67.31) (xy 113.03 67.31)
+			(xy 101.6 50.8) (xy 102.87 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7871,7 +8102,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 41.91) (xy 114.3 41.91)
+			(xy 111.76 25.4) (xy 113.03 25.4)
 		)
 		(stroke
 			(width 0)
@@ -7911,7 +8142,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 41.91) (xy 123.19 41.91)
+			(xy 120.65 25.4) (xy 121.92 25.4)
 		)
 		(stroke
 			(width 0)
@@ -7991,7 +8222,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 67.31) (xy 114.3 67.31)
+			(xy 102.87 50.8) (xy 104.14 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8053,7 +8284,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 113.03 99.06 270)
+		(at 113.03 104.14 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8063,7 +8294,7 @@
 		)
 		(uuid "01755878-7eb0-498c-bc6b-51d298c10623")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 107.027 90)
+			(at 113.03 112.107 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8097,7 +8328,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 123.19 49.53 270)
+		(at 121.92 33.02 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8107,7 +8338,7 @@
 		)
 		(uuid "02aff6a6-0f9d-4086-83b0-95bad11f4b8c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.19 57.497 90)
+			(at 121.92 40.987 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8381,9 +8612,31 @@
 			)
 		)
 	)
+	(global_label "Vdd_3v3"
+		(shape bidirectional)
+		(at 109.22 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0e5a7508-5e11-4210-a7dd-484cf943b905")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.3827 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RP2040_XIN"
 		(shape bidirectional)
-		(at 111.76 41.91 180)
+		(at 110.49 25.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8393,7 +8646,7 @@
 		)
 		(uuid "10355ea1-05fd-45e2-a2ff-e217c2c8ece5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.2844 41.91 0)
+			(at 96.0144 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9593,7 +9846,7 @@
 	)
 	(global_label "Vdd_3v3"
 		(shape bidirectional)
-		(at 111.76 91.44 180)
+		(at 111.76 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9603,7 +9856,7 @@
 		)
 		(uuid "4351017d-8e5e-44ac-93bf-eeda5a0bfa1d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.9227 91.44 0)
+			(at 99.9227 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11793,7 +12046,7 @@
 	)
 	(global_label "Vdd_3v3"
 		(shape bidirectional)
-		(at 111.76 67.31 180)
+		(at 101.6 50.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11803,7 +12056,7 @@
 		)
 		(uuid "8ff91a00-4f5b-4ac7-911f-8ec42be67f05")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.9227 67.31 0)
+			(at 89.7627 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13553,7 +13806,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 113.03 74.93 270)
+		(at 102.87 58.42 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13563,7 +13816,7 @@
 		)
 		(uuid "d71a2a2c-a508-458f-b614-8bd601ac48ee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 82.897 90)
+			(at 102.87 66.387 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13608,28 +13861,6 @@
 		(uuid "da63e327-e0b8-4519-b1f8-c209712fd080")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 33.02 60.5527 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CLOCK_Z80"
-		(shape input)
-		(at 124.46 67.31 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "da8f5b47-18de-4db6-9ab7-e8e7c61026b9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 138.2099 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13707,7 +13938,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 113.03 49.53 270)
+		(at 111.76 33.02 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13717,7 +13948,7 @@
 		)
 		(uuid "dc022bc3-021c-424b-a34f-7010b928ed39")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 57.497 90)
+			(at 111.76 40.987 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14211,6 +14442,28 @@
 			)
 		)
 	)
+	(global_label "CLOCK_Z80"
+		(shape input)
+		(at 133.35 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f0798937-31ae-4a8c-97e6-624e19882a18")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.0999 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB-C-VBUS"
 		(shape bidirectional)
 		(at 20.32 36.83 90)
@@ -14321,6 +14574,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 121.92 78.74 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f9c07eb2-1f56-4c38-9b7c-574ab0b6b00f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 86.707 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB-RP2040-DP"
 		(shape output)
 		(at 314.96 55.88 180)
@@ -14367,7 +14642,7 @@
 	)
 	(global_label "CLOCK_BUS"
 		(shape input)
-		(at 124.46 91.44 0)
+		(at 124.46 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14377,7 +14652,7 @@
 		)
 		(uuid "fc135c5f-d194-4748-b427-44be6fea3d62")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 138.3914 91.44 0)
+			(at 138.3914 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14389,7 +14664,7 @@
 	)
 	(global_label "RP2040_XOUT"
 		(shape bidirectional)
-		(at 124.46 41.91 0)
+		(at 123.19 25.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14399,7 +14674,7 @@
 		)
 		(uuid "fcd29df9-bbe3-4068-ba38-70876216c2c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.6289 41.91 0)
+			(at 139.3589 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14538,6 +14813,77 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Nidec_CAS-120A1")
+		(at 128.27 53.34 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01f20d19-a4fc-491b-a698-62b2f89bce7b")
+		(property "Reference" "SW5"
+			(at 128.27 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Nidec_CAS-120A1"
+			(at 128.27 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:Nidec_Copal_CAS-120A"
+			(at 128.27 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cas.pdf"
+			(at 128.27 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 128.27 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57f2873b-41d3-4f33-a2f3-e58d0b98ce39")
+		)
+		(pin "2"
+			(uuid "554a3688-7ddf-432f-b095-75d542310a01")
+		)
+		(pin "3"
+			(uuid "aa2127ff-720d-4b70-bf67-31447b55eed5")
+		)
+		(instances
+			(project ""
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -14809,7 +15155,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 45.72 180)
+		(at 111.76 29.21 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14817,7 +15163,7 @@
 		(dnp no)
 		(uuid "0698d3b5-a556-459f-9701-2ca229a6ec70")
 		(property "Reference" "C8"
-			(at 116.84 46.228 0)
+			(at 115.57 29.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14826,7 +15172,7 @@
 			)
 		)
 		(property "Value" "12pF"
-			(at 116.84 48.768 0)
+			(at 115.57 32.258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14835,7 +15181,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
-			(at 112.0648 41.91 0)
+			(at 110.7948 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14844,7 +15190,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 45.72 0)
+			(at 111.76 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14853,7 +15199,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 45.72 0)
+			(at 111.76 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16297,6 +16643,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 114.3 71.12 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28ba4051-d528-450c-b9b5-950244b57398")
+		(property "Reference" "SW6"
+			(at 114.3 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Z80_CLOCK"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 114.3 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8455ee28-83ab-493f-925e-a9a4c2f90ded")
+		)
+		(pin "1"
+			(uuid "98aaa7f2-9167-4e7d-a4ea-385aa1098353")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 114.3 372.11 270)
 		(unit 1)
@@ -16674,7 +17088,7 @@
 	)
 	(symbol
 		(lib_id "Device:Crystal")
-		(at 118.11 41.91 0)
+		(at 116.84 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16683,7 +17097,7 @@
 		(fields_autoplaced yes)
 		(uuid "3833e145-ae84-4025-8c5a-af7e5f6a3f22")
 		(property "Reference" "Y1"
-			(at 118.11 34.29 0)
+			(at 116.84 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16691,7 +17105,7 @@
 			)
 		)
 		(property "Value" "Crystal"
-			(at 118.11 36.83 0)
+			(at 116.84 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16699,7 +17113,7 @@
 			)
 		)
 		(property "Footprint" "Crystal:Crystal_HC49-4H_Vertical"
-			(at 118.11 41.91 0)
+			(at 116.84 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16708,7 +17122,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 41.91 0)
+			(at 116.84 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16717,7 +17131,7 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
-			(at 118.11 41.91 0)
+			(at 116.84 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18141,7 +18555,7 @@
 	)
 	(symbol
 		(lib_id "Device:Oscilloscope")
-		(at 119.38 91.44 90)
+		(at 119.38 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18149,7 +18563,7 @@
 		(dnp no)
 		(uuid "4ed0cecf-38e2-4474-b103-b6a523c8016d")
 		(property "Reference" "O1"
-			(at 119.38 84.582 90)
+			(at 119.38 89.662 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18157,7 +18571,7 @@
 			)
 		)
 		(property "Value" "10KHz"
-			(at 119.38 87.122 90)
+			(at 119.38 92.202 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18165,7 +18579,7 @@
 			)
 		)
 		(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm"
-			(at 116.84 91.44 90)
+			(at 116.84 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18174,7 +18588,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 91.44 90)
+			(at 116.84 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18183,7 +18597,7 @@
 			)
 		)
 		(property "Description" "Oscilloscope"
-			(at 119.38 91.44 0)
+			(at 119.38 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20226,6 +20640,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 121.92 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80b58da4-4e3d-4612-a929-70881ff12613")
+		(property "Reference" "R16"
+			(at 126.746 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 124.46 74.676 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 120.142 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 121.92 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61b26cc4-2fce-4e35-8d7b-42c89611e771")
+		)
+		(pin "2"
+			(uuid "626ac1ce-fbad-4d20-b91d-8f849d4de3b9")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 162.56 394.97 180)
 		(unit 1)
@@ -20829,7 +21310,7 @@
 	)
 	(symbol
 		(lib_id "Device:Oscilloscope")
-		(at 119.38 67.31 90)
+		(at 109.22 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20837,7 +21318,7 @@
 		(dnp no)
 		(uuid "8cc19d77-6f2e-4296-9792-caa3df33ce9a")
 		(property "Reference" "O2"
-			(at 119.38 60.452 90)
+			(at 109.22 43.942 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20845,7 +21326,7 @@
 			)
 		)
 		(property "Value" "10KHz"
-			(at 119.38 62.992 90)
+			(at 109.22 46.482 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20853,7 +21334,7 @@
 			)
 		)
 		(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm"
-			(at 116.84 67.31 90)
+			(at 106.68 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20862,7 +21343,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 67.31 90)
+			(at 106.68 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20871,7 +21352,7 @@
 			)
 		)
 		(property "Description" "Oscilloscope"
-			(at 119.38 67.31 0)
+			(at 109.22 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21150,7 +21631,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 71.12 180)
+		(at 102.87 54.61 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21158,7 +21639,7 @@
 		(dnp no)
 		(uuid "96554192-5c01-4073-870d-9e56300be67c")
 		(property "Reference" "C9"
-			(at 116.84 71.628 0)
+			(at 106.68 55.118 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21167,7 +21648,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 116.84 74.168 0)
+			(at 106.68 57.658 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21176,7 +21657,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
-			(at 112.0648 67.31 0)
+			(at 101.9048 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21185,7 +21666,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 71.12 0)
+			(at 102.87 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21194,7 +21675,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 71.12 0)
+			(at 102.87 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21852,7 +22333,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 95.25 180)
+		(at 113.03 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21860,7 +22341,7 @@
 		(dnp no)
 		(uuid "a972665e-ba55-4f10-b62f-0b7781e4c844")
 		(property "Reference" "C12"
-			(at 116.84 95.758 0)
+			(at 116.84 100.838 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21869,7 +22350,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 116.84 98.298 0)
+			(at 116.84 103.378 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21878,7 +22359,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
-			(at 112.0648 91.44 0)
+			(at 112.0648 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21887,7 +22368,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 95.25 0)
+			(at 113.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21896,7 +22377,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 95.25 0)
+			(at 113.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24774,7 +25255,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 123.19 45.72 180)
+		(at 121.92 29.21 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24782,7 +25263,7 @@
 		(dnp no)
 		(uuid "edabfdda-5d97-4519-8ea1-e242d27ca4c0")
 		(property "Reference" "C11"
-			(at 127 46.228 0)
+			(at 125.73 29.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24791,7 +25272,7 @@
 			)
 		)
 		(property "Value" "12pF"
-			(at 127 48.768 0)
+			(at 125.73 32.258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24800,7 +25281,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
-			(at 122.2248 41.91 0)
+			(at 120.9548 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24809,7 +25290,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 45.72 0)
+			(at 121.92 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24818,7 +25299,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 123.19 45.72 0)
+			(at 121.92 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
