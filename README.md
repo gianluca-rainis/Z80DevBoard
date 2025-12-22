@@ -79,7 +79,8 @@ Z80DevBoard/
 ├── Z80DevBoard.kicad_pcb   # PCB layout file
 ├── Z80DevBoard.kicad_pro   # KiCad project file
 ├── Z80DevBoard.kicad_sch   # Schematic file
-├── LICENSE                 # MIT License
+├── LICENSE-MIT.md          # MIT License
+├── LICENSE-CERN-OHL-W.md   # CERN-OHL-W License
 └── README.md               # This file
 ```
 
