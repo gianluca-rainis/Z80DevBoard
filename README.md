@@ -50,6 +50,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 ### Support components
 - Crystal 12MHz
 - 2 oscillators 10KHz
+- 74HC14
 
 ### Resistors
 - Resistor 0 ohm

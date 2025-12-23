@@ -40576,7 +40576,7 @@
 	(footprint "LOGO"
 		(layer "B.Cu")
 		(uuid "0cc70ba8-64cd-4bb3-8c33-7ea8f3dcd731")
-		(at 251.5 143.5 180)
+		(at 44 142.5 180)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "B.SilkS")
@@ -43667,7 +43667,7 @@
 		)
 	)
 	(gr_text "Z80DevBoard\n\nAuthor: Gianluca Rainis\nGitHub: gianluca-rainis\nRepo: https://github.com/gianluca-rainis/Z80DevBoard"
-		(at 82.5 145 0)
+		(at 255 143.5 0)
 		(layer "B.SilkS")
 		(uuid "8bde889a-142c-4e10-bdc5-e1e0a1961ef2")
 		(effects
