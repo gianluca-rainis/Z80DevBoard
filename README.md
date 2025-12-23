@@ -55,11 +55,11 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - Resistor 0 ohm
 - 40 Resistors 220 ohm
 - 2 Resistors 5k ohm
-- 8 Resistors 10k ohm
+- 9 Resistors 10k ohm
 
 ### Capacitors
 - 2 Capacitors 12pF
-- 7 Capacitors 0.1uF
+- 8 Capacitors 0.1uF
 - Capacitor 1uF
 - 2 Capacitors 10uF
 
