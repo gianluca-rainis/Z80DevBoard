@@ -66,6 +66,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 
 ### Other
 - 5 Buttons
+- 1 Switch
 - 40 LEDs
 - 24 Diodes
 - Fuse 500mA
