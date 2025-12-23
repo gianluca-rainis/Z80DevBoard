@@ -48,7 +48,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - Connector 2 pins
 
 ### Support components
-- Crystal 12MHz
+- Crystal 12MHz 20pF
 - 2 oscillators 10KHz
 - 74HC14
 
@@ -59,7 +59,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - 10 Resistors 10k ohm
 
 ### Capacitors
-- 2 Capacitors 12pF
+- 2 Capacitors 33pF
 - 8 Capacitors 0.1uF
 - 1 Capacitor 1uF
 - 2 Capacitors 10uF
