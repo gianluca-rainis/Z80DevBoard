@@ -30,7 +30,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 
 ## Components
 ### Microprocessors
-- Z8400
+- Z84C00
 - RP2040
 
 ### Memory
@@ -49,7 +49,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 
 ### Support components
 - Crystal 12MHz 20pF
-- 2 oscillators 10KHz
+- Oscillator 2MHz
 - 74HC14
 
 ### Resistors
@@ -57,11 +57,12 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - 40 Resistors 220 ohm
 - 2 Resistors 5k ohm
 - 10 Resistors 10k ohm
+- 1 Resistor 470k ohm
 
 ### Capacitors
 - 2 Capacitors 33pF
-- 8 Capacitors 0.1uF
-- 1 Capacitor 1uF
+- 6 Capacitors 0.1uF
+- 2 Capacitor 1uF
 - 2 Capacitors 10uF
 
 ### Other

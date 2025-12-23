@@ -3573,258 +3573,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Oscilloscope"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.0254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "MES"
-				(at -3.302 1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "Oscilloscope"
-				(at -3.302 -0.762 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Oscilloscope"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "oscilloscope"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Oscilloscope_0_0"
-				(polyline
-					(pts
-						(xy -1.778 0.508) (xy -1.905 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.778 0.508)
-					(mid -1.397 0.8874)
-					(end -1.016 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 0.508) (xy -0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.381 -0.8874)
-					(end -0.762 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.508) (xy 0.254 0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 0.508)
-					(mid 0.635 0.8874)
-					(end 1.016 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0.508) (xy 1.27 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.032 -0.508)
-					(mid 1.651 -0.8874)
-					(end 1.27 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 -0.508) (xy 2.159 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Oscilloscope_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 3.81) (xy 0.762 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 4.064) (xy 0.508 3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Oscilloscope_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -6488,6 +6236,175 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Oscillator:ASCO"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at -7.62 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ASCO"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Oscillator:Oscillator_SMD_Abracon_ASCO-4Pin_1.6x1.2mm"
+				(at 2.54 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://abracon.com/Oscillators/ASCO.pdf"
+				(at -5.715 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Crystal Clock Oscillator, Abracon ASCO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Crystal Clock Oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Oscillator*Abracon*ASCO*1.6x1.2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ASCO_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 2.54) (xy -5.08 2.54) (xy -5.08 3.81) (xy -4.445 3.81) (xy -4.445 2.54) (xy -3.81 2.54)
+						(xy -3.81 3.81) (xy -3.175 3.81) (xy -3.175 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ASCO_1_1"
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "Tri-State"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7163,7 +7080,7 @@
 	)
 	(rectangle
 		(start 87.63 15.24)
-		(end 149.86 109.22)
+		(end 149.86 132.08)
 		(stroke
 			(width 0)
 			(type default)
@@ -7436,12 +7353,6 @@
 		(uuid "2816a77c-8178-4137-84e5-163f8ced8605")
 	)
 	(junction
-		(at 111.76 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b07cf60-66ee-4f29-bb69-094d7f81d504")
-	)
-	(junction
 		(at 275.59 312.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7518,6 +7429,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96ca33fd-5400-4aa8-b910-8f7abe609031")
+	)
+	(junction
+		(at 92.71 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "991d52ff-d687-4650-80b0-159332a4dfae")
 	)
 	(junction
 		(at 242.57 370.84)
@@ -7608,12 +7525,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6810926-4640-43ac-9d1b-7a51d58b06cb")
-	)
-	(junction
-		(at 102.87 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd183ed9-0b97-40e1-8549-4777951f0d41")
 	)
 	(wire
 		(pts
@@ -7757,6 +7668,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 63.5) (xy 92.71 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f48e37a-bfa4-4ace-972f-ac5874612d32")
+	)
+	(wire
+		(pts
 			(xy 341.63 368.3) (xy 341.63 370.84)
 		)
 		(stroke
@@ -7787,7 +7708,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 55.88) (xy 123.19 55.88)
+			(xy 118.11 68.58) (xy 123.19 68.58)
 		)
 		(stroke
 			(width 0)
@@ -7867,16 +7788,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 91.44) (xy 113.03 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "384dc3de-2227-43d7-9bda-17fc44f175eb")
-	)
-	(wire
-		(pts
 			(xy 473.71 133.35) (xy 537.21 133.35)
 		)
 		(stroke
@@ -7907,7 +7818,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 50.8) (xy 123.19 50.8)
+			(xy 114.3 63.5) (xy 123.19 63.5)
 		)
 		(stroke
 			(width 0)
@@ -7964,6 +7875,16 @@
 			(type default)
 		)
 		(uuid "5076a9f1-ad7b-486b-acbb-5be10a0e6d44")
+	)
+	(wire
+		(pts
+			(xy 92.71 64.77) (xy 92.71 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52289237-bf58-496e-91cb-2fec9f01f70c")
 	)
 	(wire
 		(pts
@@ -8114,16 +8035,6 @@
 			(type default)
 		)
 		(uuid "6c2655b6-b96a-4d48-913c-62974ce7a5a3")
-	)
-	(wire
-		(pts
-			(xy 110.49 91.44) (xy 111.76 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6eb3cb9a-e83e-42a8-9b21-6df106e09dd0")
 	)
 	(wire
 		(pts
@@ -8467,13 +8378,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 50.8) (xy 102.87 50.8)
+			(xy 92.71 63.5) (xy 99.06 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a481ec7d-7f2f-4455-a400-06d9c16d9c2f")
+		(uuid "9fa09282-bdc2-4950-9710-7d7bd8d32ad4")
 	)
 	(wire
 		(pts
@@ -8837,16 +8748,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 50.8) (xy 104.14 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa3e0fba-e867-474e-93ce-64fdb3105bb5")
-	)
-	(wire
-		(pts
 			(xy 349.25 388.62) (xy 349.25 391.16)
 		)
 		(stroke
@@ -8893,28 +8794,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 111.76 99.06 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "01755878-7eb0-498c-bc6b-51d298c10623")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 107.027 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -9359,6 +9238,28 @@
 			)
 		)
 	)
+	(global_label "Vcc"
+		(shape bidirectional)
+		(at 92.71 54.61 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16ed453c-283e-4da5-b42d-307ca4b87548")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 47.2477 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CLOCK_BUS"
 		(shape output)
 		(at 490.22 215.9 180)
@@ -9570,6 +9471,28 @@
 		(uuid "1eea238a-886c-4d45-b801-b715f3ac7b9b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 549.91 96.619 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Vdd_3v3"
+		(shape bidirectional)
+		(at 118.11 106.68 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1f146ef2-63b0-49e1-b466-e8cbc0a008a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 94.8427 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10459,28 +10382,6 @@
 			)
 		)
 	)
-	(global_label "Vdd_3v3"
-		(shape bidirectional)
-		(at 110.49 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4351017d-8e5e-44ac-93bf-eeda5a0bfa1d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.6527 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape bidirectional)
 		(at 441.96 215.9 270)
@@ -10917,6 +10818,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-SH-GPIO4-RCLK"
+		(shape output)
+		(at 431.8 200.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "54997d19-aca9-40d1-816c-075a53666eef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 403.6567 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -11911,6 +11834,28 @@
 			)
 		)
 	)
+	(global_label "Vcc"
+		(shape bidirectional)
+		(at 364.49 344.17 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "74ad6c42-3de2-4391-99fa-8c7729eec5e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 364.49 351.5323 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Z80-D7"
 		(shape bidirectional)
 		(at 355.6 222.25 0)
@@ -11968,6 +11913,28 @@
 		(uuid "7704bedb-6ec7-48c1-9976-946dcaf1f40f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 417.8686 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 118.11 121.92 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "771d8cbd-c1df-4685-8e20-8a84acec22af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 129.887 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12254,28 +12221,6 @@
 		(uuid "83a3b2cb-1e9c-4d15-b8b0-4bbbfe81867d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 21.59 103.5193 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Vdd_3v3"
-		(shape bidirectional)
-		(at 364.49 344.17 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "83e6edb6-6deb-4857-a678-96f7c61878d9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 364.49 356.0073 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12681,28 +12626,6 @@
 			)
 		)
 	)
-	(global_label "Vdd_3v3"
-		(shape bidirectional)
-		(at 101.6 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8ff91a00-4f5b-4ac7-911f-8ec42be67f05")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.7627 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RAM-A12"
 		(shape input)
 		(at 125.73 394.97 0)
@@ -13024,28 +12947,6 @@
 		(uuid "981cfe36-0831-4e0d-982b-6ba293a768a5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 282.0768 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-SH-GPIO3-RCLK"
-		(shape output)
-		(at 431.8 200.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "984d314b-9ade-4fcc-b5fb-beef3a9f448c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.6567 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14067,6 +13968,28 @@
 			)
 		)
 	)
+	(global_label "CLOCK_BUS"
+		(shape input)
+		(at 128.27 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c9dc0a6c-1576-4d76-beb9-136485882fbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 142.2014 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Z80-A12"
 		(shape output)
 		(at 110.49 394.97 180)
@@ -14353,28 +14276,6 @@
 			)
 		)
 	)
-	(global_label "Vdd_3v3"
-		(shape bidirectional)
-		(at 411.48 344.17 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d27709da-5c40-4fd7-a55d-9590deb62ca2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 411.48 356.0073 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RP2040-SH-GPIO4-RCLK"
 		(shape output)
 		(at 431.8 128.27 180)
@@ -14507,9 +14408,31 @@
 			)
 		)
 	)
+	(global_label "Vcc"
+		(shape bidirectional)
+		(at 411.48 344.17 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7095fa0-039f-442c-bbb8-abb7e9bdd2d7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 411.48 351.5323 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 102.87 58.42 270)
+		(at 92.71 72.39 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14519,7 +14442,7 @@
 		)
 		(uuid "d71a2a2c-a508-458f-b614-8bd601ac48ee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.87 66.387 90)
+			(at 92.71 80.357 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14883,7 +14806,7 @@
 	)
 	(global_label "Z80_MANUAL_CLOCK"
 		(shape output)
-		(at 118.11 55.88 270)
+		(at 118.11 68.58 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14893,7 +14816,7 @@
 		)
 		(uuid "e8893a22-6ded-4662-ae1c-f14fc5b88a41")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 77.9152 90)
+			(at 118.11 90.6152 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15169,7 +15092,7 @@
 	)
 	(global_label "CLOCK_Z80"
 		(shape input)
-		(at 133.35 53.34 0)
+		(at 133.35 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15179,7 +15102,7 @@
 		)
 		(uuid "f0798937-31ae-4a8c-97e6-624e19882a18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.0999 53.34 0)
+			(at 147.0999 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15343,28 +15266,6 @@
 			)
 		)
 	)
-	(global_label "CLOCK_BUS"
-		(shape input)
-		(at 123.19 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fc135c5f-d194-4748-b427-44be6fea3d62")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.1214 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RP2040_XOUT"
 		(shape bidirectional)
 		(at 123.19 25.4 0)
@@ -15383,6 +15284,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 107.95 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fd6a52a1-fb0c-4c71-b6ee-3d0d92c3e7c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 99.983 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -15523,7 +15446,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Nidec_CAS-120A1")
-		(at 128.27 53.34 180)
+		(at 128.27 66.04 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15532,7 +15455,7 @@
 		(fields_autoplaced yes)
 		(uuid "01f20d19-a4fc-491b-a698-62b2f89bce7b")
 		(property "Reference" "SW5"
-			(at 128.27 44.45 0)
+			(at 128.27 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15540,7 +15463,7 @@
 			)
 		)
 		(property "Value" "SW_Nidec_CAS-120A1"
-			(at 128.27 46.99 0)
+			(at 128.27 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15548,7 +15471,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_Slide_SPDT_Straight_CK_OS102011MS2Q"
-			(at 128.27 43.18 0)
+			(at 128.27 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15557,7 +15480,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cas.pdf"
-			(at 128.27 45.72 0)
+			(at 128.27 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15566,7 +15489,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 128.27 53.34 0)
+			(at 128.27 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17482,6 +17405,110 @@
 		)
 	)
 	(symbol
+		(lib_id "74xx:74HC14")
+		(at 106.68 63.5 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b4f7caa-0d97-400e-97f8-26b8fc31c65b")
+		(property "Reference" "U1"
+			(at 106.68 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC14"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 106.68 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC14"
+			(at 106.68 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex inverter schmitt trigger"
+			(at 106.68 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0e94adb3-6d05-441b-a2f8-80cc33f3445c")
+		)
+		(pin "1"
+			(uuid "120a5801-9a75-48fe-81be-3bffdce2a2c5")
+		)
+		(pin "3"
+			(uuid "81f632a9-0b75-4f72-b267-654d298d3c4a")
+		)
+		(pin "9"
+			(uuid "0301bcf1-a7e0-4b2c-a901-436a886f2b24")
+		)
+		(pin "11"
+			(uuid "687043ad-e86d-404f-ae5c-8a37ee79d097")
+		)
+		(pin "10"
+			(uuid "5d7c99f4-8214-4d6b-b2ef-2c7d39bb6500")
+		)
+		(pin "13"
+			(uuid "11896566-3843-4448-a6d4-006aea84ef25")
+		)
+		(pin "6"
+			(uuid "fe23acd2-5bd9-49cd-9b6c-04fd035887bf")
+		)
+		(pin "8"
+			(uuid "66064101-3dde-4dac-a081-87a3d839c3bc")
+		)
+		(pin "4"
+			(uuid "b16767ec-92c8-4522-8331-607567f5d61a")
+		)
+		(pin "5"
+			(uuid "b1560fea-5bb3-4ebb-836a-11d133c0a728")
+		)
+		(pin "7"
+			(uuid "0c885aa1-67b7-4407-a1eb-a742beb62eec")
+		)
+		(pin "14"
+			(uuid "673bed9f-d455-4d7e-a089-4c32c97df08b")
+		)
+		(pin "12"
+			(uuid "736981d5-1f01-4342-8416-6d15dfc1ca49")
+		)
+		(instances
+			(project ""
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 104.14 279.4 180)
 		(unit 1)
@@ -19355,73 +19382,6 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Oscilloscope")
-		(at 118.11 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4ed0cecf-38e2-4474-b103-b6a523c8016d")
-		(property "Reference" "O1"
-			(at 118.11 84.582 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10KHz"
-			(at 118.11 87.122 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm"
-			(at 115.57 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Oscilloscope"
-			(at 118.11 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "349b851a-2741-45fe-b6b2-477db9bfb15a")
-		)
-		(pin "1"
-			(uuid "974669bf-91af-4c8f-bd15-8554fad952eb")
-		)
-		(instances
-			(project "Z80DevBoard"
-				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "O1")
 					(unit 1)
 				)
 			)
@@ -22356,73 +22316,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Oscilloscope")
-		(at 109.22 50.8 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8cc19d77-6f2e-4296-9792-caa3df33ce9a")
-		(property "Reference" "O2"
-			(at 109.22 43.942 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10KHz"
-			(at 109.22 46.482 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm"
-			(at 106.68 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Oscilloscope"
-			(at 109.22 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "28aba4e6-1c77-4141-aec9-fed34914c3bd")
-		)
-		(pin "1"
-			(uuid "caaef7b7-fbeb-464e-857b-39a7b6b43dc2")
-		)
-		(instances
-			(project "Z80DevBoard"
-				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "O2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 40.64 383.54 180)
 		(unit 1)
@@ -22678,7 +22571,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 102.87 54.61 180)
+		(at 92.71 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22686,7 +22579,7 @@
 		(dnp no)
 		(uuid "96554192-5c01-4073-870d-9e56300be67c")
 		(property "Reference" "C9"
-			(at 106.68 55.118 0)
+			(at 96.52 69.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22694,8 +22587,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 106.68 57.658 0)
+		(property "Value" "1uF"
+			(at 96.52 71.628 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22704,7 +22597,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
-			(at 101.9048 50.8 0)
+			(at 91.7448 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22713,7 +22606,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 54.61 0)
+			(at 92.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22722,7 +22615,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 102.87 54.61 0)
+			(at 92.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23379,34 +23272,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 111.76 95.25 180)
+		(lib_id "Device:R")
+		(at 92.71 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a972665e-ba55-4f10-b62f-0b7781e4c844")
-		(property "Reference" "C12"
-			(at 115.57 95.758 0)
+		(uuid "a9dca004-3b31-4e4e-90b8-e85b04a31fe7")
+		(property "Reference" "R54"
+			(at 97.536 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 115.57 98.298 0)
+		(property "Value" "470k"
+			(at 95.25 58.166 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
-			(at 110.7948 91.44 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 90.932 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23415,7 +23306,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 95.25 0)
+			(at 92.71 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23423,8 +23314,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 111.76 95.25 0)
+		(property "Description" "Resistor"
+			(at 92.71 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23433,15 +23324,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f0adc26-30f0-4b55-84f6-298974c82089")
+			(uuid "7a745cfe-4537-4484-98a9-01a08d6d0996")
 		)
 		(pin "2"
-			(uuid "510e1594-bcb0-4dad-956a-043b06bc0f69")
+			(uuid "d8ff2fd5-9f5e-4232-acd7-be20950f7f1a")
 		)
 		(instances
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "C12")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -23996,6 +23887,80 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "D63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Oscillator:ASCO")
+		(at 118.11 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5ae565d-04cd-43fc-a512-3e1601a19611")
+		(property "Reference" "Y2"
+			(at 129.54 107.8798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ASCO"
+			(at 129.54 110.4198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Oscillator:Oscillator_SMD_SiT_PQFN-4Pin_5.0x3.2mm"
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://abracon.com/Oscillators/ASCO.pdf"
+			(at 112.395 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal Clock Oscillator, Abracon ASCO"
+			(at 118.11 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "83c7d6ce-f320-40c0-ae8b-8703cea98b6c")
+		)
+		(pin "2"
+			(uuid "d727eb54-1ea0-44c3-9e1f-dcb1ad1a12f8")
+		)
+		(pin "1"
+			(uuid "9754cd4a-4baf-47eb-8b30-37847b9277c4")
+		)
+		(pin "3"
+			(uuid "dbdbb541-ba59-49fc-aea8-b2f21ba3098c")
+		)
+		(instances
+			(project ""
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "Y2")
 					(unit 1)
 				)
 			)
