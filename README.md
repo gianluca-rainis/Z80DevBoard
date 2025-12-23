@@ -56,16 +56,16 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - Resistor 0 ohm
 - 40 Resistors 220 ohm
 - 2 Resistors 5k ohm
-- 9 Resistors 10k ohm
+- 10 Resistors 10k ohm
 
 ### Capacitors
 - 2 Capacitors 12pF
 - 8 Capacitors 0.1uF
-- Capacitor 1uF
+- 1 Capacitor 1uF
 - 2 Capacitors 10uF
 
 ### Other
-- 4 Buttons
+- 5 Buttons
 - 40 LEDs
 - 24 Diodes
 - Fuse 500mA
