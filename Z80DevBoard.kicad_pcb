@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2025-12-23")
+		(date "2025-12-24")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -66879,7 +66879,7 @@
 		)
 		(polygon
 			(pts
-				(xy 257 146) (xy 38 146) (xy 38 38.5) (xy 257 38.5)
+				(xy 257 145.5) (xy 38 145.5) (xy 38 38.5) (xy 257 38.5)
 			)
 		)
 		(filled_polygon
