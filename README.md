@@ -34,7 +34,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - RP2040
 
 ### Memory
-- HM62256BLP (RAM)
+- 2 HM62256BLP (RAM)
 - W25Q32JVSS (Flash)
 
 ### Power Management
@@ -51,6 +51,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - Crystal 12MHz 20pF
 - Oscillator 2MHz
 - 74HC14
+- 74HC04
 
 ### Resistors
 - Resistor 0 ohm
