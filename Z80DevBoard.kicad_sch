@@ -19063,7 +19063,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 330.2 383.54 0)
 			(effects
 				(font
@@ -23421,7 +23421,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 243.84 383.54 0)
 			(effects
 				(font
@@ -23577,7 +23577,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5de33d51-1313-46a9-a9af-00a7be23c706")
-		(property "Reference" "LedMatrixRead"
+		(property "Reference" "LedMatrixRead1"
 			(at 272.6533 353.06 0)
 			(effects
 				(font
@@ -23595,7 +23595,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
 			(at 270.51 373.38 0)
 			(effects
 				(font
@@ -23685,7 +23685,7 @@
 		(instances
 			(project ""
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "LedMatrixRead")
+					(reference "LedMatrixRead1")
 					(unit 1)
 				)
 			)
@@ -24303,7 +24303,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 410.21 370.84 0)
 			(effects
 				(font
@@ -29129,7 +29129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0eacd5b-3e56-4813-b61a-40e4750025b3")
-		(property "Reference" "LedMatrixWrite"
+		(property "Reference" "LedMatrixWrite1"
 			(at 359.0133 353.06 0)
 			(effects
 				(font
@@ -29147,7 +29147,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
 			(at 356.87 373.38 0)
 			(effects
 				(font
@@ -29237,7 +29237,7 @@
 		(instances
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "LedMatrixWrite")
+					(reference "LedMatrixWrite1")
 					(unit 1)
 				)
 			)
