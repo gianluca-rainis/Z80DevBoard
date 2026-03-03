@@ -10386,22 +10386,22 @@
 	)
 	(global_label "Z80-D4"
 		(shape bidirectional)
-		(at 448.31 350.52 0)
+		(at 448.31 347.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "03e92fa5-e42e-4389-977c-d6b8db19b1e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.0869 350.52 0)
+			(at 436.5331 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -10606,7 +10606,7 @@
 	)
 	(global_label "Z80-A2"
 		(shape bidirectional)
-		(at 448.31 369.57 180)
+		(at 448.31 367.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10616,7 +10616,7 @@
 		)
 		(uuid "0b87017f-133d-4f4b-8486-e599ed3bf5c9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 369.57 0)
+			(at 437.8258 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10760,7 +10760,7 @@
 	)
 	(global_label "Z80-A12"
 		(shape bidirectional)
-		(at 448.31 394.97 180)
+		(at 448.31 392.43 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10770,7 +10770,7 @@
 		)
 		(uuid "1387ac55-d0fa-4caf-a32e-047de7534e29")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.6163 394.97 0)
+			(at 436.6163 392.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10913,8 +10913,8 @@
 		)
 	)
 	(global_label "Z80-A15"
-		(shape output)
-		(at 299.72 309.88 180)
+		(shape bidirectional)
+		(at 448.31 400.05 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10924,7 +10924,7 @@
 		)
 		(uuid "18313a93-377b-4002-8d24-ef0c71df7bef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 288.0263 309.88 0)
+			(at 436.6163 400.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10935,8 +10935,8 @@
 		)
 	)
 	(global_label "RAM-CS"
-		(shape input)
-		(at 314.96 309.88 0)
+		(shape bidirectional)
+		(at 448.31 400.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10946,7 +10946,7 @@
 		)
 		(uuid "18360baf-9792-4c32-94b6-d6d8f7ffbe03")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 325.8071 309.88 0)
+			(at 459.1571 400.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11552,7 +11552,7 @@
 	)
 	(global_label "Z80-A6"
 		(shape bidirectional)
-		(at 448.31 379.73 180)
+		(at 448.31 377.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11562,7 +11562,7 @@
 		)
 		(uuid "2adfb628-dd59-4cfa-b1ed-b42e4eef7d47")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 379.73 0)
+			(at 437.8258 377.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11728,44 +11728,44 @@
 	)
 	(global_label "RAM-Q6"
 		(shape bidirectional)
-		(at 448.31 355.6 180)
+		(at 448.31 353.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "2ce517ee-21bb-4a28-9bef-eb8f4913a795")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.2911 355.6 0)
+			(at 460.3289 353.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RAM-Q7"
 		(shape bidirectional)
-		(at 448.31 358.14 180)
+		(at 448.31 355.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "2dfba28f-c48d-4f05-8d43-3725b8e4000a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.2911 358.14 0)
+			(at 460.3289 355.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -11794,7 +11794,7 @@
 	)
 	(global_label "Z80-A11"
 		(shape bidirectional)
-		(at 448.31 392.43 180)
+		(at 448.31 389.89 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11804,7 +11804,7 @@
 		)
 		(uuid "2fb88126-f286-4323-972a-86823b735fd4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.6163 392.43 0)
+			(at 436.6163 389.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11816,7 +11816,7 @@
 	)
 	(global_label "RAM-A12"
 		(shape bidirectional)
-		(at 448.31 394.97 0)
+		(at 448.31 392.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11826,7 +11826,7 @@
 		)
 		(uuid "2fbde99c-1402-461d-adde-c81e58054f03")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.1852 394.97 0)
+			(at 460.1852 392.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12036,7 +12036,7 @@
 	)
 	(global_label "RAM-A4"
 		(shape bidirectional)
-		(at 448.31 374.65 0)
+		(at 448.31 372.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12046,7 +12046,7 @@
 		)
 		(uuid "349b2d76-b2ac-4392-91c3-d3611133dfba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 374.65 0)
+			(at 458.9757 372.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12454,7 +12454,7 @@
 	)
 	(global_label "RAM-A10"
 		(shape bidirectional)
-		(at 448.31 389.89 0)
+		(at 448.31 387.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12464,7 +12464,7 @@
 		)
 		(uuid "3f1cc400-bc0f-4152-a958-d79f27bce5cb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.1852 389.89 0)
+			(at 460.1852 387.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12520,7 +12520,7 @@
 	)
 	(global_label "RAM-A7"
 		(shape bidirectional)
-		(at 448.31 382.27 0)
+		(at 448.31 379.73 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12530,7 +12530,7 @@
 		)
 		(uuid "3fbeeb53-fef4-4eb3-bc7f-19ae1d327a5c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 382.27 0)
+			(at 458.9757 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12718,7 +12718,7 @@
 	)
 	(global_label "Z80-A14"
 		(shape bidirectional)
-		(at 448.31 400.05 180)
+		(at 448.31 397.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12728,7 +12728,7 @@
 		)
 		(uuid "45c3358b-f5f8-4c87-9bfc-dc5e0a2e55e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.6163 400.05 0)
+			(at 436.6163 397.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12784,7 +12784,7 @@
 	)
 	(global_label "RAM-A2"
 		(shape bidirectional)
-		(at 448.31 369.57 0)
+		(at 448.31 367.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12794,7 +12794,7 @@
 		)
 		(uuid "46737987-c387-4c89-966a-980bed5fe0a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 369.57 0)
+			(at 458.9757 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12872,7 +12872,7 @@
 	)
 	(global_label "Z80-A9"
 		(shape bidirectional)
-		(at 448.31 387.35 180)
+		(at 448.31 384.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12882,7 +12882,7 @@
 		)
 		(uuid "476e5a40-f47c-44ed-ba34-18f408d04545")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 387.35 0)
+			(at 437.8258 384.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12894,44 +12894,44 @@
 	)
 	(global_label "Z80-D0"
 		(shape bidirectional)
-		(at 448.31 340.36 0)
+		(at 448.31 337.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "478a537e-32d8-4715-b921-99c7398c3af8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.0869 340.36 0)
+			(at 436.5331 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Z80-D5"
 		(shape bidirectional)
-		(at 448.31 353.06 0)
+		(at 448.31 350.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "47f99095-6e32-406e-8898-97046ae87f09")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.0869 353.06 0)
+			(at 436.5331 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -13004,7 +13004,7 @@
 	)
 	(global_label "RAM-A3"
 		(shape bidirectional)
-		(at 448.31 372.11 0)
+		(at 448.31 369.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13014,7 +13014,7 @@
 		)
 		(uuid "4a86a7b9-5883-4bda-8961-5d5213c3638d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 372.11 0)
+			(at 458.9757 369.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13334,7 +13334,7 @@
 	)
 	(global_label "RAM-A11"
 		(shape bidirectional)
-		(at 448.31 392.43 0)
+		(at 448.31 389.89 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13344,7 +13344,7 @@
 		)
 		(uuid "53f9c420-0e84-46e2-80a4-a88d2cb8d95f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.1852 392.43 0)
+			(at 460.1852 389.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13598,22 +13598,22 @@
 	)
 	(global_label "RAM-Q3"
 		(shape bidirectional)
-		(at 448.31 347.98 180)
+		(at 448.31 345.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "57597219-691e-4d02-9edb-03d0a4b90b7b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.2911 347.98 0)
+			(at 460.3289 345.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -13884,7 +13884,7 @@
 	)
 	(global_label "Z80-A10"
 		(shape bidirectional)
-		(at 448.31 389.89 180)
+		(at 448.31 387.35 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13894,7 +13894,7 @@
 		)
 		(uuid "5e05b46b-489c-4548-8ece-b91d2107779a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.6163 389.89 0)
+			(at 436.6163 387.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14126,7 +14126,7 @@
 	)
 	(global_label "Z80-A1"
 		(shape bidirectional)
-		(at 448.31 367.03 180)
+		(at 448.31 364.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14136,7 +14136,7 @@
 		)
 		(uuid "64d276aa-e482-4fe2-85e9-cf70221002cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 367.03 0)
+			(at 437.8258 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14346,22 +14346,22 @@
 	)
 	(global_label "Z80-D2"
 		(shape bidirectional)
-		(at 448.31 345.44 0)
+		(at 448.31 342.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "6b773eac-2bc6-4b05-91e5-3a75d4be98bd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.0869 345.44 0)
+			(at 436.5331 342.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -14456,7 +14456,7 @@
 	)
 	(global_label "RAM-A14"
 		(shape bidirectional)
-		(at 448.31 400.05 0)
+		(at 448.31 397.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14466,7 +14466,7 @@
 		)
 		(uuid "6e052794-95c1-4288-8129-4e098328a19b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.1852 400.05 0)
+			(at 460.1852 397.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14478,7 +14478,7 @@
 	)
 	(global_label "RAM-A0"
 		(shape bidirectional)
-		(at 448.31 364.49 0)
+		(at 448.31 361.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14488,7 +14488,7 @@
 		)
 		(uuid "6e6c6221-2d02-4419-96bc-16e0cfad313a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 364.49 0)
+			(at 458.9757 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14676,22 +14676,22 @@
 	)
 	(global_label "RAM-Q0"
 		(shape bidirectional)
-		(at 448.31 340.36 180)
+		(at 448.31 337.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "73d65d68-ac5e-4bdb-9713-1656aea7863b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.2911 340.36 0)
+			(at 460.3289 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -15138,7 +15138,7 @@
 	)
 	(global_label "RAM-A9"
 		(shape bidirectional)
-		(at 448.31 387.35 0)
+		(at 448.31 384.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15148,7 +15148,7 @@
 		)
 		(uuid "8070f43d-d436-4265-807d-2d38b5d00394")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 387.35 0)
+			(at 458.9757 384.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15446,7 +15446,7 @@
 	)
 	(global_label "Z80-A7"
 		(shape bidirectional)
-		(at 448.31 382.27 180)
+		(at 448.31 379.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15456,7 +15456,7 @@
 		)
 		(uuid "89fa4040-d64a-4c56-be62-e88b81f29fdd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 382.27 0)
+			(at 437.8258 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15534,7 +15534,7 @@
 	)
 	(global_label "RAM-A13"
 		(shape bidirectional)
-		(at 448.31 397.51 0)
+		(at 448.31 394.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15544,7 +15544,7 @@
 		)
 		(uuid "8bd56ed5-3169-4c1b-ba35-61b64d8575af")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.1852 397.51 0)
+			(at 460.1852 394.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15622,22 +15622,22 @@
 	)
 	(global_label "RAM-Q1"
 		(shape bidirectional)
-		(at 448.31 342.9 180)
+		(at 448.31 340.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "8f12d719-ea0d-4cac-addb-cf229ba6e2ed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.2911 342.9 0)
+			(at 460.3289 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -15842,7 +15842,7 @@
 	)
 	(global_label "Z80-A5"
 		(shape bidirectional)
-		(at 448.31 377.19 180)
+		(at 448.31 374.65 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15852,7 +15852,7 @@
 		)
 		(uuid "93b81beb-cac3-4b7e-8437-0dd791c54415")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 377.19 0)
+			(at 437.8258 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16678,22 +16678,22 @@
 	)
 	(global_label "Z80-D7"
 		(shape bidirectional)
-		(at 448.31 358.14 0)
+		(at 448.31 355.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "aff0f858-c7f0-442f-8f9c-5e6f1531ee06")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.0869 358.14 0)
+			(at 436.5331 355.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -16722,22 +16722,22 @@
 	)
 	(global_label "RAM-Q5"
 		(shape bidirectional)
-		(at 448.31 353.06 180)
+		(at 448.31 350.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "b03ef173-e3da-4b44-bfb7-cb4083b69a15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.2911 353.06 0)
+			(at 460.3289 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -16832,22 +16832,22 @@
 	)
 	(global_label "RAM-Q4"
 		(shape bidirectional)
-		(at 448.31 350.52 180)
+		(at 448.31 347.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "b447a38b-33b2-4f98-8a9b-3c6e32301c9c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.2911 350.52 0)
+			(at 460.3289 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -17008,7 +17008,7 @@
 	)
 	(global_label "Z80-A0"
 		(shape bidirectional)
-		(at 448.31 364.49 180)
+		(at 448.31 361.95 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17018,7 +17018,7 @@
 		)
 		(uuid "b79b07a3-5ff5-4acd-ac4f-70adcd161d91")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 364.49 0)
+			(at 437.8258 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17074,7 +17074,7 @@
 	)
 	(global_label "RAM-A5"
 		(shape bidirectional)
-		(at 448.31 377.19 0)
+		(at 448.31 374.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17084,7 +17084,7 @@
 		)
 		(uuid "b9741298-d75a-4921-9743-c2766fcad607")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 377.19 0)
+			(at 458.9757 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17118,7 +17118,7 @@
 	)
 	(global_label "RAM-A8"
 		(shape bidirectional)
-		(at 448.31 384.81 0)
+		(at 448.31 382.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17128,7 +17128,7 @@
 		)
 		(uuid "bbea2d27-1456-4ac3-a261-a4dbde187e7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 384.81 0)
+			(at 458.9757 382.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17976,22 +17976,22 @@
 	)
 	(global_label "Z80-D6"
 		(shape bidirectional)
-		(at 448.31 355.6 0)
+		(at 448.31 353.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "d2ad2764-150a-4522-a554-a02055c79238")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.0869 355.6 0)
+			(at 436.5331 353.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -18086,22 +18086,22 @@
 	)
 	(global_label "Z80-D3"
 		(shape bidirectional)
-		(at 448.31 347.98 0)
+		(at 448.31 345.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "d48f1eb5-4aec-447c-8987-b4a1c93571da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.0869 347.98 0)
+			(at 436.5331 345.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -18218,7 +18218,7 @@
 	)
 	(global_label "Z80-A4"
 		(shape bidirectional)
-		(at 448.31 374.65 180)
+		(at 448.31 372.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18228,7 +18228,7 @@
 		)
 		(uuid "d7528a1e-b28b-4242-bc38-3812f3b73b9a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 374.65 0)
+			(at 437.8258 372.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18262,7 +18262,7 @@
 	)
 	(global_label "RAM-A1"
 		(shape bidirectional)
-		(at 448.31 367.03 0)
+		(at 448.31 364.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18272,7 +18272,7 @@
 		)
 		(uuid "d9c18fd5-1939-4eec-96ce-25e2c66a2754")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 367.03 0)
+			(at 458.9757 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18372,7 +18372,7 @@
 	)
 	(global_label "Z80-A13"
 		(shape bidirectional)
-		(at 448.31 397.51 180)
+		(at 448.31 394.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18382,7 +18382,7 @@
 		)
 		(uuid "dbb60642-ed86-4017-8657-e8c0b789bbdb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.6163 397.51 0)
+			(at 436.6163 394.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18790,7 +18790,7 @@
 	)
 	(global_label "Z80-A8"
 		(shape bidirectional)
-		(at 448.31 384.81 180)
+		(at 448.31 382.27 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18800,7 +18800,7 @@
 		)
 		(uuid "eaa90368-27ee-4e48-ae3c-93909437bd34")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 384.81 0)
+			(at 437.8258 382.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18944,22 +18944,22 @@
 	)
 	(global_label "RAM-Q2"
 		(shape bidirectional)
-		(at 448.31 345.44 180)
+		(at 448.31 342.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "ef4929e7-cedc-4384-8822-358ba73314e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.2911 345.44 0)
+			(at 460.3289 342.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -19164,7 +19164,7 @@
 	)
 	(global_label "RAM-A6"
 		(shape bidirectional)
-		(at 448.31 379.73 0)
+		(at 448.31 377.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19174,7 +19174,7 @@
 		)
 		(uuid "f2d5a72e-78c5-463c-91c6-8f2fb2be9274")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 458.9757 379.73 0)
+			(at 458.9757 377.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19362,22 +19362,22 @@
 	)
 	(global_label "Z80-D1"
 		(shape bidirectional)
-		(at 448.31 342.9 0)
+		(at 448.31 340.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "fb829079-dd1f-4786-81f0-a52039bf27c2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.0869 342.9 0)
+			(at 436.5331 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -19450,7 +19450,7 @@
 	)
 	(global_label "Z80-A3"
 		(shape bidirectional)
-		(at 448.31 372.11 180)
+		(at 448.31 369.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19460,7 +19460,7 @@
 		)
 		(uuid "fd903ed1-42e4-454e-ab77-10b533d66d9c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.8258 372.11 0)
+			(at 437.8258 369.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27387,74 +27387,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 303.53 309.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9da2b3d3-0792-4935-828d-e0cea1bf0805")
-		(property "Reference" "R19"
-			(at 303.53 303.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 303.53 306.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 303.53 311.658 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 303.53 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 303.53 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3ce86cfc-67f3-4cf4-98b8-bf5603f2b298")
-		)
-		(pin "2"
-			(uuid "c0dc683e-a7c4-4385-9b50-41abedab80f3")
-		)
-		(instances
-			(project "Z80DevBoard"
-				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Logic_LevelTranslator:SN74LVC245APW")
 		(at 549.91 48.26 0)
 		(unit 1)
@@ -27640,82 +27572,6 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "R61")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 311.15 309.88 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a435870c-4139-40bf-804a-5765dc1a2479")
-		(property "Reference" "D57"
-			(at 310.642 316.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SWITCH-BLOCK"
-			(at 310.642 313.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_PLCC_2835"
-			(at 311.15 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 311.15 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 311.15 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 311.15 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ff1ceb7c-3d56-4960-b4f6-4ed0053bc72d")
-		)
-		(pin "1"
-			(uuid "93f871e2-6bca-40da-908d-7a71163bca6c")
-		)
-		(instances
-			(project "Z80DevBoard"
-				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "D57")
 					(unit 1)
 				)
 			)
