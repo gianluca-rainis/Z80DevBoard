@@ -49,6 +49,8 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - 4 74HCT574 (8 bit Buffer)
 - 3 SN74LVC245APW (Bus to handle the voltage differences)
 - 1 Connector 2 pins
+- 1 Connector 2x20 pins
+- 1 Connector 2x10 pins
 
 ### Support components
 - 1 Crystal 12MHz 20pF
