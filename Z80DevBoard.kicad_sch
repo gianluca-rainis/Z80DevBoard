@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-03-05")
+		(date "2026-03-10")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -13040,28 +13040,6 @@
 			)
 		)
 	)
-	(global_label "Z80-IORQ"
-		(shape bidirectional)
-		(at 354.33 337.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1c23798c-0ff0-4166-b24d-0243569b3e5e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 368.1632 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RAM-A9"
 		(shape output)
 		(at 85.09 233.68 270)
@@ -14747,6 +14725,28 @@
 		(uuid "3e5bf079-88c6-4e16-a809-5b9cbfb508d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.01 197.3724 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 354.33 340.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ea51253-4338-4c08-b4ff-3ae2cc2852ed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 362.297 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16802,28 +16802,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 341.63 340.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "684767b4-eab5-44de-9772-4abaec6132f4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 333.663 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Z80-RESET"
 		(shape input)
 		(at 46.99 378.46 180)
@@ -17194,6 +17172,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Z80-IORQ"
+		(shape bidirectional)
+		(at 341.63 337.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "718f0e3a-6b6d-46df-aae3-54ea375c2ddc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 327.7968 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -18025,6 +18025,28 @@
 		(uuid "83b4d7ec-72fa-4cb0-b95f-557e8d9e9331")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 419.9912 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Vcc"
+		(shape bidirectional)
+		(at 354.33 337.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "841d91c2-3994-4c5e-a275-58d0c1ba6245")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 361.6923 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19532,22 +19554,22 @@
 	)
 	(global_label "Z80-MREQ"
 		(shape bidirectional)
-		(at 354.33 340.36 0)
+		(at 341.63 340.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "a556d301-7b12-412a-83a9-dcc9a72d5629")
+		(uuid "a54286c9-4e2e-433a-9ee3-eacfd40b2e60")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 368.8283 340.36 0)
+			(at 327.1317 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -19653,28 +19675,6 @@
 		(uuid "ad9610f3-e96b-4136-b1f5-d73009a8c4e9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 88.213 383.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Vcc"
-		(shape bidirectional)
-		(at 341.63 337.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ae366fd6-507e-4546-b1fa-5797cbfc9f83")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 334.2677 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
