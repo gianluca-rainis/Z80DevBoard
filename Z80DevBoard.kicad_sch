@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-03-10")
+		(date "2026-03-12")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -24729,7 +24729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 36.83 360.68 0)
 			(effects
 				(font
@@ -26753,7 +26753,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 36.83 387.35 0)
 			(effects
 				(font
@@ -28849,7 +28849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 67.31 387.35 0)
 			(effects
 				(font
@@ -31878,7 +31878,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 67.31 360.68 0)
 			(effects
 				(font

@@ -54,7 +54,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 
 ### Support components
 - 1 Crystal 12MHz 20pF
-- 1 Oscillator 2MHz
+- 1 Oscillator 8MHz
 - 1 74HC14
 - 1 74HC04
 - 1 74HC00
