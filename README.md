@@ -1,7 +1,11 @@
 # Z80DevBoard
-An advanced development board for the Z80 microprocessor (specific model: Z84C00), powered by an RP2040.
+The Z80DevBoard is an advanced development board for the Z80 microprocessor, based on the RP2040.
 
-This board combines the classic Z80 with a modern RP2040 microcontroller. The RP2040 handles flash storage and loads programs into RAM for the Z80 to execute. Real-time LED indicators provide visual feedback of Z80 activity, making the platform ideal for both learning and development.
+This board combines the classic Z80 with the modern RP2040 microcontroller. The RP2040 manages the flash memory and loads programs into RAM for execution by the Z80. Real-time LED indicators provide visual feedback on the Z80's activity, making it an ideal platform for both learning and development. The board's buttons allow the user to load the Z80 program or custom firmware into memory, manually set the Z80 clock, put the Z80 into wait mode, and reset it.
+
+Connection to the computer, used for both power and data transmission, is via a USB-C port.
+Two sockets are provided for expansion boards or for advanced projects.
+The SWD and SWCLK pins on the RP2040 are accessible to allow a fix for any firmware crashes that prevented the fix from loading over USB-C.
 
 <img src="./images/Z80DevBoard.png" alt="Z80DevBoard Logo" style="background-color: white;">
 
