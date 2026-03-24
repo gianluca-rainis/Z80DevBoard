@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-03-12")
+		(date "2026-03-24")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -11330,6 +11330,16 @@
 	)
 	(wire
 		(pts
+			(xy 311.15 58.42) (xy 314.96 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e7ab6c-7fde-43a8-8958-b37844dac1e4")
+	)
+	(wire
+		(pts
 			(xy 458.47 43.18) (xy 452.12 43.18)
 		)
 		(stroke
@@ -11640,6 +11650,16 @@
 	)
 	(wire
 		(pts
+			(xy 311.15 55.88) (xy 314.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68eac995-ea81-4c89-afeb-f6bed7b22863")
+	)
+	(wire
+		(pts
 			(xy 46.99 378.46) (xy 46.99 382.27)
 		)
 		(stroke
@@ -11747,6 +11767,16 @@
 			(type default)
 		)
 		(uuid "80000b9b-9b8a-482d-85f0-48e18794c3bc")
+	)
+	(wire
+		(pts
+			(xy 300.99 55.88) (xy 303.53 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83e1d7ce-10ed-415c-84e7-48d02e4ae791")
 	)
 	(wire
 		(pts
@@ -12107,6 +12137,16 @@
 			(type default)
 		)
 		(uuid "e0e250a9-794e-4864-b270-3d318f85763a")
+	)
+	(wire
+		(pts
+			(xy 300.99 58.42) (xy 303.53 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1eb104b-a8d8-475c-b1cd-e8705c58a3c0")
 	)
 	(wire
 		(pts
@@ -18586,7 +18626,7 @@
 	)
 	(global_label "USB-RP2040-DM"
 		(shape output)
-		(at 314.96 58.42 180)
+		(at 300.99 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18596,7 +18636,7 @@
 		)
 		(uuid "8f47550a-5768-4039-b506-b278cc645d4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 294.9206 58.42 0)
+			(at 280.9506 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22942,7 +22982,7 @@
 	)
 	(global_label "USB-RP2040-DP"
 		(shape output)
-		(at 314.96 55.88 180)
+		(at 300.99 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22952,7 +22992,7 @@
 		)
 		(uuid "fad0a104-e52d-43fb-88fc-1f53c7c2913d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 295.102 55.88 0)
+			(at 281.132 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23617,7 +23657,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33pF"
+		(property "Value" "15pF"
 			(at 115.57 32.258 0)
 			(effects
 				(font
@@ -32752,6 +32792,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 307.34 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb4a1dd5-75ab-4415-b099-70826ef63914")
+		(property "Reference" "R19"
+			(at 307.34 60.706 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27.4"
+			(at 307.086 62.992 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 307.34 60.198 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 307.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 307.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e4acb4e-61b6-47d4-9613-8f7af781af13")
+		)
+		(pin "2"
+			(uuid "3ebbcb1e-7f7c-45f7-bdbf-ce9a3e7c675b")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 110.49 335.28 0)
 		(mirror x)
@@ -34894,7 +35001,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33pF"
+		(property "Value" "15pF"
 			(at 125.73 32.258 0)
 			(effects
 				(font
@@ -35244,6 +35351,73 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "D48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 307.34 55.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0edd5a9-65a5-44c0-b26e-4bff589314a0")
+		(property "Reference" "R38"
+			(at 307.34 51.054 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27.4"
+			(at 307.086 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 307.34 57.658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 307.34 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 307.34 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80c5cfa2-7fc6-46a4-956d-345ec1f7dbe5")
+		)
+		(pin "2"
+			(uuid "107e1fc6-a908-46b1-9b98-1e109944f750")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "R38")
 					(unit 1)
 				)
 			)
