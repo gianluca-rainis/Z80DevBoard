@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-03-24")
+		(date "2026-03-25")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -23414,7 +23414,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 91.44 332.7399 0)
 			(effects
 				(font
@@ -23484,7 +23484,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 66.04 332.7399 0)
 			(effects
 				(font
@@ -25021,7 +25021,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 43.18 332.7399 0)
 			(effects
 				(font
@@ -26854,7 +26854,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 116.84 332.7399 0)
 			(effects
 				(font
@@ -27105,7 +27105,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 298.45 269.24 90)
 			(effects
 				(font
@@ -27651,7 +27651,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 298.45 280.67 90)
 			(effects
 				(font
@@ -28597,7 +28597,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 142.24 332.7399 0)
 			(effects
 				(font
@@ -35509,7 +35509,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 167.64 332.7399 0)
 			(effects
 				(font

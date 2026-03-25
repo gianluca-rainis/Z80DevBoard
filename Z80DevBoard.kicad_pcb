@@ -1676,7 +1676,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 13.16 0 0)
 			(layer "F.Fab")
 			(uuid "ce850e33-8723-4306-a62c-a32f38a7f35d")
@@ -2295,7 +2295,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at -2.92 0 0)
 			(layer "F.Fab")
 			(uuid "7ec46301-1c2b-48df-bb61-ad575aff1b44")
@@ -11621,7 +11621,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at -3 0 0)
 			(layer "F.Fab")
 			(uuid "047743d8-fb37-4436-86fb-8e907f671f4c")
@@ -14231,7 +14231,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at -2.92 0 0)
 			(layer "F.Fab")
 			(uuid "dd142cb5-49d0-47bb-9863-010f02859745")
@@ -17825,7 +17825,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at -2.92 0 0)
 			(layer "F.Fab")
 			(uuid "bbd921b4-7a3f-4ad9-9036-fc5dd76c199c")
@@ -21535,7 +21535,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 13.08 0 0)
 			(layer "F.Fab")
 			(uuid "c2f4f10c-a660-4961-b693-abf620c95d14")
@@ -32041,7 +32041,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at 13.08 0 0)
 			(layer "F.Fab")
 			(uuid "bf038753-74a5-4725-a81f-773a80b3c672")
@@ -45120,7 +45120,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1k"
 			(at -2.84 0 0)
 			(layer "F.Fab")
 			(uuid "135425c1-94a2-421e-872d-932ecf56c8fe")
@@ -55403,7 +55403,7 @@
 			)
 		)
 	)
-	(gr_text "220"
+	(gr_text "1k"
 		(at 113 137 0)
 		(layer "F.SilkS")
 		(uuid "0b52cf6f-51b0-4dea-b24e-d76cf3dded36")
@@ -55710,8 +55710,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "220"
-		(at 139 137.5 0)
+	(gr_text "1k"
+		(at 139.5 137.75 0)
 		(layer "F.SilkS")
 		(uuid "24d4865d-4591-4acf-8232-246e6af0414d")
 		(effects
@@ -55919,8 +55919,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "220"
-		(at 139 117 0)
+	(gr_text "1k"
+		(at 139.5 117 0)
 		(layer "F.SilkS")
 		(uuid "4fcbcdcf-86f9-4af2-9721-b00e7b1208ce")
 		(effects
@@ -56278,8 +56278,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "220"
-		(at 139 141 0)
+	(gr_text "1k"
+		(at 139.75 141.25 0)
 		(layer "F.SilkS")
 		(uuid "6fba0a0c-33b4-48c0-88df-578116edf030")
 		(effects
@@ -57025,8 +57025,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "220"
-		(at 139 120.5 0)
+	(gr_text "1k"
+		(at 139.5 120.5 0)
 		(layer "F.SilkS")
 		(uuid "c4890e88-072c-469b-bebf-bf38fd854a90")
 		(effects
@@ -57107,7 +57107,7 @@
 			)
 		)
 	)
-	(gr_text "220"
+	(gr_text "1k"
 		(at 113 140.5 0)
 		(layer "F.SilkS")
 		(uuid "cf37e9f8-dfef-4344-8523-a55fc49aae8d")
@@ -57432,7 +57432,7 @@
 			)
 		)
 	)
-	(gr_text "220"
+	(gr_text "1k"
 		(at 113 133.717 0)
 		(layer "F.SilkS")
 		(uuid "ef2a5571-5ffd-4a50-b329-698c3f92a19b")
@@ -57456,8 +57456,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "220"
-		(at 139 134.5 0)
+	(gr_text "1k"
+		(at 139.5 134.5 0)
 		(layer "F.SilkS")
 		(uuid "f13b8a53-ee7e-4a17-8cb5-5b86a5cecb36")
 		(effects
@@ -68739,14 +68739,6 @@
 		(uuid "f1d826e2-5389-4d54-ad9a-a56a90cfd431")
 	)
 	(segment
-		(start 91.1 132.5)
-		(end 91.1 136.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 20)
-		(uuid "028fbba4-ab70-453b-9553-5460a5237fd0")
-	)
-	(segment
 		(start 223.9686 119.2219)
 		(end 224.2375 118.953)
 		(width 0.2)
@@ -68769,14 +68761,6 @@
 		(layer "F.Cu")
 		(net 20)
 		(uuid "2e1a0f8b-81ac-47e2-9f00-446ee14bfe7f")
-	)
-	(segment
-		(start 91.1 136.5)
-		(end 91.1 140.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 20)
-		(uuid "4262b9d5-805a-4de8-a3a3-93e12b75335d")
 	)
 	(segment
 		(start 231.9186 113.753)
@@ -68945,6 +68929,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 20)
 		(uuid "583f68ff-f232-4067-885d-c78e590ae377")
+	)
+	(via
+		(at 91.1 132.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 20)
+		(uuid "5cd97eb0-9dfc-4099-b7fc-86ac1d53337d")
 	)
 	(via
 		(at 68 77)
@@ -69137,6 +69129,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 20)
 		(uuid "d444531e-dc43-4827-84d7-ff9045607704")
+	)
+	(via
+		(at 91.1 140.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 20)
+		(uuid "d6f224f5-5302-4b0d-bec0-6e45fcbc5257")
 	)
 	(via
 		(at 209.5 77.5)
