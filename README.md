@@ -66,7 +66,8 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 ### Resistors
 - 1 Resistor 0 ohm
 - 2 Resistors 27.4 ohm
-- 40 Resistors 1k ohm
+- 34 Resistors 1k ohm
+- 6 Resistors 3.3k ohm
 - 2 Resistors 5k ohm
 - 10 Resistors 10k ohm
 - 1 Resistor 470k ohm
