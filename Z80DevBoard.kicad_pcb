@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-03-24")
+		(date "2026-03-25")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -56627,18 +56627,6 @@
 			)
 		)
 	)
-	(gr_text "CS (15)"
-		(at 93 102 0)
-		(layer "F.SilkS")
-		(uuid "99f14011-cc55-4566-addd-377be6694510")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "BACK"
 		(at 192.7 141.8 0)
 		(layer "F.SilkS")
@@ -57085,6 +57073,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "8MHz"
+		(at 171.25 126.5 0)
+		(layer "F.SilkS")
+		(uuid "cad44c55-58b4-441a-bb92-e9d8b2ff101c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "WR"
 		(at 208 136.6 0)
 		(layer "F.SilkS")
@@ -57188,7 +57188,7 @@
 		)
 	)
 	(gr_text "Auto"
-		(at 93 109.5 0)
+		(at 93 97.25 0)
 		(layer "F.SilkS")
 		(uuid "d7e087fb-b5dd-44e0-ba1b-04a22c644a55")
 		(effects
@@ -57304,7 +57304,7 @@
 		)
 	)
 	(gr_text "Manual"
-		(at 107.5 109.6 0)
+		(at 107 97.5 0)
 		(layer "F.SilkS")
 		(uuid "e1094b34-c940-4310-b9ea-c13cd34e838e")
 		(effects
