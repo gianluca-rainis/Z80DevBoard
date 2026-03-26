@@ -52,6 +52,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - 1 74HC165 (8 bit to Serial)
 - 4 74HCT574 (8 bit Buffer)
 - 3 SN74LVC245APW (Bus to handle the voltage differences)
+- 1 TXS0102DCT (Bus to handle the voltage differences)
 - 1 Connector 2 pins
 - 1 Connector 2x20 pins
 - 1 Connector 2x10 pins
@@ -69,12 +70,12 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 - 34 Resistors 1k ohm
 - 6 Resistors 3.3k ohm
 - 2 Resistors 5k ohm
-- 10 Resistors 10k ohm
+- 12 Resistors 10k ohm
 - 1 Resistor 470k ohm
 
 ### Capacitors
 - 2 Capacitors 15pF
-- 6 Capacitors 0.1uF
+- 8 Capacitors 0.1uF
 - 3 Capacitor 1uF
 - 2 Capacitors 10uF
 

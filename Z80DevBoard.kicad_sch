@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-03-25")
+		(date "2026-03-26")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -8062,6 +8062,401 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Logic_LevelTranslator:TXS0102DCT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TXS0102DCT"
+				(at 3.81 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/txs0102"
+				(at 0 -0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2-Bit Bidirectional Voltage-Level Shifter for Open-Drain and Push-Pull Application, SSOP-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Level-Shifter CMOS-TTL-Translation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SSOP*2.95x2.8mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TXS0102DCT_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 -2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.524) (xy 2.032 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -1.27) (xy 1.524 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -1.27 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.27 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.318 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TXS0102DCT_1_1"
+				(polyline
+					(pts
+						(xy -4.318 2.54) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 3.556) (xy 2.032 3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 3.81) (xy 1.524 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -1.27 3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 1.27 3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.318 2.54) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "OE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 12.7 270)
+					(length 2.54)
+					(name "VCCA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 12.7 270)
+					(length 2.54)
+					(name "VCCB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_RaspberryPi:RP2040"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -10635,8 +11030,8 @@
 		)
 	)
 	(rectangle
-		(start 39.37 135.89)
-		(end 127 307.34)
+		(start 22.86 137.16)
+		(end 110.49 308.61)
 		(stroke
 			(width 0)
 			(type default)
@@ -10648,8 +11043,8 @@
 		(uuid 1c1a4a38-0949-4849-901d-11774e8e922c)
 	)
 	(rectangle
-		(start 228.6 252.73)
-		(end 281.94 303.53)
+		(start 22.86 344.17)
+		(end 85.09 403.86)
 		(stroke
 			(width 0)
 			(type default)
@@ -10660,8 +11055,8 @@
 		(uuid 2399d20f-c304-4e11-9628-97406abc208b)
 	)
 	(rectangle
-		(start 22.86 344.17)
-		(end 85.09 403.86)
+		(start 148.59 262.89)
+		(end 184.15 322.58)
 		(stroke
 			(width 0)
 			(type default)
@@ -10709,8 +11104,8 @@
 		(uuid 29e13cf1-ef2f-429e-97b1-d5fa4aa08f0b)
 	)
 	(rectangle
-		(start 43.18 251.46)
-		(end 123.19 303.53)
+		(start 26.67 252.73)
+		(end 106.68 304.8)
 		(stroke
 			(width 0)
 			(type default)
@@ -10744,6 +11139,18 @@
 			(type none)
 		)
 		(uuid 3c0c050a-ac7d-4f4e-aaff-8b1f04c46999)
+	)
+	(rectangle
+		(start 184.15 184.15)
+		(end 252.73 233.68)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 48233c20-6c9f-4ebf-b1d1-482eaee8ba04)
 	)
 	(rectangle
 		(start 426.72 332.74)
@@ -10809,8 +11216,8 @@
 		(uuid 908c60f2-9f61-4719-9802-dd41faf5eeb4)
 	)
 	(rectangle
-		(start 48.26 139.7)
-		(end 116.84 247.65)
+		(start 31.75 140.97)
+		(end 100.33 248.92)
 		(stroke
 			(width 0)
 			(type default)
@@ -10822,7 +11229,7 @@
 		(uuid b386eaea-b352-4d2b-adcb-bb038ed257b5)
 	)
 	(rectangle
-		(start 184.15 303.53)
+		(start 184.15 233.68)
 		(end 281.94 344.17)
 		(stroke
 			(width 0)
@@ -10920,7 +11327,7 @@
 	)
 	(text "RAM"
 		(exclude_from_sim no)
-		(at 51.054 141.732 0)
+		(at 34.544 143.002 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10931,7 +11338,7 @@
 	)
 	(text "Special Buttons"
 		(exclude_from_sim no)
-		(at 31.496 346.456 0)
+		(at 156.718 264.668 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10950,9 +11357,19 @@
 		)
 		(uuid "2a328403-85c9-414b-a77f-6fddb5207ae7")
 	)
+	(text "RP2040 Z80 Connections"
+		(exclude_from_sim no)
+		(at 197.358 186.436 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3e147158-b2ce-45d2-99a2-75668f5b28ba")
+	)
 	(text "Debouncer"
 		(exclude_from_sim no)
-		(at 189.992 305.562 0)
+		(at 189.992 235.712 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11108,7 +11525,7 @@
 	)
 	(text "Memory"
 		(exclude_from_sim no)
-		(at 43.688 137.922 0)
+		(at 27.178 139.192 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11119,7 +11536,7 @@
 	)
 	(text "Flash"
 		(exclude_from_sim no)
-		(at 46.482 253.238 0)
+		(at 29.972 254.508 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11130,7 +11547,7 @@
 	)
 	(text "RAM Enable"
 		(exclude_from_sim no)
-		(at 234.95 254.762 0)
+		(at 29.718 346.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11139,13 +11556,13 @@
 		(uuid "f3951154-4ba6-4530-8b44-eeca13da33dd")
 	)
 	(junction
-		(at 46.99 382.27)
+		(at 209.55 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "19b555d4-b325-401d-a452-46c465539dc0")
 	)
 	(junction
-		(at 77.47 355.6)
+		(at 176.53 274.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "46df1e0a-7f95-43f3-a87c-568ff367bf21")
@@ -11175,16 +11592,16 @@
 		(uuid "78085862-244a-4934-9c03-96b99396ed82")
 	)
 	(junction
+		(at 222.25 280.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d9ca27d-8978-41d4-a4e8-00368fae2698")
+	)
+	(junction
 		(at 111.76 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8241c156-bb01-426d-8e31-8acb2a10ae5a")
-	)
-	(junction
-		(at 46.99 355.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e0ef6a5-fe19-4d49-ba7d-504e5aeffd72")
 	)
 	(junction
 		(at 490.22 187.96)
@@ -11229,7 +11646,7 @@
 		(uuid "b40c9f65-a70f-464d-a04c-fb72a795db48")
 	)
 	(junction
-		(at 247.65 266.7)
+		(at 45.72 360.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bace1e6c-09ae-452e-b4d5-8255307455ad")
@@ -11247,7 +11664,13 @@
 		(uuid "dbe50c7d-fe05-47b8-bff0-adfb4be85d22")
 	)
 	(junction
-		(at 77.47 382.27)
+		(at 209.55 284.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7542e68-71a3-4695-973e-4b3341b7919c")
+	)
+	(junction
+		(at 176.53 300.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "efe30710-2b8a-469a-a601-06949d9685ad")
@@ -11257,6 +11680,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6810926-4640-43ac-9d1b-7a51d58b06cb")
+	)
+	(junction
+		(at 222.25 246.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f713cd9b-e252-4d57-b3b2-c5de9a3608df")
 	)
 	(wire
 		(pts
@@ -11350,7 +11779,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 266.7) (xy 247.65 273.05)
+			(xy 45.72 360.68) (xy 45.72 367.03)
 		)
 		(stroke
 			(width 0)
@@ -11370,6 +11799,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 287.02) (xy 222.25 280.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "196fd248-eb0e-4182-8d0a-7d735b353c35")
+	)
+	(wire
+		(pts
 			(xy 473.71 123.19) (xy 537.21 123.19)
 		)
 		(stroke
@@ -11377,6 +11816,16 @@
 			(type default)
 		)
 		(uuid "1a9b64fb-9419-4d2a-9d3e-4f2de6bd832b")
+	)
+	(wire
+		(pts
+			(xy 209.55 280.67) (xy 209.55 284.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eb19e9b-e765-4341-b41f-124311336367")
 	)
 	(wire
 		(pts
@@ -11470,7 +11919,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 382.27) (xy 41.91 382.27)
+			(xy 209.55 250.19) (xy 204.47 250.19)
 		)
 		(stroke
 			(width 0)
@@ -11660,7 +12109,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 378.46) (xy 46.99 382.27)
+			(xy 209.55 246.38) (xy 209.55 250.19)
 		)
 		(stroke
 			(width 0)
@@ -11680,13 +12129,23 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 351.79) (xy 77.47 355.6)
+			(xy 176.53 270.51) (xy 176.53 274.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6c2655b6-b96a-4d48-913c-62974ce7a5a3")
+	)
+	(wire
+		(pts
+			(xy 209.55 284.48) (xy 204.47 284.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d7a4840-f44c-453a-bb98-0a5adea4e2ec")
 	)
 	(wire
 		(pts
@@ -11700,23 +12159,13 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 382.27) (xy 72.39 382.27)
+			(xy 176.53 300.99) (xy 171.45 300.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "765a9d0d-e284-400f-a2f1-95d5590e9faa")
-	)
-	(wire
-		(pts
-			(xy 46.99 355.6) (xy 41.91 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "781a0960-3014-4749-beff-d9dd92c240ac")
 	)
 	(wire
 		(pts
@@ -11920,13 +12369,13 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 351.79) (xy 46.99 355.6)
+			(xy 222.25 252.73) (xy 222.25 246.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9a69c6fa-c19d-433a-a7b8-38fcb5b609ca")
+		(uuid "9bb80497-164b-4438-b763-f79146ed5e0d")
 	)
 	(wire
 		(pts
@@ -12030,7 +12479,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 260.35) (xy 247.65 260.35)
+			(xy 60.96 354.33) (xy 45.72 354.33)
 		)
 		(stroke
 			(width 0)
@@ -12060,7 +12509,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 355.6) (xy 72.39 355.6)
+			(xy 217.17 280.67) (xy 222.25 280.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bead52de-54a0-425c-9fe5-121095c01927")
+	)
+	(wire
+		(pts
+			(xy 176.53 274.32) (xy 171.45 274.32)
 		)
 		(stroke
 			(width 0)
@@ -12077,6 +12536,16 @@
 			(type default)
 		)
 		(uuid "bffac6a3-adea-4501-b89c-16fc475ae249")
+	)
+	(wire
+		(pts
+			(xy 217.17 246.38) (xy 222.25 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9917f33-373d-4243-b5fe-206ea5517704")
 	)
 	(wire
 		(pts
@@ -12160,7 +12629,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 378.46) (xy 77.47 382.27)
+			(xy 176.53 297.18) (xy 176.53 300.99)
 		)
 		(stroke
 			(width 0)
@@ -12250,7 +12719,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 260.35) (xy 247.65 266.7)
+			(xy 45.72 354.33) (xy 45.72 360.68)
 		)
 		(stroke
 			(width 0)
@@ -12280,7 +12749,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 266.7) (xy 247.65 266.7)
+			(xy 43.18 360.68) (xy 45.72 360.68)
 		)
 		(stroke
 			(width 0)
@@ -12394,28 +12863,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO11"
-		(shape bidirectional)
-		(at 387.35 307.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "04c3b7ae-f0fc-44e4-8c0e-19cc1b275982")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -12554,7 +13001,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 62.23 382.27 180)
+		(at 161.29 300.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12564,7 +13011,7 @@
 		)
 		(uuid "08b1fcaf-2968-40d7-967d-8a709287f547")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.3743 382.27 0)
+			(at 154.4343 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12592,28 +13039,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Vcc"
-		(shape bidirectional)
-		(at 46.99 363.22 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0b194a51-47ae-427d-ba07-96337dbfcf9c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 369.471 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -12816,28 +13241,6 @@
 			)
 		)
 	)
-	(global_label "Z80-WAIT"
-		(shape input)
-		(at 46.99 351.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "13d17a67-5f39-4086-ae56-86f251635c47")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.6915 351.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RAM-A9"
 		(shape input)
 		(at 562.61 118.11 0)
@@ -12928,7 +13331,7 @@
 	)
 	(global_label "RAM-A8"
 		(shape output)
-		(at 82.55 179.07 270)
+		(at 66.04 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12938,7 +13341,7 @@
 		)
 		(uuid "17d70906-ef32-4c40-927f-1bdd0413da68")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.55 189.7357 90)
+			(at 66.04 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13038,7 +13441,7 @@
 	)
 	(global_label "Vdd_3v3"
 		(shape bidirectional)
-		(at 77.47 389.89 270)
+		(at 176.53 308.61 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13048,7 +13451,7 @@
 		)
 		(uuid "19600e17-7c45-4cbc-b71c-1a24e42ed948")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 401.7273 90)
+			(at 176.53 320.4473 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13082,7 +13485,7 @@
 	)
 	(global_label "RAM-A9"
 		(shape output)
-		(at 85.09 233.68 270)
+		(at 68.58 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13092,7 +13495,7 @@
 		)
 		(uuid "1c8e434a-3131-4637-9135-0e9b451e9d7e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.09 244.3457 90)
+			(at 68.58 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13115,28 +13518,6 @@
 		(uuid "1d656e3b-b65e-4b1b-8b1b-e02593263a11")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 306.417 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO21"
-		(shape bidirectional)
-		(at 400.05 307.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1dcca87d-69e6-4bd0-ab0e-d10ce357ae82")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 419.9912 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13203,6 +13584,28 @@
 		(uuid "1e9bfd4e-d711-45df-8437-3ef6cad96e2a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 385.7012 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Vdd_3v3"
+		(shape bidirectional)
+		(at 222.25 198.12 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ebc3d78-37b8-4725-bac0-9b679007be25")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 186.2827 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13302,7 +13705,7 @@
 	)
 	(global_label "RAM-A6"
 		(shape output)
-		(at 77.47 179.07 270)
+		(at 60.96 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13312,29 +13715,7 @@
 		)
 		(uuid "217e76da-590e-4036-99ff-1dabc7d3455a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 189.7357 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO10"
-		(shape bidirectional)
-		(at 387.35 304.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "22910975-54d9-46d3-a593-f043cdf47299")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 304.8 0)
+			(at 60.96 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13564,28 +13945,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 31.75 355.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "29eced1f-d01a-489b-a5d0-40b6dac09060")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.8943 355.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USB-C-CC2"
 		(shape bidirectional)
 		(at 520.7 332.74 90)
@@ -13610,7 +13969,7 @@
 	)
 	(global_label "RAM-A12"
 		(shape output)
-		(at 92.71 179.07 270)
+		(at 76.2 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13620,7 +13979,7 @@
 		)
 		(uuid "2a25a674-5dc1-4937-bd0b-5911dcfb6c3a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 190.9452 90)
+			(at 76.2 192.2152 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13742,7 +14101,7 @@
 	)
 	(global_label "RAM-Q5"
 		(shape bidirectional)
-		(at 74.93 208.28 90)
+		(at 58.42 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13752,7 +14111,7 @@
 		)
 		(uuid "2b3e1e62-0f3d-4cd7-8f7a-26efc119ecdb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.93 197.3724 90)
+			(at 58.42 198.6424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13830,7 +14189,7 @@
 	)
 	(global_label "RAM-Q4"
 		(shape bidirectional)
-		(at 72.39 208.28 90)
+		(at 55.88 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13840,7 +14199,7 @@
 		)
 		(uuid "2cba3975-6065-4512-8e99-a5955ca41e8b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.39 197.3724 90)
+			(at 55.88 198.6424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14006,7 +14365,7 @@
 	)
 	(global_label "RAM-A11"
 		(shape output)
-		(at 90.17 179.07 270)
+		(at 73.66 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14016,7 +14375,7 @@
 		)
 		(uuid "2fd7ef96-b587-4239-a863-d2f1ded69b8c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 190.9452 90)
+			(at 73.66 192.2152 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14026,7 +14385,7 @@
 			)
 		)
 	)
-	(global_label "RP2040-GPIO10"
+	(global_label "RP2040-GPIO10-BUSREQ"
 		(shape bidirectional)
 		(at 365.76 73.66 0)
 		(fields_autoplaced yes)
@@ -14038,7 +14397,7 @@
 		)
 		(uuid "300ed936-11e6-4734-9b5e-51cde6f9cee4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 384.5899 73.66 0)
+			(at 394.8331 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14050,7 +14409,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 31.75 382.27 180)
+		(at 194.31 250.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14060,7 +14419,7 @@
 		)
 		(uuid "3017a996-33e8-4316-958d-732b5e332be4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.8943 382.27 0)
+			(at 187.4543 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14116,7 +14475,7 @@
 	)
 	(global_label "RAM-Q6"
 		(shape bidirectional)
-		(at 77.47 153.67 90)
+		(at 60.96 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14126,7 +14485,7 @@
 		)
 		(uuid "30b3950f-6687-409f-987c-0ce2ba8947e8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 142.7624 90)
+			(at 60.96 144.0324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14204,7 +14563,7 @@
 	)
 	(global_label "RAM-A12"
 		(shape output)
-		(at 92.71 233.68 270)
+		(at 76.2 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14214,7 +14573,7 @@
 		)
 		(uuid "33a49bce-9576-421e-b8be-ed052d28d996")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 245.5552 90)
+			(at 76.2 246.8252 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14248,7 +14607,7 @@
 	)
 	(global_label "RAM-A4"
 		(shape output)
-		(at 72.39 179.07 270)
+		(at 55.88 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14258,7 +14617,7 @@
 		)
 		(uuid "346d8dde-b342-4f30-a696-d7a4dd612eaf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.39 189.7357 90)
+			(at 55.88 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14286,28 +14645,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO13"
-		(shape bidirectional)
-		(at 387.35 312.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "35ae9a80-2f10-45cb-8d92-3a6b25bd3f6d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 312.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -14556,7 +14893,7 @@
 	)
 	(global_label "RAM-A3"
 		(shape output)
-		(at 69.85 233.68 270)
+		(at 53.34 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14566,7 +14903,7 @@
 		)
 		(uuid "3ab64400-fda8-41bb-82d3-78bde41b998e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.85 244.3457 90)
+			(at 53.34 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14600,7 +14937,7 @@
 	)
 	(global_label "RAM-Q7"
 		(shape bidirectional)
-		(at 80.01 153.67 90)
+		(at 63.5 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14610,7 +14947,7 @@
 		)
 		(uuid "3bef7b6b-f55d-4497-a5aa-4e3a6b3ca876")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.01 142.7624 90)
+			(at 63.5 144.0324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14642,24 +14979,24 @@
 			)
 		)
 	)
-	(global_label "RP2040-GPIO22"
+	(global_label "RP2040-GPIO18"
 		(shape bidirectional)
-		(at 400.05 309.88 0)
+		(at 387.35 320.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "3c344369-b3f2-4b4d-8326-2f6fdada6fae")
+		(uuid "3c198568-77f7-42e4-8115-92cb3721a933")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 419.9912 309.88 0)
+			(at 367.4088 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -14688,7 +15025,7 @@
 	)
 	(global_label "RAM-OE"
 		(shape output)
-		(at 90.17 208.28 90)
+		(at 73.66 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14698,7 +15035,7 @@
 		)
 		(uuid "3ca733dd-fefb-44b1-a526-3acf798c4897")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 197.4329 90)
+			(at 73.66 198.7029 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14732,7 +15069,7 @@
 	)
 	(global_label "RAM-A9"
 		(shape output)
-		(at 85.09 179.07 270)
+		(at 68.58 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14742,7 +15079,7 @@
 		)
 		(uuid "3df5aafd-f98a-4ed1-936c-3cb1c4556ffb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.09 189.7357 90)
+			(at 68.58 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14754,7 +15091,7 @@
 	)
 	(global_label "RAM-Q7"
 		(shape bidirectional)
-		(at 80.01 208.28 90)
+		(at 63.5 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14764,7 +15101,7 @@
 		)
 		(uuid "3e5bf079-88c6-4e16-a809-5b9cbfb508d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.01 197.3724 90)
+			(at 63.5 198.6424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14886,7 +15223,7 @@
 	)
 	(global_label "RAM-Q3"
 		(shape bidirectional)
-		(at 69.85 153.67 90)
+		(at 53.34 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14896,7 +15233,7 @@
 		)
 		(uuid "40317087-0117-442f-9ec3-26d6c01672a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.85 142.7624 90)
+			(at 53.34 144.0324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14974,7 +15311,7 @@
 	)
 	(global_label "RAM-Q6"
 		(shape bidirectional)
-		(at 77.47 208.28 90)
+		(at 60.96 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14984,7 +15321,7 @@
 		)
 		(uuid "41bdaba3-8937-4963-a77a-9a19da4544e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 197.3724 90)
+			(at 60.96 198.6424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15128,7 +15465,7 @@
 	)
 	(global_label "RAM-Q0"
 		(shape bidirectional)
-		(at 62.23 153.67 90)
+		(at 45.72 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15138,7 +15475,7 @@
 		)
 		(uuid "45e6b9fa-af09-4ac4-a57c-e1cc6d595348")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.23 142.7624 90)
+			(at 45.72 144.0324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15348,7 +15685,7 @@
 	)
 	(global_label "RAM-OE"
 		(shape output)
-		(at 90.17 153.67 90)
+		(at 73.66 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15358,7 +15695,7 @@
 		)
 		(uuid "48aac69c-3c49-4ad4-b129-5037beea74e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 142.8229 90)
+			(at 73.66 144.0929 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15370,7 +15707,7 @@
 	)
 	(global_label "RAM-A10"
 		(shape output)
-		(at 87.63 233.68 270)
+		(at 71.12 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15380,7 +15717,7 @@
 		)
 		(uuid "48e08b4f-5e2e-4b1d-99d4-e75a132907a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.63 245.5552 90)
+			(at 71.12 246.8252 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15412,7 +15749,7 @@
 			)
 		)
 	)
-	(global_label "RP2040-GPIO11"
+	(global_label "RP2040-GPIO11-BUSACK"
 		(shape bidirectional)
 		(at 365.76 76.2 0)
 		(fields_autoplaced yes)
@@ -15424,7 +15761,7 @@
 		)
 		(uuid "494ceff0-1047-4d40-9f3b-754882d30b26")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 385.7012 76.2 0)
+			(at 394.7122 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15524,7 +15861,7 @@
 	)
 	(global_label "Vcc"
 		(shape bidirectional)
-		(at 57.15 166.37 180)
+		(at 40.64 167.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15534,7 +15871,7 @@
 		)
 		(uuid "4e375bb4-ccfb-4a3d-a3cf-992ccc0911ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.899 166.37 0)
+			(at 34.389 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15590,7 +15927,7 @@
 	)
 	(global_label "RAM-A0"
 		(shape output)
-		(at 62.23 233.68 270)
+		(at 45.72 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15600,7 +15937,7 @@
 		)
 		(uuid "4e87d202-b15c-46e8-a8de-be2b6b43b778")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.23 244.3457 90)
+			(at 45.72 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15720,9 +16057,31 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO25"
+		(shape bidirectional)
+		(at 400.05 312.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "519cf40d-6be8-4736-8132-4e7a15b1dfec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 419.9912 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RAM-WE"
 		(shape output)
-		(at 92.71 208.28 90)
+		(at 76.2 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15732,7 +16091,7 @@
 		)
 		(uuid "51c9464b-b256-42d5-99d0-cfb53d6a4c0d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 197.312 90)
+			(at 76.2 198.582 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15876,7 +16235,7 @@
 	)
 	(global_label "Vcc"
 		(shape bidirectional)
-		(at 46.99 389.89 270)
+		(at 209.55 257.81 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15886,7 +16245,7 @@
 		)
 		(uuid "54a2bd8c-d484-44d1-a347-b0117b68e2e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 396.141 90)
+			(at 209.55 264.061 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15942,7 +16301,7 @@
 	)
 	(global_label "RAM-A8"
 		(shape output)
-		(at 82.55 233.68 270)
+		(at 66.04 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15952,7 +16311,7 @@
 		)
 		(uuid "561811ff-77c5-49e0-9722-149ebd6ee97e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.55 244.3457 90)
+			(at 66.04 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16030,7 +16389,7 @@
 	)
 	(global_label "CLOCK_FLASH"
 		(shape output)
-		(at 87.63 275.59 180)
+		(at 71.12 276.86 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16040,7 +16399,7 @@
 		)
 		(uuid "57571a4f-dff9-4254-ba14-ad3b975b05ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.7633 275.59 0)
+			(at 55.2533 276.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16118,7 +16477,7 @@
 	)
 	(global_label "RAM-A14"
 		(shape output)
-		(at 97.79 179.07 270)
+		(at 81.28 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16128,7 +16487,51 @@
 		)
 		(uuid "58a52a2d-c09a-47c6-9744-52f69db660d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.79 190.9452 90)
+			(at 81.28 192.2152 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 222.25 260.35 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "596afbf3-3c21-49d0-ac1d-bca76544b7b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.25 268.317 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO21"
+		(shape bidirectional)
+		(at 387.35 327.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "598c743d-c247-48e9-97ff-73d871614f90")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 327.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16151,28 +16554,6 @@
 		(uuid "59945eeb-e1af-4f35-9a06-dd061d3aaeb7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 549.91 145.2857 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO16"
-		(shape bidirectional)
-		(at 387.35 320.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5a4424bf-138d-41c1-b4b4-296b4e4659e7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16250,7 +16631,7 @@
 	)
 	(global_label "FLASH-HOLD-RESRT-RP2040-QSPI_SD3"
 		(shape bidirectional)
-		(at 87.63 285.75 180)
+		(at 71.12 287.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16260,7 +16641,7 @@
 		)
 		(uuid "5bb548e2-1914-4dbe-9f33-7f9392e2bb45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.224 285.75 0)
+			(at 27.714 287.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16426,7 +16807,7 @@
 	)
 	(global_label "RAM-A5"
 		(shape output)
-		(at 74.93 233.68 270)
+		(at 58.42 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16436,7 +16817,7 @@
 		)
 		(uuid "5ebd0666-e435-4002-8782-21f3b01279a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.93 244.3457 90)
+			(at 58.42 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16470,7 +16851,7 @@
 	)
 	(global_label "RAM1-CS"
 		(shape output)
-		(at 262.89 260.35 0)
+		(at 60.96 354.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16480,7 +16861,7 @@
 		)
 		(uuid "5f911344-8e8c-4fc1-9b3e-25efa2223ca8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 274.9466 260.35 0)
+			(at 73.0166 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16558,7 +16939,7 @@
 	)
 	(global_label "RAM-Q5"
 		(shape bidirectional)
-		(at 74.93 153.67 90)
+		(at 58.42 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16568,7 +16949,7 @@
 		)
 		(uuid "60d7c5be-3bd9-4c78-a03d-38d7952bf12e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.93 142.7624 90)
+			(at 58.42 144.0324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16800,7 +17181,7 @@
 	)
 	(global_label "RAM-A7"
 		(shape output)
-		(at 80.01 179.07 270)
+		(at 63.5 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16810,7 +17191,7 @@
 		)
 		(uuid "678a2284-88b5-4b85-8a4e-104d77152d19")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.01 189.7357 90)
+			(at 63.5 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16833,28 +17214,6 @@
 		(uuid "682e9555-3642-44cd-b62e-1fd6b7e88644")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 332.1511 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Z80-RESET"
-		(shape input)
-		(at 46.99 378.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "688bb79d-63da-4ddb-a2b8-777da565c0b0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.0588 378.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17172,9 +17531,31 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO28-ADC2"
+		(shape bidirectional)
+		(at 400.05 320.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f751501-540c-49f1-b9fe-06dbf4f5c25b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 426.4017 320.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RAM-A6"
 		(shape output)
-		(at 77.47 233.68 270)
+		(at 60.96 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17184,12 +17565,34 @@
 		)
 		(uuid "703ef83b-5515-4956-9025-aafa587a7483")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 244.3457 90)
+			(at 60.96 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Z80-WAIT"
+		(shape input)
+		(at 237.49 280.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7120efcd-c69e-4fd2-9f99-8bc398acab22")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 249.7885 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -17348,6 +17751,28 @@
 			)
 		)
 	)
+	(global_label "Z80-BUSREQ"
+		(shape input)
+		(at 234.95 208.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "73bd1739-9f68-4ccb-a712-589dfdc0e92c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.6956 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RAM-Q0"
 		(shape bidirectional)
 		(at 448.31 337.82 0)
@@ -17416,7 +17841,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 62.23 355.6 180)
+		(at 161.29 274.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17426,7 +17851,7 @@
 		)
 		(uuid "746f274d-249a-43af-bc93-a22cd6f267e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.3743 355.6 0)
+			(at 154.4343 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17437,7 +17862,7 @@
 		)
 	)
 	(global_label "Z80-BUSACK"
-		(shape output)
+		(shape input)
 		(at 330.2 196.85 180)
 		(fields_autoplaced yes)
 		(effects
@@ -17504,7 +17929,7 @@
 	)
 	(global_label "RP2040-Z80BOOTMODE"
 		(shape input)
-		(at 77.47 351.79 180)
+		(at 176.53 270.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17514,7 +17939,7 @@
 		)
 		(uuid "766116ec-1e97-4c18-8cf1-f01cfd1230d3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 51.8064 351.79 0)
+			(at 150.8664 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17636,7 +18061,7 @@
 	)
 	(global_label "RAM-A14"
 		(shape output)
-		(at 97.79 233.68 270)
+		(at 81.28 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17646,7 +18071,7 @@
 		)
 		(uuid "79bb6717-13fb-4d3b-bee0-903b4a0ee584")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.79 245.5552 90)
+			(at 81.28 246.8252 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17988,7 +18413,7 @@
 	)
 	(global_label "RAM-Q2"
 		(shape bidirectional)
-		(at 67.31 208.28 90)
+		(at 50.8 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17998,34 +18423,12 @@
 		)
 		(uuid "81b77adb-a621-45a9-8e39-38615fc3cf59")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.31 197.3724 90)
+			(at 50.8 198.6424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO14"
-		(shape bidirectional)
-		(at 387.35 314.96 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "81d3a03f-8120-4cf5-9875-8711b19b2b0f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -18052,24 +18455,24 @@
 			)
 		)
 	)
-	(global_label "RP2040-GPIO23"
+	(global_label "GND"
 		(shape bidirectional)
-		(at 400.05 312.42 0)
+		(at 194.31 284.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "83b4d7ec-72fa-4cb0-b95f-557e8d9e9331")
+		(uuid "83e5913e-b7ca-4b8a-8bad-0ba62afb4e2c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 419.9912 312.42 0)
+			(at 187.4543 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -18120,7 +18523,7 @@
 	)
 	(global_label "RAM-A1"
 		(shape output)
-		(at 64.77 179.07 270)
+		(at 48.26 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18130,7 +18533,7 @@
 		)
 		(uuid "86175068-ba4e-4f72-8a82-0223459c3f43")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.77 189.7357 90)
+			(at 48.26 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18230,7 +18633,7 @@
 	)
 	(global_label "RAM2-CS"
 		(shape output)
-		(at 85.09 153.67 90)
+		(at 68.58 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18240,7 +18643,7 @@
 		)
 		(uuid "87eeb692-7fab-4cc3-b2e0-6c400f56d5df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.09 141.6134 90)
+			(at 68.58 142.8834 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18252,7 +18655,7 @@
 	)
 	(global_label "RAM-A10"
 		(shape output)
-		(at 87.63 179.07 270)
+		(at 71.12 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18262,7 +18665,7 @@
 		)
 		(uuid "888dcb03-e614-4e8f-b01c-e8dd7cfa50da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.63 190.9452 90)
+			(at 71.12 192.2152 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18296,7 +18699,7 @@
 	)
 	(global_label "RAM-A1"
 		(shape output)
-		(at 64.77 233.68 270)
+		(at 48.26 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18306,7 +18709,7 @@
 		)
 		(uuid "892a1807-9f4a-4a7a-a297-57b1e507cf98")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.77 244.3457 90)
+			(at 48.26 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18756,9 +19159,31 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO19"
+		(shape bidirectional)
+		(at 387.35 322.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "919f29cc-a95d-45d0-be85-1bfa30e3540b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FLASH-DO-RP2040-QSPI_SD1"
 		(shape bidirectional)
-		(at 87.63 280.67 180)
+		(at 71.12 281.94 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18768,7 +19193,7 @@
 		)
 		(uuid "91e0fca9-1a95-401c-9227-7afb8fc2dd6b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.0211 280.67 0)
+			(at 37.5111 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18934,7 +19359,7 @@
 	)
 	(global_label "RAM-A11"
 		(shape output)
-		(at 90.17 233.68 270)
+		(at 73.66 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18944,7 +19369,7 @@
 		)
 		(uuid "9583d4f3-6222-41f5-826b-340cf3712a6b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 245.5552 90)
+			(at 73.66 246.8252 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19088,7 +19513,7 @@
 	)
 	(global_label "FLASH-CS-RP2040-QSPI_SS"
 		(shape bidirectional)
-		(at 87.63 273.05 180)
+		(at 71.12 274.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19098,7 +19523,7 @@
 		)
 		(uuid "9800f73d-fec7-4617-854a-e017afffd469")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.5234 273.05 0)
+			(at 40.0134 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19154,7 +19579,7 @@
 	)
 	(global_label "RAM-Q2"
 		(shape bidirectional)
-		(at 67.31 153.67 90)
+		(at 50.8 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19164,29 +19589,7 @@
 		)
 		(uuid "99796bb2-5e9c-4352-8474-5ccf11180616")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.31 142.7624 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO20"
-		(shape bidirectional)
-		(at 400.05 304.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "997d1ffa-aa34-4cf5-a3a5-7b45039edeff")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 419.9912 304.8 0)
+			(at 50.8 144.0324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19198,7 +19601,7 @@
 	)
 	(global_label "RAM-A3"
 		(shape output)
-		(at 69.85 179.07 270)
+		(at 53.34 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19208,7 +19611,7 @@
 		)
 		(uuid "99ec9024-0364-49ab-9c57-d4d90720b229")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.85 189.7357 90)
+			(at 53.34 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19236,6 +19639,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 224.79 223.52 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b5aef7f-ff89-4269-bdfc-f9eb2f53f05b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 231.487 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -19372,31 +19797,31 @@
 			)
 		)
 	)
-	(global_label "RP2040-GPIO27-ADC1"
+	(global_label "RP2040-GPIO11-BUSACK"
 		(shape bidirectional)
-		(at 400.05 322.58 0)
+		(at 214.63 213.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "9d888576-e145-4fdc-9afc-6fa7c3e4c1dc")
+		(uuid "9d7dfa3e-d88b-4d59-a76b-dbc8419ef349")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 426.4017 322.58 0)
+			(at 185.6778 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RAM-Q4"
 		(shape bidirectional)
-		(at 72.39 153.67 90)
+		(at 55.88 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19406,7 +19831,7 @@
 		)
 		(uuid "9df1327b-3e30-4858-94cf-c0706fa86b76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.39 142.7624 90)
+			(at 55.88 144.0324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19429,6 +19854,28 @@
 		(uuid "9e59b46a-6ccc-4133-bd49-037bb3991b59")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 319.117 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO24"
+		(shape bidirectional)
+		(at 400.05 309.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9f3f70a7-33cf-42b5-aede-5787bbd654a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 419.9912 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19484,7 +19931,7 @@
 	)
 	(global_label "FLASH-DI-RP2040-QSPI_SD0"
 		(shape bidirectional)
-		(at 87.63 278.13 180)
+		(at 71.12 279.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19494,7 +19941,29 @@
 		)
 		(uuid "a1b0f7c2-3047-486d-b0ff-f8e7820aefb0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.7468 278.13 0)
+			(at 38.2368 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO13"
+		(shape bidirectional)
+		(at 387.35 307.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1d42478-860d-4ba6-bfe2-3aa9ffc54131")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19572,7 +20041,7 @@
 	)
 	(global_label "RAM-A5"
 		(shape output)
-		(at 74.93 179.07 270)
+		(at 58.42 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19582,7 +20051,7 @@
 		)
 		(uuid "a496a7d1-a453-449e-a153-f566b6d57f44")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.93 189.7357 90)
+			(at 58.42 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19671,6 +20140,28 @@
 		(uuid "aadeb97a-4d40-499a-afbf-dc8487cfb634")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 573.2757 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO29-ADC3"
+		(shape bidirectional)
+		(at 365.76 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab9d739d-df77-45cf-98b5-5a594e10ea2d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 392.1117 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19814,7 +20305,7 @@
 	)
 	(global_label "RAM-A13"
 		(shape output)
-		(at 95.25 179.07 270)
+		(at 78.74 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19824,7 +20315,7 @@
 		)
 		(uuid "b00ecd92-d00f-49b8-a4fb-848a4b9ab805")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 190.9452 90)
+			(at 78.74 192.2152 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19902,7 +20393,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 102.87 166.37 0)
+		(at 86.36 167.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19912,7 +20403,7 @@
 		)
 		(uuid "b2073a83-f93d-4b3c-8877-6d4e806cdd5d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.7257 166.37 0)
+			(at 93.2157 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19935,28 +20426,6 @@
 		(uuid "b287b3ba-27e5-4872-aaf6-033171c4e723")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 329.8531 299.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO17"
-		(shape bidirectional)
-		(at 387.35 322.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b2e4d1a7-fda8-402f-b588-275f4b31154a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 322.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19990,7 +20459,7 @@
 	)
 	(global_label "RAM-A4"
 		(shape output)
-		(at 72.39 233.68 270)
+		(at 55.88 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20000,7 +20469,7 @@
 		)
 		(uuid "b3903fcf-e47f-4ebf-8049-b0ab34954759")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.39 244.3457 90)
+			(at 55.88 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20078,7 +20547,7 @@
 	)
 	(global_label "RAM1-CS"
 		(shape output)
-		(at 85.09 208.28 90)
+		(at 68.58 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20088,34 +20557,12 @@
 		)
 		(uuid "b5f92534-c4e5-4e45-8d9c-e1c1e1d58f32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.09 196.2234 90)
+			(at 68.58 197.4934 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO19"
-		(shape bidirectional)
-		(at 387.35 327.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b6481aa3-f200-445b-a987-01fa325f394c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 327.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -20144,7 +20591,7 @@
 	)
 	(global_label "RAM-Q1"
 		(shape bidirectional)
-		(at 64.77 153.67 90)
+		(at 48.26 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20154,7 +20601,7 @@
 		)
 		(uuid "b66a32c9-7c7e-4022-9799-d3582975989e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.77 142.7624 90)
+			(at 48.26 144.0324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20188,7 +20635,7 @@
 	)
 	(global_label "RAM-A13"
 		(shape output)
-		(at 95.25 233.68 270)
+		(at 78.74 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20198,29 +20645,7 @@
 		)
 		(uuid "b7572527-489e-40f3-8d91-4b08ad26305d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 245.5552 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO15"
-		(shape bidirectional)
-		(at 387.35 317.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b791dfe6-d509-4c84-b4aa-90da95bb6b4e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 317.5 0)
+			(at 78.74 246.8252 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20353,50 +20778,6 @@
 		(uuid "ba28a4ac-d057-4833-a085-8fd86e993631")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 513.08 316.6314 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO24"
-		(shape bidirectional)
-		(at 400.05 314.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ba37f22d-0075-40da-a041-bd8495eb0321")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 419.9912 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO26-ADC0"
-		(shape bidirectional)
-		(at 400.05 320.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ba429612-9776-4ddd-8e20-d05c574f6666")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 426.4017 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20562,7 +20943,7 @@
 	)
 	(global_label "RAM-A2"
 		(shape output)
-		(at 67.31 179.07 270)
+		(at 50.8 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20572,7 +20953,7 @@
 		)
 		(uuid "bdf7480c-a8e8-4847-8e27-028817e2246d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.31 189.7357 90)
+			(at 50.8 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20760,7 +21141,7 @@
 	)
 	(global_label "FLASH-WP-RP2040-QSPI_SD2"
 		(shape bidirectional)
-		(at 87.63 283.21 180)
+		(at 71.12 284.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20770,7 +21151,7 @@
 		)
 		(uuid "c5b184ed-5d31-4378-846b-4e80978d8e3b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.9002 283.21 0)
+			(at 37.3902 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20848,7 +21229,7 @@
 	)
 	(global_label "Vdd_3v3"
 		(shape bidirectional)
-		(at 77.47 363.22 270)
+		(at 176.53 281.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20858,7 +21239,29 @@
 		)
 		(uuid "c87e6c8d-cf83-4688-a1c2-378e8f9dc8cc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 375.0573 90)
+			(at 176.53 293.7773 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Vdd_3v3"
+		(shape bidirectional)
+		(at 214.63 203.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c900ff27-a534-411f-ad8c-19162af7d486")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.7927 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21002,7 +21405,7 @@
 	)
 	(global_label "RAM-A2"
 		(shape output)
-		(at 67.31 233.68 270)
+		(at 50.8 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21012,7 +21415,7 @@
 		)
 		(uuid "cadc5063-4fba-4712-8142-89d79a7dbd9e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.31 244.3457 90)
+			(at 50.8 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21110,9 +21513,53 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO28-ADC2"
+		(shape bidirectional)
+		(at 365.76 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc177114-e562-4b85-88b0-382a7c366195")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 392.1117 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO26-ADC0"
+		(shape bidirectional)
+		(at 400.05 314.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc5ee3ae-fdff-4337-97e8-297b55a93ec0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 426.4017 314.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RAM2-CS"
 		(shape output)
-		(at 262.89 273.05 0)
+		(at 60.96 367.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21122,7 +21569,7 @@
 		)
 		(uuid "cc9db6d3-ad69-427f-a2d5-89a680da85cd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 274.9466 273.05 0)
+			(at 73.0166 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21211,6 +21658,50 @@
 		(uuid "d0e807a8-03f1-42fd-b965-e846de623e3a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 574.4852 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Z80-RESET"
+		(shape input)
+		(at 237.49 246.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d15b1c03-6bba-483c-a2b8-f9f8d3afab33")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 251.4212 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO29-ADC3"
+		(shape bidirectional)
+		(at 400.05 322.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d15cd433-eea6-4910-85cc-9f2b7ea21dc7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 426.4017 322.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21418,9 +21909,31 @@
 			)
 		)
 	)
+	(global_label "Vcc"
+		(shape bidirectional)
+		(at 227.33 198.12 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d41856b4-f4fb-46be-a2ca-bb9d1389c3e4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.33 190.7577 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RP2040-RPBOOTMODE"
 		(shape input)
-		(at 77.47 378.46 180)
+		(at 176.53 297.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21430,7 +21943,7 @@
 		)
 		(uuid "d42021b4-8850-49f8-8634-2aaedb07b6fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.8949 378.46 0)
+			(at 151.9549 297.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21616,6 +22129,28 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO17"
+		(shape bidirectional)
+		(at 387.35 317.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7507b17-bc60-4d29-aacd-a5a034226a9a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Z80-A4"
 		(shape bidirectional)
 		(at 448.31 372.11 180)
@@ -21651,6 +22186,28 @@
 		(uuid "d853d058-adfd-41bd-bc13-2bc6a539fb45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 327.8801 320.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO20"
+		(shape bidirectional)
+		(at 387.35 325.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d883405b-53e8-4639-9859-5b45cfb430b0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 325.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21726,9 +22283,31 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO12"
+		(shape bidirectional)
+		(at 387.35 304.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "daaa81a6-4da0-4e29-bb63-7148ca70d0cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 102.87 220.98 0)
+		(at 86.36 222.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21738,7 +22317,7 @@
 		)
 		(uuid "db210252-8f7e-45e7-8bb6-dc87a66320ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.7257 220.98 0)
+			(at 93.2157 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21750,7 +22329,7 @@
 	)
 	(global_label "RAM-Q3"
 		(shape bidirectional)
-		(at 69.85 208.28 90)
+		(at 53.34 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21760,7 +22339,7 @@
 		)
 		(uuid "db5de91f-a753-4347-9f20-44fef479d194")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.85 197.3724 90)
+			(at 53.34 198.6424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21860,7 +22439,7 @@
 	)
 	(global_label "RAM-CS"
 		(shape output)
-		(at 245.11 266.7 180)
+		(at 43.18 360.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21870,7 +22449,7 @@
 		)
 		(uuid "dc88c204-b683-47cb-9eeb-b56310b769ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 234.2629 266.7 0)
+			(at 32.3329 360.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21924,9 +22503,31 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO14"
+		(shape bidirectional)
+		(at 387.35 309.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de2630dd-3b49-4e20-8601-3e4cb8e34a99")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 309.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Vcc"
 		(shape bidirectional)
-		(at 97.79 260.35 90)
+		(at 81.28 261.62 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21936,7 +22537,7 @@
 		)
 		(uuid "df95318f-0a41-418e-988b-d487ebf3f066")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.79 254.099 90)
+			(at 81.28 255.369 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22080,7 +22681,7 @@
 	)
 	(global_label "RAM-Q1"
 		(shape bidirectional)
-		(at 64.77 208.28 90)
+		(at 48.26 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22090,7 +22691,29 @@
 		)
 		(uuid "e1c8c3eb-0ffd-4641-80c8-2eda9a4910ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.77 197.3724 90)
+			(at 48.26 198.6424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO22"
+		(shape bidirectional)
+		(at 400.05 304.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1dc9ac4-9d3f-44d1-95f9-522ee12067f0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 419.9912 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22102,7 +22725,7 @@
 	)
 	(global_label "RAM-A0"
 		(shape output)
-		(at 62.23 179.07 270)
+		(at 45.72 180.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22112,29 +22735,7 @@
 		)
 		(uuid "e2e98321-8331-4e83-967c-7386ad6d5455")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.23 189.7357 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RP2040-GPIO18"
-		(shape bidirectional)
-		(at 387.35 325.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e3a40ef1-593a-4448-b895-e311bb643571")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 325.12 0)
+			(at 45.72 191.0057 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22188,9 +22789,9 @@
 			)
 		)
 	)
-	(global_label "RP2040-GPIO12"
+	(global_label "GND"
 		(shape bidirectional)
-		(at 387.35 309.88 180)
+		(at 222.25 294.64 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22198,14 +22799,58 @@
 			)
 			(justify right)
 		)
-		(uuid "e473705a-fdae-4f57-85ab-284c0cd9ae9e")
+		(uuid "e54239b8-13b6-4b3a-9df1-b975a7fecab0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.4088 309.88 0)
+			(at 222.25 302.607 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Vcc"
+		(shape bidirectional)
+		(at 209.55 292.1 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e55533a0-48c0-4b9e-b546-0f46aaf6db00")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 209.55 298.351 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO23"
+		(shape bidirectional)
+		(at 400.05 307.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e7e6515c-9900-470f-822e-f5d21d5d4300")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 419.9912 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -22256,7 +22901,7 @@
 	)
 	(global_label "RAM-A7"
 		(shape output)
-		(at 80.01 233.68 270)
+		(at 63.5 234.95 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22266,7 +22911,7 @@
 		)
 		(uuid "e98b334c-a6ba-4233-9847-8a6597cd747f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.01 244.3457 90)
+			(at 63.5 245.6157 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22344,7 +22989,7 @@
 	)
 	(global_label "RAM-WE"
 		(shape output)
-		(at 92.71 153.67 90)
+		(at 76.2 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22354,12 +22999,34 @@
 		)
 		(uuid "ead31715-3c1b-4cb4-a89d-0ac630a4f02b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 142.702 90)
+			(at 76.2 143.972 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO16"
+		(shape bidirectional)
+		(at 387.35 314.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eb186a66-f703-4ccf-a173-7bce098f1e9a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 314.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -22542,7 +23209,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 97.79 293.37 270)
+		(at 81.28 294.64 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22552,7 +23219,7 @@
 		)
 		(uuid "eeeb8597-5453-470d-b379-408989fb64d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.79 300.2257 90)
+			(at 81.28 301.4957 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22652,7 +23319,7 @@
 	)
 	(global_label "Vcc"
 		(shape bidirectional)
-		(at 57.15 220.98 180)
+		(at 40.64 222.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22662,7 +23329,7 @@
 		)
 		(uuid "f00a0103-d87a-438f-971e-c641fab0d0d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.899 220.98 0)
+			(at 34.389 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22762,7 +23429,7 @@
 	)
 	(global_label "Vcc"
 		(shape bidirectional)
-		(at 242.57 292.1 270)
+		(at 40.64 389.89 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22772,7 +23439,7 @@
 		)
 		(uuid "f291291d-7a65-4180-814a-5df95329358a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.57 299.4623 90)
+			(at 40.64 397.2523 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22892,6 +23559,28 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO10-BUSREQ"
+		(shape bidirectional)
+		(at 214.63 208.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f4d31002-0f3e-4fe2-aadb-95e98673dc5e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.5569 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape bidirectional)
 		(at 384.81 368.3 0)
@@ -22916,7 +23605,7 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 267.97 292.1 270)
+		(at 66.04 389.89 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22926,7 +23615,7 @@
 		)
 		(uuid "f5ffe1e3-3c83-4990-a6d8-927ea7fdf10b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.97 300.067 90)
+			(at 66.04 397.857 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22949,6 +23638,28 @@
 		(uuid "f64b8db5-6a4b-4361-b488-cfabfc0c1e6f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 366.0842 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Z80-BUSACK"
+		(shape output)
+		(at 234.95 213.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f85819ac-3097-428b-b7f1-8cf2ec73bbd4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.5747 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23046,6 +23757,28 @@
 			)
 		)
 	)
+	(global_label "RP2040-GPIO27-ADC1"
+		(shape bidirectional)
+		(at 400.05 317.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc87f2b3-57ca-471b-b2ff-50f5496c9624")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 426.4017 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Z80-MREQ"
 		(shape output)
 		(at 168.91 383.54 180)
@@ -23086,6 +23819,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RP2040-GPIO15"
+		(shape bidirectional)
+		(at 387.35 312.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fcf3276b-654a-4dcd-b5f0-2c3f52676dc5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.4088 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -23134,31 +23889,9 @@
 			)
 		)
 	)
-	(global_label "RP2040-GPIO25"
-		(shape bidirectional)
-		(at 400.05 317.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fe28b17a-5332-4b08-bede-e35e7a4fe741")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 419.9912 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RAM-Q0"
 		(shape bidirectional)
-		(at 62.23 208.28 90)
+		(at 45.72 209.55 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23168,7 +23901,7 @@
 		)
 		(uuid "ff59df7e-121f-4620-aa95-73e7171612ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.23 197.3724 90)
+			(at 45.72 198.6424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23641,6 +24374,75 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 222.25 290.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "067e0d29-4eaa-4eb2-872d-84651dd4c174")
+		(property "Reference" "C12"
+			(at 226.06 291.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 226.06 293.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+			(at 221.2848 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 222.25 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4af23a09-7262-4c18-8de5-69929bf3ffca")
+		)
+		(pin "2"
+			(uuid "8d9a6fb8-2b96-4c24-86cd-ad54cb68e236")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 111.76 29.21 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23923,7 +24725,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 77.47 386.08 0)
+		(at 176.53 304.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23931,7 +24733,7 @@
 		(dnp no)
 		(uuid "0cc3e84c-4afd-401b-875d-c8bd322afc58")
 		(property "Reference" "R18"
-			(at 82.296 386.08 90)
+			(at 181.356 304.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23939,7 +24741,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 80.01 385.826 90)
+			(at 179.07 304.546 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23947,7 +24749,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 75.692 386.08 90)
+			(at 174.752 304.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23956,7 +24758,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 386.08 0)
+			(at 176.53 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23965,7 +24767,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 77.47 386.08 0)
+			(at 176.53 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24404,7 +25206,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC04")
-		(at 255.27 273.05 0)
+		(at 53.34 367.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24413,7 +25215,7 @@
 		(fields_autoplaced yes)
 		(uuid "18ae778e-a950-4921-8e0e-1fe77d9b2507")
 		(property "Reference" "U2"
-			(at 255.27 264.16 0)
+			(at 53.34 358.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24421,7 +25223,7 @@
 			)
 		)
 		(property "Value" "74HC04"
-			(at 255.27 266.7 0)
+			(at 53.34 360.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24429,7 +25231,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 255.27 273.05 0)
+			(at 53.34 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24438,7 +25240,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf"
-			(at 255.27 273.05 0)
+			(at 53.34 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24447,7 +25249,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 255.27 273.05 0)
+			(at 53.34 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24501,6 +25303,94 @@
 			(project ""
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Logic_LevelTranslator:TXS0102DCT")
+		(at 224.79 210.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19f84f47-c04f-4813-ba15-b640ea18e385")
+		(property "Reference" "U6"
+			(at 226.9333 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TXS0102DCT"
+			(at 226.9333 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+			(at 224.79 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/txs0102"
+			(at 224.79 211.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2-Bit Bidirectional Voltage-Level Shifter for Open-Drain and Push-Pull Application, SSOP-8"
+			(at 224.79 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "f309d611-0e6d-435d-be2a-178091943657")
+		)
+		(pin "6"
+			(uuid "84d8e2bb-4944-4635-8a7b-89100bdd3442")
+		)
+		(pin "5"
+			(uuid "c45a0299-9ea5-4c50-a3ef-0c1eddfa0451")
+		)
+		(pin "2"
+			(uuid "a80f9b1c-5f6b-4cba-a000-e1340d851b76")
+		)
+		(pin "4"
+			(uuid "d8239b6b-a60b-409d-bbba-a382a60857be")
+		)
+		(pin "3"
+			(uuid "9c1b4701-7819-4868-ba7b-9df56ea0f061")
+		)
+		(pin "7"
+			(uuid "23b670b1-0330-48e2-b2e8-fd397025584c")
+		)
+		(pin "1"
+			(uuid "645ea280-47c1-425a-a9c7-e64591e5bee1")
+		)
+		(instances
+			(project ""
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -24745,7 +25635,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 36.83 355.6 0)
+		(at 199.39 284.48 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24754,7 +25644,7 @@
 		(dnp no)
 		(uuid "1e64a33e-1ca5-4811-b8ba-90b1678a056b")
 		(property "Reference" "SW1"
-			(at 36.83 363.22 0)
+			(at 199.39 292.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24762,7 +25652,7 @@
 			)
 		)
 		(property "Value" "WAIT"
-			(at 36.83 360.68 0)
+			(at 199.39 289.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24770,7 +25660,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 36.83 360.68 0)
+			(at 199.39 289.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24779,7 +25669,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 360.68 0)
+			(at 199.39 289.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24788,7 +25678,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 36.83 355.6 0)
+			(at 199.39 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25541,7 +26431,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 97.79 264.16 180)
+		(at 81.28 265.43 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25550,7 +26440,7 @@
 		(fields_autoplaced yes)
 		(uuid "3003b820-607b-424a-b8be-e19622c3a448")
 		(property "Reference" "C7"
-			(at 101.6 262.8899 0)
+			(at 85.09 264.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25559,7 +26449,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 101.6 265.4299 0)
+			(at 85.09 266.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25568,7 +26458,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
-			(at 96.8248 260.35 0)
+			(at 80.3148 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25577,7 +26467,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 264.16 0)
+			(at 81.28 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25586,7 +26476,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 97.79 264.16 0)
+			(at 81.28 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26319,7 +27209,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 46.99 386.08 0)
+		(at 209.55 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26327,7 +27217,7 @@
 		(dnp no)
 		(uuid "42ca201a-22df-43fd-9b72-d75dc2417cb2")
 		(property "Reference" "R6"
-			(at 51.816 386.08 90)
+			(at 214.376 254 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26335,7 +27225,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 49.53 385.826 90)
+			(at 212.09 253.746 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26343,7 +27233,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 45.212 386.08 90)
+			(at 207.772 254 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26352,7 +27242,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 386.08 0)
+			(at 209.55 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26361,7 +27251,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 386.08 0)
+			(at 209.55 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26769,7 +27659,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 36.83 382.27 0)
+		(at 199.39 250.19 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26778,7 +27668,7 @@
 		(dnp no)
 		(uuid "4564575b-a83c-447a-b6f5-fc026419e8fa")
 		(property "Reference" "SW2"
-			(at 36.83 389.89 0)
+			(at 199.39 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26786,7 +27676,7 @@
 			)
 		)
 		(property "Value" "RESET"
-			(at 36.83 387.35 0)
+			(at 199.39 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26794,7 +27684,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 36.83 387.35 0)
+			(at 199.39 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26803,7 +27693,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 387.35 0)
+			(at 199.39 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26812,7 +27702,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 36.83 382.27 0)
+			(at 199.39 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27703,7 +28593,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 77.47 359.41 0)
+		(at 176.53 278.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27711,7 +28601,7 @@
 		(dnp no)
 		(uuid "5c06b6ba-fe9d-4dbf-baf7-be313cebeb36")
 		(property "Reference" "R17"
-			(at 82.296 359.41 90)
+			(at 181.356 278.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27719,7 +28609,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 80.01 359.156 90)
+			(at 179.07 277.876 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27727,7 +28617,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 75.692 359.41 90)
+			(at 174.752 278.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27736,7 +28626,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 359.41 0)
+			(at 176.53 278.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27745,7 +28635,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 77.47 359.41 0)
+			(at 176.53 278.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28865,7 +29755,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 67.31 382.27 0)
+		(at 166.37 300.99 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28874,7 +29764,7 @@
 		(dnp no)
 		(uuid "6a4fdc7e-ae22-485b-bbaf-ae47d83900d3")
 		(property "Reference" "SW4"
-			(at 67.31 389.89 0)
+			(at 166.37 308.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28882,7 +29772,7 @@
 			)
 		)
 		(property "Value" "RPBOOT"
-			(at 67.31 387.35 0)
+			(at 166.37 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28890,7 +29780,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 67.31 387.35 0)
+			(at 166.37 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28899,7 +29789,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 387.35 0)
+			(at 166.37 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28908,7 +29798,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 67.31 382.27 0)
+			(at 166.37 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30198,6 +31088,110 @@
 		)
 	)
 	(symbol
+		(lib_id "74xx:74HC14")
+		(at 229.87 280.67 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8561be3a-7ef4-40d2-99ba-3e341e9048bf")
+		(property "Reference" "U1"
+			(at 229.87 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC14"
+			(at 229.87 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 229.87 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC14"
+			(at 229.87 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex inverter schmitt trigger"
+			(at 229.87 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "ad76b95f-5e5c-47a4-9015-8b3fe77d7479")
+		)
+		(pin "6"
+			(uuid "94b07d61-d8b4-4bad-88c6-99154d5aa296")
+		)
+		(pin "13"
+			(uuid "baf71fc2-edf5-4cd3-98e4-db2eac46327c")
+		)
+		(pin "14"
+			(uuid "27690b4f-274b-468d-a25a-6bf3c738f833")
+		)
+		(pin "9"
+			(uuid "a5b50277-b39b-4b3f-86c2-e4ca8f7d76e6")
+		)
+		(pin "1"
+			(uuid "fa26fc9f-fe22-4257-8c7b-9927caf39090")
+		)
+		(pin "2"
+			(uuid "dfe476be-f91d-4368-85c0-9ed65c64eee7")
+		)
+		(pin "3"
+			(uuid "40fd2271-d1be-40c0-867e-d8863cde47a4")
+		)
+		(pin "5"
+			(uuid "8904cf11-0022-4ecd-b6e9-426567184dd8")
+		)
+		(pin "8"
+			(uuid "251c0b0f-6b87-420a-b011-f863af1c35e5")
+		)
+		(pin "11"
+			(uuid "b8d0158f-3b12-47c5-aecb-dbd84d84bbd6")
+		)
+		(pin "10"
+			(uuid "8d0eff44-4dbe-4413-a74e-deec806f001c")
+		)
+		(pin "12"
+			(uuid "7d89aa28-fb9a-4742-9c9c-6079b4656fea")
+		)
+		(pin "7"
+			(uuid "cb902ad6-5bc2-410a-a3eb-6b887b6043da")
+		)
+		(instances
+			(project ""
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "U1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 138.43 370.84 180)
 		(unit 1)
@@ -30564,6 +31558,73 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "R68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 213.36 280.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d986428-6a5d-487e-ad4c-e1b8727ef170")
+		(property "Reference" "R39"
+			(at 213.36 275.844 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 213.106 278.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 213.36 282.448 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "168a1843-5284-44e4-b9ed-0b54ec06cd0c")
+		)
+		(pin "2"
+			(uuid "d2fd1100-350b-49d5-9f55-e51eb8b54eb9")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -31732,6 +32793,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 222.25 256.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abe0bdb3-f9ac-4fab-ab3f-5bd7998fd243")
+		(property "Reference" "C14"
+			(at 226.06 257.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 226.06 259.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+			(at 221.2848 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 222.25 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e823d16-975b-47bd-9036-c36e1abb0fbb")
+		)
+		(pin "2"
+			(uuid "0e816bf0-2402-4912-b1f2-dd624c34719c")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 205.74 368.3 180)
 		(unit 1)
@@ -31894,7 +33024,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 67.31 355.6 0)
+		(at 166.37 274.32 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31903,7 +33033,7 @@
 		(dnp no)
 		(uuid "ad7471d3-2a7e-409b-a9c6-f33dffda2e0f")
 		(property "Reference" "SW3"
-			(at 67.31 363.22 0)
+			(at 166.37 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31911,7 +33041,7 @@
 			)
 		)
 		(property "Value" "Z80BOOT"
-			(at 67.31 360.68 0)
+			(at 166.37 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31919,7 +33049,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 67.31 360.68 0)
+			(at 166.37 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31928,7 +33058,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 360.68 0)
+			(at 166.37 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31937,7 +33067,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 67.31 355.6 0)
+			(at 166.37 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34003,6 +35133,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 213.36 246.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d41fab3c-2db4-48c9-8746-ce229406b8fc")
+		(property "Reference" "R40"
+			(at 213.36 241.554 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 213.106 243.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 213.36 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e79e569-447f-4eca-8c32-f5d91fe21880")
+		)
+		(pin "2"
+			(uuid "455302a5-dc30-4bf0-b91e-01d65fe6a79a")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 138.43 360.68 180)
 		(unit 1)
@@ -34080,7 +35277,7 @@
 	)
 	(symbol
 		(lib_id "Memory_RAM:HM62256BLP")
-		(at 80.01 220.98 90)
+		(at 63.5 222.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34088,7 +35285,7 @@
 		(dnp no)
 		(uuid "d826e6ca-efaa-4e5f-a613-a78822e45d20")
 		(property "Reference" "RAM1"
-			(at 107.95 215.5346 90)
+			(at 91.44 216.8046 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34096,7 +35293,7 @@
 			)
 		)
 		(property "Value" "HM62256BLP"
-			(at 107.95 218.0746 90)
+			(at 91.44 219.3446 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34104,7 +35301,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-28_W15.24mm"
-			(at 82.55 220.98 0)
+			(at 66.04 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34113,7 +35310,7 @@
 			)
 		)
 		(property "Datasheet" "https://web.mit.edu/6.115/www/document/62256.pdf"
-			(at 82.55 220.98 0)
+			(at 66.04 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34122,7 +35319,7 @@
 			)
 		)
 		(property "Description" "32,768-word × 8-bit High Speed CMOS Static RAM, 70ns, DIP-28"
-			(at 80.01 220.98 0)
+			(at 63.5 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35562,7 +36759,7 @@
 	)
 	(symbol
 		(lib_id "Memory_RAM:HM62256BLP")
-		(at 80.01 166.37 90)
+		(at 63.5 167.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -35570,7 +36767,7 @@
 		(dnp no)
 		(uuid "f23ff368-43c7-4ef2-b253-219faff16868")
 		(property "Reference" "RAM2"
-			(at 107.95 160.9246 90)
+			(at 91.44 162.1946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35578,7 +36775,7 @@
 			)
 		)
 		(property "Value" "HM62256BLP"
-			(at 107.95 163.4646 90)
+			(at 91.44 164.7346 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35586,7 +36783,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-28_W15.24mm"
-			(at 82.55 166.37 0)
+			(at 66.04 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35595,7 +36792,7 @@
 			)
 		)
 		(property "Datasheet" "https://web.mit.edu/6.115/www/document/62256.pdf"
-			(at 82.55 166.37 0)
+			(at 66.04 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35604,7 +36801,7 @@
 			)
 		)
 		(property "Description" "32,768-word × 8-bit High Speed CMOS Static RAM, 70ns, DIP-28"
-			(at 80.01 166.37 0)
+			(at 63.5 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36207,7 +37404,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC04")
-		(at 255.27 292.1 90)
+		(at 53.34 389.89 90)
 		(unit 7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -36216,7 +37413,7 @@
 		(fields_autoplaced yes)
 		(uuid "f79c7792-432a-4f85-afeb-df287efa5775")
 		(property "Reference" "U2"
-			(at 255.27 281.94 90)
+			(at 53.34 379.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36224,7 +37421,7 @@
 			)
 		)
 		(property "Value" "74HC04"
-			(at 255.27 284.48 90)
+			(at 53.34 382.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36232,7 +37429,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 255.27 292.1 0)
+			(at 53.34 389.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36241,7 +37438,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf"
-			(at 255.27 292.1 0)
+			(at 53.34 389.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36250,7 +37447,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 255.27 292.1 0)
+			(at 53.34 389.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36529,8 +37726,112 @@
 		)
 	)
 	(symbol
+		(lib_id "74xx:74HC14")
+		(at 229.87 246.38 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fae637fe-bb1c-43ee-916b-b02c65460fb0")
+		(property "Reference" "U1"
+			(at 229.87 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC14"
+			(at 229.87 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 229.87 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC14"
+			(at 229.87 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex inverter schmitt trigger"
+			(at 229.87 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "d9a60864-5a0f-4fd1-934b-22061672e9e6")
+		)
+		(pin "6"
+			(uuid "94b07d61-d8b4-4bad-88c6-99154d5aa296")
+		)
+		(pin "13"
+			(uuid "baf71fc2-edf5-4cd3-98e4-db2eac46327c")
+		)
+		(pin "14"
+			(uuid "27690b4f-274b-468d-a25a-6bf3c738f833")
+		)
+		(pin "9"
+			(uuid "a5b50277-b39b-4b3f-86c2-e4ca8f7d76e6")
+		)
+		(pin "1"
+			(uuid "fa26fc9f-fe22-4257-8c7b-9927caf39090")
+		)
+		(pin "2"
+			(uuid "dfe476be-f91d-4368-85c0-9ed65c64eee7")
+		)
+		(pin "3"
+			(uuid "cbc862c9-c614-4581-a5c7-3497f954d3b1")
+		)
+		(pin "5"
+			(uuid "8904cf11-0022-4ecd-b6e9-426567184dd8")
+		)
+		(pin "8"
+			(uuid "251c0b0f-6b87-420a-b011-f863af1c35e5")
+		)
+		(pin "11"
+			(uuid "b8d0158f-3b12-47c5-aecb-dbd84d84bbd6")
+		)
+		(pin "10"
+			(uuid "8d0eff44-4dbe-4413-a74e-deec806f001c")
+		)
+		(pin "12"
+			(uuid "7d89aa28-fb9a-4742-9c9c-6079b4656fea")
+		)
+		(pin "7"
+			(uuid "cb902ad6-5bc2-410a-a3eb-6b887b6043da")
+		)
+		(instances
+			(project "Z80DevBoard"
+				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
+					(reference "U1")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 46.99 359.41 0)
+		(at 209.55 288.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -36538,7 +37839,7 @@
 		(dnp no)
 		(uuid "fb8f0e1c-ec5b-4fb3-a96e-9a75bc75b8ee")
 		(property "Reference" "R5"
-			(at 51.816 359.41 90)
+			(at 214.376 288.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36546,7 +37847,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 49.53 359.156 90)
+			(at 212.09 288.036 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36554,7 +37855,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 45.212 359.41 90)
+			(at 207.772 288.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36563,7 +37864,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 359.41 0)
+			(at 209.55 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36572,7 +37873,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 359.41 0)
+			(at 209.55 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36850,7 +38151,7 @@
 	)
 	(symbol
 		(lib_id "Memory_Flash:W25Q32JVSS")
-		(at 97.79 280.67 0)
+		(at 81.28 281.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -36859,7 +38160,7 @@
 		(fields_autoplaced yes)
 		(uuid "fdbebb15-86c6-4307-97e6-86418c75431b")
 		(property "Reference" "Flash1"
-			(at 109.22 279.3999 0)
+			(at 92.71 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36868,7 +38169,7 @@
 			)
 		)
 		(property "Value" "W25Q32JVSS"
-			(at 109.22 281.9399 0)
+			(at 92.71 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36877,7 +38178,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
-			(at 97.79 280.67 0)
+			(at 81.28 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36886,7 +38187,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf"
-			(at 97.79 280.67 0)
+			(at 81.28 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36895,7 +38196,7 @@
 			)
 		)
 		(property "Description" "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)"
-			(at 97.79 280.67 0)
+			(at 81.28 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
