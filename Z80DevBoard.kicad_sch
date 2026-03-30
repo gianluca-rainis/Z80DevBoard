@@ -24399,7 +24399,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 221.2848 287.02 0)
 			(effects
 				(font
@@ -24468,7 +24468,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 110.7948 25.4 0)
 			(effects
 				(font
@@ -24538,7 +24538,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 20.6248 72.39 0)
 			(effects
 				(font
@@ -24818,7 +24818,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 43.4848 31.75 0)
 			(effects
 				(font
@@ -26457,7 +26457,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 80.3148 261.62 0)
 			(effects
 				(font
@@ -27013,7 +27013,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 71.4248 72.39 0)
 			(effects
 				(font
@@ -27615,7 +27615,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 66.3448 31.75 0)
 			(effects
 				(font
@@ -29426,7 +29426,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 218.7448 322.58 0)
 			(effects
 				(font
@@ -32054,7 +32054,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 91.7448 64.77 0)
 			(effects
 				(font
@@ -32819,7 +32819,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 221.2848 252.73 0)
 			(effects
 				(font
@@ -34379,7 +34379,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 32.0548 72.39 0)
 			(effects
 				(font
@@ -34534,7 +34534,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 44.7548 72.39 0)
 			(effects
 				(font
@@ -34689,7 +34689,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 57.4548 72.39 0)
 			(effects
 				(font
@@ -36207,7 +36207,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 120.9548 25.4 0)
 			(effects
 				(font
@@ -37782,43 +37782,43 @@
 			(uuid "d9a60864-5a0f-4fd1-934b-22061672e9e6")
 		)
 		(pin "6"
-			(uuid "94b07d61-d8b4-4bad-88c6-99154d5aa296")
+			(uuid "94b07d61-d8b4-4bad-88c6-99154d5aa297")
 		)
 		(pin "13"
-			(uuid "baf71fc2-edf5-4cd3-98e4-db2eac46327c")
+			(uuid "baf71fc2-edf5-4cd3-98e4-db2eac46327d")
 		)
 		(pin "14"
-			(uuid "27690b4f-274b-468d-a25a-6bf3c738f833")
+			(uuid "27690b4f-274b-468d-a25a-6bf3c738f834")
 		)
 		(pin "9"
-			(uuid "a5b50277-b39b-4b3f-86c2-e4ca8f7d76e6")
+			(uuid "a5b50277-b39b-4b3f-86c2-e4ca8f7d76e7")
 		)
 		(pin "1"
-			(uuid "fa26fc9f-fe22-4257-8c7b-9927caf39090")
+			(uuid "fa26fc9f-fe22-4257-8c7b-9927caf39091")
 		)
 		(pin "2"
-			(uuid "dfe476be-f91d-4368-85c0-9ed65c64eee7")
+			(uuid "dfe476be-f91d-4368-85c0-9ed65c64eee8")
 		)
 		(pin "3"
 			(uuid "cbc862c9-c614-4581-a5c7-3497f954d3b1")
 		)
 		(pin "5"
-			(uuid "8904cf11-0022-4ecd-b6e9-426567184dd8")
+			(uuid "8904cf11-0022-4ecd-b6e9-426567184dd9")
 		)
 		(pin "8"
-			(uuid "251c0b0f-6b87-420a-b011-f863af1c35e5")
+			(uuid "251c0b0f-6b87-420a-b011-f863af1c35e6")
 		)
 		(pin "11"
-			(uuid "b8d0158f-3b12-47c5-aecb-dbd84d84bbd6")
+			(uuid "b8d0158f-3b12-47c5-aecb-dbd84d84bbd7")
 		)
 		(pin "10"
-			(uuid "8d0eff44-4dbe-4413-a74e-deec806f001c")
+			(uuid "8d0eff44-4dbe-4413-a74e-deec806f001d")
 		)
 		(pin "12"
-			(uuid "7d89aa28-fb9a-4742-9c9c-6079b4656fea")
+			(uuid "7d89aa28-fb9a-4742-9c9c-6079b4656feb")
 		)
 		(pin "7"
-			(uuid "cb902ad6-5bc2-410a-a3eb-6b887b6043da")
+			(uuid "cb902ad6-5bc2-410a-a3eb-6b887b6043db")
 		)
 		(instances
 			(project "Z80DevBoard"
