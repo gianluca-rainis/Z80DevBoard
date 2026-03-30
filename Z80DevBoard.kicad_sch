@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-03-26")
+		(date "2026-03-30")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -28073,7 +28073,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_0402_1005Metric"
+		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
 			(at 22.098 40.64 90)
 			(effects
 				(font
