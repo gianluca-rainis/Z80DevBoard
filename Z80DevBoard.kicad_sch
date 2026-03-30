@@ -23959,7 +23959,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Slide_SPDT_Straight_CK_OS102011MS2Q"
+		(property "Footprint" "customFootprints:SW_Slide-03_Wuerth-WS-SLTV"
 			(at 128.27 55.88 0)
 			(effects
 				(font
