@@ -46779,8 +46779,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "74HC596"
-		(at 200.1 119.6 90)
+	(gr_text "74HC595"
+		(at 200 119.6 90)
 		(layer "F.SilkS")
 		(uuid "22cb63e5-ee50-4cca-abb1-1c141ea74b18")
 		(effects
@@ -46937,8 +46937,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "74HC596"
-		(at 199.8186 108.7305 90)
+	(gr_text "74HC595"
+		(at 200 108.5 90)
 		(layer "F.SilkS")
 		(uuid "311fc8bc-b5bf-4f97-a3f8-1634e2044e6f")
 		(effects
@@ -48514,8 +48514,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "74HC596"
-		(at 200 131.5 90)
+	(gr_text "74HC595"
+		(at 200 131.25 90)
 		(layer "F.SilkS")
 		(uuid "c2a4da7e-5e2c-4b6b-88e1-ac94eb0c10e3")
 		(effects

@@ -88,11 +88,10 @@ Z80DevBoard/
 |||||
 |USB C 2.0 port|1|Data Bus|Through Holes|
 |74HC595|3|Data Bus|Through Holes|
-|74HC165|1|Data Bus|Through Holes|
+|74HC155|1|Data Bus|Through Holes|
 |74HCT574|4|Data Bus|Through Holes|
 |SN74LVC245APW|3|Data Bus|SMD|
 |TXS0102DCT|1|Data Bus|SMD|
-|Connector 2 pins|1|Data Bus|Through Holes|
 |Connector 2 pins|1|Data Bus|Through Holes|
 |Connector 2x20 pins|1|Data Bus|Through Holes|
 |Connector 2x10 pins|1|Data Bus|Through Holes|
@@ -138,7 +137,7 @@ Z80DevBoard/
 ### Data Bus
 - 1 USB C 2.0 port
 - 3 74HC595 (Serial to 8 bit)
-- 1 74HC165 (8 bit to Serial)
+- 1 74HC155 (8 bit to Serial)
 - 4 74HCT574 (8 bit Buffer)
 - 3 SN74LVC245APW (Bus to handle the voltage differences)
 - 1 TXS0102DCT (Bus to handle the voltage differences)
