@@ -21410,7 +21410,7 @@
 			(net 166 "Net-(USB_C1-SHIELD)")
 			(pinfunction "SHIELD")
 			(pintype "passive")
-			(uuid "4de5b493-9844-4a6d-b806-8a42875a16b5")
+			(uuid "06ca276a-bc74-4cc7-a808-81faea183698")
 		)
 		(pad "S1" thru_hole oval
 			(at 4.32 -3.13 180)
@@ -21422,7 +21422,7 @@
 			(net 166 "Net-(USB_C1-SHIELD)")
 			(pinfunction "SHIELD")
 			(pintype "passive")
-			(uuid "4de5b493-9844-4a6d-b806-8a42875a16b5")
+			(uuid "817133ac-04bf-48e6-b0ae-559a338aea9f")
 		)
 		(pad "S1" thru_hole oval
 			(at 4.32 1.05 180)
@@ -21434,7 +21434,7 @@
 			(net 166 "Net-(USB_C1-SHIELD)")
 			(pinfunction "SHIELD")
 			(pintype "passive")
-			(uuid "4de5b493-9844-4a6d-b806-8a42875a16b5")
+			(uuid "e82b20fd-a94e-441f-8ace-6d6f01b91c63")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
