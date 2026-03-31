@@ -28073,7 +28073,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
 			(at 22.098 40.64 90)
 			(effects
 				(font
