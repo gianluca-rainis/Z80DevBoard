@@ -76,52 +76,52 @@ Z80DevBoard/
 <img src="./images/screenshot_3d_back.png" alt="3D render - back view">
 
 ## Components Table
-|Name|Quantity|Class|Type|Link|
-|--|--|--|--|--|
-|Z84C00|1|Microprocessor|Through Holes||
-|RP2040|1|Microprocessor|SMD||
-||||||
-|HM62256BLP|2|Memory|Through Holes||
-|W25Q32JVSS|1|Memory|SMD||
-||||||
-|AMS1117-3.3|1|Power Management|SMD||
-||||||
-|USB C 2.0 port|1|Data Bus|Through Holes||
-|74HC595|3|Data Bus|Through Holes||
-|74HC165|1|Data Bus|Through Holes||
-|74HCT574|4|Data Bus|Through Holes||
-|SN74LVC245APW|3|Data Bus|SMD||
-|TXS0102DCT|1|Data Bus|SMD||
-|Connector 2 pins|1|Data Bus|Through Holes||
-|Connector 2 pins|1|Data Bus|Through Holes||
-|Connector 2x20 pins|1|Data Bus|Through Holes||
-|Connector 2x10 pins|1|Data Bus|Through Holes||
-||||||
-|Crystal 12MHz 20pF|1|Clock|Through Holes||
-|Oscillator 8MHz|1|Clock|SMD||
-||||||
-|74HC14|1|Support components|Through Holes||
-|74HC04|1|Support components|Through Holes||
-|74HC00|1|Support components|Through Holes||
-||||||
-|Resistor 0 ohm|1|Resistor|Through Holes||
-|Resistor 27.4 ohm|2|Resistor|Through Holes||
-|Resistor 1k ohm|34|Resistor|Through Holes||
-|Resistor 3.3k ohm|6|Resistor|Through Holes||
-|Resistor 5k ohm|2|Resistor|Through Holes||
-|Resistor 10k ohm|12|Resistor|Through Holes||
-|Resistor 470k ohm|1|Resistor|Through Holes||
-||||||
-|Capacitors 15pF|2|Capacitor|Through Holes||
-|Capacitors 0.1uF|8|Capacitor|Through Holes||
-|Capacitors 1uF|3|Capacitor|Through Holes||
-|Capacitors 10uF|2|Capacitor|Through Holes||
-||||||
-|Button|5|Other|Through Holes||
-|Switch|1|Other|Through Holes||
-|LED|40|Other|SMD||
-|Diodes|24|Other|SMD||
-|Fuse 500mA|1|Other|SMD||
+|Name|Quantity|Class|Type|
+|--|--|--|--|
+|Z84C00|1|Microprocessor|Through Holes|
+|RP2040|1|Microprocessor|SMD|
+|||||
+|HM62256BLP|2|Memory|Through Holes|
+|W25Q32JVSS|1|Memory|SMD|
+|||||
+|AMS1117-3.3|1|Power Management|SMD|
+|||||
+|USB C 2.0 port|1|Data Bus|Through Holes|
+|74HC595|3|Data Bus|Through Holes|
+|74HC165|1|Data Bus|Through Holes|
+|74HCT574|4|Data Bus|Through Holes|
+|SN74LVC245APW|3|Data Bus|SMD|
+|TXS0102DCT|1|Data Bus|SMD|
+|Connector 2 pins|1|Data Bus|Through Holes|
+|Connector 2 pins|1|Data Bus|Through Holes|
+|Connector 2x20 pins|1|Data Bus|Through Holes|
+|Connector 2x10 pins|1|Data Bus|Through Holes|
+|||||
+|Crystal 12MHz 20pF|1|Clock|Through Holes|
+|Oscillator 8MHz|1|Clock|SMD|
+|||||
+|74HC14|1|Support components|Through Holes|
+|74HC04|1|Support components|Through Holes|
+|74HC00|1|Support components|Through Holes|
+|||||
+|Resistor 0 ohm|1|Resistor|Through Holes|
+|Resistor 27.4 ohm|2|Resistor|Through Holes|
+|Resistor 1k ohm|34|Resistor|Through Holes|
+|Resistor 3.3k ohm|6|Resistor|Through Holes|
+|Resistor 5k ohm|2|Resistor|Through Holes|
+|Resistor 10k ohm|12|Resistor|Through Holes|
+|Resistor 470k ohm|1|Resistor|Through Holes|
+|||||
+|Capacitors 15pF|2|Capacitor|Through Holes|
+|Capacitors 0.1uF|8|Capacitor|Through Holes|
+|Capacitors 1uF|3|Capacitor|Through Holes|
+|Capacitors 10uF|2|Capacitor|Through Holes|
+|||||
+|Button|5|Other|Through Holes|
+|Switch|1|Other|Through Holes|
+|LED|40|Other|SMD|
+|Diodes|24|Other|SMD|
+|Fuse 500mA|1|Other|SMD|
 
 ## Components List
 ### Microprocessors
