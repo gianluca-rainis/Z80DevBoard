@@ -490,7 +490,7 @@
       "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Z80DevBoard.step",
       "svg": "",
       "vrml": ""
     },
