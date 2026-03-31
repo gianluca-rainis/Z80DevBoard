@@ -183,5 +183,5 @@ From the project root, run:
 
 ```bash
 cmake -S firmware -B firmware/build
-cmake --build firmware/build
+cmake --build firmware/build -j
 ```

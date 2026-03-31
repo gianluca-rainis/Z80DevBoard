@@ -59,11 +59,11 @@ void setup() {
     gpio_init(GPIO_EXPANSION_14);
     gpio_set_dir(GPIO_EXPANSION_14, GPIO_OUT); */
 
-    if (gpio_read(GPIO_RP2040_FIRMWARE_LOAD) == 1) {
+    if (gpio_get(GPIO_RP2040_FIRMWARE_LOAD) == 1) {
         // Save the new firmware of the RP2040 to flash
     }
     
-    if (gpio_read(GPIO_Z80_PROGRAM_LOAD) == 1) {
+    if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 1) {
         // Save the new program of the Z80 to flash
     }
 }
