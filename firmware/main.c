@@ -6,7 +6,7 @@
     GPIO3 - Output of the data of the RAM (serial 8 bit)
     GPIO4 - Output of the rotation clock of the shift registers
     GPIO5 - Output of the direction of the operation to RAM (1 for write, 0 for read)
-    GPIO6 - GND
+    GPIO6 - DS of the read shift register
     GPIO7 - Input of the byte of data read from RAM (serial 8 bit)
     GPIO8 - Output of the moment when read the RAM (0 for read, 1 for shift)
     GPIO9 - DISCONNECTED
@@ -31,3 +31,14 @@
     GPIO28-ADC2 - Expansion Pin
     GPIO29-ADC3 - Expansion Pin
 */
+
+#include "firmware.h"
+
+int main() {
+    setup();
+
+    while (true)
+    {
+        loop();
+    }
+}
