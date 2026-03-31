@@ -6,7 +6,7 @@
     GPIO3 - Output of the data of the RAM (serial 8 bit)
     GPIO4 - Output of the rotation clock of the shift registers
     GPIO5 - Output of the direction of the operation to RAM (1 for write, 0 for read)
-    GPIO6 - DS of the read shift register
+    GPIO6 - Output of the RESET signal to Z80
     GPIO7 - Input of the byte of data read from RAM (serial 8 bit)
     GPIO8 - Output of the moment when read the RAM (0 for read, 1 for shift)
     GPIO9 - DISCONNECTED
@@ -33,6 +33,7 @@
 */
 
 #include "firmware.h"
+#include <stdbool.h>
 
 int main() {
     setup();

@@ -176,3 +176,12 @@ Z80DevBoard/
 - 40 LEDs
 - 24 Diodes
 - 1 Fuse 500mA
+
+## Firmware
+### Build
+From the project root, run:
+
+```bash
+cmake -S firmware -B firmware/build
+cmake --build firmware/build
+```
