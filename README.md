@@ -106,15 +106,15 @@ Z80DevBoard/
 |||||
 |Resistor 0 ohm|1|Resistor|Through Holes|
 |Resistor 27.4 ohm|2|Resistor|Through Holes|
-|Resistor 1k ohm|34|Resistor|Through Holes|
+|Resistor 1k ohm|36|Resistor|Through Holes|
 |Resistor 3.3k ohm|6|Resistor|Through Holes|
 |Resistor 5k ohm|2|Resistor|Through Holes|
-|Resistor 10k ohm|12|Resistor|Through Holes|
+|Resistor 10k ohm|13|Resistor|Through Holes|
 |Resistor 470k ohm|1|Resistor|Through Holes|
 |||||
 |Capacitors 15pF|2|Capacitor|Through Holes|
-|Capacitors 0.1uF|8|Capacitor|Through Holes|
-|Capacitors 1uF|3|Capacitor|Through Holes|
+|Capacitors 0.1uF|13|Capacitor|Through Holes|
+|Capacitors 1uF|4|Capacitor|Through Holes|
 |Capacitors 10uF|2|Capacitor|Through Holes|
 |||||
 |Button|5|Other|Through Holes|

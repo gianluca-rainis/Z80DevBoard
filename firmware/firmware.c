@@ -6,8 +6,6 @@
 */
 void setup() {
     // Initialize the GPIO pins
-    gpio_init(GPIO_RP2040_FIRMWARE_LOAD);
-    gpio_set_dir(GPIO_RP2040_FIRMWARE_LOAD, GPIO_IN);
     gpio_init(GPIO_Z80_PROGRAM_LOAD);
     gpio_set_dir(GPIO_Z80_PROGRAM_LOAD, GPIO_IN);
     gpio_init(GPIO_RAM_ADDRESS);
@@ -58,10 +56,6 @@ void setup() {
     gpio_set_dir(GPIO_EXPANSION_13, GPIO_OUT);
     gpio_init(GPIO_EXPANSION_14);
     gpio_set_dir(GPIO_EXPANSION_14, GPIO_OUT); */
-
-    if (gpio_get(GPIO_RP2040_FIRMWARE_LOAD) == 1) {
-        // Save the new firmware of the RP2040 to flash
-    }
     
     if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 1) {
         // Save the new program of the Z80 to flash
