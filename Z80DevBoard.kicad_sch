@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-04-13")
+		(date "2026-04-19")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -28585,7 +28585,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x20_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x20_P1.27mm_Vertical_SMD"
 			(at 346.71 314.96 0)
 			(effects
 				(font
@@ -37295,7 +37295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x10_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x10_P1.27mm_Vertical_SMD"
 			(at 392.43 314.96 0)
 			(effects
 				(font
