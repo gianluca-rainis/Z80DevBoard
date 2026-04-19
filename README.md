@@ -1,4 +1,9 @@
 # Z80DevBoard
+![License](https://img.shields.io/github/license/gianluca-rainis/Z80DevBoard)
+![GitHub Repo stars](https://img.shields.io/github/stars/gianluca-rainis/Z80DevBoard)
+![GitHub watchers](https://img.shields.io/github/watchers/gianluca-rainis/Z80DevBoard)
+![Sponsor](https://img.shields.io/badge/sponsor-PCBWay-green?link=https%3A%2F%2Fwww.pcbway.com%2F)
+
 The Z80DevBoard is an advanced development board for the Z80 microprocessor, based on the RP2040.
 
 This board combines the classic Z80 with the modern RP2040 microcontroller. The RP2040 manages the flash memory and loads programs into RAM for execution by the Z80. Real-time LED indicators provide visual feedback on the Z80's activity, making it an ideal platform for both learning and development. The board's buttons allow the user to load the Z80 program or custom firmware into memory, manually set the Z80 clock, put the Z80 into wait mode, and reset it.
