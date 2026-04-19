@@ -48,11 +48,13 @@ Z80DevBoard/
 ├── images/                   # Documentation images and KiCad symbols
 ├── .gitattributes            # Gitattributes file
 ├── .gitignore                # Gitignore file
+├── gerber.zip                # Zip folder with all the gerber files
 ├── Z80DevBoard.kicad_pcb     # PCB layout file
 ├── Z80DevBoard.kicad_pro     # KiCad project file
 ├── Z80DevBoard.kicad_sch     # Schematic file
-├── LICENSE-MIT.md            # MIT License
+├── BOM.csv                   # Bill Of Materials
 ├── LICENSE-CERN-OHL-S.md     # CERN-OHL-S License
+├── LICENSE-MIT.md            # MIT License
 └── README.md                 # This file
 ```
 
@@ -80,6 +82,11 @@ Z80DevBoard/
 
 #### Back View
 <img src="./images/screenshot_3d_back.png" alt="3D render - back view">
+
+## Technical Details
+- **Size**: 219mm x 108.5mm
+- **Layers**: 4
+- **Supply Voltage**: 5V, 3v3
 
 ## Components Table
 |Name|Quantity|Class|Type|
