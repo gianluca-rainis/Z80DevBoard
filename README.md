@@ -22,6 +22,11 @@ The SWD and SWCLK pins on the RP2040 are accessible to allow a fix for any firmw
 The author of the whole project is: 
 **Gianluca Rainis** - [gianluca-rainis](https://github.com/gianluca-rainis) on GitHub.
 
+## Sponsor
+The PCB prototyping for this project is sponsored by **[PCBWay](https://www.pcbway.com)**.
+
+[![PCBWay](images/pcbway.png)](https://www.pcbway.com)
+
 ## License
 ### Hardware design files (schematics, PCB, BOM):
 Licensed under [CERN-OHL-S v2.0](LICENSE-CERN-OHL-S.md)
