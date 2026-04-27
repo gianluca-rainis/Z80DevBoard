@@ -196,9 +196,25 @@ Z80DevBoard/
 
 ## Firmware
 ### Build
-From the project root, run:
+From the project root, make sure CMake and the ARM GNU toolchain (arm-none-eabi-gcc) are installed.
+
+If the toolchain is not in your PATH, provide it explicitly with PICO_TOOLCHAIN_PATH:
 
 ```bash
-cmake -S firmware -B firmware/build
-cmake --build firmware/build -j
+cmake -S firmware -B firmware/build -DPICO_TOOLCHAIN_PATH=/path/to/arm-gnu-toolchain
+cmake --build firmware/build --parallel
 ```
+
+If the toolchain is already in your PATH, you can omit PICO_TOOLCHAIN_PATH.
+
+#### Local build (Windows / PowerShell)
+If you build locally on Windows and need UF2 generation, configure with both the ARM toolchain and a host picotool installation:
+
+```powershell
+& "path/to/cmake.exe" -S firmware -B firmware/build -G "MinGW Makefiles" -DCMAKE_MAKE_PROGRAM="C:/msys64/ucrt64/bin/mingw32-make.exe" -DPICO_TOOLCHAIN_PATH="path/to/picotool"
+& "path/to/cmake.exe" --build firmware/build --parallel
+```
+
+#### Output file
+The file to load in the RP2040's memory after the build is `Z80DevBoard.uf2`.
+You can find it in the `/firmware/build` folder.

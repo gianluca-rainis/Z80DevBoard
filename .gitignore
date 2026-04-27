@@ -45,3 +45,6 @@ CMakeUserPresets.json
 
 # VS Code
 .vscode/
+
+# Custom
+.local

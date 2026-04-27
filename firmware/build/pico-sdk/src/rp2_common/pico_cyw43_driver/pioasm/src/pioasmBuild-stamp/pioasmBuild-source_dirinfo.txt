@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/mnt/c/Users/Gianl/OneDrive/Documenti/GitHub_Projects/Z80DevBoard/firmware/pico-sdk/tools/pioasm
+source_dir=C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/Z80DevBoard/firmware/pico-sdk/tools/pioasm
 work_dir=
 

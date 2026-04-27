@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /mnt/c/Users/Gianl/OneDrive/Documenti/GitHub_Projects/Z80DevBoard/firmware/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/Z80DevBoard/firmware/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

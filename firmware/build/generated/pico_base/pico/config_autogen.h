@@ -4,7 +4,7 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "/mnt/c/Users/Gianl/OneDrive/Documenti/GitHub_Projects/Z80DevBoard/firmware/pico-sdk/src/boards/include/boards/pico.h"
-#include "/mnt/c/Users/Gianl/OneDrive/Documenti/GitHub_Projects/Z80DevBoard/firmware/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
+#include "C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/Z80DevBoard/firmware/pico-sdk/src/boards/include/boards/pico.h"
+#include "C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/Z80DevBoard/firmware/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:
