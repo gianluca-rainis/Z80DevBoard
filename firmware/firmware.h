@@ -1,3 +1,7 @@
+#include "flash.h"
+#include <stdio.h>
+#include "pico/stdlib.h"
+
 #ifndef FIRMWARE
     #define FIRMWARE
 
@@ -31,7 +35,16 @@
     # define GPIO_EXPANSION_ADC2 28
     # define GPIO_EXPANSION_ADC3 29
 
-    // Functions
+    // Main functions
     void setup();
     void loop();
+
+    // Ram operations
+    void accessRamAddress(uint16_t address);
+    uint8_t readRamCell();
+    void writeRamCell(uint8_t data);
+
+    // Z80 operations
+    void loadZ80ProgramInRam();
+    void resetZ80();
 #endif

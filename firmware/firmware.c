@@ -1,5 +1,75 @@
-#include "pico/stdlib.h"
 #include "firmware.h"
+
+// Access the RAM at the given address.
+void accessRamAddress(uint16_t address) {
+    for (size_t i = 15; i > 0; i--)
+    {
+        gpio_put(GPIO_RAM_ADDRESS, ((address >> i) & 1));
+        gpio_put(GPIO_SHIFT_CLOCK, 1);
+        gpio_put(GPIO_SHIFT_CLOCK, 0);
+    }
+}
+
+// Read a byte from the RAM.
+uint8_t readRamCell() {
+    uint8_t data = 0;
+
+    gpio_put(GPIO_RAM_OPERATION, 0);
+
+    for (size_t i = 7; i > 0; i--)
+    {
+        data |= (gpio_get(GPIO_RAM_DATA_READ) << i);
+        gpio_put(GPIO_RAM_DATA_SHIFT, 1);
+        gpio_put(GPIO_RAM_DATA_SHIFT, 0);
+    }
+
+    return data;
+}
+
+// Write a byte to the RAM.
+void writeRamCell(uint8_t data) {
+    gpio_put(GPIO_RAM_OPERATION, 1);
+
+    for (size_t i = 7; i > 0; i--)
+    {
+        gpio_put(GPIO_RAM_DATA, ((data >> i) & 1));
+        gpio_put(GPIO_SHIFT_CLOCK, 1);
+        gpio_put(GPIO_SHIFT_CLOCK, 0);
+    }
+}
+
+// Load the Z80 program from the flash memory to the RAM.
+void loadZ80ProgramInRam() {
+    gpio_put(GPIO_Z80_BUSREQ, 0);
+
+    while (!gpio_get(GPIO_Z80_BUSACK)) {
+        // Wait for the Z80 to acknowledge the bus request
+    }
+
+    uint8_t *ram_buf = malloc(FLASH_LAST_32K_SIZE);
+
+    load_z80_program_from_flash(ram_buf);
+
+    for (uint16_t i = 0; i < FLASH_LAST_32K_SIZE; i++)
+    {
+        uint8_t data = ram_buf[i];
+
+        accessRamAddress(i);
+        writeRamCell(data);
+    }
+
+    free(ram_buf);
+
+    gpio_put(GPIO_Z80_BUSREQ, 1);
+
+    resetZ80();
+}
+
+void resetZ80() {
+    gpio_put(GPIO_Z80_RESET, 0);
+    sleep_ms(100);
+    gpio_put(GPIO_Z80_RESET, 1);
+}
 
 /* 
     This function is runned only once at the start of the program.
@@ -17,7 +87,7 @@ void setup() {
     gpio_init(GPIO_RAM_OPERATION);
     gpio_set_dir(GPIO_RAM_OPERATION, GPIO_OUT);
     gpio_init(GPIO_Z80_RESET);
-    gpio_set_dir(GPIO_Z80_RESET, GPIO_OUT);
+    gpio_set_dir(GPIO_Z80_RESET, GPIO_OUT); // Default to output, but will be used also as input
     gpio_init(GPIO_RAM_DATA_READ);
     gpio_set_dir(GPIO_RAM_DATA_READ, GPIO_IN);
     gpio_init(GPIO_RAM_DATA_SHIFT);
@@ -58,8 +128,10 @@ void setup() {
     gpio_set_dir(GPIO_EXPANSION_14, GPIO_OUT); */
     
     if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 1) {
-        // Save the new program of the Z80 to flash
+        
     }
+
+    loadZ80ProgramInRam();
 }
 
 /* 
