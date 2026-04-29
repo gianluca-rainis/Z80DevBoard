@@ -12,7 +12,7 @@ Connection to the computer, used for both power and data transmission, is via a 
 Two sockets are provided for expansion boards or for advanced projects.
 The SWD and SWCLK pins on the RP2040 are accessible to allow a fix for any firmware crashes that prevented the fix from loading over USB-C.
 
-<img src="./images/Z80DevBoard.png" alt="Z80DevBoard Logo" style="background-color: white;">
+<img src="./images/phisical_board.png" alt="Z80DevBoard Picture">
 
 ---
 
@@ -218,3 +218,6 @@ If you build locally on Windows and need UF2 generation, configure with both the
 #### Output file
 The file to load in the RP2040's memory after the build is `Z80DevBoard.uf2`.
 You can find it in the `/firmware/build` folder.
+
+## Hardware
+<img src="./images/phisical_board.png" alt="Z80DevBoard Picture">
