@@ -3,8 +3,9 @@
 ## Official Documentation
 - **Version:** 1.7.0
 - **Author:** Gianluca Rainis
-- **License:** CERN OHL S v2.0
+- **License:** *CERN OHL S v2.0*, *MIT License*
 - **Repository:** [github.com/gianluca-rainis/Z80DevBoard](https://github.com/gianluca-rainis/Z80DevBoard)
+- **Sponsor:** [PCBWay](https://www.pcbway.com/)
 
 ---
 
