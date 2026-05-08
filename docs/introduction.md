@@ -130,7 +130,7 @@ The Z80DevBoard lets you:
 
 ---
 
-<div style="display: flex; justify-content: space-between;">
+<div>
   <p align="left">
     <em>
       <b>

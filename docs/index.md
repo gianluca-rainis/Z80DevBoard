@@ -31,15 +31,17 @@ The document is structured in two layers:
 
 ---
 
-<p align="right">
-  <em>
-    <b>
-      <a href="/docs/introduction.md">
-        Next Section →
-      </a>
-    </b>
-  </em>
-</p>
+<div>
+  <p align="right">
+    <em>
+      <b>
+        <a href="/docs/introduction.md">
+          Next Section →
+        </a>
+      </b>
+    </em>
+  </p>
+</div>
 
 ---
 
