@@ -130,25 +130,27 @@ The Z80DevBoard lets you:
 
 ---
 
-<p align="left">
-  <em>
-    <b>
-      <a href="/docs/index.md">
-        ← Back
-      </a>
-    </b>
-  </em>
-</p>
+<div style="display: flex; justify-content: space-between;">
+  <p align="left">
+    <em>
+      <b>
+        <a href="/docs/index.md">
+          ← Back
+        </a>
+      </b>
+    </em>
+  </p>
 
-<p align="right">
-  <em>
-    <b>
-      <a href="/docs/hardware.md">
-        Next Section →
-      </a>
-    </b>
-  </em>
-</p>
+  <p align="right">
+    <em>
+      <b>
+        <a href="/docs/hardware.md">
+          Next Section →
+        </a>
+      </b>
+    </em>
+  </p>
+</div>
 
 ---
 
