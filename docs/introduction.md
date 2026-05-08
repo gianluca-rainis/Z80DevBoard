@@ -130,4 +130,28 @@ The Z80DevBoard lets you:
 
 ---
 
-*Next chapter: [Hardware Architecture](hardware.md)*
+<p align="left">
+  <em>
+    <b>
+      <a href="/docs/index.md">
+        ← Back
+      </a>
+    </b>
+  </em>
+</p>
+
+<p align="right">
+  <em>
+    <b>
+      <a href="/docs/hardware.md">
+        Next Section →
+      </a>
+    </b>
+  </em>
+</p>
+
+---
+
+<p align="center">
+    <em>Open source, Open Education - Z80DevBoard</em>
+</p>

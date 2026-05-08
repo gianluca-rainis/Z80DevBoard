@@ -31,4 +31,18 @@ The document is structured in two layers:
 
 ---
 
-*Z80DevBoard is an open-source project.*
+<p align="right">
+  <em>
+    <b>
+      <a href="/docs/introduction.md">
+        Next Section →
+      </a>
+    </b>
+  </em>
+</p>
+
+---
+
+<p align="center">
+    <em>Open source, Open Education - Z80DevBoard</em>
+</p>
