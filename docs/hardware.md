@@ -28,6 +28,18 @@ The *Z84C00* operates with a **5V supply** and communicates with the rest of the
 With 16 address lines, the CPU can directly address **up to 64 KB** of memory: exactly the amount provided by the onboard SRAM.
 
 ## 2.3 The RP2040
+The RP2040 is a dual-core ARM Cortex-M0+ **microcontroller** developed by ***Raspberry Pi*** and released in 2021.
+It runs at up to *133MHz*, integrates *264KB of SRAM*, and includes a rich set of peripherals, among which the most relevant is the *Programmable I/O* (*PIO*): a set of small, deterministic state machines capable of handling **GPIO pins** with cycle-accurate timing.
+
+On the Z80DevBoard, the RP2040 serves as the primary interface between **the developer and the hardware**.
+At boot, it **reads the compiled Z80 program** from the onboard flash memory and **transfers it into SRAM**, where the Z80 will execute it.
+During execution, it monitors the Z80 control signals in real time, handles I/O bus cycles, and maintains the serial connection with the host computer over USB.
+
+The RP2040 runs at **3.3V**, while the Z80 operates at **5V**.
+All signals exchanged between the two pass through *level shifters* and *bus transceivers* that **handle the voltage difference** transparently.
+Communication with the *shift registers*, used to **extend the RP2040's effective GPIO count**, happens over a **fast serial interface**, keeping the pin usage manageable without sacrificing bus performance.
+
+The RP2040 also exposes its ***SWD* debug interface** on dedicated pins, allowing firmware to be **developed and debugged with standard tools** such as a ***Raspberry Pi Debug Probe*** or **any compatible SWD adapter**.
 
 ## 2.4 The SRAM
 
