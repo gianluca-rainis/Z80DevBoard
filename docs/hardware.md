@@ -68,8 +68,26 @@ From the Z80's perspective, **the flash memory is completely invisible**: the CP
 The flash is **exclusively managed by the RP2040**, which handles all read and write operations transparently in the background.
 
 ## 2.6 The LED Matrices
+The Z80DevBoard features ***40 LEDs* organized in matrices**, one of the most distinctive and educationally valuable aspects of the board.
+Each LED reflects **the real-time state of a specific signal or data line**, giving an **immediate visual representation** of **what the Z80 is doing** at any given moment, without the need for an oscilloscope or a logic analyzer.
+
+The LEDs are driven by *74HCT574* *octal D-type flip-flop buffers*, which latch the current state of the bus.
+Without buffering, the signals on a running Z80 bus change far too rapidly to be perceived directly, at even a modest clock frequency, individual bus cycles last only a few hundred nanoseconds.
+The buffers solve this by capturing a snapshot of the bus state and holding it stable until the next update.
+
+This is where the **manual clock mode becomes particularly powerful**: by stepping through the program one clock cycle at a time, **the LEDs update with each step**, allowing you to **follow the execution of every instruction in real time** and **observe exactly how the Z80 reads from and writes to memory**.
+Combined with the serial connection to the RP2040, this makes the Z80DevBoard a **genuinely transparent system**: one where **the internal state of the CPU is always visible** and never hidden.
 
 ## 2.7 The Expansion Pins
+The Z80DevBoard exposes **two expansion connectors** designed to make the board the foundation of a larger system, rather than a closed, self-contained unit.
+
+The first is a *2×20 pin connector* that breaks out **all 40 pins of the Z80**: address bus, data bus, and control signals; giving direct access to the full CPU interface.
+This connector is intended for daughter boards that **extend the Z80's environment**: additional memory, custom peripherals, or any hardware that needs to interact directly with the Z80 bus.
+
+The second is a *2×10 pin connector* that exposes **a selection of RP2040** signals: the **3.3V and GND power** rails, the **two *ADC*** inputs (*ADC0* and *ADC1*), and *GPIO10* through *GPIO25*.
+This connector is oriented towards **more advanced projects** where the **RP2040 itself needs to interact with external hardware**: sensors, displays, communication modules, or custom firmware **experiments that go beyond the standard board functionality**.
+
+Together, the two connectors cover **both sides of the system**: the **Z80's classic parallel bus interface** and the **RP2040's modern programmable I/O**, making it possible to build virtually **any extension imaginable** on top of the Z80DevBoard.
 
 ## 2.8 The USB-C
 
