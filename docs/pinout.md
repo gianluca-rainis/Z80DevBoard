@@ -2,7 +2,7 @@
 
 ## 3.1 Z80 Pinout
 The *Z84C00* is available in a **40-pin DIP package**.
-Pin 1 is located at the top-left of the notch; numbering proceeds counter-clockwise.
+The pinout below reflects the official Zilog datasheet.
 
 ```
               ┌───────────────────┐
@@ -51,6 +51,57 @@ Pin 1 is located at the top-left of the notch; numbering proceeds counter-clockw
 |GND|29|Power|Ground|
 
 ## 3.2 RP2040 Pinout
+The *RP2040* is available in a **56-pin QFN package**.
+The pinout below reflects the official Raspberry Pi datasheet.
+
+```
+                    56  QSPI_SS_N
+                    55  QSPI_SD1
+                    54  QSPI_SD2
+                    53  QSPI_SD0
+                    52  QSPI_SCLK
+                    51  QSPI_SD3
+                    50  DVDD
+                    49  IOVDD
+                    48  USB_VDD
+                    47  USB_DP
+                    46  USB_DM
+                    45  VREG_VIN
+                    44  VREG_VOUT
+                    43  ADC_AVDD
+         ┌───────────────────────────────────────────────┐
+         │   56 55 54 53 52 51 50 49 48 47 46 45 44 43   │
+IOVDD  1 │  1                                         42 │ 42  IOVDD
+GPIO0  2 │  2                                         41 │ 41  GPIO29/ADC3
+GPIO1  3 │  3                                         40 │ 40  GPIO28/ADC2
+GPIO2  4 │  4                                         39 │ 39  GPIO27/ADC1
+GPIO3  5 │  5                                         38 │ 38  GPIO26/ADC0
+GPIO4  6 │  6                                         37 │ 37  GPIO25
+GPIO5  7 │  7                   GND                   36 │ 36  GPIO24
+GPIO6  8 │  8                                         35 │ 35  GPIO23
+GPIO7  9 │  9                                         34 │ 34  GPIO22
+IOVDD 10 │ 10                                         33 │ 33  IOVDD
+GPIO8 11 │ 11                                         32 │ 32  GPIO21
+GPIO9 12 │ 12                                         31 │ 31  GPIO20
+GPIO10 13│ 13                                         30 │ 30  GPIO19
+GPIO11 14│ 14                                         29 │ 29  GPIO18
+         │   15 16 17 18 19 20 21 22 23 24 25 26 27 28   │
+         └───────────────────────────────────────────────┘
+                    15  GPIO12
+                    16  GPIO13
+                    17  GPIO14
+                    18  GPIO15
+                    19  TESTEN
+                    20  XIN
+                    21  XOUT
+                    22  IOVDD
+                    23  DVDD
+                    24  SWCLK
+                    25  SWDIO
+                    26  RUN
+                    27  GPIO16
+                    28  GPIO17
+```
 
 ## 3.3 Expansion Connector 2x20 (Z80 Bus)
 
