@@ -42,8 +42,30 @@ Communication with the *shift registers*, used to **extend the RP2040's effectiv
 The RP2040 also exposes its ***SWD* debug interface** on dedicated pins, allowing firmware to be **developed and debugged with standard tools** such as a ***Raspberry Pi Debug Probe*** or **any compatible SWD adapter**.
 
 ## 2.4 The SRAM
+The Z80DevBoard mount two *HM62256BLP* chips as its main memory: a classic **32KB × 8-bit Asynchronous Static RAM**.
+Mounted **in parallel**, the two chips provide **a combined address space** of *64KB*, which is **the maximum the Z80 can directly address** with its 16-bit address bus.
+
+Unlike Dynamic RAM (*DRAM*), Static RAM **does not require periodic refresh cycles** to retain its contents.
+This **simplifies the board design** considerably: there is **no need for a dedicated refresh controller**, and the Z80's `/RFSH` pin, which would normally **trigger DRAM refresh**, is simply **left unused**.
+As long as the board is powered, the memory contents remain intact.
+
+The *HM62256BLP* is an **asynchronous device**, meaning **it does not rely on a shared clock** signal to coordinate read and write operations.
+Instead, timing is governed entirely by the Z80's control signals: `/MREQ`, `/RD`, and `/WR`, which the SRAM monitors directly.
+A **read cycle** completes as soon as **the address has been stable** for the chip's access time; a **write cycle** latches the data **on the rising edge of `/WR`**.
+
+At boot, the **RP2040 takes control of the bus** and **writes the compiled Z80 program** into *SRAM* before releasing the CPU from reset.
+From that point on, the Z80 reads instructions and data, and writes results back, to these two chips for the entire duration of program execution.
 
 ## 2.5 The Flash Memory
+The *W25Q32JVSS* is a *32Mbit* (*4MB*) ***SPI* *NOR* flash memory** chip, used on the Z80DevBoard as **persistent storage for the RP2040 firmware and the Z80 program**.
+Unlike *SRAM*, flash memory **retains its contents** when the board is powered off, making it the natural choice for **storing code** that needs to survive **between sessions**.
+
+The RP2040 communicates with the flash chip over **a dedicated *SPI* bus**.
+At boot, it **reads the compiled Z80 program from flash** and transfers it into *SRAM* before releasing the Z80 from reset.
+The RP2040's own firmware is also stored on the same chip, following the standard *Raspberry Pi Pico* architecture where the **RP2040 boots directly from an *external SPI flash***.
+
+From the Z80's perspective, **the flash memory is completely invisible**: the CPU only ever interacts with the *SRAM*.
+The flash is **exclusively managed by the RP2040**, which handles all read and write operations transparently in the background.
 
 ## 2.6 The LED Matrices
 
