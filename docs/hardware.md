@@ -90,9 +90,41 @@ This connector is oriented towards **more advanced projects** where the **RP2040
 Together, the two connectors cover **both sides of the system**: the **Z80's classic parallel bus interface** and the **RP2040's modern programmable I/O**, making it possible to build virtually **any extension imaginable** on top of the Z80DevBoard.
 
 ## 2.8 The USB-C
+The board **is powered and connected to the host computer** through a single *USB-C 2.0* connector.
+It serves two distinct purposes simultaneously: **delivering the 5V supply voltage to the board**, and **providing a full-speed USB data connection to the RP2040**.
+
+On the power side, the **5V** rail feeds the Z80 directly and passes through the onboard *AMS1117-3.3* regulator to generate the **3.3V** rail for the RP2040 and the supporting logic.
+A *500mA* fuse protects the board from overcurrent conditions.
+
+On the data side, the RP2040 enumerates as a *USB CDC* (*Communications Device Class*) serial device, appearing as a virtual *COM* port on the host computer.
+This connection is used to **upload compiled Z80 programs** to the board, **interact with the RP2040** firmware, and **read any output the Z80 program produces** at runtime.
+No special driver is required on Linux or macOS; on Windows, the board appears as a standard *COM* port in Device Manager.
+
+The choice of *USB-C* makes the board **compatible with modern laptops and workstations** without the need for adapters, while keeping the connector **robust enough for repeated use in an educational environment**.
 
 ## 2.9 How It All Connects
+The center of the board is the Z80, connected to the two *SRAM* chips through its full *16-bit* address bus and *8-bit* data bus.
+Every memory access the Z80 performs (fetching an instruction, reading a variable, writing a result) travels directly across these buses to and from the *SRAM*.
 
+The RP2040 sits **alongside the Z80**, connected to the same data and control buses through a set of *SN74LVC245APW* bus transceivers and *74HC595* - *74HC165* shift registers.
+The transceivers **handle the voltage difference** between the Z80's 5V logic and the RP2040's 3.3V logic, while the shift registers allow the RP2040 to **read and drive the bus over a compact serial interface**, keeping GPIO usage under control.
+A *TXS0104EPW* level shifter handles the `BUSREQ` and `BUSACK` signals specifically, which coordinate bus ownership between the two chips.
+
+The *W25Q32JVSS* flash memory is connected exclusively to the RP2040 over *SPI*.
+The Z80 has no direct access to it, the flash is managed only by the RP2040, which uses it to store firmware and the Z80 program persistently between sessions.
+
+The LED matrices, driven by *74HCT574* buffers, display the state of data and address buses in real time.
+The buffers stay between the bus and the LEDs, ensuring that the display logic **never interferes with bus** timing.
+
+The *USB-C* connector provides 5V to the board and connects it directly to the RP2040's USB pins, establishing the serial link with the host computer.
+The *AMS1117-3.3* regulator is positioned between the 5V input and the 3.3V rail, supplying the RP2040 and all the 3.3V logic on the board.
+
+Finally, the two expansion connectors provide the Z80 bus and the RP2040 GPIO pins, making every relevant signal accessible to external hardware without interfering with the rest of the board.
+
+The board is laid out on a 4-layer PCB.
+The front copper layer (*F.Cu*) and the back copper layer (*B.Cu*) are used for the **general signal routing**.
+The inner layer *In1.Cu* is dedicated to the **power distribution network**, carrying **both the 5V and 3.3V rails** across the board.
+The inner layer *In2.Cu* is a **solid ground plane**, providing a **clean reference for all signals** and **reducing electromagnetic interference**.
 
 ---
 
