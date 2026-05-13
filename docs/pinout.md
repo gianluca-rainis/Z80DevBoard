@@ -79,6 +79,29 @@ GPIO11 │ 14                                         29 │ GPIO18
 GPIO12 GPIO13 GPIO14 GPIO15 TESTEN XIN XOUT IOVDD DVDD SWCLK SWDIO RUN GPIO16 GPIO17
 ```
 
+|Symbol|Pin|Direction|Description|
+|---|---|---|---|
+|GPIO0–GPIO25|2-9, 11-18, 27-32, 34-37|Configurable|General purpose I/O|
+|GPIO26/ADC0|38|Configurable|GPIO or ADC (Analog to Digital Converter) channel 0|
+|GPIO27/ADC1|39|Configurable|GPIO or ADC (Analog to Digital Converter) channel 1|
+|GPIO28/ADC2|40|Configurable|GPIO or ADC (Analog to Digital Converter) channel 2|
+|GPIO29/ADC3|41|Configurable|GPIO or ADC (Analog to Digital Converter) channel 3|
+|XIN|20|Input|Crystal oscillator input (12 MHz)|
+|XOUT|21|Output|Crystal oscillator output|
+|USB_DP|47|Bidirectional|USB D+ (27Ω resistor required)|
+|USB_DM|46|Bidirectional|USB D− (27Ω resistor required)|
+|SWCLK|24|Input|SWD clock (debug)|
+|SWDIO|25|Bidirectional|SWD data (debug)|
+|RUN|26|Input|Reset (active low)|
+|VREG_VIN|45|Power|Voltage regulator input (1.8V to 3.3V) (1uF capacitor required)|
+|VREG_VOUT|44|Power|Voltage regulator output (1.1V core) (1uF capacitor required)|
+|IOVDD|1, 10, 22, 33, 42, 49|Power|GPIO supply (1.8V to 3.3V)|
+|DVDD|23, 50|Power|Digital core supply (1.1V)|
+|ADC_AVDD|43|Power|ADC analog supply (3.3V)|
+|USB_VDD|48|Power|USB PHY supply (3.3V)|
+|GND|Center Pad|Power|Ground|
+|QSPI_*|51–56|Bidirectional|Interface to a SPI flash (Usable also as GPIO)|
+
 ## 3.3 Expansion Connector 2x20 (Z80 Bus)
 
 ## 3.4 Expansion Connector 2x10 (RP2040)
