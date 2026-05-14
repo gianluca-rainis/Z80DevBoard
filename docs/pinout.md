@@ -113,8 +113,8 @@ It exposes all **Z80 bus signals**, providing direct access to the CPU interface
 │ ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
 │ ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
 └────────────────────────────────────────────────────────────┘
- D1 D3 D5 D7 WAIT CLK BACK NMI RFSH MREQ A1 A3 A5 A7 A9 A11 A13 A15 RD GND
   2  4  6  8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40
+ D1 D3 D5 D7 WAIT CLK BACK NMI RFSH MREQ A1 A3 A5 A7 A9 A11 A13 A15 RD GND
 ```
 
 |Symbol|Pin|Direction|Description|
@@ -139,6 +139,26 @@ It exposes all **Z80 bus signals**, providing direct access to the CPU interface
 |GND|40|Power|Ground|
 
 ## 3.4 Expansion Connector 2x10 (RP2040)
+The *Expansion Connector (RP2040)* is a **2×10 pin connector** located on the bottom-right of the Z80DevBoard.
+It exposes GPIO pins 10 through 25, two ADC pins, and the 3v3 power rail, allowing the development of more advanced projects on expansion boards with custom firmware.
+
+```
+ GPIO10 GPIO12 GPIO14 GPIO16 GPIO18 GPIO20 GPIO22 GPIO24 ADC0 3v3
+  1  3  5  7  9 11 13 15 17 19
+┌──────────────────────────────┐
+│ ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
+│ ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
+└──────────────────────────────┘
+  2  4  6  8 10 12 14 16 18 20
+ GPIO11 GPIO13 GPIO15 GPIO17 GPIO19 GPIO21 GPIO23 GPIO25 ADC1 GND
+```
+
+|Symbol|Pin|Direction|Description|
+|---|---|---|---|
+|GPIO10-GPIO25|1-16|Configurable|General purpose I/O|
+|ADC0-ADC1|17-18|Configurable|GPIO or ADC (Analog to Digital Converter) channel 0 and 1|
+|3v3|19|Power|+3.3V supply|
+|GND|20|Power|Ground|
 
 ## 3.5 SWD Debug Connector
 
