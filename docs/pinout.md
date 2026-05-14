@@ -103,6 +103,40 @@ GPIO12 GPIO13 GPIO14 GPIO15 TESTEN XIN XOUT IOVDD DVDD SWCLK SWDIO RUN GPIO16 GP
 |QSPI_*|51–56|Bidirectional|Interface to a SPI flash (Usable also as GPIO)|
 
 ## 3.3 Expansion Connector 2x20 (Z80 Bus)
+The *Expansion Connector (Z80 Bus)* is a **2×20 pin connector** located on the bottom-right of the Z80DevBoard.
+It exposes all **Z80 bus signals**, providing direct access to the CPU interface for daughter boards and external hardware.
+
+```
+ D0 D2 D4 D6 HALT RST BREQ INT M1 IORQ A0 A2 A4 A6 A8 A10 A12 A14 WR Vcc
+  1  3  5  7  9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39
+┌────────────────────────────────────────────────────────────┐
+│ ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
+│ ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
+└────────────────────────────────────────────────────────────┘
+ D1 D3 D5 D7 WAIT CLK BACK NMI RFSH MREQ A1 A3 A5 A7 A9 A11 A13 A15 RD GND
+  2  4  6  8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40
+```
+
+|Symbol|Pin|Direction|Description|
+|---|---|---|---|
+|D0–D7|1-8|Bidirectional|8-bit data bus|
+|HALT|9|Output|CPU halted (active low)|
+|WAIT|10|Input|Insert wait states (active low)|
+|RST|11|Input|Reset (active low)|
+|CLK|12|Input|System clock|
+|BREQ|13|Input|Bus request (active low)|
+|BACK|14|Output|Bus acknowledge (active low)|
+|INT|15|Input|Maskable interrupt request (active low)|
+|NMI|16|Input|Non-maskable interrupt request (active low)|
+|M1|17|Output|With MREQ indicates op code fetch cycle, with IORQ indicates interrupt acknowledge cycle (active low)|
+|RFSH|18|Output|DRAM refresh cycle (active low)|
+|IORQ|19|Output|I/O request (active low)|
+|MREQ|20|Output|Memory request (active low)|
+|A0–A15|21-36|Output|16-bit address bus|
+|WR|37|Output|Write operation indicator (active low)|
+|RD|38|Output|Read operation indicator (active low)|
+|Vcc|39|Power|+5V supply|
+|GND|40|Power|Ground|
 
 ## 3.4 Expansion Connector 2x10 (RP2040)
 
