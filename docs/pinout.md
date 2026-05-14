@@ -161,7 +161,26 @@ It exposes GPIO pins 10 through 25, two ADC pins, and the 3v3 power rail, allowi
 |GND|20|Power|Ground|
 
 ## 3.5 SWD Debug Connector
+The SWD (*Serial Wire Debug*) interface is exposed through two dedicated pins located in the top-right corner of the Z80DevBoard.
+It provides a direct connection to the RP2040's debug port, allowing firmware to be flashed and debugged using any SWD-compatible adapter, such as a *Raspberry Pi Debug Probe*.
 
+```
+ SWCLK
+  1
+┌───┐
+│ ● │
+│ ● │
+└───┘
+  2
+ SWD
+```
+
+|Symbol|Pin|Direction|Description|
+|---|---|---|---|
+|SWCLK|1|Input|SWD clock (debug)|
+|SWD|2|Bidirectional|SWD data (debug)|
+
+> A ground reference is available on the *GND* pins of the *Expansion connector*.
 
 ---
 
