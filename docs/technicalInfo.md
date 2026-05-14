@@ -1,4 +1,4 @@
-# Chapter 6 - Schematics & KiCad Reference
+# Chapter 7 - Schematics & KiCad Reference
 
 
 ---

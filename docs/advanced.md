@@ -1,16 +1,4 @@
-# Chapter 4 - Quick Start Guide
-
-## 4.1 What You Need
-
-## 4.2 Powering the Board
-
-## 4.3 Loading a Program
-
-## 4.4 Running Your First Program
-
-## 4.5 Using the Manual Clock
-
-## 4.6 Reading the LED Matrices
+# Chapter 5 - Advanced Guide
 
 
 ---
@@ -19,7 +7,7 @@
   <p align="left">
     <em>
       <b>
-        <a href="/docs/pinout.md">
+        <a href="/docs/quickstart.md">
           ← Back
         </a>
       </b>
@@ -29,7 +17,7 @@
   <p align="right">
     <em>
       <b>
-        <a href="/docs/advanced.md">
+        <a href="/docs/z80Assembly.md">
           Next Section →
         </a>
       </b>

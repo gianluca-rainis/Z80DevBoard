@@ -18,9 +18,10 @@
 2. [Hardware Architecture](hardware.md)
 3. [Pinout & Connectors](pinout.md)
 4. [Quick Start Guide](quickstart.md)
-5. [Z80 Assembly Programming](z80Assembly.md)
-6. [Schematics & KiCad Reference](technicalInfo.md)
-7. [Conclusions](conclusions.md)
+5. [Advanced Projects](advanced.md)
+6. [Z80 Assembly Programming](z80Assembly.md)
+7. [Schematics & KiCad Reference](technicalInfo.md)
+8. [Conclusions](conclusions.md)
 
 ## About This Document
 This documentation is designed for use in educational kits. Each chapter is self-contained and can be read independently, though following the order is recommended for beginners.

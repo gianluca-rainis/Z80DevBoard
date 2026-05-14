@@ -1,4 +1,4 @@
-# Chapter 5 - Z80 Assembly Programming
+# Chapter 6 - Z80 Assembly Programming
 
 
 ---
@@ -7,7 +7,7 @@
   <p align="left">
     <em>
       <b>
-        <a href="/docs/quickstart.md">
+        <a href="/docs/advanced.md">
           ← Back
         </a>
       </b>
