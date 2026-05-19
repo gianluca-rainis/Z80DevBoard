@@ -57,7 +57,29 @@ To use the manual clock:
 Combined with the LED matrices, manual clock mode turns the Z80DevBoard into a **fully transparent system**: every internal state of the CPU becomes visible and inspectable, one step at a time.
 
 ## 4.6 Reading the LED Matrices
+The Z80DevBoard features ***40 LEDs* organized in matrices** that display the **real-time state** of the Z80 buses.
+Each LED corresponds to a specific signal line.
 
+> When the LED is on, the line is *HIGH*; when it is off, the line is *LOW*.
+
+The matrices are organized as follows:
+|Matrix|Signals|Description|
+|---|---|---|
+|Address Bus|A0–A15|The *16-bit* memory address the Z80 is currently accessing|
+|Data Bus (*WRITING*)|D0–D7|The *8-bit* value being written|
+|Data Bus (*READING*)|D0–D7|The *8-bit* value being read|
+|HALT|HALT|The CPU has executed a *HALT* instruction|
+|MREQ|MREQ|The Z80 is performing a memory access|
+|IORQ|IORQ|The Z80 is performing an I/O port access|
+|RFSH|RFSH|The Z80 is performing a *DRAM* refresh cycle|
+|M1|M1|The Z80 is fetching an opcode (with *MREQ*) or is acknowledging an interrupt (with *IORQ*)|
+|BUSACK|BACK|The Z80 has released the bus in response to a BUSREQ|
+|WRITE|WR|The Z80 is writing data to memory or an I/O port|
+|READ|RD|The Z80 is reading data from memory or an I/O port|
+
+The LEDs are most readable in *manual clock mode*: since the bus changes faster than the human eye can follow at normal clock speeds, stepping one cycle at a time allows you to read each matrix clearly after every press of *Z80CLOCK*.
+
+In *automatic clock mode*, the low frequency of the onboard oscillator still makes the matrices partially readable, giving a general sense of program activity even without stepping manually.
 
 ---
 

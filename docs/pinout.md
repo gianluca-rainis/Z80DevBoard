@@ -38,7 +38,7 @@ The pinout below reflects the official Zilog datasheet.
 |/IORQ|20|Output|I/O request (active low)|
 |/RD|21|Output|Read operation indicator (active low)|
 |/WR|22|Output|Write operation indicator (active low)|
-|/M1|27|Output|With /MREQ indicates op code fetch cycle, with /IORQ indicates interrupt acknowledge cycle (active low)|
+|/M1|27|Output|With /MREQ indicates opcode fetch cycle, with /IORQ indicates interrupt acknowledge cycle (active low)|
 |/RFSH|28|Output|DRAM refresh cycle (active low)|
 |/HALT|18|Output|CPU halted (active low)|
 |/WAIT|24|Input|Insert wait states (active low)|
@@ -128,7 +128,7 @@ It exposes all **Z80 bus signals**, providing direct access to the CPU interface
 |BACK|14|Output|Bus acknowledge (active low)|
 |INT|15|Input|Maskable interrupt request (active low)|
 |NMI|16|Input|Non-maskable interrupt request (active low)|
-|M1|17|Output|With MREQ indicates op code fetch cycle, with IORQ indicates interrupt acknowledge cycle (active low)|
+|M1|17|Output|With MREQ indicates opcode fetch cycle, with IORQ indicates interrupt acknowledge cycle (active low)|
 |RFSH|18|Output|DRAM refresh cycle (active low)|
 |IORQ|19|Output|I/O request (active low)|
 |MREQ|20|Output|Memory request (active low)|
