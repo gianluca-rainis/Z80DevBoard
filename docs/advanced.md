@@ -1,6 +1,13 @@
 # Chapter 5 - Advanced Guide
 
 ## 5.1 Flashing the Firmware
+To flash a new firmware onto the RP2040:
+1. Hold the *RP2040BOOT* button while connecting the board to your computer through the USB-C port.
+2. The RP2040 will expose a **mass storage device** on your computer: it will appear as a USB drive.
+3. Copy your **compiled UF2 firmware** file onto the drive.
+4. The RP2040 will reset automatically and boot with the new firmware.
+
+> The latest official firmware for the Z80DevBoard is available in the firmware folder of the repository.
 
 ## 5.2 Serial Communication with the RP2040
 
