@@ -26,6 +26,17 @@ The author of the whole project is:
 ## Sponsor
 The PCB prototyping for this project is sponsored by **[PCBWay](https://www.pcbway.com)**.
 
+The *boards* were manufactured with **high precision**, faithfully **following the PCB design down to the smallest details**.
+The *silkscreen* is **crisp and perfectly readable**, with **no errors or misalignments**.
+The *board edges* and corner's holes were **cut cleanly and accurately**.
+The *drill holes* **match the component footprints exactly**, making placement and soldering straightforward.
+The *SMD pads* are **precise and clean**, even for the most challenging footprints, and solder beautifully.
+
+The *PCBWay website* is **intuitive, even for first-time users**.
+**Placing an order is simple**, and before proceeding to payment **the design is reviewed by their technical staff**, who catch and communicate **any potential manufacturing issues** promptly and professionally, avoiding problems before production even begins.
+
+> If you are looking for a reliable, high-quality PCB manufacturer for your own projects, **[PCBWay](https://www.pcbway.com)** is highly recommended!
+
 [![PCBWay](images/pcbway.png)](https://www.pcbway.com)
 
 ## License
