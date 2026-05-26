@@ -10,6 +10,43 @@ To flash a new firmware onto the RP2040:
 > The latest official firmware for the Z80DevBoard is available in the firmware folder of the repository.
 
 ## 5.2 Serial Communication with the RP2040
+The RP2040 exposes a **USB CDC (Communications Device Class) serial interface** over the USB-C connector, which appears as a virtual COM port on the host computer.
+This interface allows sending commands to the board and receiving output in real time, without any additional hardware.
+
+To connect, open a serial terminal at ***115200* baud, *8N1*** (8 bit of data for each byte, No parity, 1 bit of stop) on the port assigned to the board by your operating system.
+
+### Available Commands
+`read <addrstart> [addrend]`
+
+Reads one or more bytes from RAM and returns them as space-separated hexadecimal values.
+
+```
+read 0x0000        -> FF
+read 0x0000 0x0004 -> FF A1 00 33 00
+```
+
+---
+
+`write <addr> <value>`
+
+Writes a single byte to the specified RAM address.
+Returns the value read back from that address after the write: if it matches the value sent, the write was successful.
+
+```
+write 0x0FFF FF -> FF
+```
+
+If the readback differs from the written value, it indicates that an issue happened while writing that memory cell.
+
+### Error Responses
+All commands return an error message prefixed with ERROR: if the input is malformed:
+
+```
+read              -> ERROR: missing address
+read 0xGGGG       -> ERROR: invalid address '0xGGGG'
+write 0x0000      -> ERROR: missing value
+unknowncmd        -> ERROR: unknown command 'unknowncmd'
+```
 
 ## 5.3 Writing Custom RP2040 Firmware
 
@@ -37,7 +74,7 @@ To flash a new firmware onto the RP2040:
     <em>
       <b>
         <a href="/docs/z80Assembly.md">
-          Next Section →
+          Next Section ->
         </a>
       </b>
     </em>
