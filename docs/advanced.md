@@ -51,6 +51,18 @@ unknowncmd        -> ERROR: unknown command 'unknowncmd'
 ## 5.3 Writing Custom RP2040 Firmware
 
 ## 5.4 Using an Expansion Board
+The Z80DevBoard exposes **two expansion connectors** described in detail in [Chapter 3 - Pinout & Connectors](pinout.md).
+Both are **dual-row SMD female** connectors with ***1.27 mm* pitch**.
+
+To use a *third-part* or *community-designed* expansion board, check that it has matching **dual-row *1.27 mm* pitch male pin headers** on its **underside** and that it is **designed for the Z80DevBoard pinout**.
+Plug it directly into the connectors.
+**No soldering required**.
+
+Before powering on, verify the following:
+- Check the **voltage levels** of the expansion board. Signals on the 2x20 connector are at *5V* (Z80 bus), while signals on the 2x10 connector are at *3.3V* (RP2040 GPIO). Make sure the expansion board **is designed for the correct voltage** on each connector, and use a **level shifter** if interfacing between the two.
+- Check the expansion board's power requirements. The *5V* pin (pin 39 on the 2x20) and the *3.3V* pin (pin 19 on the 2x10) can supply power, but the 3.3V rail is limited by the RP2040's onboard LDO. Power-hungry boards **should be supplied independently**.
+- The ADC pins are analog inputs. **Do not exceed 3.3V on these pins**.
+- If the expansion board requires custom RP2040 firmware, refer to section [5.3 Writing Custom RP2040 Firmware](advanced.md#53-writing-custom-rp2040-firmware) and **flash it before use**.
 
 ## 5.5 Developing an Expansion Board
 
