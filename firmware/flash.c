@@ -9,14 +9,14 @@
  */
 
 // Read from QSPI flash via direct XIP mapping
-void flash_read(uint32_t offset, uint8_t *destination, size_t length) {
+void flashRead(uint32_t offset, uint8_t *destination, size_t length) {
     const uint8_t *flash_ptr = (uint8_t *)(FLASH_XIP_BASE + offset);
 
     memcpy(destination, flash_ptr, length);
 }
 
 // Load Z80 program from the last 32 KB of flash
-void load_z80_program_from_flash(uint8_t *ram_buf) {
+void loadZ80ProgramFromFlash(uint8_t *ram_buf) {
     const uint8_t *program_ptr = (uint8_t *)FLASH_LAST_32K_ADDR;
 
     memcpy(ram_buf, program_ptr, FLASH_LAST_32K_SIZE);

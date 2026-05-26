@@ -1,8 +1,33 @@
 #include "firmware.h"
 
+// Send a bus request to the Z80 and wait for the bus acknowledgment.
+bool sendBusReqAndWaitBusAck() {
+    if (gpio_get(GPIO_Z80_BUSACK) == 0) {
+        // BUSREQ already sended and BUSACK already received
+        return true;
+    }
+
+    gpio_put(GPIO_Z80_BUSREQ, 0);
+
+    while (!gpio_get(GPIO_Z80_BUSACK)) {
+        // Wait for the Z80 to acknowledge the bus request
+    }
+
+    return true;
+}
+
+// Release the bus request to the Z80.
+bool releaseBusReq() {
+    gpio_put(GPIO_Z80_BUSREQ, 1);
+
+    return true;
+}
+
 // Access the RAM at the given address.
 void accessRamAddress(uint16_t address) {
-    for (size_t i = 15; i > 0; i--)
+    sendBusReqAndWaitBusAck();
+    
+    for (int i = 15; i >= 0; i--)
     {
         gpio_put(GPIO_RAM_ADDRESS, ((address >> i) & 1));
         gpio_put(GPIO_SHIFT_CLOCK, 1);
@@ -14,9 +39,11 @@ void accessRamAddress(uint16_t address) {
 uint8_t readRamCell() {
     uint8_t data = 0;
 
+    sendBusReqAndWaitBusAck();
+
     gpio_put(GPIO_RAM_OPERATION, 0);
 
-    for (size_t i = 7; i > 0; i--)
+    for (int i = 7; i >= 0; i--)
     {
         data |= (gpio_get(GPIO_RAM_DATA_READ) << i);
         gpio_put(GPIO_RAM_DATA_SHIFT, 1);
@@ -28,9 +55,11 @@ uint8_t readRamCell() {
 
 // Write a byte to the RAM.
 void writeRamCell(uint8_t data) {
+    sendBusReqAndWaitBusAck();
+
     gpio_put(GPIO_RAM_OPERATION, 1);
 
-    for (size_t i = 7; i > 0; i--)
+    for (int i = 7; i >= 0; i--)
     {
         gpio_put(GPIO_RAM_DATA, ((data >> i) & 1));
         gpio_put(GPIO_SHIFT_CLOCK, 1);
@@ -38,17 +67,18 @@ void writeRamCell(uint8_t data) {
     }
 }
 
+// Reset the Z80 to start executing the program loaded in the RAM.
+void resetZ80() {
+    gpio_put(GPIO_Z80_RESET, 0);
+    sleep_ms(100);
+    gpio_put(GPIO_Z80_RESET, 1);
+}
+
 // Load the Z80 program from the flash memory to the RAM.
 void loadZ80ProgramInRam() {
-    gpio_put(GPIO_Z80_BUSREQ, 0);
-
-    while (!gpio_get(GPIO_Z80_BUSACK)) {
-        // Wait for the Z80 to acknowledge the bus request
-    }
-
     uint8_t *ram_buf = malloc(FLASH_LAST_32K_SIZE);
 
-    load_z80_program_from_flash(ram_buf);
+    loadZ80ProgramFromFlash(ram_buf);
 
     for (uint16_t i = 0; i < FLASH_LAST_32K_SIZE; i++)
     {
@@ -60,15 +90,9 @@ void loadZ80ProgramInRam() {
 
     free(ram_buf);
 
-    gpio_put(GPIO_Z80_BUSREQ, 1);
+    releaseBusReq();
 
     resetZ80();
-}
-
-void resetZ80() {
-    gpio_put(GPIO_Z80_RESET, 0);
-    sleep_ms(100);
-    gpio_put(GPIO_Z80_RESET, 1);
 }
 
 /* 
@@ -126,6 +150,8 @@ void setup() {
     gpio_set_dir(GPIO_EXPANSION_13, GPIO_OUT);
     gpio_init(GPIO_EXPANSION_14);
     gpio_set_dir(GPIO_EXPANSION_14, GPIO_OUT); */
+
+    uartInitUsb();
     
     if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 1) {
         
@@ -138,5 +164,8 @@ void setup() {
     This function is runned in a loop after the setup function.
 */
 void loop() {
+    char cmd[UART_CMD_MAX_LEN];
 
+    uartReadLine(cmd, sizeof(cmd));
+    uartProcessCommand(cmd);
 }

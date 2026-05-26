@@ -1,5 +1,6 @@
 #include "flash.h"
 #include <stdio.h>
+#include <stdbool.h>
 #include "pico/stdlib.h"
 
 #ifndef FIRMWARE
@@ -39,12 +40,16 @@
     void setup();
     void loop();
 
+    // Bus functions
+    bool sendBusReqAndWaitBusAck();
+    bool releaseBusReq();
+
     // Ram operations
     void accessRamAddress(uint16_t address);
     uint8_t readRamCell();
     void writeRamCell(uint8_t data);
 
     // Z80 operations
-    void loadZ80ProgramInRam();
     void resetZ80();
+    void loadZ80ProgramInRam();
 #endif
