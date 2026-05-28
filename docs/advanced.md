@@ -59,12 +59,52 @@ Plug it directly into the connectors.
 **No soldering required**.
 
 Before powering on, verify the following:
-- Check the **voltage levels** of the expansion board. Signals on the 2x20 connector are at *5V* (Z80 bus), while signals on the 2x10 connector are at *3.3V* (RP2040 GPIO). Make sure the expansion board **is designed for the correct voltage** on each connector, and use a **level shifter** if interfacing between the two.
-- Check the expansion board's power requirements. The *5V* pin (pin 39 on the 2x20) and the *3.3V* pin (pin 19 on the 2x10) can supply power, but the 3.3V rail is limited by the RP2040's onboard LDO. Power-hungry boards **should be supplied independently**.
+- Check the **voltage levels** of the expansion board. Signals on the 2×20 connector are at *5V* (Z80 bus), while signals on the 2×10 connector are at *3.3V* (RP2040 GPIO). Make sure the expansion board **is designed for the correct voltage** on each connector, and use a **level shifter** if interfacing between the two.
+- Check the expansion board's power requirements. The *5V* pin (pin 39 on the 2×20) and the *3.3V* pin (pin 19 on the 2×10) can supply power, but the 3.3V rail is limited by the RP2040's onboard LDO. Power-hungry boards **should be supplied independently**.
 - The ADC pins are analog inputs. **Do not exceed 3.3V on these pins**.
 - If the expansion board requires custom RP2040 firmware, refer to section [5.3 Writing Custom RP2040 Firmware](advanced.md#53-writing-custom-rp2040-firmware) and **flash it before use**.
 
 ## 5.5 Developing an Expansion Board
+Designing an expansion board for the Z80DevBoard requires attention to both **mechanical and electrical compatibility**.
+
+### Mechanical Requirements
+The two expansion connectors on the Z80DevBoard are **dual-row SMD female** connectors with ***1.27 mm* pitch**.
+Your expansion board must use matching **dual-row *1.27 mm* pitch male pin headers on its underside**, aligned to the Z80DevBoard pinout as described in [Chapter 3 - Pinout & Connectors](pinout.md).
+When designing the PCB, make sure the connector footprints are **placed on the bottom layer** of the expansion board, so that the board sits flat on top of the Z80DevBoard when plugged in.
+
+### Electrical Considerations
+Signals on the 2×20 connector are at **5V** (Z80 bus).
+Design any circuit connected to these pins for **5V logic**, or add a **level shifter** if interfacing with **3.3V components**.
+
+Signals on the 2×10 connector are at **3.3V** (RP2040 GPIO).
+**Do not exceed 3.3V on any of these pins**.
+
+The *ADC* pins (*ADC0*, *ADC1*) are analog inputs with a **maximum of 3.3V**.
+Keep analog signals clean and **away from noisy** digital traces on your PCB.
+If your board requires **more power** than the onboard rails can provide, add an **independent power input** rather than relying on the Z80DevBoard's LDO.
+
+### PCB Design in KiCad
+The Z80DevBoard is **designed in *KiCad***, and using the same tool for your expansion board ensures **full compatibility**.
+
+The connector footprints to use are **standard *2×20* and *2×10* male pin headers with 1.27 mm pitch**: these are available in the *KiCad standard library*.
+
+To verify alignment, import the Z80DevBoard PCB as a reference layer in your KiCad project and check that the **connector positions match** before ordering.
+
+### RP2040 Firmware
+If your expansion board uses GPIO pins from the 2×10 connector, those pins must be initialised in the RP2040 firmware.
+The expansion GPIO definitions are already present in `firmware.h`:
+
+```c
+#define GPIO_EXPANSION_1  12
+#define GPIO_EXPANSION_2  13
+// ...
+# define GPIO_EXPANSION_ADC1 27
+# define GPIO_EXPANSION_ADC2 28
+# define GPIO_EXPANSION_ADC3 29
+```
+
+**Uncomment** the corresponding `gpio_init` and `gpio_set_dir` calls in `setup()`, then add your logic to `loop()` or dedicated handler functions.
+Refer to section [5.3 Writing Custom RP2040 Firmware](advanced.md#53-writing-custom-rp2040-firmware) for further guidance.
 
 ## 5.6 Debugging with SWD
 

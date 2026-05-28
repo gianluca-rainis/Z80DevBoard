@@ -102,7 +102,7 @@ GPIO12 GPIO13 GPIO14 GPIO15 TESTEN XIN XOUT IOVDD DVDD SWCLK SWDIO RUN GPIO16 GP
 |GND|Center Pad|Power|Ground|
 |QSPI_*|51–56|Bidirectional|Interface to a SPI flash (Usable also as GPIO)|
 
-## 3.3 Expansion Connector 2x20 (Z80 Bus)
+## 3.3 Expansion Connector 2×20 (Z80 Bus)
 The *Expansion Connector (Z80 Bus)* is a **2×20 pin connector** located on the bottom-right of the Z80DevBoard.
 It exposes all **Z80 bus signals**, providing direct access to the CPU interface for daughter boards and external hardware.
 
@@ -138,7 +138,7 @@ It exposes all **Z80 bus signals**, providing direct access to the CPU interface
 |Vcc|39|Power|+5V supply|
 |GND|40|Power|Ground|
 
-## 3.4 Expansion Connector 2x10 (RP2040)
+## 3.4 Expansion Connector 2×10 (RP2040)
 The *Expansion Connector (RP2040)* is a **2×10 pin connector** located on the bottom-right of the Z80DevBoard.
 It exposes GPIO pins 10 through 25, two ADC pins, and the 3v3 power rail, allowing the development of more advanced projects on expansion boards with custom firmware.
 

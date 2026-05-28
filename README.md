@@ -126,8 +126,8 @@ Z80DevBoard/
 |SN74LVC245APW|3|Data Bus|SMD|
 |TXS0104EPW|1|Data Bus|SMD|
 |Connector 2 pins|1|Data Bus|Through Holes|
-|Connector 2x20 pins|1|Data Bus|Through Holes|
-|Connector 2x10 pins|1|Data Bus|Through Holes|
+|Connector 2×20 pins|1|Data Bus|Through Holes|
+|Connector 2×10 pins|1|Data Bus|Through Holes|
 |||||
 |Crystal 12MHz 20pF|1|Clock|Through Holes|
 |Oscillator 8MHz|1|Clock|SMD|
@@ -175,8 +175,8 @@ Z80DevBoard/
 - 3 SN74LVC245APW (Bus to handle the voltage differences)
 - 1 TXS0104EPW (Bus to handle the voltage differences)
 - 1 Connector 2 pins
-- 1 Connector 2x20 pins
-- 1 Connector 2x10 pins
+- 1 Connector 2×20 pins
+- 1 Connector 2×10 pins
 
 ### Clock
 - 1 Crystal 12MHz 20pF
