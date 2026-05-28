@@ -1,6 +1,21 @@
 # Chapter 6 - Z80 Assembly Programming
 
 ## 6.1 Introduction to Z80 Assembly
+**Assembly language** is the human-readable form of a **processor's machine code**.
+Each line corresponds directly to **one instruction the CPU executes**, without compiler; runtime; or framework between you and the hardware.
+
+Writing Z80 assembly means writing exactly **what the processor will do**, one operation at a time: load a value into a register, add two numbers, jump to a different part of the program.
+There is **no abstraction**, **no hidden behavior**, and **no overhead**.
+
+> *What you write is what runs.*
+
+This directness is what makes assembly both **challenging** and deeply **educational**.
+Understanding Z80 assembly means understanding **how any CPU works** at its most fundamental level: how instructions are fetched and decoded, how memory is addressed, how control flow is implemented in hardware.
+
+These concepts underlie **every programming language** and **every processor architecture** in use today.
+The Z80 is one of the **best architectures to learn assembly** on: its **instruction set is rich but regular**, its **documentation is thorough**, and its **behavior is entirely predictable**.
+
+> *Once you understand the Z80, the principles transfer directly to other architectures.*
 
 ## 6.2 The Z80 Register Set
 The *Z80 CPU* contains *208 bits* of **read/write memory**, configured as **eighteen *8-bit* registers** and **four *16-bit* registers**.
