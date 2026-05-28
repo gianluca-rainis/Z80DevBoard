@@ -49,6 +49,7 @@ unknowncmd        -> ERROR: unknown command 'unknowncmd'
 ```
 
 ## 5.3 Writing Custom RP2040 Firmware
+> *This section is not yet available. It will be added in a future version of the documentation.*
 
 ## 5.4 Using an Expansion Board
 The Z80DevBoard exposes **two expansion connectors** described in detail in [Chapter 3 - Pinout & Connectors](pinout.md).
@@ -107,7 +108,42 @@ The expansion GPIO definitions are already present in `firmware.h`:
 Refer to section [5.3 Writing Custom RP2040 Firmware](advanced.md#53-writing-custom-rp2040-firmware) for further guidance.
 
 ## 5.6 Debugging with SWD
+The Z80DevBoard exposes the **RP2040's *SWD*** (*Serial Wire Debug*) interface through **two dedicated pins** located in the top-right corner of the board, as described in [Chapter 3 - Pinout & Connectors](pinout.md).
 
+*SWD* allows **full debugging of the RP2040 firmware**: setting breakpoints, stepping through code, inspecting memory and registers, and flashing new firmware: all without pressing the *RP2040BOOT* button.
+
+### What You Need
+- A **SWD-compatible debug probe**: the official *Raspberry Pi Debug Probe* is recommended, but any *CMSIS-DAP* compatible adapter works.
+- *OpenOCD* or other tools **supporting *CMSIS-DAP*** as the debug backend.
+- An *IDE* with **debugging support**: *VS Code* with the *Cortex-Debug* extension is the most common choice for *Pico SDK* projects.
+
+### Connecting the Probe
+Connect the debug probe to the **two *SWD* pins** on the board:
+
+|SWD Pin|Signal|
+|---|---|
+|1|*SWCLK*|
+|2|*SWDIO*|
+
+Use a **GND reference** from the **nearest GND pin on the expansion connector**.
+
+### OpenOCD Configuration
+A basic *OpenOCD* configuration for the RP2040:
+
+```bash
+sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg
+```
+
+Once connected, you can attach *GDB*:
+
+```bash
+gdb firmware/build/Z80DevBoard.elf
+(gdb) target remote localhost:3333
+(gdb) monitor reset init
+(gdb) continue
+```
+
+For a more comfortable experience, use the *Cortex-Debug* extension in *VS Code*, which wraps *OpenOCD* and *GDB* in a **graphical interface** with breakpoints, variable inspection, and call stack view.
 
 ---
 
