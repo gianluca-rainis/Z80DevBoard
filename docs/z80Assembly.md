@@ -48,6 +48,22 @@ There are **two sets of six general-purpose registers**, **two sets of Accumulat
 |Program Counter|PC|
 
 ## 6.3 The Flag Register
+The **Flag Registers** (**F** and **F'**) are two *8-bit* registers automatically updated by the CPU after arithmetic and logic operations.
+Each bit represents a specific condition, used by conditional instructions to decide whether to jump, call, or return.
+
+|Bit|Flag|Name|Set when|
+|---|---|---|---|
+|7|S|Sign|Result is negative (bit 7 of result = 1)|
+|6|Z|Zero|Result is zero|
+|5|X|Not used|—|
+|4|H|Half Carry|Carry from bit 3 to bit 4 (used by DAA)|
+|3|X|Not used|—|
+|2|P/V|Parity / Overflow|Even parity (logic ops) or signed overflow (> +128 or < -128)|
+|1|N|Add / Subtract|Last operation was a subtraction (N = 1) or an addition (N = 0)|
+|0|C|Carry|Result produced a carry or borrow|
+
+The Flag Register cannot be written directly, it is only modified as a side effect of instructions.
+It can however be saved and restored via the stack using `PUSH AF` and `POP AF`, or via the alternate register with `EX AF, AF'`.
 
 ## 6.4 Addressing Modes
 
