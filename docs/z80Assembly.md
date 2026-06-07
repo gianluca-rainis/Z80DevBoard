@@ -38,9 +38,10 @@ There are **two sets of six general-purpose registers**, **two sets of Accumulat
 |H'|L'|
 
 ### Special Purpose Registers
-|Interrupt Vector|Memory Refresh|
+|Use|Register|
 |---|---|
-|I|R|
+|Interrupt Vector|I|
+|Memory Refresh|R|
 |||
 |Index Register|IX|
 |Index Register|IY|
