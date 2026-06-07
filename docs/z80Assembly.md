@@ -67,6 +67,87 @@ The Flag Register cannot be written directly, it is only modified as a side effe
 It can however be saved and restored via the stack using `PUSH AF` and `POP AF`, or via the alternate register with `EX AF, AF'`.
 
 ## 6.4 Addressing Modes
+Addressing modes define how an instruction locates its operands.
+The Z80 supports the following addressing modes.
+
+### Immediate
+The byte immediately following the opcode in memory contains the operand.
+
+```asm
+LD A, 42          ; A <- 42
+```
+
+### Immediate Extended
+The two bytes following the opcode are the operand, forming a 16-bit value.
+
+```asm
+LD HL, 0x8000     ; HL <- 0x8000
+```
+
+### Modified Page Zero
+A single-byte `RST` instruction calls one of eight fixed locations in *Page 0* of memory, saving memory space for commonly-used subroutines.
+
+```asm
+RST 0x08          ; Call subroutine at 0x0008
+```
+
+### Relative
+A signed 8-bit displacement is added to the address of the following instruction to form a jump target.
+Allows relocatable code and saves memory space compared to extended jumps.
+
+```asm
+JR Z, LABEL       ; Relative jump to LABEL if Zero flag set
+```
+
+### Extended
+Two bytes of address are included in the instruction, used as a pointer to a memory location or as a jump destination.
+
+```asm
+LD A, (0x4000)    ; A <- memory[0x4000]
+JP 0x0100         ; Jump to 0x0100
+```
+
+### Indexed
+A signed 8-bit displacement is added to an index register (IX or IY) to form a pointer to memory.
+The index register itself is not modified.
+
+```asm
+LD A, (IX+5)      ; A <- memory[IX + 5]
+LD (IY-2), B      ; Memory[IY - 2] <- B
+```
+
+### Register
+The operand is a CPU register, specified by bits in the opcode.
+
+```asm
+LD A, B           ; A <- B
+ADD A, C          ; A <- A + C
+```
+
+### Implied
+The operand is implicitly defined by the opcode, no explicit address is needed.
+
+```asm
+RLCA              ; Rotate A left (A is implied)
+DAA               ; Decimal adjust A (A is implied)
+```
+
+### Register Indirect
+A 16-bit register pair is used as a pointer to a memory location.
+
+```asm
+LD A, (HL)      ; A <- memory[HL]
+LD (HL), B      ; Memory[HL] <- B
+```
+
+### Bit Addressing
+Used by bit set, reset, and test instructions.
+Three bits in the opcode specify which of the eight bits to manipulate, while the operand is addressed via register, register indirect, or indexed modes.
+
+```asm
+BIT 3, A        ; Test bit 3 of A
+SET 7, (HL)     ; Set bit 7 of memory[HL]
+```
 
 ## 6.5 Core Instructions
 
