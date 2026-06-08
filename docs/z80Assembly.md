@@ -149,17 +149,246 @@ BIT 3, A        ; Test bit 3 of A
 SET 7, (HL)     ; Set bit 7 of memory[HL]
 ```
 
-## 6.5 Core Instructions
+## 6.5 Instruction Set
+### 6.5.1 Data Transfer
+Data transfer instructions move data between registers, memory, and I/O ports.
 
-## 6.6 Subroutines and the Stack
+```asm
+; Register to register
+LD A, B           ; A <- B
+LD H, L           ; H <- L
 
-## 6.7 Interrupts
+; Immediate to register
+LD A, 0x42        ; A <- 0x42
+LD HL, 0x4000     ; HL <- 0x4000
 
-## 6.8 Assembler Directives
+; Register to memory
+LD (HL), A        ; memory[HL] <- A
+LD (0x4000), A    ; memory[0x4000] <- A
 
-## 6.9 Your First Program
+; Memory to register
+LD A, (HL)        ; A <- memory[HL]
+LD A, (0x4000)    ; A <- memory[0x4000]
 
-## 6.10 Recommended Resources
+; Stack
+PUSH BC           ; Push BC onto stack (SP -= 2)
+POP HL            ; Pop stack into HL (SP += 2)
+
+; Exchange
+EX DE, HL         ; Swap DE <-> HL
+EX AF, AF'        ; Swap A,F <-> A',F'
+EXX               ; Swap BC,DE,HL <-> BC',DE',HL'
+```
+
+### 6.5.2 Arithmetic
+```asm
+; 8-bit
+ADD A, B          ; A <- A + B
+ADD A, 0x10       ; A <- A + 0x10
+ADC A, B          ; A <- A + B + Carry
+SUB B             ; A <- A - B
+SBC A, B          ; A <- A - B - Carry
+INC A             ; A <- A + 1 (Carry not affected)
+DEC B             ; B <- B - 1 (Carry not affected)
+
+; 16-bit
+ADD HL, BC        ; HL <- HL + BC
+ADC HL, DE        ; HL <- HL + DE + Carry
+SBC HL, DE        ; HL <- HL - DE - Carry
+INC HL            ; HL <- HL + 1
+DEC DE            ; DE <- DE - 1
+```
+
+### 6.5.3 Logic
+```asm
+AND B             ; A <- A AND B  (P/V = parity)
+OR C              ; A <- A OR  C
+XOR D             ; A <- A XOR D
+CP E              ; Flags <- (A - E), A unchanged
+CPL               ; A <- NOT A  (complement)
+NEG               ; A <- 0 - A  (two's complement negate)
+```
+
+### 6.5.4 Bit Manipulation
+```asm
+BIT 3, A          ; Test bit 3 of A  -> sets Z flag
+SET 7, B          ; Set bit 7 of B to 1
+RES 0, C          ; Reset bit 0 of C to 0
+
+; Rotate and shift
+RLCA              ; Rotate A left  (bit 7 -> Carry -> bit 0)
+RRCA              ; Rotate A right (bit 0 -> Carry -> bit 7)
+RLA               ; Rotate A left  through Carry
+RRA               ; Rotate A right through Carry
+RLC r             ; Rotate register r left
+RRC r             ; Rotate register r right
+SLA r             ; Shift r left  arithmetic (LSB <- 0)
+SRA r             ; Shift r right arithmetic (MSB preserved)
+SRL r             ; Shift r right logical    (MSB <- 0)
+RL r              ; Rotate register r left through Carry
+RR r              ; Rotate register r right through Carry
+RLD               ; Rotate left digit: high nibble of (HL) <-> low nibble of A
+RRD               ; Rotate right digit: low nibble of A <-> high nibble of (HL)
+```
+
+### 6.5.5 Control Flow
+```asm
+; Unconditional
+JP 0x0100         ; Jump to 0x0100
+JR LABEL          ; Relative jump (-128 to +127 bytes)
+DJNZ LABEL        ; B--; jump if B != 0 (loop counter)
+
+; Conditional jumps (cc = Z, NZ, C, NC, PE, PO, M, P)
+JP Z, LABEL       ; Jump if Zero flag set
+JP NZ, LABEL      ; Jump if Zero flag clear
+JP C, LABEL       ; Jump if Carry set
+JP NC, LABEL      ; Jump if Carry clear
+JR Z, LABEL       ; Relative jump if Zero
+JR NZ, LABEL      ; Relative jump if Zero clear
+JR C, LABEL       ; Relative jump if Carry
+JR NC, LABEL      ; Relative jump if Carry clear
+
+; Restart (Modified Page Zero)
+RST 0x08          ; Call subroutine at 0x0008
+```
+
+### 6.5.6 Subroutines and the Stack
+The Z80 uses a **descending stack**: it grows toward lower addresses.
+`SP` always points to the last byte pushed.
+
+`CALL` pushes the return address onto the stack and jumps to the subroutine.
+`RET` pops the return address and jumps back.
+
+```asm
+    LD SP, 0xFFFF   ; Initialize stack pointer to top of RAM
+
+MAIN:
+    LD A, 0x41      ; 'A' in ASCII
+    CALL PRINT      ; Call subroutine
+    HALT
+
+PRINT:
+    OUT (0x00), A   ; Send character to UART TX
+    RET             ; Return to caller
+```
+
+Conditional calls and returns are also supported:
+
+```asm
+CALL Z,  LABEL    ; Call if Zero flag set
+CALL NZ, LABEL    ; Call if Zero flag clear
+RET Z             ; Return if Zero flag set
+RET C             ; Return if Carry set
+```
+
+### 6.5.7 Block Instructions
+Block instructions operate on ranges of memory or I/O ports in a single instruction, replacing multi-instruction loops.
+
+```asm
+LDIR    ; Copy (HL)->(DE), HL++, DE++, BC--; repeat until BC=0
+
+LDDR    ; Same but HL--, DE-- (copy backward)
+
+CPIR    ; Compare A with (HL), HL++, BC--; stop on match or BC=0
+
+CPDR    ; Same but HL-- (search backward)
+
+INIR    ; Input from port C to (HL), HL++, B--; repeat until B=0
+
+OTIR    ; Output (HL) to port C, HL++, B--; repeat until B=0
+
+LDI     ; Copy (HL)->(DE), HL++, DE++, BC-- (single step, no repeat)
+
+LDD     ; Copy (HL)->(DE), HL--, DE--, BC-- (single step, no repeat)
+
+CPI     ; Compare A with (HL), HL++, BC-- (single step, no repeat)
+
+CPD     ; Compare A with (HL), HL--, BC-- (single step, no repeat)
+
+INI     ; Input from port C to (HL), HL++, B-- (single step)
+
+IND     ; Input from port C to (HL), HL--, B-- (single step)
+
+INDR    ; Same as IND but repeat until B=0
+
+OUTI    ; Output (HL) to port C, HL++, B-- (single step)
+
+OUTD    ; Output (HL) to port C, HL--, B-- (single step)
+```
+
+### 6.5.8 I/O Instructions
+The Z80 has a dedicated I/O space of 256 ports, accessed with `IN` and `OUT` instructions, separate from the memory address space.
+
+```asm
+OUT (0x00), A     ; Output A to I/O port 0x00
+IN A, (0x01)      ; Read I/O port 0x01 into A
+OUT (C), B        ; Output B to port number in C
+IN B, (C)         ; Read port in C into B
+```
+
+> On the Z80DevBoard, port `0x00` is the **UART TX** virtual peripheral.
+> Writing to it sends a character to the USB serial console.
+
+### 6.5.9 Interrupts
+The Z80 supports two types of interrupt: **maskable** (`/INT`) and **non-maskable** (`/NMI`).
+
+```asm
+EI          ; Enable maskable interrupts
+DI          ; Disable maskable interrupts
+```
+
+**Non-maskable interrupts** (`/NMI`) are always serviced, regardless of the `EI`/`DI` state.
+The CPU saves the current PC on the stack and jumps to the fixed address `0x0066`.
+
+**Maskable interrupts** (`/INT`) are only serviced when interrupts are enabled (`EI`).
+
+The Z80 supports three interrupt modes:
+
+| Mode | Instruction | Behaviour |
+|---|---|---|
+| 0 | `IM 0` | External device places an opcode on the data bus |
+| 1 | `IM 1` | CPU always jumps to fixed address `0x0038` |
+| 2 | `IM 2` | Vectored: address = `(I << 8) \| (data bus byte)` |
+
+**IM 1** is the simplest and recommended for beginners:
+```asm
+    LD SP, 0xFFFF
+    IM 1            ; Use interrupt mode 1
+    EI              ; Enable maskable interrupts
+    ; ... main code ...
+    HALT
+
+    ORG 0x0038      ; IM 1 interrupt service routine
+ISR:
+    ; Handle interrupt here
+    EI              ; Re-enable interrupts
+    RETI            ; Return from interrupt (restores IFF flags)
+```
+
+Return instructions for interrupts:
+```asm
+RETI    ; Return from maskable interrupt (signals I/O devices)
+RETN    ; Return from non-maskable interrupt (restores IFF1 from IFF2)
+```
+
+### 6.5.10 Miscellaneous
+```asm
+NOP     ; No operation (4 cycles)
+
+HALT    ; Stop execution, wait for interrupt
+
+SCF     ; Set Carry flag
+
+CCF     ; Complement Carry flag
+
+DAA     ; Decimal adjust A after BCD arithmetic
+```
+
+## 6.6 Assembler Directives
+
+## 6.7 Your First Program
+
+## 6.8 Recommended Resources
 
 
 ---
