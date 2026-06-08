@@ -367,6 +367,18 @@ DAA     ; Decimal adjust A after BCD arithmetic
 ```
 
 ## 6.6 Assembler Directives
+Assembler directives are not Z80 instructions, they are commands to the assembler itself, controlling how the source code is translated into machine code.
+
+|Directive|Example|Description|
+|---|---|---|
+|`ORG`|`ORG 0x0000`|Set the address|
+|`DEFB` / `DB`|`DEFB 0xFF, 0x00`|Emit one or more literal bytes|
+|`DEFW` / `DW`|`DEFW 0x1234`|Emit a 16-bit word|
+|`DEFS` / `DS`|`DEFS 16`|Reserve N zero-filled bytes|
+|`DEFM` / `DM`|`DEFM "Hello"`|Emit a string as raw bytes|
+|`EQU`|`UART_TX EQU 0x00`|Define a symbolic constant|
+|`INCLUDE`|`INCLUDE "utils.asm"`|Include another source file|
+|`END`|`END`|Mark the end of the source file|
 
 ## 6.7 Your First Program
 
