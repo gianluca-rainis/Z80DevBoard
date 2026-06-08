@@ -286,33 +286,19 @@ Block instructions operate on ranges of memory or I/O ports in a single instruct
 
 ```asm
 LDIR    ; Copy (HL)->(DE), HL++, DE++, BC--; repeat until BC=0
-
 LDDR    ; Same but HL--, DE-- (copy backward)
-
 CPIR    ; Compare A with (HL), HL++, BC--; stop on match or BC=0
-
 CPDR    ; Same but HL-- (search backward)
-
 INIR    ; Input from port C to (HL), HL++, B--; repeat until B=0
-
 OTIR    ; Output (HL) to port C, HL++, B--; repeat until B=0
-
 LDI     ; Copy (HL)->(DE), HL++, DE++, BC-- (single step, no repeat)
-
 LDD     ; Copy (HL)->(DE), HL--, DE--, BC-- (single step, no repeat)
-
 CPI     ; Compare A with (HL), HL++, BC-- (single step, no repeat)
-
 CPD     ; Compare A with (HL), HL--, BC-- (single step, no repeat)
-
 INI     ; Input from port C to (HL), HL++, B-- (single step)
-
 IND     ; Input from port C to (HL), HL--, B-- (single step)
-
 INDR    ; Same as IND but repeat until B=0
-
 OUTI    ; Output (HL) to port C, HL++, B-- (single step)
-
 OUTD    ; Output (HL) to port C, HL--, B-- (single step)
 ```
 
@@ -374,13 +360,9 @@ RETN    ; Return from non-maskable interrupt (restores IFF1 from IFF2)
 ### 6.5.10 Miscellaneous
 ```asm
 NOP     ; No operation (4 cycles)
-
 HALT    ; Stop execution, wait for interrupt
-
 SCF     ; Set Carry flag
-
 CCF     ; Complement Carry flag
-
 DAA     ; Decimal adjust A after BCD arithmetic
 ```
 
