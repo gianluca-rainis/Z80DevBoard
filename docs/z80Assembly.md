@@ -369,6 +369,8 @@ DAA     ; Decimal adjust A after BCD arithmetic
 ## 6.6 Assembler Directives
 Assembler directives are not Z80 instructions, they are commands to the assembler itself, controlling how the source code is translated into machine code.
 
+Remember that the assembler directives may be different between different assemblers.
+
 |Directive|Example|Description|
 |---|---|---|
 |`ORG`|`ORG 0x0000`|Set the address|
