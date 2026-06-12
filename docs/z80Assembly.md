@@ -383,6 +383,44 @@ Remember that the assembler directives may be different between different assemb
 |`END`|`END`|Mark the end of the source file|
 
 ## 6.7 Your First Program
+### 6.7.1 Hello World
+This program prints a greeting message over the UART, demonstrating basic data movement, the indirect addressing mode, and a simple loop with a string terminator.
+
+```asm
+ORG 0x0000
+
+UART_TX EQU 0x00
+
+START:
+    LD HL, MSG          ; HL points to the start of the message
+
+LOOP:
+    LD A, (HL)          ; Load the next character into A
+    OR A                ; Check if A is zero (string terminator)
+    JR Z, DONE          ; If zero, the string is finished
+
+    OUT (UART_TX), A    ; Send the character to the UART
+    INC HL              ; Move to the next character
+    JR LOOP             ; Repeat
+
+DONE:
+    HALT                ; Stop execution
+
+MSG:    DEFM "Hello, World!", 0x0D, 0x0A, 0x00
+
+    END
+```
+
+The program uses `HL` as a pointer that walks through the `MSG` string, one byte at a time.
+
+Each character is loaded into `A` with `LD A, (HL)`, this is register indirect addressing: the address to read from is held inside `HL`, not written literally in the instruction.
+
+The `OR A` instruction is a common check: ORing a register with itself doesn't change its value, but it updates the flags based on that value.
+If `A` is `0x00`, the *Zero flag* is set, and `JR Z, DONE` jumps to the end of the program.
+
+If the character isn't the terminator, it's sent to the *UART* with `OUT (UART_TX), A`, `HL` is incremented to point at the next character, and the loop repeats with `JR LOOP`.
+
+The message itself is defined with `DEFM`, which emits each character as a raw byte, followed by `0x0D` (carriage return), `0x0A` (line feed), and `0x00` (the null terminator for the loop check).
 
 ## 6.8 Recommended Resources
 
