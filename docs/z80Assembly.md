@@ -422,6 +422,73 @@ If the character isn't the terminator, it's sent to the *UART* with `OUT (UART_T
 
 The message itself is defined with `DEFM`, which emits each character as a raw byte, followed by `0x0D` (carriage return), `0x0A` (line feed), and `0x00` (the null terminator for the loop check).
 
+### 6.7.2 Bubble Sort
+This program sorts an array of bytes in ascending order using the bubble sort algorithm.
+It repeatedly scans the array, swapping adjacent elements that are out of order, until a full pass produces no swaps.
+
+```asm
+ORG 0x0000
+
+START:
+    LD HL, TABLE          ; HL <- address of the first element
+    LD A, TABLE_END - TABLE
+    DEC A                 ; A <- number of comparisons per pass
+    LD B, A
+
+PASS:
+    LD C, 0               ; C <- swap flag, 0 = no swaps this pass
+    LD D, B               ; D <- save comparison count for this pass
+    LD HL, TABLE          ; Reset HL to the start of the array
+
+COMPARE:
+    LD A, (HL)            ; A <- current element
+    INC HL                ; HL -> next element
+    CP (HL)               ; Compare A with next element
+
+    JP C, NEXT            ; If A < next element, already in order
+
+    CALL SWAP             ; Otherwise, swap the two elements
+    LD C, 1               ; Mark that a swap occurred
+
+NEXT:
+    DEC D                 ; One comparison done
+    JP NZ, COMPARE        ; Repeat until D = 0
+
+    LD A, C
+    OR A                  ; Check if any swap occurred this pass
+    JP NZ, PASS           ; If yes, do another pass
+
+    HALT                  ; Array is sorted
+
+; --- Subroutine: swap (HL) with the element before it ---
+SWAP:
+    LD C, (HL)            ; C <- next element
+    LD (HL), A            ; next element <- A (current element)
+    DEC HL
+    LD (HL), C            ; current element <- C (next element)
+    INC HL
+    RET
+
+TABLE:      DEFB 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+TABLE_END:
+
+END
+```
+
+The algorithm performs repeated **passes** over the array.
+In each pass, `HL` walks through the array comparing each element with the one immediately after it.
+If the current element is greater than the next one, detected with `CP (HL)` (which sets the *Carry flag* if `A < (HL)`), the two are out of order and `SWAP` exchanges them.
+
+The flag `C` tracks whether any swap happened during the current pass.
+If a full pass completes with `C = 0`, the array is fully sorted and the program halts.
+Otherwise, `PASS` resets `HL` and the comparison counter `D`, and runs another pass.
+
+The number of comparisons per pass is computed as `TABLE_END - TABLE`, the size of the array in bytes, minus one, since comparing the last element with anything beyond it is meaningless.
+Using labels instead of a hardcoded constant means the table size updates automatically if the array changes.
+
+The `SWAP` subroutine exchanges `(HL)` with the byte before it, using `C` as a temporary register.
+Note that `A` still holds the original value of `(HL-1)` at this point, which is why `LD (HL), A` writes it into the new position.
+
 ## 6.8 Recommended Resources
 
 
