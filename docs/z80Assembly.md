@@ -489,6 +489,77 @@ Using labels instead of a hardcoded constant means the table size updates automa
 The `SWAP` subroutine exchanges `(HL)` with the byte before it, using `C` as a temporary register.
 Note that `A` still holds the original value of `(HL-1)` at this point, which is why `LD (HL), A` writes it into the new position.
 
+### 6.7.3 Selection Sort
+This program sorts an array of bytes in ascending order using the selection sort algorithm.
+For each position in the array, it finds the smallest element in the remaining unsorted portion and swaps it into place.
+
+```asm
+ORG 0x0000
+
+START:
+    LD SP, 0x01FF           ; Initialize stack pointer
+
+    LD A, TABLE_END - TABLE
+    DEC A                   ; A <- array length - 1
+    LD B, A                 ; B <- outer loop counter
+
+    LD IX, TABLE            ; IX <- outer pointer
+
+OUTER:
+    PUSH IX
+    POP HL                  ; HL <- minimum pointer (starts at outer position)
+
+    PUSH IX
+    POP IY
+    INC IY                  ; IY <- inner pointer (IX + 1)
+
+    LD A, B                 ; Inner iterations = remaining outer passes
+    PUSH BC                 ; Save outer counter
+    LD B, A                 ; B <- inner loop counter
+
+INNER:
+    LD A, (IY+0)            ; A <- inner element
+    CP (HL)                 ; Compare with current minimum
+    JP NC, NEXT             ; If A >= minimum, skip
+
+    PUSH IY
+    POP HL                  ; HL <- new minimum pointer
+
+NEXT:
+    INC IY                  ; Advance inner pointer
+    DJNZ INNER              ; Repeat inner loop
+
+    ; Swap outer element with minimum
+    LD A, (IX+0)            ; A <- outer element
+    LD E, (HL)              ; E <- minimum element
+    LD (IX+0), E            ; outer position <- minimum
+    LD (HL), A              ; minimum position <- outer element
+
+    POP BC                  ; Restore outer counter
+    INC IX                  ; Advance outer pointer
+    DJNZ OUTER              ; Repeat outer loop
+
+    HALT                    ; Array is sorted
+
+TABLE:      DEFB 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+TABLE_END:
+
+END
+```
+
+The algorithm uses two nested loops.
+The **outer loop** advances a pointer `IX` through the array from the first element to the second-to-last.
+At each position, `HL` is set to point to the current outer element, which is initially assumed to be the minimum of the unsorted portion.
+
+The **inner loop** scans from the current outer position to the end of the array.
+For each element, `CP (HL)` compares it against the current minimum: if a smaller value is found, `HL` is updated to point to it.
+When the inner loop completes, `HL` holds the address of the true minimum of the unsorted portion.
+
+The minimum is then swapped into the outer position using `IX` and `HL`: the outer element goes to the minimum's address and the minimum goes to the outer position.
+After the swap, `IX` advances by one and `DJNZ` decrements `B`, repeating the outer loop until all positions have been processed.
+
+The `IX` index register is used here instead of `HL` for the outer pointer, freeing `HL` to track the minimum position throughout the inner loop.
+
 ## 6.8 Recommended Resources
 
 
