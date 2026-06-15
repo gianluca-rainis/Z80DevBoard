@@ -560,6 +560,49 @@ After the swap, `IX` advances by one and `DJNZ` decrements `B`, repeating the ou
 
 The `IX` index register is used here instead of `HL` for the outer pointer, freeing `HL` to track the minimum position throughout the inner loop.
 
+### 6.7.4 Interrupt-Driven Input
+This program waits for characters sent by the host over the UART and echoes them back, using interrupt mode 1.
+Instead of continuously polling the UART status in a loop, the Z80 halts and resumes only when the RP2040 asserts /INT, signaling that a character is available.
+
+```asm
+ORG 0x0000
+
+UART_RX EQU 0x01            ; UART RX port
+UART_TX EQU 0x00            ; UART TX port
+
+START:
+    LD SP, 0x01FF           ; Initialize stack pointer
+    IM 1                    ; Set interrupt mode 1
+    EI                      ; Enable maskable interrupts
+
+WAIT:
+    HALT                    ; Wait for interrupt
+    JP WAIT                 ; Loop back after returning from ISR
+
+; --- Interrupt Service Routine (IM 1) ---
+ORG 0x0038
+
+ISR:
+    IN A, (UART_RX)         ; Read character from UART RX
+    OUT (UART_TX), A        ; Echo it back to UART TX
+    EI                      ; Re-enable interrupts
+    RETI                    ; Return from interrupt
+
+END
+```
+
+After initialising the stack and setting interrupt mode 1 with `IM 1`, the program enables maskable interrupts with `EI` and enters a `HALT` instruction.
+`HALT` suspends execution and puts the Z80 into a low-power wait state: the CPU stops fetching instructions, but remains fully operational and ready to respond to interrupts.
+
+When the host sends a character over the UART, the RP2040 asserts the `/INT` signal.
+The Z80 detects the interrupt, pushes the current `PC` (Program Counter) onto the stack, disables interrupts, and jumps to the fixed address `0x0038`: the **IM 1 interrupt vector**.
+
+The ISR reads the incoming character from the UART RX port with `IN A, (UART_RX)` and immediately sends it back with `OUT (UART_TX), A`.
+`EI` re-enables interrupts before `RETI` returns, restoring the program counter from the stack and resuming execution at `HALT`.
+
+Note that **interrupts are automatically disabled** when the Z80 enters an ISR, this prevents a second interrupt from interrupting the handler itself.
+`EI` before `RETI` re-enables them, but the effect is delayed by one instruction, so RETI always executes before any new interrupt is serviced.
+
 ## 6.8 Recommended Resources
 
 
