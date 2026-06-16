@@ -56,9 +56,9 @@ Each bit represents a specific condition, used by conditional instructions to de
 |---|---|---|---|
 |7|S|Sign|Result is negative (bit 7 of result = 1)|
 |6|Z|Zero|Result is zero|
-|5|X|Not used|—|
+|5|X|Not used|-|
 |4|H|Half Carry|Carry from bit 3 to bit 4 (used by DAA)|
-|3|X|Not used|—|
+|3|X|Not used|-|
 |2|P/V|Parity / Overflow|Even parity (logic ops) or signed overflow (> +128 or < -128)|
 |1|N|Add / Subtract|Last operation was a subtraction (N = 1) or an addition (N = 0)|
 |0|C|Carry|Result produced a carry or borrow|
@@ -604,7 +604,20 @@ Note that **interrupts are automatically disabled** when the Z80 enters an ISR, 
 `EI` before `RETI` re-enables them, but the effect is delayed by one instruction, so RETI always executes before any new interrupt is serviced.
 
 ## 6.8 Recommended Resources
+### Official Documentation
+- [Z80 CPU User Manual](https://www.zilog.com/docs/z80/um0080.pdf) - Zilog Inc. (official reference, freely available as PDF at zilog.com)
+- [Z84C00 Product Specification](https://www.zilog.com/docs/z80/ps0178.pdf) - Zilog Inc. (datasheet for the CMOS variant used on this board)
 
+### Books
+- [Z80 Assembly Language Programming](https://acpc.me/ACME/LITTERATURE/LIVRES/%5BENG%5DENGLISH/OSBORNE/Z80_Assembly_Language_programming(Lance_LEVENTHAL_1979).pdf) - Lance A. Leventhal (classic textbook, covers the instruction set in depth with practical examples)
+- [The Undocumented Z80 Documented](http://www.z80.info/zip/z80-documented.pdf) - Sean Young (covers undocumented opcodes, flag behavior edge cases, and internal CPU behavior not described in the official manual)
+
+### Online Resources
+- [ClrHome Z80 Reference](https://clrhome.org/table/) - (interactive opcode table with cycle counts and flag effects)
+
+### Tools
+- [z80asm](https://www.nongnu.org/z80asm/) - assembler used in the examples in this chapter
+- [Z80 Simulator IDE](https://www.oshonsoft.com/z80.php) - a cool simulator by *OshonSoft* that can be used to test the programs
 
 ---
 
