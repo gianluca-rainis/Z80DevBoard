@@ -17,7 +17,7 @@ The SWD and SWCLK pins on the RP2040 are accessible to allow a fix for any firmw
 
 ---
 
-<img src="./images/screenshot_3d_front.png" alt="Front view of the dev board">
+<img src="./images/Z80DevBoard_FinishedBoard.png" alt="Front view of the dev board">
 
 ## Author
 The author of the whole project is: 
@@ -235,4 +235,6 @@ The file to load in the RP2040's memory after the build is `Z80DevBoard.uf2`.
 You can find it in the `/firmware/build` folder.
 
 ## Hardware
+<img src="./images/Z80DevBoard_FinishedBoard.png" alt="Front view of the dev board">
+
 <img src="./images/phisical_board.png" alt="Z80DevBoard Picture">
