@@ -1,5 +1,17 @@
 # Chapter 7 - Schematics & KiCad Reference
 
+## 7.1 PCB Overview
+
+## 7.2 Schematic
+
+## 7.3 PCB Layout
+
+## 7.4 3D Render
+
+## 7.5 The Real Board
+
+## 7.6 Design Choices
+
 
 ---
 
