@@ -8,15 +8,35 @@ The USB-C connector is located in the top-left corner.
 The LED matrices are distributed around the Z80: the data bus matrices (read and write) are to the left, the address bus matrices run along the right side, and the control signal LEDs (such as MREQ, M1, and HALT) are placed close to their respective Z80 pins for clarity.
 The expansion connectors are located on the bottom-right, keeping them accessible for daughter boards.
 
-![Top view of the Z80DevBoard](/images/Z80DevBoard_FinishedBoard.png)
+![Top view of the Z80DevBoard](/images/Z80DevBoard_FinishedBoard.png)  
 *Top view of the Z80DevBoard*
 
 The silkscreen includes labels for every Z80 pin, every expansion pin, and all the onboard buttons and switches, making the board self-documenting and easy to use without referring to this manual.
 
-![Bottom view of the Z80DevBoard](/images/screenshot_3d_back.png)
+![Bottom view of the Z80DevBoard](/images/screenshot_3d_back.png)  
 *Bottom view of the Z80DevBoard*
 
 ## 7.2 Schematic
+The full schematic is available in `Z80DevBoard.kicad_sch` and can be opened with KiCad 10.0 or later.
+The images below show the main sections of the schematic for reference.
+
+![Full schematic](/images/screenshot_circuits.png)  
+*Full schematic*
+
+![Z80 CPU](/images/screenshot_circuits_z80.png)  
+*Z80 CPU*
+
+![RP2040](/images/screenshot_circuits_rp2040.png)  
+*RP2040*
+
+![Power supply and clock](/images/power_clock_circuits.png)  
+*Power supply and clock*
+
+![Shift registers and Data bus](/images/shift_registers_data_bus_circuits.png)  
+*Shift registers and Data bus*
+
+![SRAM and flash](/images/sram_flash_circuits.png)  
+*SRAM and flash*
 
 ## 7.3 PCB Layout
 
