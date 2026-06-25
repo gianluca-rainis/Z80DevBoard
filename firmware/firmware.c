@@ -76,6 +76,20 @@ void resetZ80() {
     gpio_put(GPIO_Z80_RESET, 1);
 }
 
+void Z80ProgramLoadHandler() {
+    uint8_t *prog_buf = malloc(FLASH_LAST_32K_SIZE);
+
+    sendBusReqAndWaitBusAck();
+
+    // TODO: readZ80ProgramFromUsb(prog_buf);
+    saveZ80ProgramInFlash(prog_buf);
+
+    free(prog_buf);
+
+    releaseBusReq();
+    resetZ80();
+}
+
 // Load the Z80 program from the flash memory to the RAM.
 void loadZ80ProgramInRam() {
     uint8_t *ram_buf = malloc(FLASH_LAST_32K_SIZE);
@@ -93,7 +107,6 @@ void loadZ80ProgramInRam() {
     free(ram_buf);
 
     releaseBusReq();
-
     resetZ80();
 }
 
@@ -156,7 +169,7 @@ void setup() {
     uartInitUsb();
     
     if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 1) {
-        
+        Z80ProgramLoadHandler();
     }
 
     loadZ80ProgramInRam();
@@ -168,6 +181,7 @@ void setup() {
 void loop() {
     char cmd[UART_CMD_MAX_LEN];
 
-    uartReadLine(cmd, sizeof(cmd));
-    uartProcessCommand(cmd);
+    if (uartReadLine(cmd, sizeof(cmd))) {
+        uartProcessCommand(cmd);
+    }
 }

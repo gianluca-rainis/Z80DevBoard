@@ -49,3 +49,4 @@ CMakeUserPresets.json
 # Custom
 .local
 build/
+.history/

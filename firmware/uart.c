@@ -6,8 +6,12 @@ void uartInitUsb() {
 }
 
 // Read a line from USB UART
-void uartReadLine(char *buf, size_t max_len) {
+bool uartReadLine(char *buf, size_t max_len) {
     size_t i = 0;
+
+    if (max_len == 0) {
+        return false;
+    }
 
     while (i < max_len - 1) {
         int c = getchar();
@@ -20,6 +24,8 @@ void uartReadLine(char *buf, size_t max_len) {
     }
 
     buf[i] = '\0';
+
+    return true;
 }
 
 // Parse a hex string (0xXXXX) into a uint16_t.

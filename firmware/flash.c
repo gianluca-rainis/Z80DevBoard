@@ -21,3 +21,10 @@ void loadZ80ProgramFromFlash(uint8_t *ram_buf) {
 
     memcpy(ram_buf, program_ptr, FLASH_LAST_32K_SIZE);
 }
+
+// Save Z80 program to the last 32 KB of flash
+void saveZ80ProgramInFlash(uint8_t *prog_buf) {
+    const uint8_t *program_ptr = (uint8_t *)FLASH_LAST_32K_ADDR;
+
+    memcpy(program_ptr, prog_buf, FLASH_LAST_32K_SIZE);
+}

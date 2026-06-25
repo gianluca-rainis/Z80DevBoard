@@ -12,6 +12,6 @@
  
     // UART functions
     void uartInitUsb();
-    void uartReadLine(char *buf, size_t max_len);
+    bool uartReadLine(char *buf, size_t max_len);
     void uartProcessCommand(const char *cmd);
 #endif
