@@ -1,4 +1,6 @@
 #include "firmware.h"
+#include "uart.h"
+#include <stdlib.h>
 
 // Send a bus request to the Z80 and wait for the bus acknowledgment.
 bool sendBusReqAndWaitBusAck() {

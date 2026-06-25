@@ -33,6 +33,9 @@ add_executable(Z80DevBoard
 	main.c
 	firmware.c
 	flash.c
+	uart.c
 )
 target_link_libraries(Z80DevBoard pico_stdlib)
+pico_enable_stdio_usb(Z80DevBoard 1)
+pico_enable_stdio_uart(Z80DevBoard 0)
 pico_add_extra_outputs(Z80DevBoard)
