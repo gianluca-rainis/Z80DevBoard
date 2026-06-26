@@ -78,12 +78,16 @@ void resetZ80() {
     gpio_put(GPIO_Z80_RESET, 1);
 }
 
+// Load the Z80 program from the USB to the flash memory.
 void Z80ProgramLoadHandler() {
     uint8_t *prog_buf = malloc(FLASH_LAST_32K_SIZE);
 
-    sendBusReqAndWaitBusAck();
-
     // TODO: readZ80ProgramFromUsb(prog_buf);
+    for (uint32_t i = 0; i < FLASH_LAST_32K_SIZE; i++)
+    {
+        prog_buf[i] = 0;
+    }
+    // -------------------------------------
     saveZ80ProgramInFlash(prog_buf);
 
     free(prog_buf);
@@ -174,12 +178,23 @@ void setup() {
     gpio_put(GPIO_RAM_OPERATION, 0);
 
     uartInitUsb();
-    
-    if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 1) {
+
+    printf("+---------------------------------+\n");
+    printf("|           Z80DevBoard           |\n");
+    printf("|                                 |\n");
+    printf("|        Official Firmware        |\n");
+    printf("|         Serial Terminal         |\n");
+    printf("+---------------------------------+\n\n");
+
+    if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 0) {
+        printf("[LOG] Z80 New Program Loading...\n");
         Z80ProgramLoadHandler();
+        printf("[LOG] New Z80 Program Loaded!\n");
     }
 
+    printf("[LOG] Loading Z80 Program in RAM...\n");
     loadZ80ProgramInRam();
+    printf("[LOG] Z80 Program Loaded in RAM!\n");
 }
 
 /* 
@@ -189,6 +204,8 @@ void loop() {
     char cmd[UART_CMD_MAX_LEN];
 
     if (uartReadLine(cmd, sizeof(cmd))) {
+        printf("> %s\n", cmd);
+
         uartProcessCommand(cmd);
     }
 }

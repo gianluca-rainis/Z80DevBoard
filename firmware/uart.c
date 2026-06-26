@@ -3,6 +3,18 @@
 // Initialize USB UART
 void uartInitUsb() {
     stdio_init_all();
+
+    uint32_t start = to_ms_since_boot(get_absolute_time());
+
+    while (!stdio_usb_connected()) { // Wait for USB to be ready
+        if (to_ms_since_boot(get_absolute_time()) - start > 3000) {
+            break;
+        }
+
+        sleep_ms(10);
+    }
+
+    sleep_ms(100);
 }
 
 // Read a line from USB UART
