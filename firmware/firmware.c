@@ -11,7 +11,7 @@ bool sendBusReqAndWaitBusAck() {
 
     gpio_put(GPIO_Z80_BUSREQ, 0);
 
-    while (!gpio_get(GPIO_Z80_BUSACK)) {
+    while (gpio_get(GPIO_Z80_BUSACK) != 0) {
         // Wait for the Z80 to acknowledge the bus request
     }
 
@@ -26,7 +26,7 @@ bool releaseBusReq() {
 }
 
 // Access the RAM at the given address.
-void accessRamAddress(uint16_t address) {
+void accessRamAddress(uint32_t address) {
     sendBusReqAndWaitBusAck();
     
     for (int i = 15; i >= 0; i--)
@@ -44,6 +44,7 @@ uint8_t readRamCell() {
     sendBusReqAndWaitBusAck();
 
     gpio_put(GPIO_RAM_OPERATION, 0);
+    sleep_us(1); // Wait for the RAM to prepare the data
 
     for (int i = 7; i >= 0; i--)
     {
@@ -60,6 +61,7 @@ void writeRamCell(uint8_t data) {
     sendBusReqAndWaitBusAck();
 
     gpio_put(GPIO_RAM_OPERATION, 1);
+    sleep_us(1); // Wait for the RAM to prepare the data
 
     for (int i = 7; i >= 0; i--)
     {
@@ -96,7 +98,7 @@ void loadZ80ProgramInRam() {
 
     loadZ80ProgramFromFlash(ram_buf);
 
-    for (uint16_t i = 0; i < FLASH_LAST_32K_SIZE; i++)
+    for (uint32_t i = 0; i < FLASH_LAST_32K_SIZE; i++)
     {
         uint8_t data = ram_buf[i];
 
@@ -165,6 +167,11 @@ void setup() {
     gpio_set_dir(GPIO_EXPANSION_13, GPIO_OUT);
     gpio_init(GPIO_EXPANSION_14);
     gpio_set_dir(GPIO_EXPANSION_14, GPIO_OUT); */
+
+    gpio_put(GPIO_Z80_BUSREQ, 1);
+    gpio_put(GPIO_Z80_RESET, 1);
+    gpio_put(GPIO_SHIFT_CLOCK, 0);
+    gpio_put(GPIO_RAM_OPERATION, 0);
 
     uartInitUsb();
     

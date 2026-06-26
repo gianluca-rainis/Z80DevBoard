@@ -14,10 +14,18 @@ bool uartReadLine(char *buf, size_t max_len) {
     }
 
     while (i < max_len - 1) {
-        int c = getchar();
+        int c = getchar_timeout_us(10000); // 10ms timeout
 
-        if (c == '\n' || c == '\r') {
+        if (c == PICO_ERROR_TIMEOUT) {
+            return false;
+        }
+
+        if (c == '\n' || c == '\r') { // End of line
             break;
+        }
+
+        if (c < 0x20 || c > 0x7E) { // Ignore non-printable characters
+            continue;
         }
 
         buf[i++] = (char)c;
@@ -25,7 +33,7 @@ bool uartReadLine(char *buf, size_t max_len) {
 
     buf[i] = '\0';
 
-    return true;
+    return i > 0; // Return true if we read any characters
 }
 
 // Parse a hex string (0xXXXX) into a uint16_t.
@@ -66,7 +74,7 @@ static void cmdRead(char *args) {
         return;
     }
 
-    uint16_t addr_start;
+    uint32_t addr_start;
 
     if (!parseHex16(token, &addr_start)) {
         printf("ERROR: invalid address '%s'\n", token);
@@ -74,7 +82,7 @@ static void cmdRead(char *args) {
         return;
     }
 
-    uint16_t addr_end = addr_start;
+    uint32_t addr_end = addr_start;
     token = strtok(NULL, " ");
 
     if (token != NULL) {
@@ -91,16 +99,18 @@ static void cmdRead(char *args) {
         }
     }
 
-    for (uint16_t addr = addr_start; addr <= addr_end; addr++) {
+    for (uint32_t addr = addr_start; ; addr++) {
         accessRamAddress(addr);
 
         uint8_t val = readRamCell();
 
         printf("%02X", val);
 
-        if (addr < addr_end) {
-            printf(" ");
+        if (addr == addr_end) {
+            break;
         }
+
+        printf(" ");
     }
 
     printf("\n");
@@ -116,7 +126,7 @@ static void cmdWrite(char *args) {
         return;
     }
 
-    uint16_t addr;
+    uint32_t addr;
 
     if (!parseHex16(token, &addr)) {
         printf("ERROR: invalid address '%s'\n", token);

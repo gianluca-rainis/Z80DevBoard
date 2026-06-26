@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include "pico/stdlib.h"
 
-#ifndef UART
-    #define UART
+#ifndef Z80DEVBOARD_UART
+    #define Z80DEVBOARD_UART
 
     #define UART_CMD_MAX_LEN 64
  

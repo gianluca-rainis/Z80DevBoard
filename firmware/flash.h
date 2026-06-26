@@ -1,8 +1,8 @@
 #include <stdint.h>
 #include <string.h>
 
-#ifndef FLASH
-    #define FLASH
+#ifndef Z80DEVBOARD_FLASH
+    #define Z80DEVBOARD_FLASH
 
     #define FLASH_XIP_BASE 0x10000000u
 
@@ -12,5 +12,5 @@
 
     void flashRead(uint32_t offset, uint8_t *destination, size_t length);
     void loadZ80ProgramFromFlash(uint8_t *ram_buf);
-    void saveZ80ProgramInFlash(uint8_t *prog_buf);
+    void saveZ80ProgramInFlash(const uint8_t *prog_buf);
 #endif

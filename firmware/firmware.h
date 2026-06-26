@@ -3,8 +3,8 @@
 #include <stdbool.h>
 #include "pico/stdlib.h"
 
-#ifndef FIRMWARE
-    #define FIRMWARE
+#ifndef Z80DEVBOARD_FIRMWARE
+    #define Z80DEVBOARD_FIRMWARE
 
     #define GPIO_Z80_PROGRAM_LOAD 0
     #define GPIO_RAM_ADDRESS 1
@@ -45,7 +45,7 @@
     bool releaseBusReq();
 
     // Ram operations
-    void accessRamAddress(uint16_t address);
+    void accessRamAddress(uint32_t address);
     uint8_t readRamCell();
     void writeRamCell(uint8_t data);
 

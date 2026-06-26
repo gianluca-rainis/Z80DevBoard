@@ -1,4 +1,6 @@
 #include "flash.h"
+#include "hardware/flash.h"
+#include "hardware/sync.h"
 
 /* 
  * QSPI Flash access via XIP (eXecute In Place)
@@ -23,8 +25,11 @@ void loadZ80ProgramFromFlash(uint8_t *ram_buf) {
 }
 
 // Save Z80 program to the last 32 KB of flash
-void saveZ80ProgramInFlash(uint8_t *prog_buf) {
-    const uint8_t *program_ptr = (uint8_t *)FLASH_LAST_32K_ADDR;
+void saveZ80ProgramInFlash(const uint8_t *prog_buf) {
+    uint32_t ints = save_and_disable_interrupts();
 
-    memcpy(program_ptr, prog_buf, FLASH_LAST_32K_SIZE);
+    flash_range_erase(FLASH_LAST_32K_OFFSET, FLASH_LAST_32K_SIZE);
+    flash_range_program(FLASH_LAST_32K_OFFSET, prog_buf, FLASH_LAST_32K_SIZE);
+
+    restore_interrupts(ints);
 }
