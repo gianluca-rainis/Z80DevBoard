@@ -14,10 +14,14 @@ bool uartReadLine(char *buf, size_t max_len) {
     }
 
     while (i < max_len - 1) {
-        int c = getchar_timeout_us(10000); // 10ms timeout
+        int c = getchar_timeout_us(i == 0 ? 0 : 100000);
 
         if (c == PICO_ERROR_TIMEOUT) {
-            return false;
+            if (i == 0) {
+                return false; // No characters read
+            }
+
+            continue;
         }
 
         if (c == '\n' || c == '\r') { // End of line
