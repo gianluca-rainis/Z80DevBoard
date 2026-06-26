@@ -26,7 +26,7 @@ bool releaseBusReq() {
 }
 
 // Access the RAM at the given address.
-void accessRamAddress(uint32_t address) {
+void accessRamAddress(uint16_t address) {
     sendBusReqAndWaitBusAck();
     
     for (int i = 15; i >= 0; i--)
@@ -102,7 +102,7 @@ void loadZ80ProgramInRam() {
     {
         uint8_t data = ram_buf[i];
 
-        accessRamAddress(i);
+        accessRamAddress((uint16_t)i);
         writeRamCell(data);
     }
 

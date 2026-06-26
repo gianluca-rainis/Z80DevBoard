@@ -74,7 +74,7 @@ static void cmdRead(char *args) {
         return;
     }
 
-    uint32_t addr_start;
+    uint16_t addr_start;
 
     if (!parseHex16(token, &addr_start)) {
         printf("ERROR: invalid address '%s'\n", token);
@@ -82,7 +82,7 @@ static void cmdRead(char *args) {
         return;
     }
 
-    uint32_t addr_end = addr_start;
+    uint16_t addr_end = addr_start;
     token = strtok(NULL, " ");
 
     if (token != NULL) {
@@ -99,7 +99,7 @@ static void cmdRead(char *args) {
         }
     }
 
-    for (uint32_t addr = addr_start; ; addr++) {
+    for (uint16_t addr = addr_start; ; addr++) {
         accessRamAddress(addr);
 
         uint8_t val = readRamCell();
@@ -126,7 +126,7 @@ static void cmdWrite(char *args) {
         return;
     }
 
-    uint32_t addr;
+    uint16_t addr;
 
     if (!parseHex16(token, &addr)) {
         printf("ERROR: invalid address '%s'\n", token);

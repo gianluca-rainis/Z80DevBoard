@@ -99,9 +99,9 @@ The expansion GPIO definitions are already present in `firmware.h`:
 #define GPIO_EXPANSION_1  12
 #define GPIO_EXPANSION_2  13
 // ...
-# define GPIO_EXPANSION_ADC1 27
-# define GPIO_EXPANSION_ADC2 28
-# define GPIO_EXPANSION_ADC3 29
+#define GPIO_EXPANSION_ADC1 27
+#define GPIO_EXPANSION_ADC2 28
+#define GPIO_EXPANSION_ADC3 29
 ```
 
 **Uncomment** the corresponding `gpio_init` and `gpio_set_dir` calls in `setup()`, then add your logic to `loop()` or dedicated handler functions.
