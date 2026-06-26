@@ -45,9 +45,9 @@
     bool releaseBusReq();
 
     // Ram operations
-    void accessRamAddress(uint16_t address);
+    bool accessRamAddress(uint16_t address);
     uint8_t readRamCell();
-    void writeRamCell(uint8_t data);
+    bool writeRamCell(uint8_t data);
 
     // Z80 operations
     void resetZ80();

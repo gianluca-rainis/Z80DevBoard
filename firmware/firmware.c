@@ -11,8 +11,16 @@ bool sendBusReqAndWaitBusAck() {
 
     gpio_put(GPIO_Z80_BUSREQ, 0);
 
+    uint32_t start = to_ms_since_boot(get_absolute_time());
+
     while (gpio_get(GPIO_Z80_BUSACK) != 0) {
-        // Wait for the Z80 to acknowledge the bus request
+        if (to_ms_since_boot(get_absolute_time()) - start > 1000) {
+            printf("[ERROR] BUSACK timeout\n");
+
+            releaseBusReq();
+            
+            return false;
+        }
     }
 
     return true;
@@ -26,22 +34,28 @@ bool releaseBusReq() {
 }
 
 // Access the RAM at the given address.
-void accessRamAddress(uint16_t address) {
-    sendBusReqAndWaitBusAck();
-    
+bool accessRamAddress(uint16_t address) {
+    if (!sendBusReqAndWaitBusAck()) {
+        return false;
+    }
+
     for (int i = 15; i >= 0; i--)
     {
         gpio_put(GPIO_RAM_ADDRESS, ((address >> i) & 1));
         gpio_put(GPIO_SHIFT_CLOCK, 1);
         gpio_put(GPIO_SHIFT_CLOCK, 0);
     }
+
+    return true;
 }
 
 // Read a byte from the RAM.
 uint8_t readRamCell() {
     uint8_t data = 0;
 
-    sendBusReqAndWaitBusAck();
+    if (!sendBusReqAndWaitBusAck()) {
+        return 0;
+    }
 
     gpio_put(GPIO_RAM_OPERATION, 0);
     sleep_us(1); // Wait for the RAM to prepare the data
@@ -57,8 +71,10 @@ uint8_t readRamCell() {
 }
 
 // Write a byte to the RAM.
-void writeRamCell(uint8_t data) {
-    sendBusReqAndWaitBusAck();
+bool writeRamCell(uint8_t data) {
+    if (!sendBusReqAndWaitBusAck()) {
+        return false;
+    }
 
     gpio_put(GPIO_RAM_OPERATION, 1);
     sleep_us(1); // Wait for the RAM to prepare the data
@@ -69,6 +85,8 @@ void writeRamCell(uint8_t data) {
         gpio_put(GPIO_SHIFT_CLOCK, 1);
         gpio_put(GPIO_SHIFT_CLOCK, 0);
     }
+
+    return true;
 }
 
 // Reset the Z80 to start executing the program loaded in the RAM.
@@ -92,7 +110,6 @@ void Z80ProgramLoadHandler() {
 
     free(prog_buf);
 
-    releaseBusReq();
     resetZ80();
 }
 
@@ -106,8 +123,13 @@ void loadZ80ProgramInRam() {
     {
         uint8_t data = ram_buf[i];
 
-        accessRamAddress((uint16_t)i);
-        writeRamCell(data);
+        if (!accessRamAddress((uint16_t)i)) {
+            break;
+        }
+
+        if (!writeRamCell(data)) {
+            break;
+        }
     }
 
     free(ram_buf);
@@ -188,12 +210,16 @@ void setup() {
 
     if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 0) {
         printf("[LOG] Z80 New Program Loading...\n");
+
         Z80ProgramLoadHandler();
+
         printf("[LOG] New Z80 Program Loaded!\n");
     }
 
     printf("[LOG] Loading Z80 Program in RAM...\n");
+
     loadZ80ProgramInRam();
+
     printf("[LOG] Z80 Program Loaded in RAM!\n");
 }
 
@@ -207,5 +233,8 @@ void loop() {
         printf("> %s\n", cmd);
 
         uartProcessCommand(cmd);
+    }
+    else {
+        sleep_ms(10);
     }
 }
