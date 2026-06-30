@@ -54,3 +54,4 @@ build/
 /firmware/build/picotool/
 /firmware/build/pico-sdk/
 /firmware/build/generated/
+.DS_Store
