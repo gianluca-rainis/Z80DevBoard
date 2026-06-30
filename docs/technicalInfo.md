@@ -67,6 +67,13 @@ KiCad's built-in 3D viewer was used to generate a render of the assembled board,
 *3D render - bottom view*
 
 ## 7.5 The Real Board
+Photos of the assembled, manufactured Z80DevBoard, shown here for reference alongside the 3D render and schematics.
+
+![Assembled Z80DevBoard - top view](/images/Z80DevBoard_FinishedBoard.png)  
+*Assembled Z80DevBoard - top view*
+
+![Assembled Z80DevBoard - bottom view](/images/Z80DevBoard_FinishedBoard_Back.png)  
+*Assembled Z80DevBoard - bottom view*
 
 ## 7.6 Design Choices
 
