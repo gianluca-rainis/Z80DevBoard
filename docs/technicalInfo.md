@@ -58,6 +58,13 @@ The board uses **4 layers**: *F.Cu* and *B.Cu* for general signal routing, *In1.
 *All layers combined*
 
 ## 7.4 3D Render
+KiCad's built-in 3D viewer was used to generate a render of the assembled board, useful for previewing component placement before manufacturing and for visualizing the board without needing a physical unit on hand.
+
+![3D render - top view](/images/screenshot_3d_front.png)  
+*3D render - top view*
+
+![3D render - bottom view](/images/screenshot_3d_back.png)  
+*3D render - bottom view*
 
 ## 7.5 The Real Board
 
