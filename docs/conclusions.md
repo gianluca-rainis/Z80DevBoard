@@ -43,6 +43,21 @@ The Z80DevBoard is a starting point, not a destination. Here are some directions
 - Compare the Z80's architecture to a modern processor and identify what changed, and what didn't
 
 ## 8.3 Contributing
+The Z80DevBoard is released under open licenses: the hardware under **CERN OHL S v2.0**, and the firmware and documentation under the **MIT License**.
+
+This means:
+- You are free to use, study, modify, and manufacture the hardware
+- If you distribute modified versions of the hardware, you must release your changes under the same CERN OHL S v2.0 terms
+- The firmware and documentation can be freely reused, modified, and redistributed under the MIT License
+- Attribution to the original project is appreciated
+
+Contributions are welcome via the GitHub repository:
+- **Bug reports and corrections** - open an issue
+- **Hardware improvements** - submit a pull request against the KiCad project
+- **Firmware features** - submit a pull request against the firmware source
+- **Documentation additions** - submit a pull request against the documentation
+
+Repository: [github.com/gianluca-rainis/Z80DevBoard](https://github.com/gianluca-rainis/Z80DevBoard)
 
 ## 8.4 Acknowledgements
 
