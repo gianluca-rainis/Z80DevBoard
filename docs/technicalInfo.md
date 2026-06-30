@@ -13,7 +13,7 @@ The expansion connectors are located on the bottom-right, keeping them accessibl
 
 The silkscreen includes labels for every Z80 pin, every expansion pin, and all the onboard buttons and switches, making the board self-documenting and easy to use without referring to this manual.
 
-![Bottom view of the Z80DevBoard](/images/screenshot_3d_back.png)  
+![Bottom view of the Z80DevBoard](/images/Z80DevBoard_FinishedBoard_Back.png)  
 *Bottom view of the Z80DevBoard*
 
 ## 7.2 Schematic
@@ -76,7 +76,42 @@ Photos of the assembled, manufactured Z80DevBoard, shown here for reference alon
 *Assembled Z80DevBoard - bottom view*
 
 ## 7.6 Design Choices
+This section explains the reasoning behind some of the key hardware decisions made on the Z80DevBoard.
 
+### Why the Z84C00?
+The *CMOS* variant of the Z80 was chosen specifically because **it supports full static operation**, meaning **the clock can be slowed down** to DC without losing register state.
+This is **what makes manual clocking possible**: stepping through a program one cycle at a time would simply **not work with the original *NMOS Z80***, which requires a **minimum clock frequency to function** correctly.
+
+### Why asynchronous SRAM?
+Asynchronous *SRAM* was chosen for **simpler, more direct memory access from both the Z80 and the RP2040**.
+Since it doesn't rely on a shared clock to coordinate read and write operations, both processors can access it independently, each governed by its own timing: the Z80 through its native bus protocol, and the RP2040 through the shift registers.
+
+### Why the RP2040?
+The RP2040 was chosen as a **modern microcontroller** that offers a **rich set of advanced features** (PIO, dual cores, ample SRAM, USB) at a low cost, making it an ideal companion processor for managing the Z80 environment without requiring custom ASICs or excessive support circuitry.
+
+### Why shift registers and bus transceivers?
+**Shift registers** allow the RP2040 to control the full Z80 address bus and data bus **using only a handful of GPIO pins**, instead of dedicating 24 pins directly to bus signals.
+**Bus transceivers** handle the **voltage difference between the Z80's *5V* logic and the RP2040's *3.3V* logic**, allowing the two to communicate safely.
+
+### Why the LED matrices?
+The LED matrices let you **observe the Z80's bus activity in real time**, without needing a computer, an oscilloscope, or a logic analyzer connected.
+This was a deliberate choice to **keep the board self-contained and immediately readable**.
+
+### Why the buttons?
+- *Z80BOOT* - Enters mass storage mode to load a new Z80 program.
+- *RP2040BOOT* - Enters mass storage mode to flash custom RP2040 firmware.
+- *Z80RESET* - Manually resets the CPU without need to reload the program.
+- *Z80WAIT* - Halts the Z80 mid-execution, useful when running on the automatic clock.
+- *Z80CLOCK* - Manually advances the clock by one cycle, used in manual clock mode.
+
+### Why SWD and SWCLK?
+The ***SWD* debug interface** enables **advanced debugging of the RP2040** like setting breakpoints, inspecting memory and stepping through code, which becomes **essential for custom firmware development**.
+
+### Why expansion pins?
+The expansion connectors are there to **support advanced projects** beyond the board's default functionality: custom I/O handling, hardware actions triggered by interrupts, or entirely new peripherals built on top of the existing platform.
+
+### Why USB-C?
+USB-C is the modern standard, present on virtually every laptop and workstation today, eliminating the need for adapters or legacy cables.
 
 ---
 
