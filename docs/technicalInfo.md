@@ -39,6 +39,23 @@ The images below show the main sections of the schematic for reference.
 *SRAM and flash*
 
 ## 7.3 PCB Layout
+The PCB layout was designed in KiCad with attention to **signal integrity**, **routing clarity**, and **ease of hand-assembly**.
+The board uses **4 layers**: *F.Cu* and *B.Cu* for general signal routing, *In1.Cu* for the power distribution network (5V and 3.3V), and *In2.Cu* as a solid ground plane.
+
+![Front copper layer (F.Cu)](/images/screenshot_pcb_FCu.png)  
+*Front copper layer (F.Cu)*
+
+![Inner layer In1.Cu](/images/screenshot_pcb_In1Cu.png)  
+*Inner layer In1.Cu*
+
+![Inner layer In2.Cu](/images/screenshot_pcb_In2Cu.png)  
+*Inner layer In2.Cu*
+
+![Back copper layer (B.Cu)](/images/screenshot_pcb_BCu.png)  
+*Back copper layer (B.Cu)*
+
+![All layers combined](/images/screenshot_pcb_only_layers.png)  
+*All layers combined*
 
 ## 7.4 3D Render
 
