@@ -49,7 +49,135 @@ unknowncmd        -> ERROR: unknown command 'unknowncmd'
 ```
 
 ## 5.3 Writing Custom RP2040 Firmware
-> *This section is not yet available. It will be added in a future version of the documentation.*
+The Z80DevBoard's official firmware is open source and built with the **Raspberry Pi Pico SDK**, written in **C**.
+This section covers how to set up a development environment, build firmware from source, and extend it with your own functionality.
+
+### 5.3.1 Setting Up the Development Environment
+You will need:
+- **CMake** (3.13 or later)
+- **GCC ARM toolchain** (arm-none-eabi-gcc)
+- **Pico SDK** (cloned from the official Raspberry Pi repository)
+- **Git**
+
+Clone the Z80DevBoard repository and move in the project's folder:
+```bash
+git clone https://github.com/gianluca-rainis/Z80DevBoard.git
+
+cd Z80DevBoard
+```
+
+---
+
+#### Linux (Debian/Ubuntu-based)
+```bash
+sudo apt update
+sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential git
+
+cd firmware
+git clone -b master https://github.com/raspberrypi/pico-sdk.git
+cd pico-sdk
+git submodule update --init
+export PICO_SDK_PATH=$(pwd)
+```
+
+#### macOS
+```bash
+brew install cmake arm-none-eabi-gcc git
+
+cd firmware
+git clone -b master https://github.com/raspberrypi/pico-sdk.git
+cd pico-sdk
+git submodule update --init
+export PICO_SDK_PATH=$(pwd)
+```
+
+#### Windows
+The simplest approach is to use the official **Raspberry Pi Pico Setup Windows installer**, which configures CMake, the ARM toolchain, and the Pico SDK automatically.
+Alternatively, install the prerequisites manually via MSYS2 or the ARM GNU Toolchain installer, then clone the Pico SDK as shown above.
+
+On all platforms, make sure the `PICO_SDK_PATH` environment variable points to your Pico SDK directory, this is required by the build system.
+
+### 5.3.2 Building the Firmware
+Build the firmware repository with CMake:
+```bash
+mkdir build
+cmake --build build --parallel
+```
+
+If the build succeeds, a `.uf2` file will be produced in the `build/` directory, this is the file you flash onto the board.
+
+### 5.3.3 Flashing Custom Firmware
+Custom firmware is flashed the same way as official releases, using the *RP2040BOOT* button described in section [5.1 Flashing the Firmware](advanced.md#51-flashing-the-firmware):
+1. Hold *RP2040BOOT* while connecting the board via USB-C.
+2. The RP2040 exposes itself as a mass storage device.
+3. Copy your compiled `.uf2` file onto the drive.
+4. The board resets automatically and boots into your custom firmware.
+
+> Always keep a copy of the latest official `.uf2` firmware on hand, so you can restore the board to its default behavior if your custom firmware doesn't work as expected.
+
+> Remember that you can always use the *SWD* and *SWCLK* pins on the board to live debug your firmware.
+
+### 5.3.4 Adding a New UART Command
+The UART command parser, implemented in `uart.c`, dispatches incoming commands by comparing the first word of the input line.
+Adding a new command means adding a new branch to this dispatch logic and writing a handler function for it.
+
+As an example, here's how to add a `version` command that reports the firmware version:
+```c
+// In uart.c
+
+#define FIRMWARE_VERSION "1.7.0"
+
+// Handle command: version
+static void cmdVersion(char *args) {
+    printf("Z80DevBoard firmware v%s\n", FIRMWARE_VERSION);
+}
+
+// Dispatch a command string to the appropriate handler.
+void uartProcessCommand(const char *cmd) {
+    // ... existing code ...
+
+    if (strcmp(verb, "read") == 0) {
+        cmdRead(args);
+    }
+    else if (strcmp(verb, "write") == 0) {
+        cmdWrite(args);
+    }
+    else if (strcmp(verb, "version") == 0) {
+        cmdVersion(args);
+    }
+    else {
+        printf("ERROR: unknown command '%s'\n", verb);
+    }
+}
+```
+
+Any handler function follows the same pattern: it receives the remainder of the command line as a string (`args`), parses whatever parameters it needs, performs its operation, and writes a response using `printf`.
+
+### 5.3.5 Using the Expansion GPIO Pins
+The expansion pins exposed on the 2×10 connector (`GPIO10-GPIO25`, `ADC0`, `ADC1`) are defined in `firmware.h` but left uninitialised by default, since their use depends entirely on your project.
+
+To use them, uncomment and adapt the relevant `gpio_init` calls in `setup()`:
+```c
+gpio_init(GPIO_EXPANSION_1);
+gpio_set_dir(GPIO_EXPANSION_1, GPIO_OUT);
+```
+
+For analog input via the ADC-capable pins, initialise the RP2040 ADC peripheral instead of treating the pin as a digital GPIO:
+```c
+#include "hardware/adc.h"
+
+adc_init();
+adc_gpio_init(GPIO_EXPANSION_ADC0);
+adc_select_input(0);
+
+uint16_t result = adc_read();
+```
+
+Once initialised, you can read or drive these pins anywhere in your firmware: inside `loop()`, inside a UART command handler, or inside an interrupt handler if you configure one.
+
+### 5.3.6 A Note on the Z80 Bus
+Any custom firmware that interacts with the Z80 bus (reading or writing SRAM, monitoring control signals) must respect the bus arbitration protocol.
+Always call `sendBusReqAndWaitBusAck()` before accessing the bus directly, and `releaseBusReq()` once finished, to avoid bus contention with the Z80.
 
 ## 5.4 Using an Expansion Board
 The Z80DevBoard exposes **two expansion connectors** described in detail in [Chapter 3 - Pinout & Connectors](pinout.md).
