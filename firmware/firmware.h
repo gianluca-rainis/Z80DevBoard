@@ -36,6 +36,9 @@
     #define GPIO_EXPANSION_ADC2 28
     #define GPIO_EXPANSION_ADC3 29
 
+    // Variables
+    extern bool wasSerialConnected; // Flag to check if the serial was connected at least once
+
     // Main functions
     void setup();
     void loop();
@@ -52,4 +55,11 @@
     // Z80 operations
     void resetZ80();
     void loadZ80ProgramInRam();
+
+    // Support functions
+    void printSerialBanner();
+#endif
+
+#ifndef null
+    #define null 0
 #endif

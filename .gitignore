@@ -50,3 +50,7 @@ CMakeUserPresets.json
 .local
 build/
 .history/
+/firmware/pico-sdk/
+/firmware/build/picotool/
+/firmware/build/pico-sdk/
+/firmware/build/generated/

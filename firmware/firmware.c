@@ -2,6 +2,8 @@
 #include "uart.h"
 #include <stdlib.h>
 
+bool wasSerialConnected = false;
+
 // Send a bus request to the Z80 and wait for the bus acknowledgment.
 bool sendBusReqAndWaitBusAck() {
     if (gpio_get(GPIO_Z80_BUSACK) == 0) {
@@ -138,6 +140,16 @@ void loadZ80ProgramInRam() {
     resetZ80();
 }
 
+// Print the serial banner to the USB terminal.
+void printSerialBanner() {
+    printf("+---------------------------------+\n");
+    printf("|           Z80DevBoard           |\n");
+    printf("|                                 |\n");
+    printf("|        Official Firmware        |\n");
+    printf("|         Serial Terminal         |\n");
+    printf("+---------------------------------+\n\n");
+}
+
 /* 
     This function is runned only once at the start of the program.
 */
@@ -201,32 +213,43 @@ void setup() {
 
     uartInitUsb();
 
-    printf("+---------------------------------+\n");
-    printf("|           Z80DevBoard           |\n");
-    printf("|                                 |\n");
-    printf("|        Official Firmware        |\n");
-    printf("|         Serial Terminal         |\n");
-    printf("+---------------------------------+\n\n");
+    bool connectedSerial = stdio_usb_connected();
+    
+    if (connectedSerial && !wasSerialConnected) {
+        printSerialBanner();
+    }
+
+    wasSerialConnected = connectedSerial;
 
     if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 0) {
-        printf("[LOG] Z80 New Program Loading...\n");
+        wasSerialConnected?printf("[LOG] Z80 New Program Loading...\n"):null;
 
         Z80ProgramLoadHandler();
 
-        printf("[LOG] New Z80 Program Loaded!\n");
+        wasSerialConnected?printf("[LOG] New Z80 Program Loaded!\n"):null;
     }
 
-    printf("[LOG] Loading Z80 Program in RAM...\n");
+    wasSerialConnected?printf("[LOG] Loading Z80 Program in RAM...\n"):null;
 
     loadZ80ProgramInRam();
 
-    printf("[LOG] Z80 Program Loaded in RAM!\n");
+    wasSerialConnected?printf("[LOG] Z80 Program Loaded in RAM!\n"):null;
 }
 
 /* 
     This function is runned in a loop after the setup function.
 */
 void loop() {
+    // Check if the USB terminal is connected
+    bool connectedSerial = stdio_usb_connected();
+
+    if (connectedSerial && !wasSerialConnected) {
+        printSerialBanner();
+    }
+
+    wasSerialConnected = connectedSerial;
+
+    // Check if a command is received from the USB terminal
     char cmd[UART_CMD_MAX_LEN];
 
     if (uartReadLine(cmd, sizeof(cmd))) {

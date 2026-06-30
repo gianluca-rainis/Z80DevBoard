@@ -7,7 +7,7 @@ void uartInitUsb() {
     uint32_t start = to_ms_since_boot(get_absolute_time());
 
     while (!stdio_usb_connected()) { // Wait for USB to be ready
-        if (to_ms_since_boot(get_absolute_time()) - start > 3000) {
+        if (to_ms_since_boot(get_absolute_time()) - start > 1000) {
             break;
         }
 
