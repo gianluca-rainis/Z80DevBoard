@@ -13,11 +13,12 @@ Connection to the computer, used for both power and data transmission, is via a 
 Two sockets are provided for expansion boards or for advanced projects.
 The SWD and SWCLK pins on the RP2040 are accessible to allow a fix for any firmware crashes that prevented the fix from loading over USB-C.
 
-<img src="./images/phisical_board.png" alt="Z80DevBoard Picture">
+<img src="./images/Z80DevBoard_FinishedBoard.png" alt="Front view of the dev board">
+<img src="./images/Z80DevBoard_FinishedBoard_Back.png" alt="Front view of the dev board">
 
 ---
 
-<img src="./images/Z80DevBoard_FinishedBoard.png" alt="Front view of the dev board">
+<img src="./images/phisical_board.png" alt="Z80DevBoard Picture">
 
 ## Author
 The author of the whole project is: 
@@ -47,7 +48,11 @@ Licensed under [CERN-OHL-S v2.0](LICENSE-CERN-OHL-S.md)
 Licensed under the [MIT License](LICENSE-MIT.md)
 
 ## AI Disclaimer
-No AI was used in this project. Everything was designed by the author.
+**No AI was used in the conception, design, engineering, or development of this project**.
+Every circuit and every design decision is the original work of the author.
+
+*AI tools* were used solely as a **writing assistant** for **parts of the documentation**, to help refine and organize technical explanations.
+**All content has been reviewed, verified, and edited by the author.**
 
 ## Documentation
 The full documentation is available in the [`docs/`](docs/index.md) folder.
@@ -63,6 +68,7 @@ The Gerber files for PCB manufacturing are available in the [`gerber/`](gerber/)
 ```
 Z80DevBoard/
 ├── customFootprints.pretty/  # Custom footprints
+├── docs/                     # The documentation and the guides
 ├── firmware/                 # The RP2040 firmware
 ├── gerber/                   # PCB manufacturing files (Gerber format)
 ├── images/                   # Documentation images and KiCad symbols
@@ -72,7 +78,10 @@ Z80DevBoard/
 ├── Z80DevBoard.kicad_pcb     # PCB layout file
 ├── Z80DevBoard.kicad_pro     # KiCad project file
 ├── Z80DevBoard.kicad_sch     # Schematic file
+├── Z80DevBoard.step          # 3D model
 ├── BOM.csv                   # Bill Of Materials
+├── CHANGELOG.md              # Change log of the project
+├── JOURNAL.md                # Journal of the project
 ├── LICENSE-CERN-OHL-S.md     # CERN-OHL-S License
 ├── LICENSE-MIT.md            # MIT License
 └── README.md                 # This file
@@ -155,60 +164,6 @@ Z80DevBoard/
 |Diodes|24|Other|SMD|
 |Fuse 500mA|1|Other|SMD|
 
-## Components List
-### Microprocessors
-- 1 Z84C00
-- 1 RP2040
-
-### Memory
-- 2 HM62256BLP (RAM)
-- 1 W25Q32JVSS (Flash)
-
-### Power Management
-- 1 AMS1117-3.3 (5V to 3v3)
-
-### Data Bus
-- 1 USB C 2.0 port
-- 3 74HC595 (Serial to 8 bit)
-- 1 74HC155 (8 bit to Serial)
-- 4 74HCT574 (8 bit Buffer)
-- 3 SN74LVC245APW (Bus to handle the voltage differences)
-- 1 TXS0104EPW (Bus to handle the voltage differences)
-- 1 Connector 2 pins
-- 1 Connector 2×20 pins
-- 1 Connector 2×10 pins
-
-### Clock
-- 1 Crystal 12MHz 20pF
-- 1 Oscillator 8MHz
-
-### Support components
-- 1 74HC14
-- 1 74HC04
-- 1 74HC00
-
-### Resistors
-- 1 Resistor 0 ohm
-- 2 Resistors 27.4 ohm
-- 34 Resistors 1k ohm
-- 6 Resistors 3.3k ohm
-- 2 Resistors 5k ohm
-- 12 Resistors 10k ohm
-- 1 Resistor 470k ohm
-
-### Capacitors
-- 2 Capacitors 15pF
-- 8 Capacitors 0.1uF
-- 3 Capacitor 1uF
-- 2 Capacitors 10uF
-
-### Other
-- 5 Buttons
-- 1 Switch
-- 40 LEDs
-- 24 Diodes
-- 1 Fuse 500mA
-
 ## Firmware
 ### Build
 From the project root, make sure CMake and the ARM GNU toolchain (arm-none-eabi-gcc) are installed.
@@ -233,8 +188,3 @@ If you build locally on Windows and need UF2 generation, configure with both the
 #### Output file
 The file to load in the RP2040's memory after the build is `Z80DevBoard.uf2`.
 You can find it in the `/firmware/build` folder.
-
-## Hardware
-<img src="./images/Z80DevBoard_FinishedBoard.png" alt="Front view of the dev board">
-
-<img src="./images/phisical_board.png" alt="Z80DevBoard Picture">
