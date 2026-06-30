@@ -60,7 +60,19 @@ Contributions are welcome via the GitHub repository:
 Repository: [github.com/gianluca-rainis/Z80DevBoard](https://github.com/gianluca-rainis/Z80DevBoard)
 
 ## 8.4 Acknowledgements
+The Z80DevBoard draws on decades of publicly available documentation, open-source tooling, and community knowledge:
 
+- **Zilog** - for producing and documenting the Z80 so thoroughly
+- **Raspberry Pi Ltd** - for the RP2040 and the Pico SDK
+- **The KiCad team** - truly excellent open-source PCB design software, free for everyone
+- **Hack Club** - for fostering a community of young makers and giving projects like this a place to grow
+- **Every student, teacher, and hobbyist** who kept 8-bit computing alive and worth caring about
+
+> *A special thanks goes to* **[PCBWay](https://www.pcbway.com)***, whose sponsorship made the manufacturing of this board possible in the first place.*
+> [![PCBWay](/images/pcbway.png)](https://www.pcbway.com)
+> *Their precision, reliability, and genuinely helpful technical staff turned a KiCad design file into a real, working board. Without them, this project would still be a set of schematics on a screen.*
+
+This documentation, and the board it describes, would not exist in this form without all of the above.
 
 ---
 
