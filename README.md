@@ -190,3 +190,6 @@ If you build locally on Windows and need UF2 generation, configure with both the
 #### Output file
 The file to load in the RP2040's memory after the build is `Z80DevBoard.uf2`.
 You can find it in the `/firmware/build` folder.
+
+### Firmware Video Presentation
+<video src="/images/videos/Z80DevBoard_Presentation.mp4" width="320" height="240" controls></video>

@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 ### Added
+- Added the pdf file of the Schematics.
+- Added the pdf file of the PCB Layout.
+- Created a video presentation for the Official Firmware Demo.
+- Added the help command in the firmware.
 
 ### Fixed
 
