@@ -1,9 +1,11 @@
 # Z80DevBoard
-![License](https://img.shields.io/github/license/gianluca-rainis/Z80DevBoard)
+![Hardware License](https://img.shields.io/github/license/gianluca-rainis/Z80DevBoard)
+![Software License](https://img.shields.io/badge/license-MIT_License-grey?color=%23939393)
+![GitHub Release](https://img.shields.io/github/v/release/gianluca-rainis/Z80DevBoard?logo=github&color=orange)
 ![GitHub Repo stars](https://img.shields.io/github/stars/gianluca-rainis/Z80DevBoard)
 ![GitHub watchers](https://img.shields.io/github/watchers/gianluca-rainis/Z80DevBoard)
 [![Documentation](https://img.shields.io/badge/Documentation-Guides-blue?logo=markdown)](/docs/index.md)
-[![Sponsor](https://img.shields.io/badge/❤_sponsor-PCBWay-darkgreen?link=https%3A%2F%2Fwww.pcbway.com%2F)](https://www.pcbway.com/)
+[![Sponsor](https://img.shields.io/badge/sponsor-PCBWay-darkgreen?logo=githubsponsors&link=https%3A%2F%2Fwww.pcbway.com%2F)](https://www.pcbway.com/)
 
 The Z80DevBoard is an advanced development board for the Z80 microprocessor, based on the RP2040.
 

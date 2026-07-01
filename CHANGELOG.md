@@ -3,15 +3,18 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 ### Added
-- Added the documentation.
-- Created the CHANGELOG file.
 
 ### Fixed
-- Fixed the board size.
-- Fixed SWD and SCLK pins.
-- Fixed the crystal and the capacitors for the RP2040 clock.
-- Fixed the data bus clock.
-- Fixed some connections.
+
+### Changed
+
+### Removed
+
+## v1.8.0 - 2026-07-01
+### Added
+- Wrote the whole documentation.
+- Created the CHANGELOG file.
+- Created the JOURNAL file.
 
 ### Changed
 - Updated the firmware.

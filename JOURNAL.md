@@ -207,3 +207,16 @@ Created the `CHANGELOG.md` file.
 Created the `JOURNAL.md` file.
 
 **Total time spent: ~2h**
+
+# June 8th-30th: Wrote the documentation
+Finished the full documentation for the Z80DevBoard, structured as a multi-chapter book designed for educational kits.
+
+Finished the *Chapter 6 - Z80 Assembly Programming*.
+Wrote the *Chapter 7 - Schematics & KiCad Reference*.
+Wrote the *Chapter 8 - Conclusions*.
+
+Added Chapter *5.3 Writing Custom RP2040 Firmware*.
+
+Implemented `uart.c` and `uart.h` for the firmware: *USB CDC* serial interface, *command parser*, `read` and `write` handlers.
+
+**Total time spent: ~15h**

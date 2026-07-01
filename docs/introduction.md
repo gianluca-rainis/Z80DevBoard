@@ -112,11 +112,18 @@ The goal became building a board that would make that possible: not just a perso
 - Fixed the sizes of the Expansion pin's names and of the Z80 pin's names.
 - Changed the footprint of the capacitors.
 
-### Version 1.7.0 *(current)*
+### Version 1.7.0
 - Fixed the alimentation of the RP2040.
 - Fixed the footprints of the two pin extension's sockets.
 - Fixed the size of the board.
 - Now the project is sponsorized by PCBWay!
+
+### Version 1.8.0 *(current)*
+- Wrote the whole documentation.
+- Created the CHANGELOG file.
+- Created the JOURNAL file.
+- Updated the firmware.
+- Updated the README file.
 
 ## 1.5 What You Can Do With This Board
 The Z80DevBoard lets you:

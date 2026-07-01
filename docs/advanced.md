@@ -125,7 +125,7 @@ As an example, here's how to add a `version` command that reports the firmware v
 ```c
 // In uart.c
 
-#define FIRMWARE_VERSION "1.7.0"
+#define FIRMWARE_VERSION "1.0.0"
 
 // Handle command: version
 static void cmdVersion(char *args) {
