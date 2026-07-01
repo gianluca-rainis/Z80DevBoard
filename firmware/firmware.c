@@ -19,9 +19,9 @@ bool sendBusReqAndWaitBusAck() {
 
     uint32_t start = to_ms_since_boot(get_absolute_time());
 
+    printf("[LOG] Awaiting BUSACK\n");
+    
     while (gpio_get(GPIO_Z80_BUSACK) != 0) {
-        printf("[LOG] Awaiting BUSACK\n");
-
         if (to_ms_since_boot(get_absolute_time()) - start > 3000) {
             printf("[ERROR] BUSACK timeout\n");
 

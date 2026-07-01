@@ -35,23 +35,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  15 .comment      00000045  00000000  00000000  0000c7d0  2**0
                   CONTENTS, READONLY
- 16 .debug_info   0003362b  00000000  00000000  0000c815  2**0
+ 16 .debug_info   0003362a  00000000  00000000  0000c815  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_abbrev 000091fe  00000000  00000000  0003fe40  2**0
+ 17 .debug_abbrev 000091fe  00000000  00000000  0003fe3f  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  18 .debug_aranges 00001780  00000000  00000000  00049040  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_rnglists 00005465  00000000  00000000  0004a7c0  2**0
+ 19 .debug_rnglists 00005474  00000000  00000000  0004a7c0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_line   0002bdb7  00000000  00000000  0004fc25  2**0
+ 20 .debug_line   0002bdd1  00000000  00000000  0004fc34  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_str    000094be  00000000  00000000  0007b9dc  2**0
+ 21 .debug_str    000094be  00000000  00000000  0007ba05  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_frame  000035e8  00000000  00000000  00084e9c  2**2
+ 22 .debug_frame  000035e8  00000000  00000000  00084ec4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_loclists 0001e49b  00000000  00000000  00088484  2**0
+ 23 .debug_loclists 0001e49b  00000000  00000000  000884ac  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 24 .debug_line_str 0000059a  00000000  00000000  000a691f  2**0
+ 24 .debug_line_str 0000059a  00000000  00000000  000a6947  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 /Users/gianlucarainis/Documents/GitHub_Projects/Z80DevBoard/firmware/build/Z80DevBoard.elf:     file format elf32-littlearm
@@ -346,22 +346,22 @@ Disassembly of section .text:
 100002fc:	61a3      	str	r3, [r4, #24]
 100002fe:	f001 fe5d 	bl	10001fbc <time_us_64>
 10000302:	2900      	cmp	r1, #0
-10000304:	d12c      	bne.n	10000360 <sendBusReqAndWaitBusAck+0x80>
-10000306:	21fa      	movs	r1, #250	@ 0xfa
-10000308:	0089      	lsls	r1, r1, #2
-1000030a:	f002 f9ef 	bl	100026ec <__wrap___aeabi_uidiv>
-1000030e:	0004      	movs	r4, r0
-10000310:	4d1d      	ldr	r5, [pc, #116]	@ (10000388 <sendBusReqAndWaitBusAck+0xa8>)
-10000312:	23d0      	movs	r3, #208	@ 0xd0
-10000314:	061b      	lsls	r3, r3, #24
-10000316:	685b      	ldr	r3, [r3, #4]
-10000318:	051b      	lsls	r3, r3, #20
-1000031a:	d51c      	bpl.n	10000356 <sendBusReqAndWaitBusAck+0x76>
-1000031c:	0028      	movs	r0, r5
-1000031e:	f004 fe4f 	bl	10004fc0 <__wrap_puts>
+10000304:	d02c      	beq.n	10000360 <sendBusReqAndWaitBusAck+0x80>
+10000306:	22fa      	movs	r2, #250	@ 0xfa
+10000308:	2300      	movs	r3, #0
+1000030a:	0092      	lsls	r2, r2, #2
+1000030c:	f002 fa2c 	bl	10002768 <__wrap___aeabi_uldivmod>
+10000310:	0004      	movs	r4, r0
+10000312:	25d0      	movs	r5, #208	@ 0xd0
+10000314:	481c      	ldr	r0, [pc, #112]	@ (10000388 <sendBusReqAndWaitBusAck+0xa8>)
+10000316:	f004 fe53 	bl	10004fc0 <__wrap_puts>
+1000031a:	062d      	lsls	r5, r5, #24
+1000031c:	686b      	ldr	r3, [r5, #4]
+1000031e:	051b      	lsls	r3, r3, #20
+10000320:	d519      	bpl.n	10000356 <sendBusReqAndWaitBusAck+0x76>
 10000322:	f001 fe4b 	bl	10001fbc <time_us_64>
 10000326:	2900      	cmp	r1, #0
-10000328:	d021      	beq.n	1000036e <sendBusReqAndWaitBusAck+0x8e>
+10000328:	d020      	beq.n	1000036c <sendBusReqAndWaitBusAck+0x8c>
 1000032a:	22fa      	movs	r2, #250	@ 0xfa
 1000032c:	2300      	movs	r3, #0
 1000032e:	0092      	lsls	r2, r2, #2
@@ -369,7 +369,7 @@ Disassembly of section .text:
 10000334:	4b15      	ldr	r3, [pc, #84]	@ (1000038c <sendBusReqAndWaitBusAck+0xac>)
 10000336:	1b00      	subs	r0, r0, r4
 10000338:	4298      	cmp	r0, r3
-1000033a:	d9ea      	bls.n	10000312 <sendBusReqAndWaitBusAck+0x32>
+1000033a:	d9ef      	bls.n	1000031c <sendBusReqAndWaitBusAck+0x3c>
 1000033c:	4814      	ldr	r0, [pc, #80]	@ (10000390 <sendBusReqAndWaitBusAck+0xb0>)
 1000033e:	f004 fe3f 	bl	10004fc0 <__wrap_puts>
 10000342:	4814      	ldr	r0, [pc, #80]	@ (10000394 <sendBusReqAndWaitBusAck+0xb4>)
@@ -385,20 +385,20 @@ Disassembly of section .text:
 10000358:	f004 fe32 	bl	10004fc0 <__wrap_puts>
 1000035c:	2001      	movs	r0, #1
 1000035e:	bd70      	pop	{r4, r5, r6, pc}
-10000360:	22fa      	movs	r2, #250	@ 0xfa
-10000362:	2300      	movs	r3, #0
-10000364:	0092      	lsls	r2, r2, #2
-10000366:	f002 f9ff 	bl	10002768 <__wrap___aeabi_uldivmod>
-1000036a:	0004      	movs	r4, r0
-1000036c:	e7d0      	b.n	10000310 <sendBusReqAndWaitBusAck+0x30>
-1000036e:	21fa      	movs	r1, #250	@ 0xfa
-10000370:	0089      	lsls	r1, r1, #2
-10000372:	f002 f9bb 	bl	100026ec <__wrap___aeabi_uidiv>
-10000376:	4b05      	ldr	r3, [pc, #20]	@ (1000038c <sendBusReqAndWaitBusAck+0xac>)
-10000378:	1b00      	subs	r0, r0, r4
-1000037a:	4298      	cmp	r0, r3
-1000037c:	d9c9      	bls.n	10000312 <sendBusReqAndWaitBusAck+0x32>
-1000037e:	e7dd      	b.n	1000033c <sendBusReqAndWaitBusAck+0x5c>
+10000360:	21fa      	movs	r1, #250	@ 0xfa
+10000362:	0089      	lsls	r1, r1, #2
+10000364:	f002 f9c2 	bl	100026ec <__wrap___aeabi_uidiv>
+10000368:	0004      	movs	r4, r0
+1000036a:	e7d2      	b.n	10000312 <sendBusReqAndWaitBusAck+0x32>
+1000036c:	21fa      	movs	r1, #250	@ 0xfa
+1000036e:	0089      	lsls	r1, r1, #2
+10000370:	f002 f9bc 	bl	100026ec <__wrap___aeabi_uidiv>
+10000374:	4b05      	ldr	r3, [pc, #20]	@ (1000038c <sendBusReqAndWaitBusAck+0xac>)
+10000376:	1b00      	subs	r0, r0, r4
+10000378:	4298      	cmp	r0, r3
+1000037a:	d9cf      	bls.n	1000031c <sendBusReqAndWaitBusAck+0x3c>
+1000037c:	e7de      	b.n	1000033c <sendBusReqAndWaitBusAck+0x5c>
+1000037e:	46c0      	nop			@ (mov r8, r8)
 10000380:	10008630 	.word	0x10008630
 10000384:	10008648 	.word	0x10008648
 10000388:	1000867c 	.word	0x1000867c
