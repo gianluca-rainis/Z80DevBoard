@@ -177,6 +177,14 @@ static void cmdWrite(char *args) {
     printf("%02X\n", readback);
 }
 
+// Handle command: help
+static void cmdHelp(char *args) {
+    printf("Available commands:\n");
+    printf("\tread <addrstart> [addrend] - Read bytes from RAM, from a single address or from a range.\n");
+    printf("\twrite <addr> <value> - Write a byte to RAM in the given address.\n");
+    printf("\thelp - Show this help message.\n");
+}
+
 // Dispatch a command string to the appropriate handler.
 void uartProcessCommand(const char *cmd) {
     // Make a mutable copy to allow strtok
@@ -199,6 +207,9 @@ void uartProcessCommand(const char *cmd) {
     }
     else if (strcmp(verb, "write") == 0) {
         cmdWrite(args);
+    }
+    else if (strcmp(verb, "help") == 0) {
+        cmdHelp(args);
     }
     else {
         printf("ERROR: unknown command '%s'\n", verb);

@@ -8,15 +8,21 @@ bool wasSerialConnected = false;
 bool sendBusReqAndWaitBusAck() {
     if (gpio_get(GPIO_Z80_BUSACK) == 0) {
         // BUSREQ already sended and BUSACK already received
+        printf("[LOG] Received BUSACK\n");
+
         return true;
     }
 
+    printf("[LOG] Sending BUSREQ\n");
+    printf("[INFO] Remember to send a clock signal to the Z80!\n");
     gpio_put(GPIO_Z80_BUSREQ, 0);
 
     uint32_t start = to_ms_since_boot(get_absolute_time());
 
     while (gpio_get(GPIO_Z80_BUSACK) != 0) {
-        if (to_ms_since_boot(get_absolute_time()) - start > 1000) {
+        printf("[LOG] Awaiting BUSACK\n");
+
+        if (to_ms_since_boot(get_absolute_time()) - start > 3000) {
             printf("[ERROR] BUSACK timeout\n");
 
             releaseBusReq();
@@ -25,11 +31,15 @@ bool sendBusReqAndWaitBusAck() {
         }
     }
 
+    printf("[LOG] Received BUSACK\n");
+
     return true;
 }
 
 // Release the bus request to the Z80.
 bool releaseBusReq() {
+    printf("[LOG] Releasing BUSREQ\n");
+    
     gpio_put(GPIO_Z80_BUSREQ, 1);
 
     return true;
