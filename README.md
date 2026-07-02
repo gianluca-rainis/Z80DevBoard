@@ -192,4 +192,4 @@ The file to load in the RP2040's memory after the build is `Z80DevBoard.uf2`.
 You can find it in the `/firmware/build` folder.
 
 ### Firmware Video Presentation
-<video src="/images/videos/Z80DevBoard_Presentation.mp4" alt="Z80DevBoard Firmware Video Presentation" width="320" height="240" controls></video>
+https://github.com/user-attachments/assets/ee6d8d69-4003-4e21-8f2b-2f08ad0c8d81
