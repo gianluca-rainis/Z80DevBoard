@@ -1,29 +1,32 @@
 #include "firmware.h"
 #include "uart.h"
+#include "mscDisk.h"
+#include "tusb.h"
 #include <stdlib.h>
 
 bool wasSerialConnected = false;
+bool showLogs = false;
 
 // Send a bus request to the Z80 and wait for the bus acknowledgment.
 bool sendBusReqAndWaitBusAck() {
     if (gpio_get(GPIO_Z80_BUSACK) == 0) {
         // BUSREQ already sended and BUSACK already received
-        printf("[LOG] Received BUSACK\n");
+        showLogs?printf("[LOG] Received BUSACK.\n"):null;
 
         return true;
     }
 
-    printf("[LOG] Sending BUSREQ\n");
-    printf("[INFO] Remember to send a clock signal to the Z80!\n");
+    showLogs?printf("[LOG] Sending BUSREQ.\n"):null;
+    showLogs?printf("[INFO] Remember to send a clock signal to the Z80!\n"):null;
     gpio_put(GPIO_Z80_BUSREQ, 0);
 
     uint32_t start = to_ms_since_boot(get_absolute_time());
 
-    printf("[LOG] Awaiting BUSACK\n");
+    showLogs?printf("[LOG] Awaiting BUSACK.\n"):null;
     
     while (gpio_get(GPIO_Z80_BUSACK) != 0) {
         if (to_ms_since_boot(get_absolute_time()) - start > 3000) {
-            printf("[ERROR] BUSACK timeout\n");
+            showLogs?printf("[ERROR] BUSACK timeout\n"):null;
 
             releaseBusReq();
             
@@ -31,14 +34,14 @@ bool sendBusReqAndWaitBusAck() {
         }
     }
 
-    printf("[LOG] Received BUSACK\n");
+    showLogs?printf("[LOG] Received BUSACK.\n"):null;
 
     return true;
 }
 
 // Release the bus request to the Z80.
 bool releaseBusReq() {
-    printf("[LOG] Releasing BUSREQ\n");
+    showLogs?printf("[LOG] Releasing BUSREQ.\n"):null;
     
     gpio_put(GPIO_Z80_BUSREQ, 1);
 
@@ -108,16 +111,32 @@ void resetZ80() {
     gpio_put(GPIO_Z80_RESET, 1);
 }
 
+// Read the Z80 program from the USB to the RAM.
+void readZ80ProgramFromUsb(uint8_t *prog_buf) {
+    mscDiskInit();
+
+    showLogs?printf("[LOG] MSC disk ready.\n"):null;
+    showLogs?printf("[INFO] Copy PROGRAM.BIN on the Z80DevBoard drive.\n"):null;
+
+    // Wait for the disk to be written
+    while (!mscDiskWritten()) {
+        tud_task(); // Handle USB events
+        sleep_ms(10);
+    }
+
+    sleep_ms(500); // Wait for the disk to be written completely
+    
+    mscDiskRead(prog_buf);
+
+    showLogs?printf("[LOG] Program received from USB disk.\n"):null;
+}
+
 // Load the Z80 program from the USB to the flash memory.
 void Z80ProgramLoadHandler() {
     uint8_t *prog_buf = malloc(FLASH_LAST_32K_SIZE);
 
-    // TODO: readZ80ProgramFromUsb(prog_buf);
-    for (uint32_t i = 0; i < FLASH_LAST_32K_SIZE; i++)
-    {
-        prog_buf[i] = 0;
-    }
-    // -------------------------------------
+    readZ80ProgramFromUsb(prog_buf);
+    
     saveZ80ProgramInFlash(prog_buf);
 
     free(prog_buf);
@@ -232,18 +251,18 @@ void setup() {
     wasSerialConnected = connectedSerial;
 
     if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 0) {
-        wasSerialConnected?printf("[LOG] Z80 New Program Loading...\n"):null;
+        wasSerialConnected?printf("[SYSTEM] Z80 New Program Loading...\n"):null;
 
         Z80ProgramLoadHandler();
 
-        wasSerialConnected?printf("[LOG] New Z80 Program Loaded!\n"):null;
+        wasSerialConnected?printf("[SYSTEM] New Z80 Program Loaded!\n"):null;
     }
 
-    wasSerialConnected?printf("[LOG] Loading Z80 Program in RAM...\n"):null;
+    wasSerialConnected?printf("[SYSTEM] Loading Z80 Program in RAM...\n"):null;
 
     loadZ80ProgramInRam();
 
-    wasSerialConnected?printf("[LOG] Z80 Program Loaded in RAM!\n"):null;
+    wasSerialConnected?printf("[SYSTEM] Z80 Program Loaded in RAM!\n"):null;
 }
 
 /* 

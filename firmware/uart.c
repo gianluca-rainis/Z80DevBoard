@@ -1,5 +1,7 @@
 #include "uart.h"
 
+bool showLogs = false;
+
 // Initialize USB UART
 void uartInitUsb() {
     stdio_init_all();
@@ -177,11 +179,30 @@ static void cmdWrite(char *args) {
     printf("%02X\n", readback);
 }
 
+// Toggle the showLogs flag
+static void cmdLogs(char *args) {
+    if (args == NULL) {
+        showLogs = !showLogs;
+    }
+    else {
+        if (strcmp(args, "on") == 0) {
+            showLogs = true;
+        }
+        else if (strcmp(args, "off") == 0) {
+            showLogs = false;
+        }
+        else {
+            printf("ERROR: invalid argument '%s'\n", args);
+        }
+    }
+}
+
 // Handle command: help
 static void cmdHelp(char *args) {
     printf("Available commands:\n");
     printf("\tread <addrstart> [addrend] - Read bytes from RAM, from a single address or from a range.\n");
     printf("\twrite <addr> <value> - Write a byte to RAM in the given address.\n");
+    printf("\tlogs [on/off] - Turn on or off the logs. If no argument is provided, the logs will be toggled.\n");
     printf("\thelp - Show this help message.\n");
 }
 
@@ -207,6 +228,9 @@ void uartProcessCommand(const char *cmd) {
     }
     else if (strcmp(verb, "write") == 0) {
         cmdWrite(args);
+    }
+    else if (strcmp(verb, "logs") == 0) {
+        cmdLogs(args);
     }
     else if (strcmp(verb, "help") == 0) {
         cmdHelp(args);
