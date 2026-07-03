@@ -9,11 +9,21 @@
 
 The Z80DevBoard is an advanced development board for the Z80 microprocessor, based on the RP2040.
 
-This board combines the classic Z80 with the modern RP2040 microcontroller. The RP2040 manages the flash memory and loads programs into RAM for execution by the Z80. Real-time LED indicators provide visual feedback on the Z80's activity, making it an ideal platform for both learning and development. The board's buttons allow the user to load the Z80 program or custom firmware into memory, manually set the Z80 clock, put the Z80 into wait mode, and reset it.
+This board is meant to be a practical educational tool, to help students learn how the Z80, one of the first CPUs and the foundation of all modern ones, works, and how to develop software for it.
 
-Connection to the computer, used for both power and data transmission, is via a USB-C port.
-Two sockets are provided for expansion boards or for advanced projects.
-The SWD and SWCLK pins on the RP2040 are accessible to allow a fix for any firmware crashes that prevented the fix from loading over USB-C.
+To the Z80 is combined a modern RP2040, a powerful microcontroller designed by Raspberry Pi.
+It allows easy interaction with the board's components: you can load a program for the Z80 into RAM; or establish a serial connection with the computer to perform live operations, such as reading and writing to RAM.
+
+The most educational components of the board are the LED matrices, which provide real-time visual feedback on the Z80's activity.
+Thanks to these LEDs, you can see which address of the RAM the Z80 is accessing, the byte it's reading or writing, whether it is answering to a BUSREQ with a BUSACK, and essentially all the operations the Z80 is executing.
+
+The board mounts five buttons: the four on the right allow the student to save a Z80 program to flash, load a custom firmware for the RP2040, reset the Z80, and put the Z80 into a wait state.
+The button on the left sends a manual clock signal to the Z80, in fact, the board mounts a *Z84C00* (the *CMOS* version of the Z80) specifically to allow it to work even with a manual clock.
+
+The board can be connected to a computer through a *USB-C* port, which provides both power and data transmission.
+On the bottom-right of the board, are mounted two pin sockets, to support expansion boards or to be used in more advanced projects that require additional hardware.
+
+For more advanced debugging, when testing custom firmware, the *SWD* and *SWCLK* pins of the RP2040 are accessible on the top-right of the board.
 
 <img src="./images/Z80DevBoard_FinishedBoard.png" alt="Front view of the dev board">
 <img src="./images/Z80DevBoard_FinishedBoard_Back.png" alt="Front view of the dev board">
@@ -46,7 +56,7 @@ The *PCBWay website* is **intuitive, even for first-time users**.
 ### Hardware design files (schematics, PCB, BOM):
 Licensed under [CERN-OHL-S v2.0](LICENSE-CERN-OHL-S.md)
 
-### Software and firmware:
+### Software, firmware and documentation:
 Licensed under the [MIT License](LICENSE-MIT.md)
 
 ## AI Disclaimer
@@ -167,6 +177,9 @@ Z80DevBoard/
 |Fuse 500mA|1|Other|SMD|
 
 ## Firmware
+### Firmware Video Presentation
+https://github.com/user-attachments/assets/ee6d8d69-4003-4e21-8f2b-2f08ad0c8d81
+
 ### Build
 From the project root, make sure CMake and the ARM GNU toolchain (arm-none-eabi-gcc) are installed.
 
@@ -179,17 +192,8 @@ cmake --build firmware/build --parallel
 
 If the toolchain is already in your PATH, you can omit PICO_TOOLCHAIN_PATH.
 
-#### Local build (Windows / PowerShell)
-If you build locally on Windows and need UF2 generation, configure with both the ARM toolchain and a host picotool installation:
-
-```powershell
-& "path/to/cmake.exe" -S firmware -B firmware/build -G "MinGW Makefiles" -DCMAKE_MAKE_PROGRAM="C:/msys64/ucrt64/bin/mingw32-make.exe" -DPICO_TOOLCHAIN_PATH="path/to/picotool"
-& "path/to/cmake.exe" --build firmware/build --parallel
-```
-
 #### Output file
 The file to load in the RP2040's memory after the build is `Z80DevBoard.uf2`.
 You can find it in the `/firmware/build` folder.
 
-### Firmware Video Presentation
-https://github.com/user-attachments/assets/ee6d8d69-4003-4e21-8f2b-2f08ad0c8d81
+> You can find more informations about the firmware, including how to write a custom one, in the [documentation](docs/index.md).
