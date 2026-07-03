@@ -1,7 +1,5 @@
 #include "uart.h"
 
-bool showLogs = false;
-
 // Initialize USB UART
 void uartInitUsb() {
     stdio_init_all();

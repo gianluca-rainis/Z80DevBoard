@@ -35,6 +35,7 @@ add_executable(Z80DevBoard
 	flash.c
 	uart.c
 	mscDisk.c
+	usb_descriptors.c
 )
 target_include_directories(Z80DevBoard PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 target_link_libraries(Z80DevBoard pico_stdlib hardware_flash tinyusb_device tinyusb_board)

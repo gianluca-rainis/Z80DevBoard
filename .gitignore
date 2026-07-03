@@ -48,7 +48,7 @@ CMakeUserPresets.json
 
 # Custom
 .local
-build/
+/build/
 .history/
 /firmware/pico-sdk/
 /firmware/build/picotool/

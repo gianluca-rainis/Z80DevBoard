@@ -42,6 +42,7 @@
 
     // Variables
     extern bool wasSerialConnected; // Flag to check if the serial was connected at least once
+    extern bool showLogs; // Flag to check if the logs are enabled by the user
 
     // Main functions
     void setup();
