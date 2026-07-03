@@ -2705,7 +2705,7 @@ LOAD /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x82d4
+.text           0x10000100     0x82ec
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -2815,646 +2815,647 @@ LOAD /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x10001234        0xc CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
                 0x10001234                mscDiskWritten
  .text.mscDiskRead
-                0x10001240       0x1c CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x10001240       0x30 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
                 0x10001240                mscDiskRead
  .text.tud_msc_get_maxlun_cb
-                0x1000125c        0x4 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x1000125c                tud_msc_get_maxlun_cb
+                0x10001270        0x4 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x10001270                tud_msc_get_maxlun_cb
  .text.tud_msc_inquiry_cb
-                0x10001260       0x34 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x10001260                tud_msc_inquiry_cb
+                0x10001274       0x34 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x10001274                tud_msc_inquiry_cb
  .text.tud_msc_test_unit_ready_cb
-                0x10001294        0x4 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x10001294                tud_msc_test_unit_ready_cb
+                0x100012a8        0x4 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x100012a8                tud_msc_test_unit_ready_cb
  .text.tud_msc_capacity_cb
-                0x10001298        0xc CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x10001298                tud_msc_capacity_cb
+                0x100012ac        0xc CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x100012ac                tud_msc_capacity_cb
  .text.tud_msc_start_stop_cb
-                0x100012a4        0x4 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x100012a4                tud_msc_start_stop_cb
+                0x100012b8        0x4 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x100012b8                tud_msc_start_stop_cb
  .text.tud_msc_read10_cb
-                0x100012a8       0x24 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x100012a8                tud_msc_read10_cb
+                0x100012bc       0x24 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x100012bc                tud_msc_read10_cb
  .text.tud_msc_is_writable_cb
-                0x100012cc        0x4 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x100012cc                tud_msc_is_writable_cb
+                0x100012e0        0x4 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x100012e0                tud_msc_is_writable_cb
  .text.tud_msc_write10_cb
-                0x100012d0       0x38 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x100012d0                tud_msc_write10_cb
+                0x100012e4       0x38 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x100012e4                tud_msc_write10_cb
  .text.tud_msc_scsi_cb
-                0x10001308       0x14 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                0x10001308                tud_msc_scsi_cb
+                0x1000131c       0x14 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x1000131c                tud_msc_scsi_cb
  .text.tud_descriptor_device_cb
-                0x1000131c        0x8 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
-                0x1000131c                tud_descriptor_device_cb
+                0x10001330        0x8 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+                0x10001330                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x10001324        0x8 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
-                0x10001324                tud_descriptor_configuration_cb
+                0x10001338        0x8 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+                0x10001338                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x1000132c       0x84 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
-                0x1000132c                tud_descriptor_string_cb
+                0x10001340       0x84 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+                0x10001340                tud_descriptor_string_cb
  .text.gpio_init
-                0x100013b0       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x100013b0                gpio_init
- .text.panic    0x100013ec       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x100013ec                panic
+                0x100013c4       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x100013c4                gpio_init
+ .text.panic    0x10001400       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10001400                panic
  .text.hw_claim_or_assert
-                0x1000141c       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x1000141c                hw_claim_or_assert
+                0x10001430       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10001430                hw_claim_or_assert
  .text.next_striped_spin_lock_num
-                0x1000146c       0x18 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x1000146c                next_striped_spin_lock_num
+                0x10001480       0x18 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10001480                next_striped_spin_lock_num
  .text.spin_locks_reset
-                0x10001484       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x10001484                spin_locks_reset
+                0x10001498       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x10001498                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x100014a0       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100014a0                runtime_init_per_core_irq_priorities
+                0x100014b4       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100014b4                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x100014e8       0x24 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100014e8                irq_set_enabled
+                0x100014fc       0x24 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100014fc                irq_set_enabled
  .text.irq_set_exclusive_handler
-                0x1000150c       0x54 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x1000150c                irq_set_exclusive_handler
+                0x10001520       0x54 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10001520                irq_set_exclusive_handler
  .text.lock_init
-                0x10001560       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x10001560                lock_init
+                0x10001574       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x10001574                lock_init
  .text.runtime_init_mutex
-                0x10001570       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10001570                runtime_init_mutex
+                0x10001584       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10001584                runtime_init_mutex
  .text.mutex_init
-                0x100015c0       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100015c0                mutex_init
+                0x100015d4       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100015d4                mutex_init
  .text.sleep_until_callback
-                0x100015dc       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x100015f0       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_irq_handler
-                0x1000160c      0x2f4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001620      0x2f4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
  .text.runtime_init_default_alarm_pool
-                0x10001900       0xd8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001900                runtime_init_default_alarm_pool
+                0x10001914       0xd8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001914                runtime_init_default_alarm_pool
  .text.alarm_pool_get_default
-                0x100019d8        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x100019d8                alarm_pool_get_default
+                0x100019ec        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x100019ec                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x100019e0       0xbc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x100019e0                alarm_pool_add_alarm_at_force_in_context
+                0x100019f4       0xbc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x100019f4                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10001a9c       0x74 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001a9c                alarm_pool_cancel_alarm
+                0x10001ab0       0x74 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001ab0                alarm_pool_cancel_alarm
  .text.alarm_pool_core_num
-                0x10001b10        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001b10                alarm_pool_core_num
+                0x10001b24        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001b24                alarm_pool_core_num
  .text.sleep_us
-                0x10001b14       0xec CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001b14                sleep_us
+                0x10001b28       0xec CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001b28                sleep_us
  .text.sleep_ms
-                0x10001c00       0xfc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001c00                sleep_ms
+                0x10001c14       0xfc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001c14                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x10001cfc      0x100 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x10001cfc                best_effort_wfe_or_timeout
+                0x10001d10      0x100 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x10001d10                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x10001dfc       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001dfc                timer_hardware_alarm_claim
+                0x10001e10       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001e10                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10001e10       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001e10                timer_time_us_64
+                0x10001e24       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001e24                timer_time_us_64
  .text.time_us_64
-                0x10001e20       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001e20                time_us_64
+                0x10001e34       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001e34                time_us_64
  .text.busy_wait_us
-                0x10001e34       0x6c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001e34                busy_wait_us
+                0x10001e48       0x6c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001e48                busy_wait_us
  .text.busy_wait_until
-                0x10001ea0       0x20 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001ea0                busy_wait_until
+                0x10001eb4       0x20 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001eb4                busy_wait_until
  .text.clock_configure_int_divider
-                0x10001ec0       0xec CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001ec0                clock_configure_int_divider
+                0x10001ed4       0xec CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001ed4                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x10001fac       0xe0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001fac                clock_configure_undivided
+                0x10001fc0       0xe0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001fc0                clock_configure_undivided
  .text.clock_get_hz
-                0x1000208c        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x1000208c                clock_get_hz
+                0x100020a0        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x100020a0                clock_get_hz
  .text.pll_init
-                0x10002098       0xb0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x10002098                pll_init
+                0x100020ac       0xb0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x100020ac                pll_init
  .text.tick_start
-                0x10002148       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x10002148                tick_start
+                0x1000215c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x1000215c                tick_start
  .text.rom_func_lookup
-                0x10002158       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10002158                rom_func_lookup
+                0x1000216c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x1000216c                rom_func_lookup
  .text.rom_data_lookup
-                0x10002168       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10002168                rom_data_lookup
+                0x1000217c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x1000217c                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10002178       0x44 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10002178                rom_funcs_lookup
+                0x1000218c       0x44 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x1000218c                rom_funcs_lookup
  .text.xosc_init
-                0x100021bc       0x28 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x100021bc                xosc_init
+                0x100021d0       0x28 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x100021d0                xosc_init
  .text.first_per_core_initializer
-                0x100021e4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100021f8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.hard_assertion_failure
-                0x100021e8        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100021e8                hard_assertion_failure
+                0x100021fc        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100021fc                hard_assertion_failure
  .text.runtime_run_initializers
-                0x100021f4       0x28 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100021f4                runtime_run_initializers
+                0x10002208       0x28 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10002208                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x1000221c       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000221c                runtime_init_early_resets
+                0x10002230       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002230                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x10002248       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002248                runtime_init_usb_power_down
+                0x1000225c       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000225c                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x10002264       0x20 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002264                runtime_init_post_clock_resets
+                0x10002278       0x20 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002278                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x10002284       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002284                runtime_init_rp2040_gpio_ie_disable
+                0x10002298       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002298                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x10002298        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002298                runtime_init_spin_locks_reset
+                0x100022ac        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100022ac                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x100022a0       0xb8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100022a0                runtime_init_install_ram_vector_table
+                0x100022b4       0xb8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100022b4                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x10002358       0xd8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x10002358                runtime_init_clocks
- .text          0x10002430       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x1000236c       0xd8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x1000236c                runtime_init_clocks
+ .text          0x10002444       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .text.__wrap___aeabi_idiv
-                0x10002440       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10002440                __wrap___aeabi_idivmod
-                0x10002440                divmod_s32s32
-                0x10002440                div_s32s32
-                0x10002440                __wrap___aeabi_idiv
-                0x10002448                divmod_s32s32_unsafe
-                0x10002474                divmod_s32s32_savestate
+                0x10002454       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10002454                __wrap___aeabi_idivmod
+                0x10002454                divmod_s32s32
+                0x10002454                div_s32s32
+                0x10002454                __wrap___aeabi_idiv
+                0x1000245c                divmod_s32s32_unsafe
+                0x10002488                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x10002490       0x4c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10002490                __wrap___aeabi_uidiv
-                0x10002490                __wrap___aeabi_uidivmod
-                0x10002490                div_u32u32
-                0x10002490                divmod_u32u32
-                0x10002498                divmod_u32u32_unsafe
-                0x100024c0                divmod_u32u32_savestate
+                0x100024a4       0x4c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x100024a4                __wrap___aeabi_uidiv
+                0x100024a4                __wrap___aeabi_uidivmod
+                0x100024a4                div_u32u32
+                0x100024a4                divmod_u32u32
+                0x100024ac                divmod_u32u32_unsafe
+                0x100024d4                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x100024dc      0x424 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x100024dc                __wrap___aeabi_ldivmod
-                0x100024dc                div_s64s64
-                0x100024dc                divmod_s64s64
-                0x1000250c                divmod_u64u64
-                0x1000250c                div_u64u64
-                0x1000250c                __wrap___aeabi_uldivmod
-                0x1000251c                divmod_u64u64_savestate
-                0x1000253c                divmod_s64s64_unsafe
-                0x100025c4                divmod_u64u64_unsafe
+                0x100024f0      0x424 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x100024f0                __wrap___aeabi_ldivmod
+                0x100024f0                div_s64s64
+                0x100024f0                divmod_s64s64
+                0x10002520                divmod_u64u64
+                0x10002520                div_u64u64
+                0x10002520                __wrap___aeabi_uldivmod
+                0x10002530                divmod_u64u64_savestate
+                0x10002550                divmod_s64s64_unsafe
+                0x100025d8                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10002900       0x80 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002900                __wrap___aeabi_drsub
-                0x10002906                __wrap___aeabi_dsub
-                0x10002918                __wrap___aeabi_dadd
-                0x1000292a                __wrap___aeabi_ddiv
-                0x10002966                __wrap___aeabi_dmul
+                0x10002914       0x80 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002914                __wrap___aeabi_drsub
+                0x1000291a                __wrap___aeabi_dsub
+                0x1000292c                __wrap___aeabi_dadd
+                0x1000293e                __wrap___aeabi_ddiv
+                0x1000297a                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10002980       0x6c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002980                __wrap___aeabi_cdrcmple
-                0x10002990                __wrap___aeabi_cdcmple
-                0x10002990                __wrap___aeabi_cdcmpeq
+                0x10002994       0x6c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002994                __wrap___aeabi_cdrcmple
+                0x100029a4                __wrap___aeabi_cdcmple
+                0x100029a4                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x100029ec        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x100029ec                __wrap___aeabi_dcmplt
+                0x10002a00        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a00                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x100029f8       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x100029f8                __wrap___aeabi_dcmple
+                0x10002a0c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a0c                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10002a08       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002a08                __wrap___aeabi_dcmpge
+                0x10002a1c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a1c                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10002a18        0xa CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002a18                __wrap___aeabi_dcmpgt
+                0x10002a2c        0xa CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a2c                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10002a22       0x18 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002a22                __wrap___aeabi_dcmpun
- *fill*         0x10002a3a        0x2 
+                0x10002a36       0x18 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a36                __wrap___aeabi_dcmpun
+ *fill*         0x10002a4e        0x2 
  .text.__wrap___aeabi_i2d
-                0x10002a3c       0x38 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002a3c                __wrap___aeabi_ui2d
-                0x10002a3c                uint2double
-                0x10002a44                __wrap___aeabi_i2d
-                0x10002a44                int2double
+                0x10002a50       0x38 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a50                __wrap___aeabi_ui2d
+                0x10002a50                uint2double
+                0x10002a58                __wrap___aeabi_i2d
+                0x10002a58                int2double
  .text.__wrap___aeabi_d2iz
-                0x10002a74       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002a74                __wrap___aeabi_d2iz
-                0x10002a74                double2int_z
+                0x10002a88       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a88                __wrap___aeabi_d2iz
+                0x10002a88                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x10002abc       0x18 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002abc                double2uint_z
-                0x10002abc                double2uint
-                0x10002abc                __wrap___aeabi_d2uiz
+                0x10002ad0       0x18 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002ad0                double2uint_z
+                0x10002ad0                double2uint
+                0x10002ad0                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x10002ad4       0xa4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-                0x10002ad4                __aeabi_double_init
+                0x10002ae8       0xa4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x10002ae8                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10002b78       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002b78                double_table_shim_on_use_helper
+                0x10002b8c       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002b8c                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10002ba4       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002ba4                drsub_shim
-                0x10002baa                dsub_shim
+                0x10002bb8       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002bb8                drsub_shim
+                0x10002bbe                dsub_shim
  .text.dadd_shim
-                0x10002bb4      0x15c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002bb4                dadd_shim
+                0x10002bc8      0x15c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002bc8                dadd_shim
  .text.dmul_shim
-                0x10002d10      0x15c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002d10                dmul_shim
+                0x10002d24      0x15c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002d24                dmul_shim
  .text.ddiv_shim
-                0x10002e6c      0x1b0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002e6c                ddiv_shim
+                0x10002e80      0x1b0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002e80                ddiv_shim
  .text.double2uint_shim
-                0x1000301c        0xe CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x1000301c                double2uint_shim
-                0x1000301e                double2ufix_shim
- *fill*         0x1000302a        0x2 
+                0x10003030        0xe CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10003030                double2uint_shim
+                0x10003032                double2ufix_shim
+ *fill*         0x1000303e        0x2 
  .text.double2uint64_shim
-                0x1000302c       0x70 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x1000302c                double2uint64_shim
-                0x1000302e                double2ufix64_shim
-                0x1000304e                d2fix_a
+                0x10003040       0x70 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10003040                double2uint64_shim
+                0x10003042                double2ufix64_shim
+                0x10003062                d2fix_a
  .text.dunpacks
-                0x1000309c       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x1000309c                dunpacks
+                0x100030b0       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x100030b0                dunpacks
  .text.__aeabi_lmul
-                0x100030d8       0x32 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-                0x100030d8                __wrap___aeabi_lmul
- *fill*         0x1000310a        0x2 
+                0x100030ec       0x32 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+                0x100030ec                __wrap___aeabi_lmul
+ *fill*         0x1000311e        0x2 
  .text.__aeabi_float_init
-                0x1000310c       0x68 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-                0x1000310c                __aeabi_float_init
+                0x10003120       0x68 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x10003120                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10003174       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x10003174                float_table_shim_on_use_helper
+                0x10003188       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x10003188                float_table_shim_on_use_helper
  .text.__wrap_malloc
-                0x100031a0       0x24 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-                0x100031a0                __wrap_malloc
+                0x100031b4       0x24 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x100031b4                __wrap_malloc
  .text.__wrap_free
-                0x100031c4        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-                0x100031c4                __wrap_free
- .text          0x100031cc       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100031cc                __aeabi_mem_init
- .text.memset   0x100031dc        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100031dc                __wrap_memset
- .text.memcpy   0x100031e8        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100031e8                __wrap___aeabi_memcpy
-                0x100031e8                __wrap_memcpy
+                0x100031d8        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x100031d8                __wrap_free
+ .text          0x100031e0       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100031e0                __aeabi_mem_init
+ .text.memset   0x100031f0        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100031f0                __wrap_memset
+ .text.memcpy   0x100031fc        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100031fc                __wrap___aeabi_memcpy
+                0x100031fc                __wrap_memcpy
  .text._out_null
-                0x100031f4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003208        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_rev
-                0x100031f8       0xa8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000320c       0xa8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._ntoa_format
-                0x100032a0      0x1d8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100032b4      0x1d8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_char
-                0x10003478       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000348c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_fct
-                0x10003488       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .text._ftoa    0x10003498      0x474 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .text._etoa    0x1000390c      0x560 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000349c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .text._ftoa    0x100034ac      0x474 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .text._etoa    0x10003920      0x560 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._vsnprintf
-                0x10003e6c      0xab8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003e80      0xab8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.vfctprintf
-                0x10004924       0x20 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10004924                vfctprintf
+                0x10004938       0x20 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10004938                vfctprintf
  .text.weak_raw_vprintf
-                0x10004944       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10004944                weak_raw_vprintf
- .text._exit    0x10004974        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10004974                _exit
- .text._sbrk    0x10004978       0x34 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10004978                _sbrk
- .text.exit     0x100049ac        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100049ac                exit
+                0x10004958       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10004958                weak_raw_vprintf
+ .text._exit    0x10004988        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10004988                _exit
+ .text._sbrk    0x1000498c       0x34 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x1000498c                _sbrk
+ .text.exit     0x100049c0        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100049c0                exit
  .text.runtime_init
-                0x100049b4       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100049b4                runtime_init
+                0x100049c8       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100049c8                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x100049e0       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100049f4       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_out_chars_crlf
-                0x100049f0       0x90 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004a04       0x90 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_buffered_printer
-                0x10004a80       0x64 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004a94       0x64 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_put_string
-                0x10004ae4       0xf4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004ae4                stdio_put_string
+                0x10004af8       0xf4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004af8                stdio_put_string
  .text.stdio_set_driver_enabled
-                0x10004bd8       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004bd8                stdio_set_driver_enabled
+                0x10004bec       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004bec                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x10004c08        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004c08                stdio_init_all
+                0x10004c1c        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004c1c                stdio_init_all
  .text.stdio_getchar_timeout_us
-                0x10004c10       0x98 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004c10                stdio_getchar_timeout_us
+                0x10004c24       0x98 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004c24                stdio_getchar_timeout_us
  .text.__wrap_putchar
-                0x10004ca8       0x94 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004ca8                stdio_putchar
-                0x10004ca8                __wrap_putchar
+                0x10004cbc       0x94 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004cbc                stdio_putchar
+                0x10004cbc                __wrap_putchar
  .text.__wrap_puts
-                0x10004d3c       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004d3c                __wrap_puts
-                0x10004d3c                stdio_puts
+                0x10004d50       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004d50                __wrap_puts
+                0x10004d50                stdio_puts
  .text.__wrap_vprintf
-                0x10004d78       0xc8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004d78                __wrap_vprintf
-                0x10004d78                stdio_vprintf
+                0x10004d8c       0xc8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004d8c                __wrap_vprintf
+                0x10004d8c                stdio_vprintf
  .text.__wrap_printf
-                0x10004e40       0x18 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004e40                stdio_printf
-                0x10004e40                __wrap_printf
+                0x10004e54       0x18 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004e54                stdio_printf
+                0x10004e54                __wrap_printf
  .text.stdio_usb_set_chars_available_callback
-                0x10004e58       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10004e58                stdio_usb_set_chars_available_callback
+                0x10004e6c       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10004e6c                stdio_usb_set_chars_available_callback
  .text.stdio_usb_in_chars
-                0x10004e6c       0x8c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10004e6c                stdio_usb_in_chars
+                0x10004e80       0x8c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10004e80                stdio_usb_in_chars
  .text.stdio_usb_out_flush
-                0x10004ef8       0x4c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10004f0c       0x4c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.stdio_usb_out_chars
-                0x10004f44       0xf8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10004f58       0xf8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.stdio_usb_init
-                0x1000503c       0x44 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x1000503c                stdio_usb_init
+                0x10005050       0x44 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005050                stdio_usb_init
  .text.stdio_usb_connected
-                0x10005080        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10005080                stdio_usb_connected
+                0x10005094        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005094                stdio_usb_connected
  .text.startup._retrieve_unique_id_on_boot
-                0x1000508c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x100050a0       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .text.flash_get_unique_id
-                0x1000509c       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-                0x1000509c                flash_get_unique_id
+                0x100050b0       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x100050b0                flash_get_unique_id
  .text.dcd_set_address
-                0x100050d8       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100050d8                dcd_set_address
+                0x100050ec       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100050ec                dcd_set_address
  .text.dcd_sof_enable
-                0x100050ec       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100050ec                dcd_sof_enable
+                0x10005100       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005100                dcd_sof_enable
  .text.dcd_edpt0_status_complete
-                0x10005108       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005108                dcd_edpt0_status_complete
+                0x1000511c       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x1000511c                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x10005124      0x114 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005124                dcd_edpt_open
+                0x10005138      0x114 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005138                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x10005238        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005238                dcd_edpt_close_all
+                0x1000524c        0x8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x1000524c                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x10005240       0x24 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005240                dcd_edpt_xfer
+                0x10005254       0x24 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005254                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x10005264       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005264                dcd_edpt_stall
+                0x10005278       0x3c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005278                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x100052a0       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100052a0                dcd_edpt_clear_stall
+                0x100052b4       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100052b4                dcd_edpt_clear_stall
  .text.hw_endpoint_xfer_start
-                0x100052d0       0x40 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-                0x100052d0                hw_endpoint_xfer_start
+                0x100052e4       0x40 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x100052e4                hw_endpoint_xfer_start
  .text.tud_vendor_control_xfer_cb
-                0x10005310        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005310                tud_vendor_control_xfer_cb
- .text.tud_event_hook_cb
-                0x10005314        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005314                tud_event_hook_cb
- .text.tud_sof_cb
-                0x10005318        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005318                tud_sof_cb
- .text.tud_descriptor_bos_cb
-                0x1000531c        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x1000531c                tud_descriptor_bos_cb
- .text.tud_descriptor_device_qualifier_cb
-                0x10005320        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005320                tud_descriptor_device_qualifier_cb
- .text.tud_descriptor_other_speed_configuration_cb
                 0x10005324        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005324                tud_descriptor_other_speed_configuration_cb
- .text.tud_mount_cb
+                0x10005324                tud_vendor_control_xfer_cb
+ .text.tud_event_hook_cb
                 0x10005328        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005328                tud_mount_cb
- .text.tud_umount_cb
+                0x10005328                tud_event_hook_cb
+ .text.tud_sof_cb
                 0x1000532c        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x1000532c                tud_umount_cb
- .text.tud_suspend_cb
+                0x1000532c                tud_sof_cb
+ .text.tud_descriptor_bos_cb
                 0x10005330        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005330                tud_suspend_cb
- .text.tud_resume_cb
+                0x10005330                tud_descriptor_bos_cb
+ .text.tud_descriptor_device_qualifier_cb
                 0x10005334        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005334                tud_resume_cb
+                0x10005334                tud_descriptor_device_qualifier_cb
+ .text.tud_descriptor_other_speed_configuration_cb
+                0x10005338        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005338                tud_descriptor_other_speed_configuration_cb
+ .text.tud_mount_cb
+                0x1000533c        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1000533c                tud_mount_cb
+ .text.tud_umount_cb
+                0x10005340        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005340                tud_umount_cb
+ .text.tud_suspend_cb
+                0x10005344        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005344                tud_suspend_cb
+ .text.tud_resume_cb
+                0x10005348        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005348                tud_resume_cb
  .text.tud_mounted
-                0x10005338       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005338                tud_mounted
+                0x1000534c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1000534c                tud_mounted
  .text.tud_suspended
-                0x10005348       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005348                tud_suspended
+                0x1000535c       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1000535c                tud_suspended
  .text.tud_task_ext
-                0x10005358      0x7fc CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005358                tud_task_ext
+                0x1000536c      0x7fc CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1000536c                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x10005b54       0x98 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005b54                usbd_open_edpt_pair
+                0x10005b68       0x98 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005b68                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x10005bec       0x34 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005bec                usbd_edpt_open
+                0x10005c00       0x34 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005c00                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x10005c20       0x28 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005c20                usbd_edpt_claim
+                0x10005c34       0x28 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005c34                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x10005c48       0x28 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005c48                usbd_edpt_release
+                0x10005c5c       0x28 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005c5c                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x10005c70       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005c70                usbd_edpt_xfer
+                0x10005c84       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005c84                usbd_edpt_xfer
  .text.usbd_edpt_busy
-                0x10005cc0       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005cc0                usbd_edpt_busy
+                0x10005cd4       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005cd4                usbd_edpt_busy
  .text.usbd_edpt_stall
-                0x10005cdc       0x38 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005cdc                usbd_edpt_stall
+                0x10005cf0       0x38 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005cf0                usbd_edpt_stall
  .text.usbd_edpt_stalled
-                0x10005d14       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005d14                usbd_edpt_stalled
+                0x10005d28       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005d28                usbd_edpt_stalled
  .text.tud_control_status
-                0x10005d30       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10005d30                tud_control_status
+                0x10005d44       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10005d44                tud_control_status
  .text.tud_control_xfer
-                0x10005d5c       0xa0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10005d5c                tud_control_xfer
+                0x10005d70       0xa0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10005d70                tud_control_xfer
  .text.usbd_control_reset
-                0x10005dfc       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10005dfc                usbd_control_reset
+                0x10005e10       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10005e10                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x10005e10        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10005e10                usbd_control_set_complete_callback
+                0x10005e24        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10005e24                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x10005e1c       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10005e1c                usbd_control_set_request
+                0x10005e30       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10005e30                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x10005e38       0xe8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10005e38                usbd_control_xfer_cb
+                0x10005e4c       0xe8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10005e4c                usbd_control_xfer_cb
  .text._prep_out_transaction.isra.0
-                0x10005f20       0x70 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10005f34       0x70 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
  .text.tud_cdc_n_connected
-                0x10005f90       0x34 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10005f90                tud_cdc_n_connected
+                0x10005fa4       0x34 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10005fa4                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x10005fc4       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10005fc4                tud_cdc_n_available
+                0x10005fd8       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10005fd8                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x10005fe0       0x9c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10005fe0                tud_cdc_n_read
+                0x10005ff4       0x9c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10005ff4                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x1000607c       0x7c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x1000607c                tud_cdc_n_write_flush
+                0x10006090       0x7c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006090                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x100060f8       0x44 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x100060f8                tud_cdc_n_write
+                0x1000610c       0x44 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x1000610c                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x1000613c       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x1000613c                tud_cdc_n_write_available
+                0x10006150       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006150                tud_cdc_n_write_available
  .text.cdcd_init
-                0x10006158       0x7c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006158                cdcd_init
+                0x1000616c       0x7c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x1000616c                cdcd_init
  .text.cdcd_deinit
-                0x100061d4       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x100061d4                cdcd_deinit
+                0x100061e8       0x30 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x100061e8                cdcd_deinit
  .text.cdcd_reset
-                0x10006204       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006204                cdcd_reset
+                0x10006218       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006218                cdcd_reset
  .text.cdcd_open
-                0x1000624c       0xa8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x1000624c                cdcd_open
+                0x10006260       0xa8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006260                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x100062f4       0xf0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x100062f4                cdcd_control_xfer_cb
+                0x10006308       0xf0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006308                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x100063e4       0xf8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x100063e4                cdcd_xfer_cb
+                0x100063f8       0xf8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x100063f8                cdcd_xfer_cb
  .text.fail_scsi_op.constprop.0
-                0x100064dc       0x58 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x100064f0       0x58 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
  .text.proc_read10_cmd.constprop.0
-                0x10006534       0xe0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x10006548       0xe0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
  .text.tud_msc_set_sense
-                0x10006614       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-                0x10006614                tud_msc_set_sense
+                0x10006628       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x10006628                tud_msc_set_sense
  .text.mscd_init
-                0x10006630       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-                0x10006630                mscd_init
- .text.mscd_reset
                 0x10006644       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-                0x10006644                mscd_reset
+                0x10006644                mscd_init
+ .text.mscd_reset
+                0x10006658       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x10006658                mscd_reset
  .text.mscd_open
-                0x10006658       0x68 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-                0x10006658                mscd_open
+                0x1000666c       0x68 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x1000666c                mscd_open
  .text.mscd_control_xfer_cb
-                0x100066c0      0x148 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-                0x100066c0                mscd_control_xfer_cb
+                0x100066d4      0x148 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x100066d4                mscd_control_xfer_cb
  .text.mscd_xfer_cb
-                0x10006808      0x7d8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-                0x10006808                mscd_xfer_cb
+                0x1000681c      0x7d8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x1000681c                mscd_xfer_cb
  .text.tu_edpt_claim
-                0x10006fe0       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10006fe0                tu_edpt_claim
+                0x10006ff4       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10006ff4                tu_edpt_claim
  .text.tu_edpt_release
-                0x10007030       0x38 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007030                tu_edpt_release
+                0x10007044       0x38 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007044                tu_edpt_release
  .text.tu_edpt_validate
-                0x10007068       0x74 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007068                tu_edpt_validate
+                0x1000707c       0x74 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x1000707c                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x100070dc       0x34 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x100070dc                tu_edpt_bind_driver
+                0x100070f0       0x34 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x100070f0                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x10007110       0x6c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007110                tu_fifo_config
+                0x10007124       0x6c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007124                tu_fifo_config
  .text.tu_fifo_count
-                0x1000717c       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x1000717c                tu_fifo_count
+                0x10007190       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007190                tu_fifo_count
  .text.tu_fifo_empty
-                0x100071a8       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100071a8                tu_fifo_empty
+                0x100071bc       0x10 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100071bc                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x100071b8       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100071b8                tu_fifo_remaining
+                0x100071cc       0x2c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100071cc                tu_fifo_remaining
  .text.tu_fifo_read
-                0x100071e4       0x9c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100071e4                tu_fifo_read
+                0x100071f8       0x9c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100071f8                tu_fifo_read
  .text.tu_fifo_read_n
-                0x10007280       0xec CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007280                tu_fifo_read_n
+                0x10007294       0xec CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007294                tu_fifo_read_n
  .text.tu_fifo_write
-                0x1000736c       0xa4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x1000736c                tu_fifo_write
+                0x10007380       0xa4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007380                tu_fifo_write
  .text.tu_fifo_write_n
-                0x10007410      0x168 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007410                tu_fifo_write_n
+                0x10007424      0x168 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007424                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x10007578       0x40 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007578                tu_fifo_clear
+                0x1000758c       0x40 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x1000758c                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x100075b8       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100075b8                tu_fifo_set_overwritable
- .text.malloc   0x10007600       0x14 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
-                0x10007600                malloc
- .text.free     0x10007614       0x14 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
-                0x10007614                free
+                0x100075cc       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100075cc                tu_fifo_set_overwritable
+ .text.malloc   0x10007614       0x14 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
+                0x10007614                malloc
+ .text.free     0x10007628       0x14 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
+                0x10007628                free
  .text._malloc_r
-                0x10007628      0x564 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
-                0x10007628                _malloc_r
+                0x1000763c      0x564 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
+                0x1000763c                _malloc_r
  .text.__malloc_lock
-                0x10007b8c       0x10 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
-                0x10007b8c                __malloc_lock
+                0x10007ba0       0x10 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
+                0x10007ba0                __malloc_lock
  .text.__malloc_unlock
-                0x10007b9c       0x10 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
-                0x10007b9c                __malloc_unlock
+                0x10007bb0       0x10 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
+                0x10007bb0                __malloc_unlock
  .text._strtoul_l.isra.0
-                0x10007bac      0x144 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtoul.o)
- .text.strtoul  0x10007cf0       0x18 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtoul.o)
-                0x10007cf0                strtoul
- .text.memmove  0x10007d08      0x104 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-memmove.o)
-                0x10007d08                memmove
- .text.strncpy  0x10007e0c       0x60 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strncpy.o)
-                0x10007e0c                strncpy
- .text.strtok   0x10007e6c       0x14 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtok.o)
-                0x10007e6c                strtok
+                0x10007bc0      0x144 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtoul.o)
+ .text.strtoul  0x10007d04       0x18 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtoul.o)
+                0x10007d04                strtoul
+ .text.memmove  0x10007d1c      0x104 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-memmove.o)
+                0x10007d1c                memmove
+ .text.strncpy  0x10007e20       0x60 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strncpy.o)
+                0x10007e20                strncpy
+ .text.strtok   0x10007e80       0x14 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtok.o)
+                0x10007e80                strtok
  .text.__strtok_r
-                0x10007e80       0x6c /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtok_r.o)
-                0x10007e80                __strtok_r
- .text._sbrk_r  0x10007eec       0x24 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
-                0x10007eec                _sbrk_r
- .text.__errno  0x10007f10        0xc /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
-                0x10007f10                __errno
- .text.sysconf  0x10007f1c       0x1c /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
-                0x10007f1c                sysconf
- .text          0x10007f38       0x88 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strcmp.o)
-                0x10007f38                strcmp
+                0x10007e94       0x6c /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strtok_r.o)
+                0x10007e94                __strtok_r
+ .text._sbrk_r  0x10007f00       0x24 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
+                0x10007f00                _sbrk_r
+ .text.__errno  0x10007f24        0xc /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
+                0x10007f24                __errno
+ .text.sysconf  0x10007f30       0x1c /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
+                0x10007f30                sysconf
+ .text          0x10007f4c       0x88 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strcmp.o)
+                0x10007f4c                strcmp
  .text.__retarget_lock_acquire_recursive
-                0x10007fc0        0x4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
-                0x10007fc0                __retarget_lock_acquire_recursive
+                0x10007fd4        0x4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
+                0x10007fd4                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x10007fc4        0x4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
-                0x10007fc4                __retarget_lock_release_recursive
- .text.strlen   0x10007fc8       0x60 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
-                0x10007fc8                strlen
+                0x10007fd8        0x4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
+                0x10007fd8                __retarget_lock_release_recursive
+ .text.strlen   0x10007fdc       0x60 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x10007fdc                strlen
  .text._malloc_trim_r
-                0x10008028       0xb0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
-                0x10008028                _malloc_trim_r
- .text._free_r  0x100080d8      0x1d4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
-                0x100080d8                _free_r
+                0x1000803c       0xb0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
+                0x1000803c                _malloc_trim_r
+ .text._free_r  0x100080ec      0x1d4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
+                0x100080ec                _free_r
  *(.fini)
- .fini          0x100082ac        0x4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crti.o
-                0x100082ac                _fini
- .fini.__stub   0x100082b0       0xe0 linker stubs
+ .fini          0x100082c0        0x4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crti.o
+                0x100082c0                _fini
+ *fill*         0x100082c4        0x4 
+ .fini.__stub   0x100082c8       0xe0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3465,224 +3466,224 @@ LOAD /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x10008390                        . = ALIGN (0x4)
-                0x10008390                        PROVIDE (__preinit_array_start = .)
+                0x100083a8                        . = ALIGN (0x4)
+                0x100083a8                        PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x10008390        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10008390                __pre_init_runtime_init_early_resets
- .preinit_array.00101
-                0x10008394        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10008394                __pre_init_runtime_init_usb_power_down
- .preinit_array.00275
-                0x10008398        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .preinit_array.00300
-                0x1000839c        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .preinit_array.00350
-                0x100083a0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .preinit_array.00350
-                0x100083a4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .preinit_array.00500
                 0x100083a8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100083a8                __pre_init_runtime_init_clocks
- .preinit_array.00600
+                0x100083a8                __pre_init_runtime_init_early_resets
+ .preinit_array.00101
                 0x100083ac        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100083ac                __pre_init_runtime_init_post_clock_resets
+                0x100083ac                __pre_init_runtime_init_usb_power_down
+ .preinit_array.00275
+                0x100083b0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .preinit_array.00300
+                0x100083b4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .preinit_array.00350
+                0x100083b8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .preinit_array.00350
+                0x100083bc        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .preinit_array.00500
+                0x100083c0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100083c0                __pre_init_runtime_init_clocks
+ .preinit_array.00600
+                0x100083c4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100083c4                __pre_init_runtime_init_post_clock_resets
  .preinit_array.00700
-                0x100083b0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100083b0                __pre_init_runtime_init_rp2040_gpio_ie_disable
+                0x100083c8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100083c8                __pre_init_runtime_init_rp2040_gpio_ie_disable
  .preinit_array.01000
-                0x100083b4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100083b4                __pre_init_runtime_init_spin_locks_reset
+                0x100083cc        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100083cc                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01100
-                0x100083b8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100083b8                __pre_init_runtime_init_mutex
+                0x100083d0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100083d0                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x100083bc        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100083bc                __pre_init_runtime_init_install_ram_vector_table
+                0x100083d4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100083d4                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x100083c0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
-                0x100083c0                __pre_init_runtime_init_default_alarm_pool
+                0x100083d8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x100083d8                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x100083c4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100083c4                __pre_init_first_per_core_initializer
+                0x100083dc        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100083dc                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x100083c8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100083c8                __pre_init_runtime_init_per_core_irq_priorities
+                0x100083e0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100083e0                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x100083cc                        PROVIDE (__preinit_array_end = .)
-                0x100083cc                        . = ALIGN (0x4)
-                0x100083cc                        PROVIDE (__init_array_start = .)
+                0x100083e4                        PROVIDE (__preinit_array_end = .)
+                0x100083e4                        . = ALIGN (0x4)
+                0x100083e4                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.01000
-                0x100083cc        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x100083e4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  *(.init_array)
- .init_array    0x100083d0        0x4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x100083d4                        PROVIDE (__init_array_end = .)
-                0x100083d4                        . = ALIGN (0x4)
+ .init_array    0x100083e8        0x4 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x100083ec                        PROVIDE (__init_array_end = .)
+                0x100083ec                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
                 [!provide]                        PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x100083d4        0x0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x100083d4                        . = ALIGN (0x4)
+ .eh_frame      0x100083ec        0x0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x100083ec                        . = ALIGN (0x4)
 
-.glue_7         0x100083d4        0x0
- .glue_7        0x100083d4        0x0 linker stubs
+.glue_7         0x100083ec        0x0
+ .glue_7        0x100083ec        0x0 linker stubs
 
-.glue_7t        0x100083d4        0x0
- .glue_7t       0x100083d4        0x0 linker stubs
+.glue_7t        0x100083ec        0x0
+ .glue_7t       0x100083ec        0x0 linker stubs
 
-.vfp11_veneer   0x100083d4        0x0
- .vfp11_veneer  0x100083d4        0x0 linker stubs
+.vfp11_veneer   0x100083ec        0x0
+ .vfp11_veneer  0x100083ec        0x0 linker stubs
 
-.v4_bx          0x100083d4        0x0
- .v4_bx         0x100083d4        0x0 linker stubs
+.v4_bx          0x100083ec        0x0
+ .v4_bx         0x100083ec        0x0 linker stubs
 
-.iplt           0x100083d4        0x0
- .iplt          0x100083d4        0x0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100083ec        0x0
+ .iplt          0x100083ec        0x0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x100083d8      0xbf8
+.rodata         0x100083f0      0xbf8
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.sendBusReqAndWaitBusAck.str1.4
-                0x100083d8      0x658 CMakeFiles/Z80DevBoard.dir/firmware.c.o
+                0x100083f0      0x658 CMakeFiles/Z80DevBoard.dir/firmware.c.o
                                  0xac (size before relaxing)
  .rodata.readZ80ProgramFromUsb.str1.4
-                0x10008a30        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
+                0x10008a48        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
                                  0x72 (size before relaxing)
  .rodata.printSerialBanner.str1.4
-                0x10008a30        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
+                0x10008a48        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
                                  0xd9 (size before relaxing)
  .rodata.setup.str1.4
-                0x10008a30        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
+                0x10008a48        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
                                  0x93 (size before relaxing)
  .rodata.loop.str1.4
-                0x10008a30        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
+                0x10008a48        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
                                   0x6 (size before relaxing)
  .rodata.uartProcessCommand.str1.4
-                0x10008a30        0x0 CMakeFiles/Z80DevBoard.dir/uart.c.o
+                0x10008a48        0x0 CMakeFiles/Z80DevBoard.dir/uart.c.o
                                 0x269 (size before relaxing)
  .rodata.tud_msc_inquiry_cb.str1.4
-                0x10008a30        0x0 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x10008a48        0x0 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
                                  0x25 (size before relaxing)
- .rodata        0x10008a30       0x3e CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+ .rodata        0x10008a48       0x3e CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
  .rodata.str1.4
-                0x10008a6e        0x0 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+                0x10008a86        0x0 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
                                  0x34 (size before relaxing)
- *fill*         0x10008a6e        0x2 
+ *fill*         0x10008a86        0x2 
  .rodata.__compound_literal.0
-                0x10008a70        0x2 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
- *fill*         0x10008a72        0x2 
+                0x10008a88        0x2 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+ *fill*         0x10008a8a        0x2 
  .rodata.desc_configuration
-                0x10008a74       0x62 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
-                0x10008a74                desc_configuration
- *fill*         0x10008ad6        0x2 
+                0x10008a8c       0x62 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+                0x10008a8c                desc_configuration
+ *fill*         0x10008aee        0x2 
  .rodata.desc_device
-                0x10008ad8       0x12 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
-                0x10008ad8                desc_device
+                0x10008af0       0x12 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+                0x10008af0                desc_device
  .rodata.panic.str1.4
-                0x10008aea        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10008b02        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
                                  0x12 (size before relaxing)
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x10008aea        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10008b02        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
                                  0x22 (size before relaxing)
  .rodata.hard_assertion_failure.str1.4
-                0x10008aea        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10008b02        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
                                   0xc (size before relaxing)
  .rodata.__wrap_malloc.str1.4
-                0x10008aea        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x10008b02        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
                                   0xe (size before relaxing)
  .rodata.str1.4
-                0x10008aea        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10008b02        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
                                  0x40 (size before relaxing)
- *fill*         0x10008aea        0x2 
+ *fill*         0x10008b02        0x2 
  .rodata.__bi_84
-                0x10008aec        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_78
-                0x10008af8        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_54
                 0x10008b04        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_48
+ .rodata.__bi_78
                 0x10008b10        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_42
+ .rodata.__bi_54
                 0x10008b1c        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_34
+ .rodata.__bi_48
                 0x10008b28        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_26
+ .rodata.__bi_42
                 0x10008b34        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .rodata.__bi_34
+                0x10008b40        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .rodata.__bi_26
+                0x10008b4c        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata._ftoa.str1.4
-                0x10008b40        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10008b58        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
                                  0x15 (size before relaxing)
  .rodata._vsnprintf
-                0x10008b40      0x19c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- *fill*         0x10008cdc        0x4 
+                0x10008b58      0x19c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ *fill*         0x10008cf4        0x4 
  .rodata.pow10.0
-                0x10008ce0       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10008cf8       0x50 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata.crlf_str.0
-                0x10008d30        0x2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10008d48        0x2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .rodata.str1.4
-                0x10008d32        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10008d4a        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
                                  0x13 (size before relaxing)
- *fill*         0x10008d32        0x2 
+ *fill*         0x10008d4a        0x2 
  .rodata.__bi_202.0
-                0x10008d34        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10008d4c        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .rodata.str1.4
-                0x10008d40        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x10008d58        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
                                  0x48 (size before relaxing)
  .rodata.tud_task_ext
-                0x10008d40       0x8c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .rodata        0x10008dcc       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10008d58       0x8c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .rodata        0x10008de4       0x1c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata._usbd_driver
-                0x10008de8       0x40 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10008e00       0x40 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata.mscd_xfer_cb
-                0x10008e28       0x98 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x10008e40       0x98 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
  .rodata.str1.4
-                0x10008ec0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x10008ed8        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
                                   0x4 (size before relaxing)
  .rodata.__bi_153.0
-                0x10008ec0        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x10008ed8        0xc CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
  .rodata._ctype_
-                0x10008ecc      0x101 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
-                0x10008ecc                _ctype_
-                0x10008fd0                        . = ALIGN (0x4)
- *fill*         0x10008fcd        0x3 
+                0x10008ee4      0x101 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
+                0x10008ee4                _ctype_
+                0x10008fe8                        . = ALIGN (0x4)
+ *fill*         0x10008fe5        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10008fd0                        . = ALIGN (0x4)
+                0x10008fe8                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10008fd0                        __exidx_start = .
+                0x10008fe8                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10008fd0                        __exidx_end = .
-                0x10008fd0                        . = ALIGN (0x4)
-                0x10008fd0                        __binary_info_start = .
+                0x10008fe8                        __exidx_end = .
+                0x10008fe8                        . = ALIGN (0x4)
+                0x10008fe8                        __binary_info_start = .
 
-.binary_info    0x10008fd0       0x24
+.binary_info    0x10008fe8       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x10008fd0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr78
-                0x10008fd4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr54
-                0x10008fd8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr48
-                0x10008fdc        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr42
-                0x10008fe0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr34
-                0x10008fe4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr26
                 0x10008fe8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr78
+                0x10008fec        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr54
+                0x10008ff0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr48
+                0x10008ff4        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr42
+                0x10008ff8        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr34
+                0x10008ffc        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr26
+                0x10009000        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr153
-                0x10008fec        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x10009004        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
  *(.binary_info.*)
  .binary_info.__bi_ptr202
-                0x10008ff0        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10008ff4                        __binary_info_end = .
-                0x10008ff4                        . = ALIGN (0x4)
+                0x10009008        0x4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x1000900c                        __binary_info_end = .
+                0x1000900c                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3696,7 +3697,7 @@ LOAD /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x200000c0                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0      0xf80 load address 0x10008ff4
+.data           0x200000c0      0xf80 load address 0x1000900c
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3808,23 +3809,23 @@ LOAD /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x20001040                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20001040        0x0 load address 0x10009f74
+                0x20001040        0x0 load address 0x10009f8c
  .tm_clone_table
                 0x20001040        0x0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20001040        0x0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20001040        0x0 load address 0x10009f74
+.igot.plt       0x20001040        0x0 load address 0x10009f8c
  .igot.plt      0x20001040        0x0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x20001040        0x0 load address 0x10009f74
+.tdata          0x20001040        0x0 load address 0x10009f8c
                 0x20001040                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20001040                        __tdata_end = .
                 0x20001040                        PROVIDE (__data_end__ = .)
-                0x10008ff4                        __etext = LOADADDR (.data)
+                0x1000900c                        __etext = LOADADDR (.data)
 
-.tbss           0x20001040        0x0 load address 0x10009f74
+.tbss           0x20001040        0x0 load address 0x10009f8c
                 0x20001040                        . = ALIGN (0x4)
                 0x20001040                        __bss_start__ = .
                 0x20001040                        __tls_base = .
@@ -3832,7 +3833,7 @@ LOAD /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(.tcommon)
                 0x20001040                        __tls_end = .
 
-.bss            0x20001040     0x9090 load address 0x10009f74
+.bss            0x20001040     0x9090 load address 0x10009f8c
                 0x20001040                        . = ALIGN (0x4)
                 0x20001040                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3943,26 +3944,26 @@ LOAD /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *fill*         0x2000a0cf        0x1 
                 0x2000a0d0                        __bss_end__ = .
 
-.heap           0x2000a0d0      0x800 load address 0x10009f74
+.heap           0x2000a0d0      0x800 load address 0x10009f8c
                 0x2000a0d0                        __end__ = .
                 0x2000a0d0                        end = __end__
  *(.heap*)
  .heap          0x2000a0d0      0x800 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x10009f74
+.scratch_x      0x20040000        0x0 load address 0x10009f8c
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x10009f74                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10009f8c                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10009f74
+.scratch_y      0x20041000        0x0 load address 0x10009f8c
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10009f74                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10009f8c                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -3974,9 +3975,9 @@ LOAD /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.flash_end      0x10009f74        0x0
+.flash_end      0x10009f8c        0x0
  *(.embedded_end_block*)
-                0x10009f74                        PROVIDE (__flash_binary_end = .)
+                0x10009f8c                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4341,113 +4342,113 @@ LOAD linker stubs
  .comment       0x00000045        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
                                  0x46 (size before relaxing)
 
-.debug_info     0x00000000    0x34a8c
+.debug_info     0x00000000    0x34aa1
  .debug_info    0x00000000       0xbc CMakeFiles/Z80DevBoard.dir/main.c.o
  .debug_info    0x000000bc     0x2754 CMakeFiles/Z80DevBoard.dir/firmware.c.o
  .debug_info    0x00002810      0x315 CMakeFiles/Z80DevBoard.dir/flash.c.o
  .debug_info    0x00002b25      0xde7 CMakeFiles/Z80DevBoard.dir/uart.c.o
- .debug_info    0x0000390c      0x8f2 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
- .debug_info    0x000041fe      0x730 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
- .debug_info    0x0000492e     0x244a CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_info    0x00006d78      0x1c4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_info    0x00006f3c      0x98d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_info    0x000078c9      0x464 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_info    0x00007d2d      0x24a CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_info    0x00007f77     0x21c3 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_info    0x0000a13a      0x164 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_info    0x0000a29e     0x278b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_info    0x0000ca29     0x4f44 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
- .debug_info    0x0001196d     0x2aa7 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_info    0x00014414     0x299f CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_info    0x00016db3      0x4f5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_info    0x000172a8      0x24d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_info    0x000174f5      0x65f CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_info    0x00017b54      0x1d5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_info    0x00017d29      0x20b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_info    0x00017f34      0x7ef CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_info    0x00018723      0x786 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_info    0x00018ea9       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_info    0x00018ecc       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_info    0x00018eef       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_info    0x00018f12      0x283 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_info    0x00019195       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_info    0x000191b8       0x24 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_info    0x000191dc       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_info    0x000191ff      0x283 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_info    0x00019482       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_info    0x000194a5      0x3e9 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
- .debug_info    0x0001988e       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_info    0x000198b1      0x2bd CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_info    0x00019b6e     0x230c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_info    0x0001be7a       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_info    0x0001be9d      0xba8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_info    0x0001ca45     0x1ba3 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_info    0x0001e5e8     0x10df CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- .debug_info    0x0001f6c7      0x206 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_info    0x0001f8cd     0x1724 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_info    0x00020ff1     0x2b5c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_info    0x00023b4d     0x1171 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_info    0x00024cbe     0x492b CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .debug_info    0x000295e9      0xb5d CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
- .debug_info    0x0002a146     0x2008 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
- .debug_info    0x0002c14e     0x36ca CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
- .debug_info    0x0002f818     0x1ebf CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
- .debug_info    0x000316d7     0x27a5 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_info    0x00033e7c      0xc10 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+ .debug_info    0x0000390c      0x907 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+ .debug_info    0x00004213      0x730 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+ .debug_info    0x00004943     0x244a CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_info    0x00006d8d      0x1c4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_info    0x00006f51      0x98d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_info    0x000078de      0x464 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_info    0x00007d42      0x24a CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_info    0x00007f8c     0x21c3 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_info    0x0000a14f      0x164 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_info    0x0000a2b3     0x278b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_info    0x0000ca3e     0x4f44 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+ .debug_info    0x00011982     0x2aa7 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_info    0x00014429     0x299f CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_info    0x00016dc8      0x4f5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_info    0x000172bd      0x24d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_info    0x0001750a      0x65f CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_info    0x00017b69      0x1d5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_info    0x00017d3e      0x20b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_info    0x00017f49      0x7ef CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_info    0x00018738      0x786 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_info    0x00018ebe       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_info    0x00018ee1       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_info    0x00018f04       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_info    0x00018f27      0x283 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_info    0x000191aa       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_info    0x000191cd       0x24 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_info    0x000191f1       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_info    0x00019214      0x283 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_info    0x00019497       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_info    0x000194ba      0x3e9 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_info    0x000198a3       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_info    0x000198c6      0x2bd CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_info    0x00019b83     0x230c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_info    0x0001be8f       0x23 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_info    0x0001beb2      0xba8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_info    0x0001ca5a     0x1ba3 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_info    0x0001e5fd     0x10df CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_info    0x0001f6dc      0x206 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_info    0x0001f8e2     0x1724 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_info    0x00021006     0x2b5c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_info    0x00023b62     0x1171 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_info    0x00024cd3     0x492b CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .debug_info    0x000295fe      0xb5d CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_info    0x0002a15b     0x2008 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_info    0x0002c163     0x36ca CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+ .debug_info    0x0002f82d     0x1ebf CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+ .debug_info    0x000316ec     0x27a5 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_info    0x00033e91      0xc10 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
 
-.debug_abbrev   0x00000000     0x8fec
+.debug_abbrev   0x00000000     0x8fe9
  .debug_abbrev  0x00000000       0x69 CMakeFiles/Z80DevBoard.dir/main.c.o
  .debug_abbrev  0x00000069      0x4c2 CMakeFiles/Z80DevBoard.dir/firmware.c.o
  .debug_abbrev  0x0000052b      0x19e CMakeFiles/Z80DevBoard.dir/flash.c.o
  .debug_abbrev  0x000006c9      0x2c6 CMakeFiles/Z80DevBoard.dir/uart.c.o
- .debug_abbrev  0x0000098f      0x202 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
- .debug_abbrev  0x00000b91      0x1ba CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
- .debug_abbrev  0x00000d4b      0x501 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_abbrev  0x0000124c      0x131 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_abbrev  0x0000137d      0x326 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_abbrev  0x000016a3      0x215 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_abbrev  0x000018b8      0x1c1 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_abbrev  0x00001a79      0x62f CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_abbrev  0x000020a8       0xf4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_abbrev  0x0000219c      0x481 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_abbrev  0x0000261d      0x65f CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
- .debug_abbrev  0x00002c7c      0x4fa CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_abbrev  0x00003176      0x500 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_abbrev  0x00003676      0x1dc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_abbrev  0x00003852      0x14b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_abbrev  0x0000399d      0x1c2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_abbrev  0x00003b5f      0x123 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_abbrev  0x00003c82      0x176 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_abbrev  0x00003df8      0x271 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_abbrev  0x00004069      0x2b5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_abbrev  0x0000431e       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_abbrev  0x00004330       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_abbrev  0x00004342       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_abbrev  0x00004354      0x180 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_abbrev  0x000044d4       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_abbrev  0x000044e6       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_abbrev  0x000044fa       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_abbrev  0x0000450c      0x179 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_abbrev  0x00004685       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_abbrev  0x00004697      0x1b3 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
- .debug_abbrev  0x0000484a       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_abbrev  0x0000485c       0xbe CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_abbrev  0x0000491a      0x4f5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_abbrev  0x00004e0f       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_abbrev  0x00004e21      0x34c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_abbrev  0x0000516d      0x5db CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_abbrev  0x00005748      0x471 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- .debug_abbrev  0x00005bb9      0x159 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_abbrev  0x00005d12      0x418 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_abbrev  0x0000612a      0x5d8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_abbrev  0x00006702      0x488 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_abbrev  0x00006b8a      0x7e2 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .debug_abbrev  0x0000736c      0x38e CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
- .debug_abbrev  0x000076fa      0x59c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
- .debug_abbrev  0x00007c96      0x5c6 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
- .debug_abbrev  0x0000825c      0x532 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
- .debug_abbrev  0x0000878e      0x431 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_abbrev  0x00008bbf      0x42d CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+ .debug_abbrev  0x0000098f      0x1ff CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+ .debug_abbrev  0x00000b8e      0x1ba CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+ .debug_abbrev  0x00000d48      0x501 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_abbrev  0x00001249      0x131 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_abbrev  0x0000137a      0x326 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_abbrev  0x000016a0      0x215 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_abbrev  0x000018b5      0x1c1 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_abbrev  0x00001a76      0x62f CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_abbrev  0x000020a5       0xf4 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_abbrev  0x00002199      0x481 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_abbrev  0x0000261a      0x65f CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+ .debug_abbrev  0x00002c79      0x4fa CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_abbrev  0x00003173      0x500 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_abbrev  0x00003673      0x1dc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_abbrev  0x0000384f      0x14b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_abbrev  0x0000399a      0x1c2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_abbrev  0x00003b5c      0x123 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_abbrev  0x00003c7f      0x176 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_abbrev  0x00003df5      0x271 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_abbrev  0x00004066      0x2b5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_abbrev  0x0000431b       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_abbrev  0x0000432d       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_abbrev  0x0000433f       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_abbrev  0x00004351      0x180 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_abbrev  0x000044d1       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_abbrev  0x000044e3       0x14 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_abbrev  0x000044f7       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_abbrev  0x00004509      0x179 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_abbrev  0x00004682       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_abbrev  0x00004694      0x1b3 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_abbrev  0x00004847       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_abbrev  0x00004859       0xbe CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_abbrev  0x00004917      0x4f5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_abbrev  0x00004e0c       0x12 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_abbrev  0x00004e1e      0x34c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_abbrev  0x0000516a      0x5db CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_abbrev  0x00005745      0x471 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_abbrev  0x00005bb6      0x159 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_abbrev  0x00005d0f      0x418 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_abbrev  0x00006127      0x5d8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_abbrev  0x000066ff      0x488 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_abbrev  0x00006b87      0x7e2 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .debug_abbrev  0x00007369      0x38e CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_abbrev  0x000076f7      0x59c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_abbrev  0x00007c93      0x5c6 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+ .debug_abbrev  0x00008259      0x532 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+ .debug_abbrev  0x0000878b      0x431 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_abbrev  0x00008bbc      0x42d CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
 
 .debug_aranges  0x00000000     0x1708
  .debug_aranges
@@ -4658,164 +4659,164 @@ LOAD linker stubs
  .debug_rnglists
                 0x00005713       0x7c CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
 
-.debug_line     0x00000000    0x2be21
+.debug_line     0x00000000    0x2be35
  .debug_line    0x00000000       0xa1 CMakeFiles/Z80DevBoard.dir/main.c.o
  .debug_line    0x000000a1     0x45ca CMakeFiles/Z80DevBoard.dir/firmware.c.o
  .debug_line    0x0000466b      0x3b4 CMakeFiles/Z80DevBoard.dir/flash.c.o
  .debug_line    0x00004a1f      0x9a0 CMakeFiles/Z80DevBoard.dir/uart.c.o
- .debug_line    0x000053bf      0x4b2 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
- .debug_line    0x00005871      0x4e2 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
- .debug_line    0x00005d53     0x1cea CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x00007a3d      0x326 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x00007d63      0xa6a CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x000087cd      0x5fc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x00008dc9      0x49b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x00009264     0x1989 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x0000abed      0x3c6 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x0000afb3     0x1d96 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x0000cd49     0x37c6 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x0001050f     0x1f8c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x0001249b     0x2450 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x000148eb      0x636 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x00014f21      0x41d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x0001533e      0x4c2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x00015800      0x448 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x00015c48      0x3eb CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x00016033      0x888 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x000168bb      0x73b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x00016ff6      0x108 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x000170fe      0x2a9 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x000173a7      0x452 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x000177f9      0x563 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x00017d5c      0x66d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x000183c9       0x61 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_line    0x0001842a      0x3d2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x000187fc      0x471 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x00018c6d      0x195 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_line    0x00018e02      0x335 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
- .debug_line    0x00019137       0x94 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x000191cb      0x288 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x00019453     0x1caa CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x0001b0fd       0xa2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x0001b19f      0xa91 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x0001bc30     0x16fb CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x0001d32b      0xe83 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- .debug_line    0x0001e1ae      0x75a CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_line    0x0001e908     0x1023 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_line    0x0001f92b     0x20e4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_line    0x00021a0f      0xecb CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_line    0x000228da     0x29c8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .debug_line    0x000252a2      0x784 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
- .debug_line    0x00025a26     0x116a CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
- .debug_line    0x00026b90     0x1a6e CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
- .debug_line    0x000285fe     0x1396 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
- .debug_line    0x00029994     0x1b65 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_line    0x0002b4f9      0x928 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+ .debug_line    0x000053bf      0x4c6 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+ .debug_line    0x00005885      0x4e2 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+ .debug_line    0x00005d67     0x1cea CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x00007a51      0x326 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x00007d77      0xa6a CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x000087e1      0x5fc CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x00008ddd      0x49b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x00009278     0x1989 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x0000ac01      0x3c6 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x0000afc7     0x1d96 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x0000cd5d     0x37c6 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x00010523     0x1f8c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x000124af     0x2450 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x000148ff      0x636 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x00014f35      0x41d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x00015352      0x4c2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x00015814      0x448 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x00015c5c      0x3eb CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x00016047      0x888 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x000168cf      0x73b CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x0001700a      0x108 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x00017112      0x2a9 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x000173bb      0x452 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x0001780d      0x563 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x00017d70      0x66d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x000183dd       0x61 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_line    0x0001843e      0x3d2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x00018810      0x471 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x00018c81      0x195 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_line    0x00018e16      0x335 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_line    0x0001914b       0x94 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x000191df      0x288 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x00019467     0x1caa CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x0001b111       0xa2 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x0001b1b3      0xa91 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x0001bc44     0x16fb CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x0001d33f      0xe83 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_line    0x0001e1c2      0x75a CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_line    0x0001e91c     0x1023 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_line    0x0001f93f     0x20e4 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_line    0x00021a23      0xecb CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_line    0x000228ee     0x29c8 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .debug_line    0x000252b6      0x784 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_line    0x00025a3a     0x116a CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_line    0x00026ba4     0x1a6e CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+ .debug_line    0x00028612     0x1396 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+ .debug_line    0x000299a8     0x1b65 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_line    0x0002b50d      0x928 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
 
-.debug_str      0x00000000     0x98a0
- .debug_str     0x00000000     0x98a0 CMakeFiles/Z80DevBoard.dir/main.c.o
+.debug_str      0x00000000     0x9895
+ .debug_str     0x00000000     0x9895 CMakeFiles/Z80DevBoard.dir/main.c.o
                                 0x1c2 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/firmware.c.o
                                 0xb08 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/flash.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/flash.c.o
                                 0x2cc (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/uart.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/uart.c.o
                                 0x65e (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
-                                0x91e (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                                0x91d (size before relaxing)
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
                                0x109e (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
                                 0xd06 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
                                 0x23e (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
                                 0x3c1 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
                                 0x36a (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
                                 0x27d (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
                                 0xaf9 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
                                 0x249 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
                                 0x824 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
                                0x1220 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
                                 0xa6c (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
                                 0xa4f (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
                                 0x49c (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
                                 0x2cb (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
                                 0x390 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
                                 0x280 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
                                 0x2d0 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
                                 0x803 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
                                 0x4d8 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
                                  0xd3 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
                                  0xd6 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
                                  0xd8 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
                                 0x2f9 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
                                  0xde (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
                                  0xdc (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
                                  0xd6 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
                                 0x2de (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
                                  0xdc (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
                                 0x276 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
                                  0xd3 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
                                 0x43f (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
                                 0x522 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                                  0xc7 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
                                 0x7b9 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
                                 0xb60 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
                                 0xac3 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
                                 0x2af (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
                                 0x7e8 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
                                0x1272 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
                                 0xa76 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
                                0x1bb0 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
                                 0x71a (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
                                0x17a9 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
                                0x1906 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
                                 0xe5b (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
                                 0x667 (size before relaxing)
- .debug_str     0x000098a0        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+ .debug_str     0x00009895        0x0 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
                                 0x799 (size before relaxing)
 
 .debug_frame    0x00000000     0x3510
@@ -4881,7 +4882,7 @@ LOAD linker stubs
  .debug_frame   0x000034e4       0x2c /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
 
 .debug_loclists
-                0x00000000    0x1f8f6
+                0x00000000    0x1f8d8
  .debug_loclists
                 0x00000000     0x39ec CMakeFiles/Z80DevBoard.dir/firmware.c.o
  .debug_loclists
@@ -4889,79 +4890,79 @@ LOAD linker stubs
  .debug_loclists
                 0x00003ae8      0x51d CMakeFiles/Z80DevBoard.dir/uart.c.o
  .debug_loclists
-                0x00004005      0x2f0 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
+                0x00004005      0x2d2 CMakeFiles/Z80DevBoard.dir/mscDisk.c.o
  .debug_loclists
-                0x000042f5      0x115 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
+                0x000042d7      0x115 CMakeFiles/Z80DevBoard.dir/usb_descriptors.c.o
  .debug_loclists
-                0x0000440a     0x18f5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x000043ec     0x18f5 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_loclists
-                0x00005cff      0x36d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x00005ce1      0x36d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_loclists
-                0x0000606c      0x101 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x0000604e      0x101 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_loclists
-                0x0000616d       0x7d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x0000614f       0x7d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_loclists
-                0x000061ea     0x108c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x000061cc     0x108c CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_loclists
-                0x00007276       0x41 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x00007258       0x41 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_loclists
-                0x000072b7      0xad8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x00007299      0xad8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_loclists
-                0x00007d8f     0x2851 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
+                0x00007d71     0x2851 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/common/pico_time/time.c.o
  .debug_loclists
-                0x0000a5e0     0x18f6 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x0000a5c2     0x18f6 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_loclists
-                0x0000bed6     0x2e22 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x0000beb8     0x2e22 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_loclists
-                0x0000ecf8      0x1cf CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x0000ecda      0x1cf CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_loclists
-                0x0000eec7       0x47 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x0000eea9       0x47 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_loclists
-                0x0000ef0e      0x351 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x0000eef0      0x351 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_loclists
-                0x0000f25f       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x0000f241       0x48 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_loclists
-                0x0000f2a7       0x7e CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x0000f289       0x7e CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_loclists
-                0x0000f325      0x141 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x0000f307      0x141 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_loclists
-                0x0000f466       0x69 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x0000f448       0x69 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_loclists
-                0x0000f4cf       0x3d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x0000f4b1       0x3d CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000f50c       0x59 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x0000f4ee       0x59 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000f565      0x212 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x0000f547      0x212 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
  .debug_loclists
-                0x0000f777     0x3100 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x0000f759     0x3100 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_loclists
-                0x00012877      0x419 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x00012859      0x419 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_loclists
-                0x00012c90      0xdf8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x00012c72      0xdf8 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_loclists
-                0x00013a88      0x2d6 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x00013a6a      0x2d6 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .debug_loclists
-                0x00013d5e      0x422 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x00013d40      0x422 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .debug_loclists
-                0x00014180      0xad0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x00014162      0xad0 CMakeFiles/Z80DevBoard.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
  .debug_loclists
-                0x00014c50     0x1ec7 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x00014c32     0x1ec7 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .debug_loclists
-                0x00016b17      0x74a CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x00016af9      0x74a CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
  .debug_loclists
-                0x00017261     0x216d CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x00017243     0x216d CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .debug_loclists
-                0x000193ce      0x41e CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x000193b0      0x41e CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
  .debug_loclists
-                0x000197ec      0xddc CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x000197ce      0xddc CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
  .debug_loclists
-                0x0001a5c8     0x21a3 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+                0x0001a5aa     0x21a3 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
  .debug_loclists
-                0x0001c76b     0x10a3 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x0001c74d     0x10a3 CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/tusb.c.o
  .debug_loclists
-                0x0001d80e     0x1f1e CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x0001d7f0     0x1f1e CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
  .debug_loclists
-                0x0001f72c      0x1ca CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x0001f70e      0x1ca CMakeFiles/Z80DevBoard.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
 
 .debug_line_str
                 0x00000000      0x59a

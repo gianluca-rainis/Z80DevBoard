@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "pico/stdlib.h"
+#include "pico/stdio_usb.h"
 
 #ifndef Z80DEVBOARD_UART
     #define Z80DEVBOARD_UART

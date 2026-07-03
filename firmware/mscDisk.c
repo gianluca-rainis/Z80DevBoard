@@ -59,9 +59,10 @@ bool mscDiskWritten(void) {
 
 // Copy the content of the disk (excluding FAT) to prog_buf
 void mscDiskRead(uint8_t *prog_buf) {
-    uint8_t *data_start = msc_disk[3];
+    uint32_t data_size = (DISK_BLOCK_NUM - 3) * DISK_BLOCK_SIZE;
 
-    memcpy(prog_buf, data_start, FLASH_LAST_32K_SIZE);
+    memcpy(prog_buf, msc_disk[3], data_size);
+    memset(prog_buf + data_size, 0, FLASH_LAST_32K_SIZE - data_size);
 
     disk_written = false;
 }
