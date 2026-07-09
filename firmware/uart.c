@@ -1,12 +1,22 @@
 #include "uart.h"
+#include "tusb.h"
 
 // Initialize USB UART
 void uartInitUsb() {
     stdio_init_all();
 
+    tusb_rhport_init_t dev_init = {
+        .role = TUSB_ROLE_DEVICE,
+        .speed = TUSB_SPEED_AUTO
+    };
+
+    tusb_init(BOARD_TUD_RHPORT, &dev_init);
+
     uint32_t start = to_ms_since_boot(get_absolute_time());
 
-    while (!stdio_usb_connected()) { // Wait for USB to be ready
+    while (!tud_cdc_connected()) { // Wait for USB to be ready
+        tud_task();
+
         if (to_ms_since_boot(get_absolute_time()) - start > 1000) {
             break;
         }
@@ -26,7 +36,11 @@ bool uartReadLine(char *buf, size_t max_len) {
     }
 
     while (i < max_len - 1) {
-        int c = getchar_timeout_us(i == 0 ? 0 : 100000);
+        int c = -1;
+        
+        if (tud_cdc_available()) {
+            c = tud_cdc_read_char();
+        }
 
         if (c == PICO_ERROR_TIMEOUT) {
             if (i == 0) {

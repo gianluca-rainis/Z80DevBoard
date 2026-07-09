@@ -242,7 +242,7 @@ void setup() {
 
     uartInitUsb();
 
-    bool connectedSerial = stdio_usb_connected();
+    bool connectedSerial = tud_cdc_connected();
     
     if (connectedSerial && !wasSerialConnected) {
         printSerialBanner();
@@ -270,7 +270,7 @@ void setup() {
 */
 void loop() {
     // Check if the USB terminal is connected
-    bool connectedSerial = stdio_usb_connected();
+    bool connectedSerial = tud_cdc_connected();
 
     if (connectedSerial && !wasSerialConnected) {
         printSerialBanner();

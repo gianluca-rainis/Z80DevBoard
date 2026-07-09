@@ -50,4 +50,10 @@ target_link_libraries(Z80DevBoard
 
 pico_enable_stdio_usb(Z80DevBoard 1)
 pico_enable_stdio_uart(Z80DevBoard 0)
+
+set_source_files_properties(
+    ${PICO_SDK_PATH}/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
+    PROPERTIES HEADER_FILE_ONLY TRUE
+)
+
 pico_add_extra_outputs(Z80DevBoard)
