@@ -63,7 +63,6 @@
 
     // Support functions
     void printSerialBanner();
-    void serialprintf(const char *format, ...);
 #endif
 
 #ifndef null
