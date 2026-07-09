@@ -1,10 +1,10 @@
+#include "firmware.h"
 #include "uart.h"
 #include "tusb.h"
+#include <stdarg.h>
 
 // Initialize USB UART
 void uartInitUsb() {
-    stdio_init_all();
-
     tusb_rhport_init_t dev_init = {
         .role = TUSB_ROLE_DEVICE,
         .speed = TUSB_SPEED_AUTO
@@ -35,16 +35,26 @@ bool uartReadLine(char *buf, size_t max_len) {
         return false;
     }
 
+    tud_task();
+
+    if (!tud_cdc_available()) {
+        return false;
+    }
+
+    uint32_t start = to_ms_since_boot(get_absolute_time());
+
     while (i < max_len - 1) {
         int c = -1;
         
         if (tud_cdc_available()) {
             c = tud_cdc_read_char();
+            start = to_ms_since_boot(get_absolute_time());
         }
 
-        if (c == PICO_ERROR_TIMEOUT) {
-            if (i == 0) {
-                return false; // No characters read
+        if (c == -1) { // No character available
+            if (to_ms_since_boot(get_absolute_time()) - start > 1000)
+            {
+                break;
             }
 
             continue;
@@ -99,7 +109,7 @@ static void cmdRead(char *args) {
     char *token = strtok(args, " ");
 
     if (token == NULL) {
-        printf("ERROR: missing address\n");
+        serialprintf("ERROR: missing address\n");
 
         return;
     }
@@ -107,7 +117,7 @@ static void cmdRead(char *args) {
     uint16_t addr_start;
 
     if (!parseHex16(token, &addr_start)) {
-        printf("ERROR: invalid address '%s'\n", token);
+        serialprintf("ERROR: invalid address '%s'\n", token);
 
         return;
     }
@@ -117,13 +127,13 @@ static void cmdRead(char *args) {
 
     if (token != NULL) {
         if (!parseHex16(token, &addr_end)) {
-            printf("ERROR: invalid end address '%s'\n", token);
+            serialprintf("ERROR: invalid end address '%s'\n", token);
 
             return;
         }
 
         if (addr_end < addr_start) {
-            printf("ERROR: end address must be >= start address\n");
+            serialprintf("ERROR: end address must be >= start address\n");
 
             return;
         }
@@ -134,16 +144,16 @@ static void cmdRead(char *args) {
 
         uint8_t val = readRamCell();
 
-        printf("%02X", val);
+        serialprintf("%02X", val);
 
         if (addr == addr_end) {
             break;
         }
 
-        printf(" ");
+        serialprintf(" ");
     }
 
-    printf("\n");
+    serialprintf("\n");
 }
 
 // Handle command: write <addr> <value>
@@ -151,7 +161,7 @@ static void cmdWrite(char *args) {
     char *token = strtok(args, " ");
 
     if (token == NULL) {
-        printf("ERROR: missing address\n");
+        serialprintf("ERROR: missing address\n");
 
         return;
     }
@@ -159,7 +169,7 @@ static void cmdWrite(char *args) {
     uint16_t addr;
 
     if (!parseHex16(token, &addr)) {
-        printf("ERROR: invalid address '%s'\n", token);
+        serialprintf("ERROR: invalid address '%s'\n", token);
 
         return;
     }
@@ -167,7 +177,7 @@ static void cmdWrite(char *args) {
     token = strtok(NULL, " ");
 
     if (token == NULL) {
-        printf("ERROR: missing value\n");
+        serialprintf("ERROR: missing value\n");
 
         return;
     }
@@ -175,7 +185,7 @@ static void cmdWrite(char *args) {
     uint8_t val;
 
     if (!parseHex8(token, &val)) {
-        printf("ERROR: invalid value '%s'\n", token);
+        serialprintf("ERROR: invalid value '%s'\n", token);
 
         return;
     }
@@ -188,7 +198,7 @@ static void cmdWrite(char *args) {
 
     uint8_t readback = readRamCell();
 
-    printf("%02X\n", readback);
+    serialprintf("%02X\n", readback);
 }
 
 // Toggle the showLogs flag
@@ -204,18 +214,18 @@ static void cmdLogs(char *args) {
             showLogs = false;
         }
         else {
-            printf("ERROR: invalid argument '%s'\n", args);
+            serialprintf("ERROR: invalid argument '%s'\n", args);
         }
     }
 }
 
 // Handle command: help
 static void cmdHelp(char *args) {
-    printf("Available commands:\n");
-    printf("\tread <addrstart> [addrend] - Read bytes from RAM, from a single address or from a range.\n");
-    printf("\twrite <addr> <value> - Write a byte to RAM in the given address.\n");
-    printf("\tlogs [on/off] - Turn on or off the logs. If no argument is provided, the logs will be toggled.\n");
-    printf("\thelp - Show this help message.\n");
+    serialprintf("Available commands:\n");
+    serialprintf("\tread <addrstart> [addrend] - Read bytes from RAM, from a single address or from a range.\n");
+    serialprintf("\twrite <addr> <value> - Write a byte to RAM in the given address.\n");
+    serialprintf("\tlogs [on/off] - Turn on or off the logs. If no argument is provided, the logs will be toggled.\n");
+    serialprintf("\thelp - Show this help message.\n");
 }
 
 // Dispatch a command string to the appropriate handler.
@@ -248,6 +258,6 @@ void uartProcessCommand(const char *cmd) {
         cmdHelp(args);
     }
     else {
-        printf("ERROR: unknown command '%s'\n", verb);
+        serialprintf("ERROR: unknown command '%s'\n", verb);
     }
 }

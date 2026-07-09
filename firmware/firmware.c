@@ -11,22 +11,22 @@ bool showLogs = false;
 bool sendBusReqAndWaitBusAck() {
     if (gpio_get(GPIO_Z80_BUSACK) == 0) {
         // BUSREQ already sended and BUSACK already received
-        showLogs?printf("[LOG] Received BUSACK.\n"):null;
+        showLogs?serialprintf("[LOG] Received BUSACK.\n"):null;
 
         return true;
     }
 
-    showLogs?printf("[LOG] Sending BUSREQ.\n"):null;
-    showLogs?printf("[INFO] Remember to send a clock signal to the Z80!\n"):null;
+    showLogs?serialprintf("[LOG] Sending BUSREQ.\n"):null;
+    showLogs?serialprintf("[INFO] Remember to send a clock signal to the Z80!\n"):null;
     gpio_put(GPIO_Z80_BUSREQ, 0);
 
     uint32_t start = to_ms_since_boot(get_absolute_time());
 
-    showLogs?printf("[LOG] Awaiting BUSACK.\n"):null;
+    showLogs?serialprintf("[LOG] Awaiting BUSACK.\n"):null;
     
     while (gpio_get(GPIO_Z80_BUSACK) != 0) {
         if (to_ms_since_boot(get_absolute_time()) - start > 3000) {
-            showLogs?printf("[ERROR] BUSACK timeout\n"):null;
+            showLogs?serialprintf("[ERROR] BUSACK timeout\n"):null;
 
             releaseBusReq();
             
@@ -34,14 +34,14 @@ bool sendBusReqAndWaitBusAck() {
         }
     }
 
-    showLogs?printf("[LOG] Received BUSACK.\n"):null;
+    showLogs?serialprintf("[LOG] Received BUSACK.\n"):null;
 
     return true;
 }
 
 // Release the bus request to the Z80.
 bool releaseBusReq() {
-    showLogs?printf("[LOG] Releasing BUSREQ.\n"):null;
+    showLogs?serialprintf("[LOG] Releasing BUSREQ.\n"):null;
     
     gpio_put(GPIO_Z80_BUSREQ, 1);
 
@@ -115,8 +115,8 @@ void resetZ80() {
 void readZ80ProgramFromUsb(uint8_t *prog_buf) {
     mscDiskInit();
 
-    showLogs?printf("[LOG] MSC disk ready.\n"):null;
-    showLogs?printf("[INFO] Copy PROGRAM.BIN on the Z80DevBoard drive.\n"):null;
+    showLogs?serialprintf("[LOG] MSC disk ready.\n"):null;
+    showLogs?serialprintf("[INFO] Copy PROGRAM.BIN on the Z80DevBoard drive.\n"):null;
 
     // Wait for the disk to be written
     while (!mscDiskWritten()) {
@@ -128,7 +128,7 @@ void readZ80ProgramFromUsb(uint8_t *prog_buf) {
     
     mscDiskRead(prog_buf);
 
-    showLogs?printf("[LOG] Program received from USB disk.\n"):null;
+    showLogs?serialprintf("[LOG] Program received from USB disk.\n"):null;
 }
 
 // Load the Z80 program from the USB to the flash memory.
@@ -171,12 +171,26 @@ void loadZ80ProgramInRam() {
 
 // Print the serial banner to the USB terminal.
 void printSerialBanner() {
-    printf("+---------------------------------+\n");
-    printf("|           Z80DevBoard           |\n");
-    printf("|                                 |\n");
-    printf("|        Official Firmware        |\n");
-    printf("|         Serial Terminal         |\n");
-    printf("+---------------------------------+\n\n");
+    serialprintf("+---------------------------------+\n");
+    serialprintf("|           Z80DevBoard           |\n");
+    serialprintf("|                                 |\n");
+    serialprintf("|        Official Firmware        |\n");
+    serialprintf("|         Serial Terminal         |\n");
+    serialprintf("+---------------------------------+\n\n");
+}
+
+void serialprintf(const char *format, ...) {
+    char buf[256];
+    va_list args;
+
+    va_start(args, format);
+
+    int len = vsnprintf(buf, sizeof(buf), format, args);
+
+    va_end(args);
+
+    tud_cdc_write(buf, len);
+    tud_cdc_write_flush();
 }
 
 /* 
@@ -251,24 +265,26 @@ void setup() {
     wasSerialConnected = connectedSerial;
 
     if (gpio_get(GPIO_Z80_PROGRAM_LOAD) == 0) {
-        wasSerialConnected?printf("[SYSTEM] Z80 New Program Loading...\n"):null;
+        wasSerialConnected?serialprintf("[SYSTEM] Z80 New Program Loading...\n"):null;
 
         Z80ProgramLoadHandler();
 
-        wasSerialConnected?printf("[SYSTEM] New Z80 Program Loaded!\n"):null;
+        wasSerialConnected?serialprintf("[SYSTEM] New Z80 Program Loaded!\n"):null;
     }
 
-    wasSerialConnected?printf("[SYSTEM] Loading Z80 Program in RAM...\n"):null;
+    wasSerialConnected?serialprintf("[SYSTEM] Loading Z80 Program in RAM...\n"):null;
 
     loadZ80ProgramInRam();
 
-    wasSerialConnected?printf("[SYSTEM] Z80 Program Loaded in RAM!\n"):null;
+    wasSerialConnected?serialprintf("[SYSTEM] Z80 Program Loaded in RAM!\n"):null;
 }
 
 /* 
     This function is runned in a loop after the setup function.
 */
 void loop() {
+    tud_task();
+
     // Check if the USB terminal is connected
     bool connectedSerial = tud_cdc_connected();
 
@@ -282,7 +298,7 @@ void loop() {
     char cmd[UART_CMD_MAX_LEN];
 
     if (uartReadLine(cmd, sizeof(cmd))) {
-        printf("> %s\n", cmd);
+        serialprintf("> %s\n", cmd);
 
         uartProcessCommand(cmd);
     }
