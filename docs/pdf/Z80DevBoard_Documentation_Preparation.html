@@ -1,0 +1,2949 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>index</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+    .page-break {
+        break-before: page;
+        page-break-before: always;
+    }
+    .ascii-diagram {
+        font-family: "SF Mono", "Menlo", "Consolas", monospace;
+        font-size: 8pt;
+        line-height: 1.05;
+        white-space: pre;
+        overflow-x: auto;
+
+        background: #f8f8f8;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+
+        padding: 12px;
+        margin: 1.2em 0;
+    }
+    body {
+        font-family: "Inter", sans-serif;
+        font-size: 8.5pt;
+        line-height: 1.2;
+        max-width: 60em;
+    }
+
+    p, li {
+        margin: 0.2em 0;
+    }
+
+    h1 {
+        font-size: 18pt;
+        margin-top: 0.8em;
+        margin-bottom: 0.4em;
+    }
+
+    h2 {
+        font-size: 13pt;
+        margin-top: 0.7em;
+        margin-bottom: 0.3em;
+    }
+
+    h3 {
+        font-size: 11pt;
+    }
+
+    pre, code {
+        font-size: 7pt;
+        line-height: 1.05;
+    }
+
+    table {
+        font-size: 7.5pt;
+    }
+  </style>
+</head>
+<body>
+<h1 id="z80devboard">Z80DevBoard</h1>
+<h2 id="official-documentation">Official Documentation</h2>
+<ul>
+<li><strong>Version:</strong> 1.8.0</li>
+<li><strong>Author:</strong> Gianluca Rainis</li>
+<li><strong>License:</strong> <em>CERN OHL S v2.0</em>, <em>MIT
+License</em></li>
+<li><strong>Repository:</strong> <a
+href="https://github.com/gianluca-rainis/Z80DevBoard">github.com/gianluca-rainis/Z80DevBoard</a></li>
+<li><strong>Sponsor:</strong> <a
+href="https://www.pcbway.com/">PCBWay</a></li>
+</ul>
+<hr />
+<blockquote>
+<p><em>A bridge between the golden age of 8-bit computing and modern
+embedded systems.</em></p>
+</blockquote>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol type="1">
+<li><a href="introduction.md">Introduction &amp; Project
+History</a></li>
+<li><a href="hardware.md">Hardware Architecture</a></li>
+<li><a href="pinout.md">Pinout &amp; Connectors</a></li>
+<li><a href="quickstart.md">Quick Start Guide</a></li>
+<li><a href="advanced.md">Advanced Projects</a></li>
+<li><a href="z80Assembly.md">Z80 Assembly Programming</a></li>
+<li><a href="technicalInfo.md">Schematics &amp; KiCad Reference</a></li>
+<li><a href="conclusions.md">Conclusions</a></li>
+</ol>
+<h2 id="about-this-document">About This Document</h2>
+<p>This documentation is designed for use in educational kits. Each
+chapter is self-contained and can be read independently, though
+following the order is recommended for beginners.</p>
+<p>The document is structured in two layers: - <strong>Introductory
+sections</strong> at the start of each chapter, suitable for anyone with
+basic electronics curiosity - <strong>Technical deep-dives</strong> for
+those who want to understand every signal, register, and timing
+detail</p>
+
+<div class="page-break"></div>
+
+<h1 id="chapter-1---introduction-project-history">Chapter 1 -
+Introduction &amp; Project History</h1>
+<h2 id="what-is-the-z80devboard">1.1 What Is the Z80DevBoard?</h2>
+<p>The <strong>Z80DevBoard</strong> is an open-source single-board
+computer that pairs a <strong>Zilog Z80 CPU</strong>, one of the most
+iconic and revolutionary 8-bit processors ever built, with an
+<strong>RP2040 microcontroller</strong>, the modern dual-core chip
+designed by <em>Raspberry Pi</em> that powers most of the most modern
+projects.</p>
+<p>The idea is simple: the Z80 operates as it would in <strong>its
+original environment</strong>, while the RP2040 handles all interaction
+between the developer and the board. The Z80 still <strong>runs real
+code</strong>, asserts real signal lines, and <em>behaves exactly as it
+did in 1976</em>, but the world it communicates with is managed by a
+modern chip running firmware that enables advanced features: loading
+programs over USB-C, serial communication, real-time RAM access, and the
+flexibility to deploy custom firmware for more complex projects.</p>
+<p>This makes the Z80DevBoard both a <strong>retrocomputing gem</strong>
+and a <strong>powerful educational tool</strong>: you can study Z80 bus
+cycles firsthand, write and run real assembly code, and observe
+authentic hardware behavior, all without the complexity of building the
+surrounding support circuitry from scratch. Whether you are a
+<em>student</em> exploring <strong>how computers truly work</strong> at
+the lowest level, or an <em>enthusiast</em> who simply appreciates the
+<strong>elegance of classic 8-bit architecture</strong>, this board was
+built with you in mind.</p>
+<h2 id="why-z80-rp2040">1.2 Why Z80 + RP2040?</h2>
+<h3 id="the-z80-a-processor-worth-knowing">The Z80: A Processor Worth
+Knowing</h3>
+<p>The <strong>Zilog Z80</strong> was developed in 1976 by
+<strong>Federico Faggin</strong> (the same engineer who designed the
+<em>Intel 4004</em> and <em>8080</em>). It later powered the <em>ZX
+Spectrum</em>, the <em>MSX family</em>, countless embedded systems, and
+even the <em>Game Boy</em>, which used a specially modified version of
+the Z80.</p>
+<p>Despite being 50 years old, the Z80 remains an <strong>excellent
+architecture to study</strong>: - Its instruction set is <em>rich yet
+regular</em>, making it <em>accessible</em>. - Its bus protocol is
+<em>well documented</em> and <em>easy to observe</em> with a logic
+analyzer. - It has influenced virtually <em>every modern CPU
+architecture</em>, including <em>x86</em> and <em>ARM</em>. - Writing
+Z80 assembly code teaches you exactly <em>what a processor does</em>,
+without layers of abstraction.</p>
+<p>In short, the Z80 is a museum piece today, but its impact on the
+history of computing was profound, and its assembly language remains one
+of the best windows into the real workings of a CPU.</p>
+<h3 id="the-rp2040-a-modern-microcontroller">The RP2040: a modern
+microcontroller</h3>
+<p>The RP2040 is a <em>dual-core ARM Cortex-M0+</em> microcontroller
+developed by <strong>Raspberry Pi</strong> and released in 2021. Despite
+its low cost, it packs a number of features that make it exceptionally
+well suited for this project, most notably its Programmable I/O
+(<em>PIO</em>) subsystem: a set of small, deterministic state machines
+capable of handling <strong>GPIO</strong> pins with precision.</p>
+<p>In the Z80DevBoard, the RP2040 takes on the role of the primary
+interface between <strong>the developer</strong> and <strong>the
+hardware</strong>: it stores the assembled program in flash, loads it
+into the onboard 64K asynchronous <em>SRAM</em> at boot, handles I/O bus
+cycles in real time, and exposes a USB serial interface for
+communication with the host computer. The expansion header additionally
+makes the board ready for more advanced use cases, from custom
+peripherals to deeper firmware experimentation.</p>
+<h2 id="project-goals">1.3 Project Goals</h2>
+<p>The Z80DevBoard was designed with <strong>three goals</strong> in
+mind.</p>
+<h3 id="education-first">Education first</h3>
+<p>Every <strong>design decision is documented and explainable</strong>.
+There are no obscure components: every chip on the board exists for a
+clear, teachable reason. The Z80DevBoard was born as an
+<strong>educational tool first</strong>: the LED matrices and the serial
+connection with the RP2040 allow you to <strong>observe Z80 operations
+in real time</strong>, making it possible to <strong>learn</strong>,
+<strong>debug</strong>, and <strong>truly understand</strong> what your
+program is doing at every step. The board is designed to <strong>grow
+with the student</strong>: starting from basic <em>Z80 assembly</em>,
+which maps directly onto topics covered in <em>computer
+architecture</em> and <em>systems</em> courses, all the way up to
+<em>writing custom RP2040 firmware</em> for <strong>more complex,
+ambitious and independent projects</strong>.</p>
+<h3 id="real-hardware-real-behavior">Real hardware, real behavior</h3>
+<p><strong>The Z80 is not simulated.</strong> It receives a real clock,
+drives real address and data buses, and asserts real control signals.
+You can watch <em>your code</em> execute on a <em>real processor</em>,
+in <em>real time</em> and <em>physically interact</em> with it.</p>
+<h3 id="open-source">Open source</h3>
+<p>All <em>KiCad design</em> files are published under the <strong>CERN
+OHL S v2.0</strong> license; the <em>firmware</em> source code and this
+<em>documentation</em> are published under the <strong>MIT
+License</strong>. Anyone can <em>manufacture the board</em>, <em>modify
+it</em>, or use it as a <em>starting point for their own project</em>,
+provided derivative works comply with the respective license terms. For
+<strong>students</strong> who want to <em>go deeper</em>, having access
+to the <strong>full sources</strong>, <strong>schematics</strong>, and
+<strong>documentation</strong> is itself a <strong>powerful learning
+resource</strong>.</p>
+<h2 id="project-history">1.4 Project History</h2>
+<p>The Z80DevBoard started from a simple desire: to <strong>learn Z80
+assembly</strong> and <strong>truly understand how a CPU works</strong>.
+Existing <strong>emulators were not enough</strong>: while functionally
+accurate, they could <strong>never replicate the feeling of watching
+real code execute on real silicon</strong>. The goal became building a
+board that would make that possible: not just a personal learning tool,
+but something that could make the <strong>study of computer
+architecture</strong> more <em>tangible</em>, more <em>immediate</em>,
+and ultimately more <em>rewarding</em> for anyone who picks it up.</p>
+<h3 id="version-0.1.0-pre-release">Version 0.1.0 (Pre-release)</h3>
+<ul>
+<li>Added the main components.</li>
+<li>Started working on the connections.</li>
+<li>Connected the Z80 to the RAM module.</li>
+<li>Created some led matrix to see the live activity of the Z80.</li>
+<li>Added some leds to see the bits the Z80 are writing or reading.</li>
+<li>Added the Wait and the Reset buttons.</li>
+</ul>
+<h3 id="version-0.9.0-pre-release">Version 0.9.0 (Pre-release)</h3>
+<ul>
+<li>Fixed the connections.</li>
+<li>Finished all the scematics.</li>
+<li>Finished the pcb.</li>
+<li>Added the 2 layers connections on the pcb.</li>
+<li>Added the graphics to the pcb.</li>
+<li>Fixed the pcb for the 3D view.</li>
+</ul>
+<h3 id="version-1.0.0">Version 1.0.0</h3>
+<ul>
+<li>Fixed all the clocks.</li>
+<li>Added the manual clock for the Z80.</li>
+<li>Added the SWCLK and SWD pins for debug.</li>
+<li>Added other 2 layers.</li>
+<li>Added the GND layer.</li>
+<li>Added the Vcc and 3v3 layer.</li>
+<li>Fixed the borders of the board.</li>
+<li>Fixed some connections.</li>
+</ul>
+<h3 id="version-1.2.0">Version 1.2.0</h3>
+<ul>
+<li>Added debouncer.</li>
+<li>Fixed board size.</li>
+<li>Added the info about the leds on the front silkscreen.</li>
+<li>Updated the back silkscreen.</li>
+<li>Changed the capacitors footprint.</li>
+<li>Changed the switch (manual - auto clock selector).</li>
+<li>Fixed SWD and SCLK pins.</li>
+<li>Fixed the crystal and the capacitors for the RP2040 clock.</li>
+<li>Fixed the data bus clock.</li>
+<li>Made a new automatic slow clock generator for the Z80.</li>
+<li>Fixed some connections.</li>
+</ul>
+<h3 id="version-1.5.0">Version 1.5.0</h3>
+<ul>
+<li>Added second SRAM to have 64Kb instead of 32Kb.</li>
+<li>Remade the led matrix.</li>
+<li>Added 74HTC574 as buffers for the led matrix.</li>
+<li>Added one 74HC00.</li>
+<li>Added the components informations in the silkscreen.</li>
+<li>Optimized the space.</li>
+<li>Fixed some DRC rules violations.</li>
+<li>Updated the documentation.</li>
+<li>Updated the CERN license.</li>
+</ul>
+<h3 id="version-1.6.0">Version 1.6.0</h3>
+<ul>
+<li>Added two pin sockets for Expansion boards or more advanced
+progects.</li>
+<li>Fixed the bus clock.</li>
+<li>Fixed some resistors.</li>
+<li>Added the names of the expansion pins.</li>
+<li>Added the names of the Z80 pins.</li>
+<li>Added the debouncer for the Reset and for the Wait buttons.</li>
+<li>Added a TXS0102DCT for the connections between the RP2040 and the
+Z80 BUSREQ and BUSACK.</li>
+<li>Fixed some capacitors values.</li>
+<li>Fixed the footprint of the fuse.</li>
+<li>Made a custom footprint for the switch.</li>
+<li>Added some graphics and funny phrases.</li>
+<li>Fixed the sizes of the Expansion pin’s names and of the Z80 pin’s
+names.</li>
+<li>Changed the footprint of the capacitors.</li>
+</ul>
+<h3 id="version-1.7.0">Version 1.7.0</h3>
+<ul>
+<li>Fixed the alimentation of the RP2040.</li>
+<li>Fixed the footprints of the two pin extension’s sockets.</li>
+<li>Fixed the size of the board.</li>
+<li>Now the project is sponsorized by PCBWay!</li>
+</ul>
+<h3 id="version-1.8.0-current">Version 1.8.0 <em>(current)</em></h3>
+<ul>
+<li>Wrote the whole documentation.</li>
+<li>Created the CHANGELOG file.</li>
+<li>Created the JOURNAL file.</li>
+<li>Updated the firmware.</li>
+<li>Updated the README file.</li>
+</ul>
+<h2 id="what-you-can-do-with-this-board">1.5 What You Can Do With This
+Board</h2>
+<p>The Z80DevBoard lets you: - <strong>Run Z80 assembly
+programs</strong> loaded over USB from a host computer - <strong>Study
+computer architecture</strong> with a real, inspectable system rather
+than a textbook diagram - <strong>Observe bus activity</strong> in real
+time through the onboard LED matrices, watching every read, write, and
+control signal as it happens - <strong>Step through your program
+manually</strong> using the manual clock input, running the Z80 at your
+own pace, one cycle at a time if needed - <strong>Read and write
+RAM</strong> in real time via the serial connection with the RP2040,
+inspecting and modifying memory while the Z80 is running -
+<strong>Expand the board</strong> by connecting your own components to
+the expansion pin sockets, from simple peripherals to complete daughter
+boards - <strong>Write custom RP2040 firmware</strong> to implement
+advanced features, experiment with the bus protocol, or build projects
+that go well beyond a standard development board</p>
+
+<div class="page-break"></div>
+
+<h1 id="chapter-2---hardware-architecture">Chapter 2 - Hardware
+Architecture</h1>
+<h2 id="system-overview">2.1 System Overview</h2>
+<p>The Z80DevBoard is a <strong>4-layer PCB</strong> measuring <em>219 ×
+108.5 mm</em>, designed around two central processing units: the
+<strong>Z84C00</strong> (Z80) and the <strong>RP2040</strong>. The board
+operates at <strong>5V</strong> via USB-C, with an onboard
+<em>AMS1117-3.3</em> regulator supplying the <strong>3.3V</strong> rail
+to the RP2040 and the supporting logic.</p>
+<p>The Z80 is the execution core: it runs assembly programs stored in
+the two onboard <em>HM62256BLP</em> SRAM chips, which together provide
+<strong>64 KB of addressable memory</strong>.</p>
+<p>The RP2040 acts as the interface layer <strong>between the developer
+and the board</strong>: it reads the compiled program from the
+<em>W25Q32JVSS</em> flash memory and loads it into SRAM before releasing
+the Z80.</p>
+<p>The data bus is managed by a set of <em>SN74LVC245APW</em> bus
+transceivers, which handle the <strong>voltage difference</strong>
+between the <strong>Z80’s 5V logic</strong> and the <strong>RP2040’s
+3.3V logic</strong>.</p>
+<p>Three <em>74HC595</em> shift registers allow the RP2040 to drive the
+bus over a serial interface, while the <em>74HC165</em> reads it back. A
+dedicated oscillator drives the Z80 clock, selectable between manual and
+automatic mode via an onboard switch; the RP2040 runs off a <strong>12
+MHz crystal</strong>.</p>
+<p>Forty LEDs, organized in matrices and driven by <em>74HCT574</em>
+buffers, provide <strong>real-time visual feedback</strong> of Z80 bus
+activity.</p>
+<p>Two expansion connectors expose additional signals for daughter
+boards and custom projects.</p>
+<h2 id="the-z80-cpu">2.2 The Z80 CPU</h2>
+<p>The Z80 is an <strong>8-bit microprocessor</strong> designed by
+<strong><em>Zilog</em></strong> and first introduced in 1976. Despite
+its age, it remains one of the <strong>most studied and documented
+CPU</strong> architectures ever produced, and its influence can still be
+traced in modern instruction set designs.</p>
+<p>The specific model used on the Z80DevBoard is the <em>Z84C00</em>:
+the <strong><em>CMOS</em> variant</strong> of the original Z80. Compared
+to the original <em>NMOS</em> version, the <em>Z84C00</em> offers
+several practical advantages: significantly <strong>lower power
+consumption</strong>, <strong>full static operation</strong> (meaning
+the clock can be slowed down to DC without losing register contents),
+and better <strong>noise immunity</strong> thanks to the wider logic
+voltage margins typical of <em>CMOS</em> technology. It is also
+considerably easier to source today than original <em>NMOS</em>
+parts.</p>
+<p>The <em>Z84C00</em> operates with a <strong>5V supply</strong> and
+communicates with the rest of the board through three buses: a
+<strong>16-bit address bus</strong>, an <strong>8-bit bidirectional data
+bus</strong>, and a set of control signals that coordinate every memory
+and I/O operation. With 16 address lines, the CPU can directly address
+<strong>up to 64 KB</strong> of memory: exactly the amount provided by
+the onboard SRAM.</p>
+<h2 id="the-rp2040">2.3 The RP2040</h2>
+<p>The RP2040 is a dual-core ARM Cortex-M0+
+<strong>microcontroller</strong> developed by <strong><em>Raspberry
+Pi</em></strong> and released in 2021. It runs at up to <em>133MHz</em>,
+integrates <em>264KB of SRAM</em>, and includes a rich set of
+peripherals, among which the most relevant is the <em>Programmable
+I/O</em> (<em>PIO</em>): a set of small, deterministic state machines
+capable of handling <strong>GPIO pins</strong> with cycle-accurate
+timing.</p>
+<p>On the Z80DevBoard, the RP2040 serves as the primary interface
+between <strong>the developer and the hardware</strong>. At boot, it
+<strong>reads the compiled Z80 program</strong> from the onboard flash
+memory and <strong>transfers it into SRAM</strong>, where the Z80 will
+execute it. During execution, it monitors the Z80 control signals in
+real time, handles I/O bus cycles, and maintains the serial connection
+with the host computer over USB.</p>
+<p>The RP2040 runs at <strong>3.3V</strong>, while the Z80 operates at
+<strong>5V</strong>. All signals exchanged between the two pass through
+<em>level shifters</em> and <em>bus transceivers</em> that
+<strong>handle the voltage difference</strong> transparently.
+Communication with the <em>shift registers</em>, used to <strong>extend
+the RP2040’s effective GPIO count</strong>, happens over a <strong>fast
+serial interface</strong>, keeping the pin usage manageable without
+sacrificing bus performance.</p>
+<p>The RP2040 also exposes its <strong><em>SWD</em> debug
+interface</strong> on dedicated pins, allowing firmware to be
+<strong>developed and debugged with standard tools</strong> such as a
+<strong><em>Raspberry Pi Debug Probe</em></strong> or <strong>any
+compatible SWD adapter</strong>.</p>
+<h2 id="the-sram">2.4 The SRAM</h2>
+<p>The Z80DevBoard mount two <em>HM62256BLP</em> chips as its main
+memory: a classic <strong>32KB × 8-bit Asynchronous Static RAM</strong>.
+Mounted <strong>in parallel</strong>, the two chips provide <strong>a
+combined address space</strong> of <em>64KB</em>, which is <strong>the
+maximum the Z80 can directly address</strong> with its 16-bit address
+bus.</p>
+<p>Unlike Dynamic RAM (<em>DRAM</em>), Static RAM <strong>does not
+require periodic refresh cycles</strong> to retain its contents. This
+<strong>simplifies the board design</strong> considerably: there is
+<strong>no need for a dedicated refresh controller</strong>, and the
+Z80’s <code>/RFSH</code> pin, which would normally <strong>trigger DRAM
+refresh</strong>, is simply <strong>left unused</strong>. As long as the
+board is powered, the memory contents remain intact.</p>
+<p>The <em>HM62256BLP</em> is an <strong>asynchronous device</strong>,
+meaning <strong>it does not rely on a shared clock</strong> signal to
+coordinate read and write operations. Instead, timing is governed
+entirely by the Z80’s control signals: <code>/MREQ</code>,
+<code>/RD</code>, and <code>/WR</code>, which the SRAM monitors
+directly. A <strong>read cycle</strong> completes as soon as <strong>the
+address has been stable</strong> for the chip’s access time; a
+<strong>write cycle</strong> latches the data <strong>on the rising edge
+of <code>/WR</code></strong>.</p>
+<p>At boot, the <strong>RP2040 takes control of the bus</strong> and
+<strong>writes the compiled Z80 program</strong> into <em>SRAM</em>
+before releasing the CPU from reset. From that point on, the Z80 reads
+instructions and data, and writes results back, to these two chips for
+the entire duration of program execution.</p>
+<h2 id="the-flash-memory">2.5 The Flash Memory</h2>
+<p>The <em>W25Q32JVSS</em> is a <em>32Mbit</em> (<em>4MB</em>)
+<strong><em>SPI</em> <em>NOR</em> flash memory</strong> chip, used on
+the Z80DevBoard as <strong>persistent storage for the RP2040 firmware
+and the Z80 program</strong>. Unlike <em>SRAM</em>, flash memory
+<strong>retains its contents</strong> when the board is powered off,
+making it the natural choice for <strong>storing code</strong> that
+needs to survive <strong>between sessions</strong>.</p>
+<p>The RP2040 communicates with the flash chip over <strong>a dedicated
+<em>SPI</em> bus</strong>. At boot, it <strong>reads the compiled Z80
+program from flash</strong> and transfers it into <em>SRAM</em> before
+releasing the Z80 from reset. The RP2040’s own firmware is also stored
+on the same chip, following the standard <em>Raspberry Pi Pico</em>
+architecture where the <strong>RP2040 boots directly from an
+<em>external SPI flash</em></strong>.</p>
+<p>From the Z80’s perspective, <strong>the flash memory is completely
+invisible</strong>: the CPU only ever interacts with the <em>SRAM</em>.
+The flash is <strong>exclusively managed by the RP2040</strong>, which
+handles all read and write operations transparently in the
+background.</p>
+<h2 id="the-led-matrices">2.6 The LED Matrices</h2>
+<p>The Z80DevBoard features <strong><em>40 LEDs</em> organized in
+matrices</strong>, one of the most distinctive and educationally
+valuable aspects of the board. Each LED reflects <strong>the real-time
+state of a specific signal or data line</strong>, giving an
+<strong>immediate visual representation</strong> of <strong>what the Z80
+is doing</strong> at any given moment, without the need for an
+oscilloscope or a logic analyzer.</p>
+<p>The LEDs are driven by <em>74HCT574</em> <em>octal D-type flip-flop
+buffers</em>, which latch the current state of the bus. Without
+buffering, the signals on a running Z80 bus change far too rapidly to be
+perceived directly, at even a modest clock frequency, individual bus
+cycles last only a few hundred nanoseconds. The buffers solve this by
+capturing a snapshot of the bus state and holding it stable until the
+next update.</p>
+<p>This is where the <strong>manual clock mode becomes particularly
+powerful</strong>: by stepping through the program one clock cycle at a
+time, <strong>the LEDs update with each step</strong>, allowing you to
+<strong>follow the execution of every instruction in real time</strong>
+and <strong>observe exactly how the Z80 reads from and writes to
+memory</strong>. Combined with the serial connection to the RP2040, this
+makes the Z80DevBoard a <strong>genuinely transparent system</strong>:
+one where <strong>the internal state of the CPU is always
+visible</strong> and never hidden.</p>
+<h2 id="the-expansion-pins">2.7 The Expansion Pins</h2>
+<p>The Z80DevBoard exposes <strong>two expansion connectors</strong>
+designed to make the board the foundation of a larger system, rather
+than a closed, self-contained unit.</p>
+<p>The first is a <em>2×20 pin connector</em> that breaks out
+<strong>all 40 pins of the Z80</strong>: address bus, data bus, and
+control signals; giving direct access to the full CPU interface. This
+connector is intended for daughter boards that <strong>extend the Z80’s
+environment</strong>: additional memory, custom peripherals, or any
+hardware that needs to interact directly with the Z80 bus.</p>
+<p>The second is a <em>2×10 pin connector</em> that exposes <strong>a
+selection of RP2040</strong> signals: the <strong>3.3V and GND
+power</strong> rails, the <strong>two <em>ADC</em></strong> inputs
+(<em>ADC0</em> and <em>ADC1</em>), and <em>GPIO10</em> through
+<em>GPIO25</em>. This connector is oriented towards <strong>more
+advanced projects</strong> where the <strong>RP2040 itself needs to
+interact with external hardware</strong>: sensors, displays,
+communication modules, or custom firmware <strong>experiments that go
+beyond the standard board functionality</strong>.</p>
+<p>Together, the two connectors cover <strong>both sides of the
+system</strong>: the <strong>Z80’s classic parallel bus
+interface</strong> and the <strong>RP2040’s modern programmable
+I/O</strong>, making it possible to build virtually <strong>any
+extension imaginable</strong> on top of the Z80DevBoard.</p>
+<h2 id="the-usb-c">2.8 The USB-C</h2>
+<p>The board <strong>is powered and connected to the host
+computer</strong> through a single <em>USB-C 2.0</em> connector. It
+serves two distinct purposes simultaneously: <strong>delivering the 5V
+supply voltage to the board</strong>, and <strong>providing a full-speed
+USB data connection to the RP2040</strong>.</p>
+<p>On the power side, the <strong>5V</strong> rail feeds the Z80
+directly and passes through the onboard <em>AMS1117-3.3</em> regulator
+to generate the <strong>3.3V</strong> rail for the RP2040 and the
+supporting logic. A <em>500mA</em> fuse protects the board from
+overcurrent conditions.</p>
+<p>On the data side, the RP2040 enumerates as a <em>USB CDC</em>
+(<em>Communications Device Class</em>) serial device, appearing as a
+virtual <em>COM</em> port on the host computer. This connection is used
+to <strong>upload compiled Z80 programs</strong> to the board,
+<strong>interact with the RP2040</strong> firmware, and <strong>read any
+output the Z80 program produces</strong> at runtime. No special driver
+is required on Linux or macOS; on Windows, the board appears as a
+standard <em>COM</em> port in Device Manager.</p>
+<p>The choice of <em>USB-C</em> makes the board <strong>compatible with
+modern laptops and workstations</strong> without the need for adapters,
+while keeping the connector <strong>robust enough for repeated use in an
+educational environment</strong>.</p>
+<h2 id="how-it-all-connects">2.9 How It All Connects</h2>
+<p>The center of the board is the Z80, connected to the two
+<em>SRAM</em> chips through its full <em>16-bit</em> address bus and
+<em>8-bit</em> data bus. Every memory access the Z80 performs (fetching
+an instruction, reading a variable, writing a result) travels directly
+across these buses to and from the <em>SRAM</em>.</p>
+<p>The RP2040 sits <strong>alongside the Z80</strong>, connected to the
+same data and control buses through a set of <em>SN74LVC245APW</em> bus
+transceivers and <em>74HC595</em> - <em>74HC165</em> shift registers.
+The transceivers <strong>handle the voltage difference</strong> between
+the Z80’s 5V logic and the RP2040’s 3.3V logic, while the shift
+registers allow the RP2040 to <strong>read and drive the bus over a
+compact serial interface</strong>, keeping GPIO usage under control. A
+<em>TXS0104EPW</em> level shifter handles the <code>BUSREQ</code> and
+<code>BUSACK</code> signals specifically, which coordinate bus ownership
+between the two chips.</p>
+<p>The <em>W25Q32JVSS</em> flash memory is connected exclusively to the
+RP2040 over <em>SPI</em>. The Z80 has no direct access to it, the flash
+is managed only by the RP2040, which uses it to store firmware and the
+Z80 program persistently between sessions.</p>
+<p>The LED matrices, driven by <em>74HCT574</em> buffers, display the
+state of data and address buses in real time. The buffers stay between
+the bus and the LEDs, ensuring that the display logic <strong>never
+interferes with bus</strong> timing.</p>
+<p>The <em>USB-C</em> connector provides 5V to the board and connects it
+directly to the RP2040’s USB pins, establishing the serial link with the
+host computer. The <em>AMS1117-3.3</em> regulator is positioned between
+the 5V input and the 3.3V rail, supplying the RP2040 and all the 3.3V
+logic on the board.</p>
+<p>Finally, the two expansion connectors provide the Z80 bus and the
+RP2040 GPIO pins, making every relevant signal accessible to external
+hardware without interfering with the rest of the board.</p>
+<p>The board is laid out on a 4-layer PCB. The front copper layer
+(<em>F.Cu</em>) and the back copper layer (<em>B.Cu</em>) are used for
+the <strong>general signal routing</strong>. The inner layer
+<em>In1.Cu</em> is dedicated to the <strong>power distribution
+network</strong>, carrying <strong>both the 5V and 3.3V rails</strong>
+across the board. The inner layer <em>In2.Cu</em> is a <strong>solid
+ground plane</strong>, providing a <strong>clean reference for all
+signals</strong> and <strong>reducing electromagnetic
+interference</strong>.</p>
+
+<div class="page-break"></div>
+
+<h1 id="chapter-3---pinout-connectors">Chapter 3 - Pinout &amp;
+Connectors</h1>
+<h2 id="z80-pinout">3.1 Z80 Pinout</h2>
+<p>The <em>Z84C00</em> is available in a <strong>40-pin DIP
+package</strong>. The pinout below reflects the official Zilog
+datasheet.</p>
+<pre class="ascii-diagram"><code>              ┌───────────────────┐
+       A11 ⬅ │  1             40 │ ⮕ A10
+       A12 ⬅ │  2     Z80     39 │ ⮕ A9
+       A13 ⬅ │  3             38 │ ⮕ A8
+       A14 ⬅ │  4             37 │ ⮕ A7
+       A15 ⬅ │  5             36 │ ⮕ A6
+       CLK ⮕ │  6             35 │ ⮕ A5
+        D4 ⬌ │  7             34 │ ⮕ A4
+        D3 ⬌ │  8             33 │ ⮕ A3
+        D5 ⬌ │  9             32 │ ⮕ A2
+        D6 ⬌ │ 10             31 │ ⮕ A1
+       Vcc ⮕ │ 11             30 │ ⮕ A0
+        D2 ⬌ │ 12             29 │ ⬅ GND
+        D7 ⬌ │ 13             28 │ ⮕ /RFSH
+        D0 ⬌ │ 14             27 │ ⮕ /M1
+        D1 ⬌ │ 15             26 │ ⬅ /RESET
+      /INT ⮕ │ 16             25 │ ⬅ /BUSRQ
+      /NMI ⮕ │ 17             24 │ ⬅ /WAIT
+     /HALT ⬅ │ 18             23 │ ⮕ /BUSACK
+     /MREQ ⬅ │ 19             22 │ ⮕ /WR
+     /IORQ ⬅ │ 20             21 │ ⮕ /RD
+              └───────────────────┘</code></pre>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Pin</th>
+<th>Direction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A0–A15</td>
+<td>30-40, 1–5</td>
+<td>Output</td>
+<td>16-bit address bus</td>
+</tr>
+<tr>
+<td>D0–D7</td>
+<td>14, 15, 12, 8, 7, 9, 10, 13</td>
+<td>Bidirectional</td>
+<td>8-bit data bus</td>
+</tr>
+<tr>
+<td>CLK</td>
+<td>6</td>
+<td>Input</td>
+<td>System clock</td>
+</tr>
+<tr>
+<td>/MREQ</td>
+<td>19</td>
+<td>Output</td>
+<td>Memory request (active low)</td>
+</tr>
+<tr>
+<td>/IORQ</td>
+<td>20</td>
+<td>Output</td>
+<td>I/O request (active low)</td>
+</tr>
+<tr>
+<td>/RD</td>
+<td>21</td>
+<td>Output</td>
+<td>Read operation indicator (active low)</td>
+</tr>
+<tr>
+<td>/WR</td>
+<td>22</td>
+<td>Output</td>
+<td>Write operation indicator (active low)</td>
+</tr>
+<tr>
+<td>/M1</td>
+<td>27</td>
+<td>Output</td>
+<td>With /MREQ indicates opcode fetch cycle, with /IORQ indicates
+interrupt acknowledge cycle (active low)</td>
+</tr>
+<tr>
+<td>/RFSH</td>
+<td>28</td>
+<td>Output</td>
+<td>DRAM refresh cycle (active low)</td>
+</tr>
+<tr>
+<td>/HALT</td>
+<td>18</td>
+<td>Output</td>
+<td>CPU halted (active low)</td>
+</tr>
+<tr>
+<td>/WAIT</td>
+<td>24</td>
+<td>Input</td>
+<td>Insert wait states (active low)</td>
+</tr>
+<tr>
+<td>/INT</td>
+<td>16</td>
+<td>Input</td>
+<td>Maskable interrupt request (active low)</td>
+</tr>
+<tr>
+<td>/NMI</td>
+<td>17</td>
+<td>Input</td>
+<td>Non-maskable interrupt request (active low)</td>
+</tr>
+<tr>
+<td>/RESET</td>
+<td>26</td>
+<td>Input</td>
+<td>Reset (active low)</td>
+</tr>
+<tr>
+<td>/BUSRQ</td>
+<td>25</td>
+<td>Input</td>
+<td>Bus request (active low)</td>
+</tr>
+<tr>
+<td>/BUSACK</td>
+<td>23</td>
+<td>Output</td>
+<td>Bus acknowledge (active low)</td>
+</tr>
+<tr>
+<td>Vcc</td>
+<td>11</td>
+<td>Power</td>
+<td>+5V supply</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>29</td>
+<td>Power</td>
+<td>Ground</td>
+</tr>
+</tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2 id="rp2040-pinout">3.2 RP2040 Pinout</h2>
+<p>The <em>RP2040</em> is available in a <strong>56-pin QFN
+package</strong>. The pinout below reflects the official Raspberry Pi
+datasheet.</p>
+<pre class="ascii-diagram"><code>QSPI_SS_N QSPI_SD1 QSPI_SD2 QSPI_SD0 QSPI_SCLK QSPI_SD3 DVDD IOVDD USB_VDD USB_DP USB_DM VREG_VIN VREG_VOUT ADC_AVDD
+       ┌───────────────────────────────────────────────┐
+       │   56 55 54 53 52 51 50 49 48 47 46 45 44 43   │
+       │                                               │
+ IOVDD │  1                                         42 │ IOVDD
+ GPIO0 │  2                                         41 │ GPIO29/ADC3
+ GPIO1 │  3                                         40 │ GPIO28/ADC2
+ GPIO2 │  4                                         39 │ GPIO27/ADC1
+ GPIO3 │  5              ┌───────────┐              38 │ GPIO26/ADC0
+ GPIO4 │  6              │           │              37 │ GPIO25
+ GPIO5 │  7              │    GND    │              36 │ GPIO24
+ GPIO6 │  8              │           │              35 │ GPIO23
+ GPIO7 │  9              └───────────┘              34 │ GPIO22
+ IOVDD │ 10                                         33 │ IOVDD
+ GPIO8 │ 11                                         32 │ GPIO21
+ GPIO9 │ 12                                         31 │ GPIO20
+GPIO10 │ 13                                         30 │ GPIO19
+GPIO11 │ 14                                         29 │ GPIO18
+       │                                               │
+       │   15 16 17 18 19 20 21 22 23 24 25 26 27 28   │
+       └───────────────────────────────────────────────┘
+GPIO12 GPIO13 GPIO14 GPIO15 TESTEN XIN XOUT IOVDD DVDD SWCLK SWDIO RUN GPIO16 GPIO17</code></pre>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Pin</th>
+<th>Direction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPIO0–GPIO25</td>
+<td>2-9, 11-18, 27-32, 34-37</td>
+<td>Configurable</td>
+<td>General purpose I/O</td>
+</tr>
+<tr>
+<td>GPIO26/ADC0</td>
+<td>38</td>
+<td>Configurable</td>
+<td>GPIO or ADC (Analog to Digital Converter) channel 0</td>
+</tr>
+<tr>
+<td>GPIO27/ADC1</td>
+<td>39</td>
+<td>Configurable</td>
+<td>GPIO or ADC (Analog to Digital Converter) channel 1</td>
+</tr>
+<tr>
+<td>GPIO28/ADC2</td>
+<td>40</td>
+<td>Configurable</td>
+<td>GPIO or ADC (Analog to Digital Converter) channel 2</td>
+</tr>
+<tr>
+<td>GPIO29/ADC3</td>
+<td>41</td>
+<td>Configurable</td>
+<td>GPIO or ADC (Analog to Digital Converter) channel 3</td>
+</tr>
+<tr>
+<td>XIN</td>
+<td>20</td>
+<td>Input</td>
+<td>Crystal oscillator input (12 MHz)</td>
+</tr>
+<tr>
+<td>XOUT</td>
+<td>21</td>
+<td>Output</td>
+<td>Crystal oscillator output</td>
+</tr>
+<tr>
+<td>USB_DP</td>
+<td>47</td>
+<td>Bidirectional</td>
+<td>USB D+ (27Ω resistor required)</td>
+</tr>
+<tr>
+<td>USB_DM</td>
+<td>46</td>
+<td>Bidirectional</td>
+<td>USB D− (27Ω resistor required)</td>
+</tr>
+<tr>
+<td>SWCLK</td>
+<td>24</td>
+<td>Input</td>
+<td>SWD clock (debug)</td>
+</tr>
+<tr>
+<td>SWDIO</td>
+<td>25</td>
+<td>Bidirectional</td>
+<td>SWD data (debug)</td>
+</tr>
+<tr>
+<td>RUN</td>
+<td>26</td>
+<td>Input</td>
+<td>Reset (active low)</td>
+</tr>
+<tr>
+<td>VREG_VIN</td>
+<td>45</td>
+<td>Power</td>
+<td>Voltage regulator input (1.8V to 3.3V) (1uF capacitor required)</td>
+</tr>
+<tr>
+<td>VREG_VOUT</td>
+<td>44</td>
+<td>Power</td>
+<td>Voltage regulator output (1.1V core) (1uF capacitor required)</td>
+</tr>
+<tr>
+<td>IOVDD</td>
+<td>1, 10, 22, 33, 42, 49</td>
+<td>Power</td>
+<td>GPIO supply (1.8V to 3.3V)</td>
+</tr>
+<tr>
+<td>DVDD</td>
+<td>23, 50</td>
+<td>Power</td>
+<td>Digital core supply (1.1V)</td>
+</tr>
+<tr>
+<td>ADC_AVDD</td>
+<td>43</td>
+<td>Power</td>
+<td>ADC analog supply (3.3V)</td>
+</tr>
+<tr>
+<td>USB_VDD</td>
+<td>48</td>
+<td>Power</td>
+<td>USB PHY supply (3.3V)</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>Center Pad</td>
+<td>Power</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>QSPI_*</td>
+<td>51–56</td>
+<td>Bidirectional</td>
+<td>Interface to a SPI flash (Usable also as GPIO)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="expansion-connector-220-z80-bus">3.3 Expansion Connector 2×20
+(Z80 Bus)</h2>
+<p>The <em>Expansion Connector (Z80 Bus)</em> is a <strong>2×20 pin
+connector</strong> located on the bottom-right of the Z80DevBoard. It
+exposes all <strong>Z80 bus signals</strong>, providing direct access to
+the CPU interface for daughter boards and external hardware.</p>
+<pre class="ascii-diagram"><code> D0 D2 D4 D6 HALT RST BREQ INT M1 IORQ A0 A2 A4 A6 A8 A10 A12 A14 WR Vcc
+  1  3  5  7  9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39
+┌────────────────────────────────────────────────────────────┐
+│ ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
+│ ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
+└────────────────────────────────────────────────────────────┘
+  2  4  6  8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40
+ D1 D3 D5 D7 WAIT CLK BACK NMI RFSH MREQ A1 A3 A5 A7 A9 A11 A13 A15 RD GND</code></pre>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Pin</th>
+<th>Direction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D0–D7</td>
+<td>1-8</td>
+<td>Bidirectional</td>
+<td>8-bit data bus</td>
+</tr>
+<tr>
+<td>HALT</td>
+<td>9</td>
+<td>Output</td>
+<td>CPU halted (active low)</td>
+</tr>
+<tr>
+<td>WAIT</td>
+<td>10</td>
+<td>Input</td>
+<td>Insert wait states (active low)</td>
+</tr>
+<tr>
+<td>RST</td>
+<td>11</td>
+<td>Input</td>
+<td>Reset (active low)</td>
+</tr>
+<tr>
+<td>CLK</td>
+<td>12</td>
+<td>Input</td>
+<td>System clock</td>
+</tr>
+<tr>
+<td>BREQ</td>
+<td>13</td>
+<td>Input</td>
+<td>Bus request (active low)</td>
+</tr>
+<tr>
+<td>BACK</td>
+<td>14</td>
+<td>Output</td>
+<td>Bus acknowledge (active low)</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>15</td>
+<td>Input</td>
+<td>Maskable interrupt request (active low)</td>
+</tr>
+<tr>
+<td>NMI</td>
+<td>16</td>
+<td>Input</td>
+<td>Non-maskable interrupt request (active low)</td>
+</tr>
+<tr>
+<td>M1</td>
+<td>17</td>
+<td>Output</td>
+<td>With MREQ indicates opcode fetch cycle, with IORQ indicates
+interrupt acknowledge cycle (active low)</td>
+</tr>
+<tr>
+<td>RFSH</td>
+<td>18</td>
+<td>Output</td>
+<td>DRAM refresh cycle (active low)</td>
+</tr>
+<tr>
+<td>IORQ</td>
+<td>19</td>
+<td>Output</td>
+<td>I/O request (active low)</td>
+</tr>
+<tr>
+<td>MREQ</td>
+<td>20</td>
+<td>Output</td>
+<td>Memory request (active low)</td>
+</tr>
+<tr>
+<td>A0–A15</td>
+<td>21-36</td>
+<td>Output</td>
+<td>16-bit address bus</td>
+</tr>
+<tr>
+<td>WR</td>
+<td>37</td>
+<td>Output</td>
+<td>Write operation indicator (active low)</td>
+</tr>
+<tr>
+<td>RD</td>
+<td>38</td>
+<td>Output</td>
+<td>Read operation indicator (active low)</td>
+</tr>
+<tr>
+<td>Vcc</td>
+<td>39</td>
+<td>Power</td>
+<td>+5V supply</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>40</td>
+<td>Power</td>
+<td>Ground</td>
+</tr>
+</tbody>
+</table>
+<h2 id="expansion-connector-210-rp2040">3.4 Expansion Connector 2×10
+(RP2040)</h2>
+<p>The <em>Expansion Connector (RP2040)</em> is a <strong>2×10 pin
+connector</strong> located on the bottom-right of the Z80DevBoard. It
+exposes GPIO pins 10 through 25, two ADC pins, and the 3v3 power rail,
+allowing the development of more advanced projects on expansion boards
+with custom firmware.</p>
+<pre class="ascii-diagram"><code> GPIO10 GPIO12 GPIO14 GPIO16 GPIO18 GPIO20 GPIO22 GPIO24 ADC0 3v3
+  1  3  5  7  9 11 13 15 17 19
+┌──────────────────────────────┐
+│ ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
+│ ●  ●  ●  ●  ●  ●  ●  ●  ●  ● │
+└──────────────────────────────┘
+  2  4  6  8 10 12 14 16 18 20
+ GPIO11 GPIO13 GPIO15 GPIO17 GPIO19 GPIO21 GPIO23 GPIO25 ADC1 GND</code></pre>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Pin</th>
+<th>Direction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPIO10-GPIO25</td>
+<td>1-16</td>
+<td>Configurable</td>
+<td>General purpose I/O</td>
+</tr>
+<tr>
+<td>ADC0-ADC1</td>
+<td>17-18</td>
+<td>Configurable</td>
+<td>GPIO or ADC (Analog to Digital Converter) channel 0 and 1</td>
+</tr>
+<tr>
+<td>3v3</td>
+<td>19</td>
+<td>Power</td>
+<td>+3.3V supply</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>20</td>
+<td>Power</td>
+<td>Ground</td>
+</tr>
+</tbody>
+</table>
+<h2 id="swd-debug-connector">3.5 SWD Debug Connector</h2>
+<p>The SWD (<em>Serial Wire Debug</em>) interface is exposed through two
+dedicated pins located in the top-right corner of the Z80DevBoard. It
+provides a direct connection to the RP2040’s debug port, allowing
+firmware to be flashed and debugged using any SWD-compatible adapter,
+such as a <em>Raspberry Pi Debug Probe</em>.</p>
+<pre class="ascii-diagram"><code> SWCLK
+  1
+┌───┐
+│ ● │
+│ ● │
+└───┘
+  2
+ SWD</code></pre>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Pin</th>
+<th>Direction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SWCLK</td>
+<td>1</td>
+<td>Input</td>
+<td>SWD clock (debug)</td>
+</tr>
+<tr>
+<td>SWD</td>
+<td>2</td>
+<td>Bidirectional</td>
+<td>SWD data (debug)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>A ground reference is available on the <em>GND</em> pins of the
+<em>Expansion connector</em>.</p>
+</blockquote>
+
+<div class="page-break"></div>
+
+<h1 id="chapter-4---quick-start-guide">Chapter 4 - Quick Start
+Guide</h1>
+<h2 id="what-you-need">4.1 What You Need</h2>
+<p>Before getting started, make sure you have the following: - A fully
+assembled Z80DevBoard - A USB-C cable (data-capable, not charge-only) -
+A computer running Linux, Windows or macOS - A Z80 assembler - z80asm is
+recommended - A serial terminal - such as PuTTY (Windows), screen or
+minicom (Linux/macOS)</p>
+<h2 id="powering-the-board">4.2 Powering the Board</h2>
+<p>Connect the USB-C cable between the board and your computer. The LEDs
+light up immediately, confirming the board is receiving power.</p>
+<p>The RP2040 initialises, requests the bus via BUSREQ, holds it while
+loading the program from flash into SRAM. Once ready, the Z80 is
+released and begins executing.</p>
+<h2 id="loading-a-program">4.3 Loading a Program</h2>
+<p>To load a program onto the Z80DevBoard: 1. Hold the <em>Z80BOOT</em>
+button while connecting the board to your computer through the USB-C
+port. 2. The RP2040 will expose a <strong><em>32KB</em> mass
+storage</strong> device on your computer: it will look like a USB drive.
+3. Copy your <strong>assembled Z80 binary</strong> onto the drive. 4.
+The RP2040 will <strong>reset automatically</strong>, load the program
+from flash into SRAM, and the board will be ready for execution.</p>
+<p>The program must be a <strong>raw Z80 binary</strong>, not an Intel
+HEX file or any other format.</p>
+<p><strong>Make sure to assemble your code before loading it onto the
+board.</strong></p>
+<h2 id="running-your-first-program">4.4 Running Your First Program</h2>
+<p>Once a program has been loaded, the Z80 begins executing
+automatically from address <code>0x0000</code>. From this point, the
+board runs autonomously. The RP2040 manages the bus in the background
+while the Z80 fetches instructions from SRAM and executes them in
+sequence.</p>
+<p>The <strong>LED matrices</strong> will <strong>immediately reflect
+the activity</strong> on the address and data buses, updating in real
+time with every memory access.</p>
+<p>The <em>Z80RESET</em> button restarts execution from
+<code>0x0000</code> <strong>without reloading the program</strong>,
+making it useful for <strong>quick re-runs</strong> during
+development.</p>
+<p>The <em>Z80WAIT</em> button stops the execution <strong>without
+reloading the program</strong>, making it useful for <strong>quick
+debug</strong> during development.</p>
+<p>An <strong>onboard switch</strong> allows toggling between
+<em>automatic clock mode</em> and <em>manual clock mode</em>: - In
+<em>automatic mode</em>, the Z80 runs at a fixed low frequency generated
+by an onboard capacitors system. - In <em>manual mode</em>, each press
+of the <em>Z80CLOCK</em> button <strong>advances the clock by one
+cycle</strong>, allowing you to step through your program one clock
+pulse at a time.</p>
+<p>For examples and a complete guide to writing Z80 assembly programs,
+refer to <a href="z80Assembly.md">Chapter 6 - Z80 Assembly
+Programming</a>.</p>
+<h2 id="using-the-manual-clock">4.5 Using the Manual Clock</h2>
+<p>The <strong>manual clock mode</strong> is one of the <strong>most
+powerful educational features</strong> of the Z80DevBoard.</p>
+<p>By stepping through the program one clock cycle at a time, you can
+observe <strong>exactly what the Z80 is doing</strong> at every stage of
+execution: <strong>which address it is reading</strong>, <strong>what
+data is on the bus</strong>, and <strong>which control signals are
+active</strong>.</p>
+<p>To use the manual clock: - Flip the onboard switch to <strong>manual
+clock mode</strong> (represented on the board by the label
+<code>Manual</code>). - (<em>Optional</em>) Press <em>Z80RESET</em> to
+restart execution from <code>0x0000</code>. - Press <em>Z80CLOCK</em> to
+<strong>advance the clock by one cycle</strong>. - <strong>Observe the
+LED matrices</strong> after each press: the address bus, data bus, and
+control signals will update with every cycle.</p>
+<p>Combined with the LED matrices, manual clock mode turns the
+Z80DevBoard into a <strong>fully transparent system</strong>: every
+internal state of the CPU becomes visible and inspectable, one step at a
+time.</p>
+<h2 id="reading-the-led-matrices">4.6 Reading the LED Matrices</h2>
+<p>The Z80DevBoard features <strong><em>40 LEDs</em> organized in
+matrices</strong> that display the <strong>real-time state</strong> of
+the Z80 buses. Each LED corresponds to a specific signal line.</p>
+<blockquote>
+<p>When the LED is on, the line is <em>HIGH</em>; when it is off, the
+line is <em>LOW</em>.</p>
+</blockquote>
+<p>The matrices are organized as follows: </p>
+<table>
+  <thead>
+    <tr>
+      <th>Matrix</th>
+      <th>Signals</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Address Bus</td>
+      <td>A0–A15</td>
+      <td>The <em>16-bit</em> memory address the Z80 is currently accessing.</td>
+    </tr>
+    <tr>
+      <td>Data Bus (<em>WRITING</em>)</td>
+      <td>D0–D7</td>
+      <td>The <em>8-bit</em> value being written.</td>
+    </tr>
+    <tr>
+      <td>Data Bus (<em>READING</em>)</td>
+      <td>D0–D7</td>
+      <td>The <em>8-bit</em> value being read.</td>
+    </tr>
+    <tr>
+      <td>HALT</td>
+      <td>HALT</td>
+      <td>The CPU has executed a <em>HALT</em> instruction.</td>
+    </tr>
+    <tr>
+      <td>MREQ</td>
+      <td>MREQ</td>
+      <td>The Z80 is performing a memory access.</td>
+    </tr>
+    <tr>
+      <td>IORQ</td>
+      <td>IORQ</td>
+      <td>The Z80 is performing an I/O port access.</td>
+    </tr>
+    <tr>
+      <td>RFSH</td>
+      <td>RFSH</td>
+      <td>The Z80 is performing a <em>DRAM</em> refresh cycle.</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+      <td>M1</td>
+      <td>The Z80 is fetching an opcode (with <em>MREQ</em>) or acknowledging an interrupt (with <em>IORQ</em>).</td>
+    </tr>
+    <tr>
+      <td>BUSACK</td>
+      <td>BUSACK</td>
+      <td>The Z80 has released the bus in response to a <em>BUSREQ</em>.</td>
+    </tr>
+    <tr>
+      <td>WRITE</td>
+      <td>WR</td>
+      <td>The Z80 is writing data to memory or an I/O port.</td>
+    </tr>
+    <tr>
+      <td>READ</td>
+      <td>RD</td>
+      <td>The Z80 is reading data from memory or an I/O port.</td>
+    </tr>
+  </tbody>
+</table>
+<p>The LEDs are most readable in <em>manual clock mode</em>: since the
+bus changes faster than the human eye can follow at normal clock speeds,
+stepping one cycle at a time allows you to read each matrix clearly
+after every press of <em>Z80CLOCK</em>.</p>
+<p>In <em>automatic clock mode</em>, the low frequency of the onboard
+oscillator still makes the matrices partially readable, giving a general
+sense of program activity even without stepping manually.</p>
+
+<div class="page-break"></div>
+
+<h1 id="chapter-5---advanced-guide">Chapter 5 - Advanced Guide</h1>
+<h2 id="flashing-the-firmware">5.1 Flashing the Firmware</h2>
+<p>To flash a new firmware onto the RP2040: 1. Hold the
+<em>RP2040BOOT</em> button while connecting the board to your computer
+through the USB-C port. 2. The RP2040 will expose a <strong>mass storage
+device</strong> on your computer: it will appear as a USB drive. 3. Copy
+your <strong>compiled UF2 firmware</strong> file onto the drive. 4. The
+RP2040 will reset automatically and boot with the new firmware.</p>
+<blockquote>
+<p>The latest official firmware for the Z80DevBoard is available in the
+firmware folder of the repository.</p>
+</blockquote>
+<h2 id="serial-communication-with-the-rp2040">5.2 Serial Communication
+with the RP2040</h2>
+<p>The RP2040 exposes a <strong>USB CDC (Communications Device Class)
+serial interface</strong> over the USB-C connector, which appears as a
+virtual COM port on the host computer. This interface allows sending
+commands to the board and receiving output in real time, without any
+additional hardware.</p>
+<p>To connect, open a serial terminal at <strong><em>115200</em> baud,
+<em>8N1</em></strong> (8 bit of data for each byte, No parity, 1 bit of
+stop) on the port assigned to the board by your operating system.</p>
+<h3 id="available-commands">Available Commands</h3>
+<p><code>read &lt;addrstart&gt; [addrend]</code></p>
+<p>Reads one or more bytes from RAM and returns them as space-separated
+hexadecimal values.</p>
+<pre><code>read 0x0000        -&gt; FF
+read 0x0000 0x0004 -&gt; FF A1 00 33 00</code></pre>
+<hr />
+<p><code>write &lt;addr&gt; &lt;value&gt;</code></p>
+<p>Writes a single byte to the specified RAM address. Returns the value
+read back from that address after the write: if it matches the value
+sent, the write was successful.</p>
+<pre><code>write 0x0FFF FF -&gt; FF</code></pre>
+<p>If the readback differs from the written value, it indicates that an
+issue happened while writing that memory cell.</p>
+<h3 id="error-responses">Error Responses</h3>
+<p>All commands return an error message prefixed with ERROR: if the
+input is malformed:</p>
+<pre><code>read              -&gt; ERROR: missing address
+read 0xGGGG       -&gt; ERROR: invalid address &#39;0xGGGG&#39;
+write 0x0000      -&gt; ERROR: missing value
+unknowncmd        -&gt; ERROR: unknown command &#39;unknowncmd&#39;</code></pre>
+<h2 id="writing-custom-rp2040-firmware">5.3 Writing Custom RP2040
+Firmware</h2>
+<p>The Z80DevBoard’s official firmware is open source and built with the
+<strong>Raspberry Pi Pico SDK</strong>, written in <strong>C</strong>.
+This section covers how to set up a development environment, build
+firmware from source, and extend it with your own functionality.</p>
+<h3 id="setting-up-the-development-environment">5.3.1 Setting Up the
+Development Environment</h3>
+<p>You will need: - <strong>CMake</strong> (3.13 or later) - <strong>GCC
+ARM toolchain</strong> (arm-none-eabi-gcc) - <strong>Pico SDK</strong>
+(cloned from the official Raspberry Pi repository) -
+<strong>Git</strong></p>
+<p>Clone the Z80DevBoard repository and move in the project’s
+folder:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/gianluca-rainis/Z80DevBoard.git</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Z80DevBoard</span></code></pre></div>
+<hr />
+<h4 id="linux-debianubuntu-based">Linux (Debian/Ubuntu-based)</h4>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential git</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> firmware</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="at">-b</span> master https://github.com/raspberrypi/pico-sdk.git</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> pico-sdk</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule update <span class="at">--init</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PICO_SDK_PATH</span><span class="op">=</span><span class="va">$(</span><span class="bu">pwd</span><span class="va">)</span></span></code></pre></div>
+<h4 id="macos">macOS</h4>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install cmake arm-none-eabi-gcc git</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> firmware</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="at">-b</span> master https://github.com/raspberrypi/pico-sdk.git</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> pico-sdk</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule update <span class="at">--init</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PICO_SDK_PATH</span><span class="op">=</span><span class="va">$(</span><span class="bu">pwd</span><span class="va">)</span></span></code></pre></div>
+<h4 id="windows">Windows</h4>
+<p>The simplest approach is to use the official <strong>Raspberry Pi
+Pico Setup Windows installer</strong>, which configures CMake, the ARM
+toolchain, and the Pico SDK automatically. Alternatively, install the
+prerequisites manually via MSYS2 or the ARM GNU Toolchain installer,
+then clone the Pico SDK as shown above.</p>
+<p>On all platforms, make sure the <code>PICO_SDK_PATH</code>
+environment variable points to your Pico SDK directory, this is required
+by the build system.</p>
+<h3 id="building-the-firmware">5.3.2 Building the Firmware</h3>
+<p>Build the firmware repository with CMake:</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> build</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cmake</span> <span class="at">--build</span> build <span class="at">--parallel</span></span></code></pre></div>
+<p>If the build succeeds, a <code>.uf2</code> file will be produced in
+the <code>build/</code> directory, this is the file you flash onto the
+board.</p>
+<h3 id="flashing-custom-firmware">5.3.3 Flashing Custom Firmware</h3>
+<p>Custom firmware is flashed the same way as official releases, using
+the <em>RP2040BOOT</em> button described in section <a
+href="advanced.md#51-flashing-the-firmware">5.1 Flashing the
+Firmware</a>: 1. Hold <em>RP2040BOOT</em> while connecting the board via
+USB-C. 2. The RP2040 exposes itself as a mass storage device. 3. Copy
+your compiled <code>.uf2</code> file onto the drive. 4. The board resets
+automatically and boots into your custom firmware.</p>
+<blockquote>
+<p>Always keep a copy of the latest official <code>.uf2</code> firmware
+on hand, so you can restore the board to its default behavior if your
+custom firmware doesn’t work as expected.</p>
+</blockquote>
+<blockquote>
+<p>Remember that you can always use the <em>SWD</em> and <em>SWCLK</em>
+pins on the board to live debug your firmware.</p>
+</blockquote>
+<h3 id="adding-a-new-uart-command">5.3.4 Adding a New UART Command</h3>
+<p>The UART command parser, implemented in <code>uart.c</code>,
+dispatches incoming commands by comparing the first word of the input
+line. Adding a new command means adding a new branch to this dispatch
+logic and writing a handler function for it.</p>
+<p>As an example, here’s how to add a <code>version</code> command that
+reports the firmware version:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">// In uart.c</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#define FIRMWARE_VERSION </span><span class="st">&quot;1.0.0&quot;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co">// Handle command: version</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">void</span> cmdVersion<span class="op">(</span><span class="dt">char</span> <span class="op">*</span>args<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Z80DevBoard firmware v</span><span class="sc">%s\n</span><span class="st">&quot;</span><span class="op">,</span> FIRMWARE_VERSION<span class="op">);</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co">// Dispatch a command string to the appropriate handler.</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> uartProcessCommand<span class="op">(</span><span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>cmd<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    <span class="co">// ... existing code ...</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>strcmp<span class="op">(</span>verb<span class="op">,</span> <span class="st">&quot;read&quot;</span><span class="op">)</span> <span class="op">==</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>        cmdRead<span class="op">(</span>args<span class="op">);</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>strcmp<span class="op">(</span>verb<span class="op">,</span> <span class="st">&quot;write&quot;</span><span class="op">)</span> <span class="op">==</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>        cmdWrite<span class="op">(</span>args<span class="op">);</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>strcmp<span class="op">(</span>verb<span class="op">,</span> <span class="st">&quot;version&quot;</span><span class="op">)</span> <span class="op">==</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>        cmdVersion<span class="op">(</span>args<span class="op">);</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>        printf<span class="op">(</span><span class="st">&quot;ERROR: unknown command &#39;</span><span class="sc">%s</span><span class="st">&#39;</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> verb<span class="op">);</span></span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>Any handler function follows the same pattern: it receives the
+remainder of the command line as a string (<code>args</code>), parses
+whatever parameters it needs, performs its operation, and writes a
+response using <code>printf</code>.</p>
+<h3 id="using-the-expansion-gpio-pins">5.3.5 Using the Expansion GPIO
+Pins</h3>
+<p>The expansion pins exposed on the 2×10 connector
+(<code>GPIO10-GPIO25</code>, <code>ADC0</code>, <code>ADC1</code>) are
+defined in <code>firmware.h</code> but left uninitialised by default,
+since their use depends entirely on your project.</p>
+<p>To use them, uncomment and adapt the relevant <code>gpio_init</code>
+calls in <code>setup()</code>:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>gpio_init<span class="op">(</span>GPIO_EXPANSION_1<span class="op">);</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>gpio_set_dir<span class="op">(</span>GPIO_EXPANSION_1<span class="op">,</span> GPIO_OUT<span class="op">);</span></span></code></pre></div>
+<p>For analog input via the ADC-capable pins, initialise the RP2040 ADC
+peripheral instead of treating the pin as a digital GPIO:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&quot;hardware/adc.h&quot;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>adc_init<span class="op">();</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>adc_gpio_init<span class="op">(</span>GPIO_EXPANSION_ADC0<span class="op">);</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>adc_select_input<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="dt">uint16_t</span> result <span class="op">=</span> adc_read<span class="op">();</span></span></code></pre></div>
+<p>Once initialised, you can read or drive these pins anywhere in your
+firmware: inside <code>loop()</code>, inside a UART command handler, or
+inside an interrupt handler if you configure one.</p>
+<h3 id="a-note-on-the-z80-bus">5.3.6 A Note on the Z80 Bus</h3>
+<p>Any custom firmware that interacts with the Z80 bus (reading or
+writing SRAM, monitoring control signals) must respect the bus
+arbitration protocol. Always call <code>sendBusReqAndWaitBusAck()</code>
+before accessing the bus directly, and <code>releaseBusReq()</code> once
+finished, to avoid bus contention with the Z80.</p>
+<h2 id="using-an-expansion-board">5.4 Using an Expansion Board</h2>
+<p>The Z80DevBoard exposes <strong>two expansion connectors</strong>
+described in detail in <a href="pinout.md">Chapter 3 - Pinout &amp;
+Connectors</a>. Both are <strong>dual-row SMD female</strong> connectors
+with <strong><em>1.27 mm</em> pitch</strong>.</p>
+<p>To use a <em>third-part</em> or <em>community-designed</em> expansion
+board, check that it has matching <strong>dual-row <em>1.27 mm</em>
+pitch male pin headers</strong> on its <strong>underside</strong> and
+that it is <strong>designed for the Z80DevBoard pinout</strong>. Plug it
+directly into the connectors. <strong>No soldering
+required</strong>.</p>
+<p>Before powering on, verify the following: - Check the <strong>voltage
+levels</strong> of the expansion board. Signals on the 2×20 connector
+are at <em>5V</em> (Z80 bus), while signals on the 2×10 connector are at
+<em>3.3V</em> (RP2040 GPIO). Make sure the expansion board <strong>is
+designed for the correct voltage</strong> on each connector, and use a
+<strong>level shifter</strong> if interfacing between the two. - Check
+the expansion board’s power requirements. The <em>5V</em> pin (pin 39 on
+the 2×20) and the <em>3.3V</em> pin (pin 19 on the 2×10) can supply
+power, but the 3.3V rail is limited by the RP2040’s onboard LDO.
+Power-hungry boards <strong>should be supplied independently</strong>. -
+The ADC pins are analog inputs. <strong>Do not exceed 3.3V on these
+pins</strong>. - If the expansion board requires custom RP2040 firmware,
+refer to section <a
+href="advanced.md#53-writing-custom-rp2040-firmware">5.3 Writing Custom
+RP2040 Firmware</a> and <strong>flash it before use</strong>.</p>
+<h2 id="developing-an-expansion-board">5.5 Developing an Expansion
+Board</h2>
+<p>Designing an expansion board for the Z80DevBoard requires attention
+to both <strong>mechanical and electrical compatibility</strong>.</p>
+<h3 id="mechanical-requirements">Mechanical Requirements</h3>
+<p>The two expansion connectors on the Z80DevBoard are <strong>dual-row
+SMD female</strong> connectors with <strong><em>1.27 mm</em>
+pitch</strong>. Your expansion board must use matching <strong>dual-row
+<em>1.27 mm</em> pitch male pin headers on its underside</strong>,
+aligned to the Z80DevBoard pinout as described in <a
+href="pinout.md">Chapter 3 - Pinout &amp; Connectors</a>. When designing
+the PCB, make sure the connector footprints are <strong>placed on the
+bottom layer</strong> of the expansion board, so that the board sits
+flat on top of the Z80DevBoard when plugged in.</p>
+<h3 id="electrical-considerations">Electrical Considerations</h3>
+<p>Signals on the 2×20 connector are at <strong>5V</strong> (Z80 bus).
+Design any circuit connected to these pins for <strong>5V
+logic</strong>, or add a <strong>level shifter</strong> if interfacing
+with <strong>3.3V components</strong>.</p>
+<p>Signals on the 2×10 connector are at <strong>3.3V</strong> (RP2040
+GPIO). <strong>Do not exceed 3.3V on any of these pins</strong>.</p>
+<p>The <em>ADC</em> pins (<em>ADC0</em>, <em>ADC1</em>) are analog
+inputs with a <strong>maximum of 3.3V</strong>. Keep analog signals
+clean and <strong>away from noisy</strong> digital traces on your PCB.
+If your board requires <strong>more power</strong> than the onboard
+rails can provide, add an <strong>independent power input</strong>
+rather than relying on the Z80DevBoard’s LDO.</p>
+<h3 id="pcb-design-in-kicad">PCB Design in KiCad</h3>
+<p>The Z80DevBoard is <strong>designed in <em>KiCad</em></strong>, and
+using the same tool for your expansion board ensures <strong>full
+compatibility</strong>.</p>
+<p>The connector footprints to use are <strong>standard <em>2×20</em>
+and <em>2×10</em> male pin headers with 1.27 mm pitch</strong>: these
+are available in the <em>KiCad standard library</em>.</p>
+<p>To verify alignment, import the Z80DevBoard PCB as a reference layer
+in your KiCad project and check that the <strong>connector positions
+match</strong> before ordering.</p>
+<h3 id="rp2040-firmware">RP2040 Firmware</h3>
+<p>If your expansion board uses GPIO pins from the 2×10 connector, those
+pins must be initialised in the RP2040 firmware. The expansion GPIO
+definitions are already present in <code>firmware.h</code>:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define GPIO_EXPANSION_1  </span><span class="dv">12</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#define GPIO_EXPANSION_2  </span><span class="dv">13</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co">// ...</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#define GPIO_EXPANSION_ADC1 </span><span class="dv">27</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#define GPIO_EXPANSION_ADC2 </span><span class="dv">28</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#define GPIO_EXPANSION_ADC3 </span><span class="dv">29</span></span></code></pre></div>
+<p><strong>Uncomment</strong> the corresponding <code>gpio_init</code>
+and <code>gpio_set_dir</code> calls in <code>setup()</code>, then add
+your logic to <code>loop()</code> or dedicated handler functions. Refer
+to section <a href="advanced.md#53-writing-custom-rp2040-firmware">5.3
+Writing Custom RP2040 Firmware</a> for further guidance.</p>
+<h2 id="debugging-with-swd">5.6 Debugging with SWD</h2>
+<p>The Z80DevBoard exposes the <strong>RP2040’s <em>SWD</em></strong>
+(<em>Serial Wire Debug</em>) interface through <strong>two dedicated
+pins</strong> located in the top-right corner of the board, as described
+in <a href="pinout.md">Chapter 3 - Pinout &amp; Connectors</a>.</p>
+<p><em>SWD</em> allows <strong>full debugging of the RP2040
+firmware</strong>: setting breakpoints, stepping through code,
+inspecting memory and registers, and flashing new firmware: all without
+pressing the <em>RP2040BOOT</em> button.</p>
+<h3 id="what-you-need-1">What You Need</h3>
+<ul>
+<li>A <strong>SWD-compatible debug probe</strong>: the official
+<em>Raspberry Pi Debug Probe</em> is recommended, but any
+<em>CMSIS-DAP</em> compatible adapter works.</li>
+<li><em>OpenOCD</em> or other tools <strong>supporting
+<em>CMSIS-DAP</em></strong> as the debug backend.</li>
+<li>An <em>IDE</em> with <strong>debugging support</strong>: <em>VS
+Code</em> with the <em>Cortex-Debug</em> extension is the most common
+choice for <em>Pico SDK</em> projects.</li>
+</ul>
+<h3 id="connecting-the-probe">Connecting the Probe</h3>
+<p>Connect the debug probe to the <strong>two <em>SWD</em> pins</strong>
+on the board:</p>
+<table>
+<thead>
+<tr>
+<th>SWD Pin</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><em>SWCLK</em></td>
+</tr>
+<tr>
+<td>2</td>
+<td><em>SWDIO</em></td>
+</tr>
+</tbody>
+</table>
+<p>Use a <strong>GND reference</strong> from the <strong>nearest GND pin
+on the expansion connector</strong>.</p>
+<h3 id="openocd-configuration">OpenOCD Configuration</h3>
+<p>A basic <em>OpenOCD</em> configuration for the RP2040:</p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> openocd <span class="at">-f</span> interface/cmsis-dap.cfg <span class="at">-f</span> target/rp2040.cfg</span></code></pre></div>
+<p>Once connected, you can attach <em>GDB</em>:</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gdb</span> firmware/build/Z80DevBoard.elf</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="fu">gdb</span><span class="kw">)</span> <span class="ex">target</span> remote localhost:3333</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="fu">gdb</span><span class="kw">)</span> <span class="ex">monitor</span> reset init</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="fu">gdb</span><span class="kw">)</span> <span class="cf">continue</span></span></code></pre></div>
+<p>For a more comfortable experience, use the <em>Cortex-Debug</em>
+extension in <em>VS Code</em>, which wraps <em>OpenOCD</em> and
+<em>GDB</em> in a <strong>graphical interface</strong> with breakpoints,
+variable inspection, and call stack view.</p>
+
+<div class="page-break"></div>
+
+<h1 id="chapter-6---z80-assembly-programming">Chapter 6 - Z80 Assembly
+Programming</h1>
+<h2 id="introduction-to-z80-assembly">6.1 Introduction to Z80
+Assembly</h2>
+<p><strong>Assembly language</strong> is the human-readable form of a
+<strong>processor’s machine code</strong>. Each line corresponds
+directly to <strong>one instruction the CPU executes</strong>, without
+compiler; runtime; or framework between you and the hardware.</p>
+<p>Writing Z80 assembly means writing exactly <strong>what the processor
+will do</strong>, one operation at a time: load a value into a register,
+add two numbers, jump to a different part of the program. There is
+<strong>no abstraction</strong>, <strong>no hidden behavior</strong>,
+and <strong>no overhead</strong>.</p>
+<blockquote>
+<p><em>What you write is what runs.</em></p>
+</blockquote>
+<p>This directness is what makes assembly both
+<strong>challenging</strong> and deeply <strong>educational</strong>.
+Understanding Z80 assembly means understanding <strong>how any CPU
+works</strong> at its most fundamental level: how instructions are
+fetched and decoded, how memory is addressed, how control flow is
+implemented in hardware.</p>
+<p>These concepts underlie <strong>every programming language</strong>
+and <strong>every processor architecture</strong> in use today. The Z80
+is one of the <strong>best architectures to learn assembly</strong> on:
+its <strong>instruction set is rich but regular</strong>, its
+<strong>documentation is thorough</strong>, and its <strong>behavior is
+entirely predictable</strong>.</p>
+<blockquote>
+<p><em>Once you understand the Z80, the principles transfer directly to
+other architectures.</em></p>
+</blockquote>
+<h2 id="the-z80-register-set">6.2 The Z80 Register Set</h2>
+<p>The <em>Z80 CPU</em> contains <em>208 bits</em> of <strong>read/write
+memory</strong>, configured as <strong>eighteen <em>8-bit</em>
+registers</strong> and <strong>four <em>16-bit</em> registers</strong>.
+There are <strong>two sets of six general-purpose registers</strong>,
+<strong>two sets of Accumulator and Flag registers</strong>, and
+<strong>six special-purpose registers</strong>.</p>
+<h3 id="main-register-set">Main Register Set</h3>
+<table>
+<thead>
+<tr>
+<th>Accumulator</th>
+<th>Flags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>F</td>
+</tr>
+<tr>
+<td>B</td>
+<td>C</td>
+</tr>
+<tr>
+<td>D</td>
+<td>E</td>
+</tr>
+<tr>
+<td>H</td>
+<td>L</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alternate-register-set">Alternate Register Set</h3>
+<table>
+<thead>
+<tr>
+<th>Accumulator</th>
+<th>Flags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A’</td>
+<td>F’</td>
+</tr>
+<tr>
+<td>B’</td>
+<td>C’</td>
+</tr>
+<tr>
+<td>D’</td>
+<td>E’</td>
+</tr>
+<tr>
+<td>H’</td>
+<td>L’</td>
+</tr>
+</tbody>
+</table>
+<h3 id="special-purpose-registers">Special Purpose Registers</h3>
+<table>
+<thead>
+<tr>
+<th>Use</th>
+<th>Register</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interrupt Vector</td>
+<td>I</td>
+</tr>
+<tr>
+<td>Memory Refresh</td>
+<td>R</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Index Register</td>
+<td>IX</td>
+</tr>
+<tr>
+<td>Index Register</td>
+<td>IY</td>
+</tr>
+<tr>
+<td>Stack Pointer</td>
+<td>SP</td>
+</tr>
+<tr>
+<td>Program Counter</td>
+<td>PC</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-flag-register">6.3 The Flag Register</h2>
+<p>The <strong>Flag Registers</strong> (<strong>F</strong> and
+<strong>F’</strong>) are two <em>8-bit</em> registers automatically
+updated by the CPU after arithmetic and logic operations. Each bit
+represents a specific condition, used by conditional instructions to
+decide whether to jump, call, or return.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bit</th>
+<th>Flag</th>
+<th>Name</th>
+<th>Set when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>S</td>
+<td>Sign</td>
+<td>Result is negative (bit 7 of result = 1)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Z</td>
+<td>Zero</td>
+<td>Result is zero</td>
+</tr>
+<tr>
+<td>5</td>
+<td>X</td>
+<td>Not used</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>H</td>
+<td>Half Carry</td>
+<td>Carry from bit 3 to bit 4 (used by DAA)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>X</td>
+<td>Not used</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>P/V</td>
+<td>Parity / Overflow</td>
+<td>Even parity (logic ops) or signed overflow (&gt; +128 or &lt;
+-128)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>N</td>
+<td>Add / Subtract</td>
+<td>Last operation was a subtraction (N = 1) or an addition (N = 0)</td>
+</tr>
+<tr>
+<td>0</td>
+<td>C</td>
+<td>Carry</td>
+<td>Result produced a carry or borrow</td>
+</tr>
+</tbody>
+</table>
+<p>The Flag Register cannot be written directly, it is only modified as
+a side effect of instructions. It can however be saved and restored via
+the stack using <code>PUSH AF</code> and <code>POP AF</code>, or via the
+alternate register with <code>EX AF, AF'</code>.</p>
+<h2 id="addressing-modes">6.4 Addressing Modes</h2>
+<p>Addressing modes define how an instruction locates its operands. The
+Z80 supports the following addressing modes.</p>
+<h3 id="immediate">Immediate</h3>
+<p>The byte immediately following the opcode in memory contains the
+operand.</p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> <span class="dv">42</span>          <span class="co">; A &lt;- 42</span></span></code></pre></div>
+<h3 id="immediate-extended">Immediate Extended</h3>
+<p>The two bytes following the opcode are the operand, forming a 16-bit
+value.</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>LD HL<span class="op">,</span> <span class="bn">0x8000</span>     <span class="co">; HL &lt;- 0x8000</span></span></code></pre></div>
+<h3 id="modified-page-zero">Modified Page Zero</h3>
+<p>A single-byte <code>RST</code> instruction calls one of eight fixed
+locations in <em>Page 0</em> of memory, saving memory space for
+commonly-used subroutines.</p>
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>RST <span class="bn">0x08</span>          <span class="co">; Call subroutine at 0x0008</span></span></code></pre></div>
+<h3 id="relative">Relative</h3>
+<p>A signed 8-bit displacement is added to the address of the following
+instruction to form a jump target. Allows relocatable code and saves
+memory space compared to extended jumps.</p>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>JR Z<span class="op">,</span> LABEL       <span class="co">; Relative jump to LABEL if Zero flag set</span></span></code></pre></div>
+<h3 id="extended">Extended</h3>
+<p>Two bytes of address are included in the instruction, used as a
+pointer to a memory location or as a jump destination.</p>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> <span class="op">(</span><span class="bn">0x4000</span><span class="op">)</span>    <span class="co">; A &lt;- memory[0x4000]</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="cf">JP</span> <span class="bn">0x0100</span>         <span class="co">; Jump to 0x0100</span></span></code></pre></div>
+<h3 id="indexed">Indexed</h3>
+<p>A signed 8-bit displacement is added to an index register (IX or IY)
+to form a pointer to memory. The index register itself is not
+modified.</p>
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> <span class="op">(</span>IX<span class="op">+</span><span class="dv">5</span><span class="op">)</span>      <span class="co">; A &lt;- memory[IX + 5]</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>LD <span class="op">(</span>IY<span class="op">-</span><span class="dv">2</span><span class="op">),</span> B      <span class="co">; Memory[IY - 2] &lt;- B</span></span></code></pre></div>
+<h3 id="register">Register</h3>
+<p>The operand is a CPU register, specified by bits in the opcode.</p>
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> B           <span class="co">; A &lt;- B</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="bu">ADD</span> A<span class="op">,</span> C          <span class="co">; A &lt;- A + C</span></span></code></pre></div>
+<h3 id="implied">Implied</h3>
+<p>The operand is implicitly defined by the opcode, no explicit address
+is needed.</p>
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>RLCA              <span class="co">; Rotate A left (A is implied)</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="bu">DAA</span>               <span class="co">; Decimal adjust A (A is implied)</span></span></code></pre></div>
+<h3 id="register-indirect">Register Indirect</h3>
+<p>A 16-bit register pair is used as a pointer to a memory location.</p>
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> <span class="op">(</span>HL<span class="op">)</span>      <span class="co">; A &lt;- memory[HL]</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>LD <span class="op">(</span>HL<span class="op">),</span> B      <span class="co">; Memory[HL] &lt;- B</span></span></code></pre></div>
+<h3 id="bit-addressing">Bit Addressing</h3>
+<p>Used by bit set, reset, and test instructions. Three bits in the
+opcode specify which of the eight bits to manipulate, while the operand
+is addressed via register, register indirect, or indexed modes.</p>
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>BIT <span class="dv">3</span><span class="op">,</span> A        <span class="co">; Test bit 3 of A</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="bu">SET</span> <span class="dv">7</span><span class="op">,</span> <span class="op">(</span>HL<span class="op">)</span>     <span class="co">; Set bit 7 of memory[HL]</span></span></code></pre></div>
+<h2 id="instruction-set">6.5 Instruction Set</h2>
+<h3 id="data-transfer">6.5.1 Data Transfer</h3>
+<p>Data transfer instructions move data between registers, memory, and
+I/O ports.</p>
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">; Register to register</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> B           <span class="co">; A &lt;- B</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>LD H<span class="op">,</span> L           <span class="co">; H &lt;- L</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co">; Immediate to register</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> <span class="bn">0x42</span>        <span class="co">; A &lt;- 0x42</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>LD HL<span class="op">,</span> <span class="bn">0x4000</span>     <span class="co">; HL &lt;- 0x4000</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="co">; Register to memory</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>LD <span class="op">(</span>HL<span class="op">),</span> A        <span class="co">; memory[HL] &lt;- A</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>LD <span class="op">(</span><span class="bn">0x4000</span><span class="op">),</span> A    <span class="co">; memory[0x4000] &lt;- A</span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a><span class="co">; Memory to register</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> <span class="op">(</span>HL<span class="op">)</span>        <span class="co">; A &lt;- memory[HL]</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>LD A<span class="op">,</span> <span class="op">(</span><span class="bn">0x4000</span><span class="op">)</span>    <span class="co">; A &lt;- memory[0x4000]</span></span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a><span class="co">; Stack</span></span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a><span class="bu">PUSH</span> BC           <span class="co">; Push BC onto stack (SP -= 2)</span></span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a><span class="bu">POP</span> HL            <span class="co">; Pop stack into HL (SP += 2)</span></span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a><span class="co">; Exchange</span></span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>EX DE<span class="op">,</span> HL         <span class="co">; Swap DE &lt;-&gt; HL</span></span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>EX AF<span class="op">,</span> AF<span class="st">&#39;        ; Swap A,F &lt;-&gt; A&#39;</span><span class="op">,</span>F<span class="st">&#39;</span></span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>EXX               <span class="co">; Swap BC,DE,HL &lt;-&gt; BC&#39;,DE&#39;,HL&#39;</span></span></code></pre></div>
+<h3 id="arithmetic">6.5.2 Arithmetic</h3>
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">; 8-bit</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="bu">ADD</span> A<span class="op">,</span> B          <span class="co">; A &lt;- A + B</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="bu">ADD</span> A<span class="op">,</span> <span class="bn">0x10</span>       <span class="co">; A &lt;- A + 0x10</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="bu">ADC</span> A<span class="op">,</span> B          <span class="co">; A &lt;- A + B + Carry</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="bu">SUB</span> B             <span class="co">; A &lt;- A - B</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>SBC A<span class="op">,</span> B          <span class="co">; A &lt;- A - B - Carry</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="bu">INC</span> A             <span class="co">; A &lt;- A + 1 (Carry not affected)</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="bu">DEC</span> B             <span class="co">; B &lt;- B - 1 (Carry not affected)</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="co">; 16-bit</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="bu">ADD</span> HL<span class="op">,</span> BC        <span class="co">; HL &lt;- HL + BC</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a><span class="bu">ADC</span> HL<span class="op">,</span> DE        <span class="co">; HL &lt;- HL + DE + Carry</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>SBC HL<span class="op">,</span> DE        <span class="co">; HL &lt;- HL - DE - Carry</span></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a><span class="bu">INC</span> HL            <span class="co">; HL &lt;- HL + 1</span></span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a><span class="bu">DEC</span> DE            <span class="co">; DE &lt;- DE - 1</span></span></code></pre></div>
+<h3 id="logic">6.5.3 Logic</h3>
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="bu">AND</span> B             <span class="co">; A &lt;- A AND B  (P/V = parity)</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="bu">OR</span> C              <span class="co">; A &lt;- A OR  C</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="bu">XOR</span> D             <span class="co">; A &lt;- A XOR D</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>CP E              <span class="co">; Flags &lt;- (A - E), A unchanged</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>CPL               <span class="co">; A &lt;- NOT A  (complement)</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="bu">NEG</span>               <span class="co">; A &lt;- 0 - A  (two&#39;s complement negate)</span></span></code></pre></div>
+<h3 id="bit-manipulation">6.5.4 Bit Manipulation</h3>
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>BIT <span class="dv">3</span><span class="op">,</span> A          <span class="co">; Test bit 3 of A  -&gt; sets Z flag</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="bu">SET</span> <span class="dv">7</span><span class="op">,</span> B          <span class="co">; Set bit 7 of B to 1</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>RES <span class="dv">0</span><span class="op">,</span> C          <span class="co">; Reset bit 0 of C to 0</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="co">; Rotate and shift</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>RLCA              <span class="co">; Rotate A left  (bit 7 -&gt; Carry -&gt; bit 0)</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>RRCA              <span class="co">; Rotate A right (bit 0 -&gt; Carry -&gt; bit 7)</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>RLA               <span class="co">; Rotate A left  through Carry</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>RRA               <span class="co">; Rotate A right through Carry</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>RLC r             <span class="co">; Rotate register r left</span></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>RRC r             <span class="co">; Rotate register r right</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>SLA r             <span class="co">; Shift r left  arithmetic (LSB &lt;- 0)</span></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>SRA r             <span class="co">; Shift r right arithmetic (MSB preserved)</span></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>SRL r             <span class="co">; Shift r right logical    (MSB &lt;- 0)</span></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>RL r              <span class="co">; Rotate register r left through Carry</span></span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>RR r              <span class="co">; Rotate register r right through Carry</span></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>RLD               <span class="co">; Rotate left digit: high nibble of (HL) &lt;-&gt; low nibble of A</span></span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a>RRD               <span class="co">; Rotate right digit: low nibble of A &lt;-&gt; high nibble of (HL)</span></span></code></pre></div>
+<h3 id="control-flow">6.5.5 Control Flow</h3>
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">; Unconditional</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="cf">JP</span> <span class="bn">0x0100</span>         <span class="co">; Jump to 0x0100</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>JR LABEL          <span class="co">; Relative jump (-128 to +127 bytes)</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>DJNZ LABEL        <span class="co">; B--; jump if B != 0 (loop counter)</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="co">; Conditional jumps (cc = Z, NZ, C, NC, PE, PO, M, P)</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="cf">JP</span> Z<span class="op">,</span> LABEL       <span class="co">; Jump if Zero flag set</span></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="cf">JP</span> NZ<span class="op">,</span> LABEL      <span class="co">; Jump if Zero flag clear</span></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="cf">JP</span> C<span class="op">,</span> LABEL       <span class="co">; Jump if Carry set</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="cf">JP</span> NC<span class="op">,</span> LABEL      <span class="co">; Jump if Carry clear</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>JR Z<span class="op">,</span> LABEL       <span class="co">; Relative jump if Zero</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>JR NZ<span class="op">,</span> LABEL      <span class="co">; Relative jump if Zero clear</span></span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>JR C<span class="op">,</span> LABEL       <span class="co">; Relative jump if Carry</span></span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>JR NC<span class="op">,</span> LABEL      <span class="co">; Relative jump if Carry clear</span></span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a><span class="co">; Restart (Modified Page Zero)</span></span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a>RST <span class="bn">0x08</span>          <span class="co">; Call subroutine at 0x0008</span></span></code></pre></div>
+<h3 id="subroutines-and-the-stack">6.5.6 Subroutines and the Stack</h3>
+<p>The Z80 uses a <strong>descending stack</strong>: it grows toward
+lower addresses. <code>SP</code> always points to the last byte
+pushed.</p>
+<p><code>CALL</code> pushes the return address onto the stack and jumps
+to the subroutine. <code>RET</code> pops the return address and jumps
+back.</p>
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>    LD <span class="kw">SP</span><span class="op">,</span> <span class="bn">0xFFFF</span>   <span class="co">; Initialize stack pointer to top of RAM</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">MAIN:</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> <span class="bn">0x41</span>      <span class="co">; &#39;A&#39; in ASCII</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">CALL</span> PRINT      <span class="co">; Call subroutine</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    HALT</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="fu">PRINT:</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">OUT</span> <span class="op">(</span><span class="bn">0x00</span><span class="op">),</span> A   <span class="co">; Send character to UART TX</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">RET</span>             <span class="co">; Return to caller</span></span></code></pre></div>
+<p>Conditional calls and returns are also supported:</p>
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="cf">CALL</span> Z<span class="op">,</span>  LABEL    <span class="co">; Call if Zero flag set</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="cf">CALL</span> NZ<span class="op">,</span> LABEL    <span class="co">; Call if Zero flag clear</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="cf">RET</span> Z             <span class="co">; Return if Zero flag set</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="cf">RET</span> C             <span class="co">; Return if Carry set</span></span></code></pre></div>
+<h3 id="block-instructions">6.5.7 Block Instructions</h3>
+<p>Block instructions operate on ranges of memory or I/O ports in a
+single instruction, replacing multi-instruction loops.</p>
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>LDIR    <span class="co">; Copy (HL)-&gt;(DE), HL++, DE++, BC--; repeat until BC=0</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>LDDR    <span class="co">; Same but HL--, DE-- (copy backward)</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>CPIR    <span class="co">; Compare A with (HL), HL++, BC--; stop on match or BC=0</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>CPDR    <span class="co">; Same but HL-- (search backward)</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>INIR    <span class="co">; Input from port C to (HL), HL++, B--; repeat until B=0</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>OTIR    <span class="co">; Output (HL) to port C, HL++, B--; repeat until B=0</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>LDI     <span class="co">; Copy (HL)-&gt;(DE), HL++, DE++, BC-- (single step, no repeat)</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>LDD     <span class="co">; Copy (HL)-&gt;(DE), HL--, DE--, BC-- (single step, no repeat)</span></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>CPI     <span class="co">; Compare A with (HL), HL++, BC-- (single step, no repeat)</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>CPD     <span class="co">; Compare A with (HL), HL--, BC-- (single step, no repeat)</span></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>INI     <span class="co">; Input from port C to (HL), HL++, B-- (single step)</span></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>IND     <span class="co">; Input from port C to (HL), HL--, B-- (single step)</span></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>INDR    <span class="co">; Same as IND but repeat until B=0</span></span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>OUTI    <span class="co">; Output (HL) to port C, HL++, B-- (single step)</span></span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>OUTD    <span class="co">; Output (HL) to port C, HL--, B-- (single step)</span></span></code></pre></div>
+<h3 id="io-instructions">6.5.8 I/O Instructions</h3>
+<p>The Z80 has a dedicated I/O space of 256 ports, accessed with
+<code>IN</code> and <code>OUT</code> instructions, separate from the
+memory address space.</p>
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="bu">OUT</span> <span class="op">(</span><span class="bn">0x00</span><span class="op">),</span> A     <span class="co">; Output A to I/O port 0x00</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="bu">IN</span> A<span class="op">,</span> <span class="op">(</span><span class="bn">0x01</span><span class="op">)</span>      <span class="co">; Read I/O port 0x01 into A</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="bu">OUT</span> <span class="op">(</span>C<span class="op">),</span> B        <span class="co">; Output B to port number in C</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="bu">IN</span> B<span class="op">,</span> <span class="op">(</span>C<span class="op">)</span>         <span class="co">; Read port in C into B</span></span></code></pre></div>
+<blockquote>
+<p>On the Z80DevBoard, port <code>0x00</code> is the <strong>UART
+TX</strong> virtual peripheral. Writing to it sends a character to the
+USB serial console.</p>
+</blockquote>
+<h3 id="interrupts">6.5.9 Interrupts</h3>
+<p>The Z80 supports two types of interrupt: <strong>maskable</strong>
+(<code>/INT</code>) and <strong>non-maskable</strong>
+(<code>/NMI</code>).</p>
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>EI          <span class="co">; Enable maskable interrupts</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>DI          <span class="co">; Disable maskable interrupts</span></span></code></pre></div>
+<p><strong>Non-maskable interrupts</strong> (<code>/NMI</code>) are
+always serviced, regardless of the <code>EI</code>/<code>DI</code>
+state. The CPU saves the current PC on the stack and jumps to the fixed
+address <code>0x0066</code>.</p>
+<p><strong>Maskable interrupts</strong> (<code>/INT</code>) are only
+serviced when interrupts are enabled (<code>EI</code>).</p>
+<p>The Z80 supports three interrupt modes:</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Instruction</th>
+<th>Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td><code>IM 0</code></td>
+<td>External device places an opcode on the data bus</td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>IM 1</code></td>
+<td>CPU always jumps to fixed address <code>0x0038</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>IM 2</code></td>
+<td>Vectored: address =
+<code>(I &lt;&lt; 8) \| (data bus byte)</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>IM 1</strong> is the simplest and recommended for
+beginners:</p>
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>    LD <span class="kw">SP</span><span class="op">,</span> <span class="bn">0xFFFF</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    IM <span class="dv">1</span>            <span class="co">; Use interrupt mode 1</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    EI              <span class="co">; Enable maskable interrupts</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">; ... main code ...</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>    HALT</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">ORG</span> <span class="bn">0x0038</span>      <span class="co">; IM 1 interrupt service routine</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ISR:</span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">; Handle interrupt here</span></span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>    EI              <span class="co">; Re-enable interrupts</span></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>    RETI            <span class="co">; Return from interrupt (restores IFF flags)</span></span></code></pre></div>
+<p>Return instructions for interrupts:</p>
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>RETI    <span class="co">; Return from maskable interrupt (signals I/O devices)</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="cf">RETN</span>    <span class="co">; Return from non-maskable interrupt (restores IFF1 from IFF2)</span></span></code></pre></div>
+<h3 id="miscellaneous">6.5.10 Miscellaneous</h3>
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="bu">NOP</span>     <span class="co">; No operation (4 cycles)</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>HALT    <span class="co">; Stop execution, wait for interrupt</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>SCF     <span class="co">; Set Carry flag</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>CCF     <span class="co">; Complement Carry flag</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="bu">DAA</span>     <span class="co">; Decimal adjust A after BCD arithmetic</span></span></code></pre></div>
+<h2 id="assembler-directives">6.6 Assembler Directives</h2>
+<p>Assembler directives are not Z80 instructions, they are commands to
+the assembler itself, controlling how the source code is translated into
+machine code.</p>
+<p>Remember that the assembler directives may be different between
+different assemblers.</p>
+<table>
+<thead>
+<tr>
+<th>Directive</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ORG</code></td>
+<td><code>ORG 0x0000</code></td>
+<td>Set the address</td>
+</tr>
+<tr>
+<td><code>DEFB</code> / <code>DB</code></td>
+<td><code>DEFB 0xFF, 0x00</code></td>
+<td>Emit one or more literal bytes</td>
+</tr>
+<tr>
+<td><code>DEFW</code> / <code>DW</code></td>
+<td><code>DEFW 0x1234</code></td>
+<td>Emit a 16-bit word</td>
+</tr>
+<tr>
+<td><code>DEFS</code> / <code>DS</code></td>
+<td><code>DEFS 16</code></td>
+<td>Reserve N zero-filled bytes</td>
+</tr>
+<tr>
+<td><code>DEFM</code> / <code>DM</code></td>
+<td><code>DEFM "Hello"</code></td>
+<td>Emit a string as raw bytes</td>
+</tr>
+<tr>
+<td><code>EQU</code></td>
+<td><code>UART_TX EQU 0x00</code></td>
+<td>Define a symbolic constant</td>
+</tr>
+<tr>
+<td><code>INCLUDE</code></td>
+<td><code>INCLUDE "utils.asm"</code></td>
+<td>Include another source file</td>
+</tr>
+<tr>
+<td><code>END</code></td>
+<td><code>END</code></td>
+<td>Mark the end of the source file</td>
+</tr>
+</tbody>
+</table>
+<h2 id="your-first-program">6.7 Your First Program</h2>
+<h3 id="hello-world">6.7.1 Hello World</h3>
+<p>This program prints a greeting message over the UART, demonstrating
+basic data movement, the indirect addressing mode, and a simple loop
+with a string terminator.</p>
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="bu">ORG</span> <span class="bn">0x0000</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>UART_TX EQU <span class="bn">0x00</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="fu">START:</span></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>    LD HL<span class="op">,</span> MSG          <span class="co">; HL points to the start of the message</span></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a><span class="fu">LOOP:</span></span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> <span class="op">(</span>HL<span class="op">)</span>          <span class="co">; Load the next character into A</span></span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">OR</span> A                <span class="co">; Check if A is zero (string terminator)</span></span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>    JR Z<span class="op">,</span> DONE          <span class="co">; If zero, the string is finished</span></span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">OUT</span> <span class="op">(</span>UART_TX<span class="op">),</span> A    <span class="co">; Send the character to the UART</span></span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">INC</span> HL              <span class="co">; Move to the next character</span></span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>    JR LOOP             <span class="co">; Repeat</span></span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a><span class="fu">DONE:</span></span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>    HALT                <span class="co">; Stop execution</span></span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a><span class="fu">MSG:</span>    DEFM <span class="st">&quot;Hello, World!&quot;</span><span class="op">,</span> <span class="bn">0x0D</span><span class="op">,</span> <span class="bn">0x0A</span><span class="op">,</span> <span class="bn">0x00</span></span>
+<span id="cb42-21"><a href="#cb42-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-22"><a href="#cb42-22" aria-hidden="true" tabindex="-1"></a>    <span class="pp">END</span></span></code></pre></div>
+<p>The program uses <code>HL</code> as a pointer that walks through the
+<code>MSG</code> string, one byte at a time.</p>
+<p>Each character is loaded into <code>A</code> with
+<code>LD A, (HL)</code>, this is register indirect addressing: the
+address to read from is held inside <code>HL</code>, not written
+literally in the instruction.</p>
+<p>The <code>OR A</code> instruction is a common check: ORing a register
+with itself doesn’t change its value, but it updates the flags based on
+that value. If <code>A</code> is <code>0x00</code>, the <em>Zero
+flag</em> is set, and <code>JR Z, DONE</code> jumps to the end of the
+program.</p>
+<p>If the character isn’t the terminator, it’s sent to the <em>UART</em>
+with <code>OUT (UART_TX), A</code>, <code>HL</code> is incremented to
+point at the next character, and the loop repeats with
+<code>JR LOOP</code>.</p>
+<p>The message itself is defined with <code>DEFM</code>, which emits
+each character as a raw byte, followed by <code>0x0D</code> (carriage
+return), <code>0x0A</code> (line feed), and <code>0x00</code> (the null
+terminator for the loop check).</p>
+<h3 id="bubble-sort">6.7.2 Bubble Sort</h3>
+<p>This program sorts an array of bytes in ascending order using the
+bubble sort algorithm. It repeatedly scans the array, swapping adjacent
+elements that are out of order, until a full pass produces no swaps.</p>
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="bu">ORG</span> <span class="bn">0x0000</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="fu">START:</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>    LD HL<span class="op">,</span> TABLE          <span class="co">; HL &lt;- address of the first element</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> TABLE_END <span class="op">-</span> TABLE</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">DEC</span> A                 <span class="co">; A &lt;- number of comparisons per pass</span></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>    LD B<span class="op">,</span> A</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a><span class="fu">PASS:</span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>    LD C<span class="op">,</span> <span class="dv">0</span>               <span class="co">; C &lt;- swap flag, 0 = no swaps this pass</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>    LD D<span class="op">,</span> B               <span class="co">; D &lt;- save comparison count for this pass</span></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>    LD HL<span class="op">,</span> TABLE          <span class="co">; Reset HL to the start of the array</span></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a><span class="fu">COMPARE:</span></span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> <span class="op">(</span>HL<span class="op">)</span>            <span class="co">; A &lt;- current element</span></span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">INC</span> HL                <span class="co">; HL -&gt; next element</span></span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>    CP <span class="op">(</span>HL<span class="op">)</span>               <span class="co">; Compare A with next element</span></span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">JP</span> C<span class="op">,</span> NEXT            <span class="co">; If A &lt; next element, already in order</span></span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">CALL</span> SWAP             <span class="co">; Otherwise, swap the two elements</span></span>
+<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a>    LD C<span class="op">,</span> <span class="dv">1</span>               <span class="co">; Mark that a swap occurred</span></span>
+<span id="cb43-23"><a href="#cb43-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-24"><a href="#cb43-24" aria-hidden="true" tabindex="-1"></a><span class="fu">NEXT:</span></span>
+<span id="cb43-25"><a href="#cb43-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">DEC</span> D                 <span class="co">; One comparison done</span></span>
+<span id="cb43-26"><a href="#cb43-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">JP</span> NZ<span class="op">,</span> COMPARE        <span class="co">; Repeat until D = 0</span></span>
+<span id="cb43-27"><a href="#cb43-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-28"><a href="#cb43-28" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> C</span>
+<span id="cb43-29"><a href="#cb43-29" aria-hidden="true" tabindex="-1"></a>    <span class="bu">OR</span> A                  <span class="co">; Check if any swap occurred this pass</span></span>
+<span id="cb43-30"><a href="#cb43-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">JP</span> NZ<span class="op">,</span> PASS           <span class="co">; If yes, do another pass</span></span>
+<span id="cb43-31"><a href="#cb43-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-32"><a href="#cb43-32" aria-hidden="true" tabindex="-1"></a>    HALT                  <span class="co">; Array is sorted</span></span>
+<span id="cb43-33"><a href="#cb43-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-34"><a href="#cb43-34" aria-hidden="true" tabindex="-1"></a><span class="co">; --- Subroutine: swap (HL) with the element before it ---</span></span>
+<span id="cb43-35"><a href="#cb43-35" aria-hidden="true" tabindex="-1"></a><span class="fu">SWAP:</span></span>
+<span id="cb43-36"><a href="#cb43-36" aria-hidden="true" tabindex="-1"></a>    LD C<span class="op">,</span> <span class="op">(</span>HL<span class="op">)</span>            <span class="co">; C &lt;- next element</span></span>
+<span id="cb43-37"><a href="#cb43-37" aria-hidden="true" tabindex="-1"></a>    LD <span class="op">(</span>HL<span class="op">),</span> A            <span class="co">; next element &lt;- A (current element)</span></span>
+<span id="cb43-38"><a href="#cb43-38" aria-hidden="true" tabindex="-1"></a>    <span class="bu">DEC</span> HL</span>
+<span id="cb43-39"><a href="#cb43-39" aria-hidden="true" tabindex="-1"></a>    LD <span class="op">(</span>HL<span class="op">),</span> C            <span class="co">; current element &lt;- C (next element)</span></span>
+<span id="cb43-40"><a href="#cb43-40" aria-hidden="true" tabindex="-1"></a>    <span class="bu">INC</span> HL</span>
+<span id="cb43-41"><a href="#cb43-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">RET</span></span>
+<span id="cb43-42"><a href="#cb43-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-43"><a href="#cb43-43" aria-hidden="true" tabindex="-1"></a><span class="fu">TABLE:</span>      DEFB <span class="dv">10</span><span class="op">,</span> <span class="dv">9</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">1</span></span>
+<span id="cb43-44"><a href="#cb43-44" aria-hidden="true" tabindex="-1"></a><span class="fu">TABLE_END:</span></span>
+<span id="cb43-45"><a href="#cb43-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-46"><a href="#cb43-46" aria-hidden="true" tabindex="-1"></a><span class="pp">END</span></span></code></pre></div>
+<p>The algorithm performs repeated <strong>passes</strong> over the
+array. In each pass, <code>HL</code> walks through the array comparing
+each element with the one immediately after it. If the current element
+is greater than the next one, detected with <code>CP (HL)</code> (which
+sets the <em>Carry flag</em> if <code>A &lt; (HL)</code>), the two are
+out of order and <code>SWAP</code> exchanges them.</p>
+<p>The flag <code>C</code> tracks whether any swap happened during the
+current pass. If a full pass completes with <code>C = 0</code>, the
+array is fully sorted and the program halts. Otherwise,
+<code>PASS</code> resets <code>HL</code> and the comparison counter
+<code>D</code>, and runs another pass.</p>
+<p>The number of comparisons per pass is computed as
+<code>TABLE_END - TABLE</code>, the size of the array in bytes, minus
+one, since comparing the last element with anything beyond it is
+meaningless. Using labels instead of a hardcoded constant means the
+table size updates automatically if the array changes.</p>
+<p>The <code>SWAP</code> subroutine exchanges <code>(HL)</code> with the
+byte before it, using <code>C</code> as a temporary register. Note that
+<code>A</code> still holds the original value of <code>(HL-1)</code> at
+this point, which is why <code>LD (HL), A</code> writes it into the new
+position.</p>
+<h3 id="selection-sort">6.7.3 Selection Sort</h3>
+<p>This program sorts an array of bytes in ascending order using the
+selection sort algorithm. For each position in the array, it finds the
+smallest element in the remaining unsorted portion and swaps it into
+place.</p>
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="bu">ORG</span> <span class="bn">0x0000</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="fu">START:</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>    LD <span class="kw">SP</span><span class="op">,</span> <span class="bn">0x01FF</span>           <span class="co">; Initialize stack pointer</span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> TABLE_END <span class="op">-</span> TABLE</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">DEC</span> A                   <span class="co">; A &lt;- array length - 1</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>    LD B<span class="op">,</span> A                 <span class="co">; B &lt;- outer loop counter</span></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>    LD IX<span class="op">,</span> TABLE            <span class="co">; IX &lt;- outer pointer</span></span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a><span class="fu">OUTER:</span></span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">PUSH</span> IX</span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">POP</span> HL                  <span class="co">; HL &lt;- minimum pointer (starts at outer position)</span></span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">PUSH</span> IX</span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">POP</span> IY</span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">INC</span> IY                  <span class="co">; IY &lt;- inner pointer (IX + 1)</span></span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> B                 <span class="co">; Inner iterations = remaining outer passes</span></span>
+<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">PUSH</span> BC                 <span class="co">; Save outer counter</span></span>
+<span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a>    LD B<span class="op">,</span> A                 <span class="co">; B &lt;- inner loop counter</span></span>
+<span id="cb44-23"><a href="#cb44-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-24"><a href="#cb44-24" aria-hidden="true" tabindex="-1"></a><span class="fu">INNER:</span></span>
+<span id="cb44-25"><a href="#cb44-25" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> <span class="op">(</span>IY<span class="op">+</span><span class="dv">0</span><span class="op">)</span>            <span class="co">; A &lt;- inner element</span></span>
+<span id="cb44-26"><a href="#cb44-26" aria-hidden="true" tabindex="-1"></a>    CP <span class="op">(</span>HL<span class="op">)</span>                 <span class="co">; Compare with current minimum</span></span>
+<span id="cb44-27"><a href="#cb44-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">JP</span> NC<span class="op">,</span> NEXT             <span class="co">; If A &gt;= minimum, skip</span></span>
+<span id="cb44-28"><a href="#cb44-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-29"><a href="#cb44-29" aria-hidden="true" tabindex="-1"></a>    <span class="bu">PUSH</span> IY</span>
+<span id="cb44-30"><a href="#cb44-30" aria-hidden="true" tabindex="-1"></a>    <span class="bu">POP</span> HL                  <span class="co">; HL &lt;- new minimum pointer</span></span>
+<span id="cb44-31"><a href="#cb44-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-32"><a href="#cb44-32" aria-hidden="true" tabindex="-1"></a><span class="fu">NEXT:</span></span>
+<span id="cb44-33"><a href="#cb44-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">INC</span> IY                  <span class="co">; Advance inner pointer</span></span>
+<span id="cb44-34"><a href="#cb44-34" aria-hidden="true" tabindex="-1"></a>    DJNZ INNER              <span class="co">; Repeat inner loop</span></span>
+<span id="cb44-35"><a href="#cb44-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-36"><a href="#cb44-36" aria-hidden="true" tabindex="-1"></a>    <span class="co">; Swap outer element with minimum</span></span>
+<span id="cb44-37"><a href="#cb44-37" aria-hidden="true" tabindex="-1"></a>    LD A<span class="op">,</span> <span class="op">(</span>IX<span class="op">+</span><span class="dv">0</span><span class="op">)</span>            <span class="co">; A &lt;- outer element</span></span>
+<span id="cb44-38"><a href="#cb44-38" aria-hidden="true" tabindex="-1"></a>    LD E<span class="op">,</span> <span class="op">(</span>HL<span class="op">)</span>              <span class="co">; E &lt;- minimum element</span></span>
+<span id="cb44-39"><a href="#cb44-39" aria-hidden="true" tabindex="-1"></a>    LD <span class="op">(</span>IX<span class="op">+</span><span class="dv">0</span><span class="op">),</span> E            <span class="co">; outer position &lt;- minimum</span></span>
+<span id="cb44-40"><a href="#cb44-40" aria-hidden="true" tabindex="-1"></a>    LD <span class="op">(</span>HL<span class="op">),</span> A              <span class="co">; minimum position &lt;- outer element</span></span>
+<span id="cb44-41"><a href="#cb44-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-42"><a href="#cb44-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">POP</span> BC                  <span class="co">; Restore outer counter</span></span>
+<span id="cb44-43"><a href="#cb44-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">INC</span> IX                  <span class="co">; Advance outer pointer</span></span>
+<span id="cb44-44"><a href="#cb44-44" aria-hidden="true" tabindex="-1"></a>    DJNZ OUTER              <span class="co">; Repeat outer loop</span></span>
+<span id="cb44-45"><a href="#cb44-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-46"><a href="#cb44-46" aria-hidden="true" tabindex="-1"></a>    HALT                    <span class="co">; Array is sorted</span></span>
+<span id="cb44-47"><a href="#cb44-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-48"><a href="#cb44-48" aria-hidden="true" tabindex="-1"></a><span class="fu">TABLE:</span>      DEFB <span class="dv">10</span><span class="op">,</span> <span class="dv">9</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">1</span></span>
+<span id="cb44-49"><a href="#cb44-49" aria-hidden="true" tabindex="-1"></a><span class="fu">TABLE_END:</span></span>
+<span id="cb44-50"><a href="#cb44-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-51"><a href="#cb44-51" aria-hidden="true" tabindex="-1"></a><span class="pp">END</span></span></code></pre></div>
+<p>The algorithm uses two nested loops. The <strong>outer loop</strong>
+advances a pointer <code>IX</code> through the array from the first
+element to the second-to-last. At each position, <code>HL</code> is set
+to point to the current outer element, which is initially assumed to be
+the minimum of the unsorted portion.</p>
+<p>The <strong>inner loop</strong> scans from the current outer position
+to the end of the array. For each element, <code>CP (HL)</code> compares
+it against the current minimum: if a smaller value is found,
+<code>HL</code> is updated to point to it. When the inner loop
+completes, <code>HL</code> holds the address of the true minimum of the
+unsorted portion.</p>
+<p>The minimum is then swapped into the outer position using
+<code>IX</code> and <code>HL</code>: the outer element goes to the
+minimum’s address and the minimum goes to the outer position. After the
+swap, <code>IX</code> advances by one and <code>DJNZ</code> decrements
+<code>B</code>, repeating the outer loop until all positions have been
+processed.</p>
+<p>The <code>IX</code> index register is used here instead of
+<code>HL</code> for the outer pointer, freeing <code>HL</code> to track
+the minimum position throughout the inner loop.</p>
+<h3 id="interrupt-driven-input">6.7.4 Interrupt-Driven Input</h3>
+<p>This program waits for characters sent by the host over the UART and
+echoes them back, using interrupt mode 1. Instead of continuously
+polling the UART status in a loop, the Z80 halts and resumes only when
+the RP2040 asserts /INT, signaling that a character is available.</p>
+<div class="sourceCode" id="cb45"><pre
+class="sourceCode asm"><code class="sourceCode fasm"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="bu">ORG</span> <span class="bn">0x0000</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>UART_RX EQU <span class="bn">0x01</span>            <span class="co">; UART RX port</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>UART_TX EQU <span class="bn">0x00</span>            <span class="co">; UART TX port</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="fu">START:</span></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>    LD <span class="kw">SP</span><span class="op">,</span> <span class="bn">0x01FF</span>           <span class="co">; Initialize stack pointer</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>    IM <span class="dv">1</span>                    <span class="co">; Set interrupt mode 1</span></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>    EI                      <span class="co">; Enable maskable interrupts</span></span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="fu">WAIT:</span></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>    HALT                    <span class="co">; Wait for interrupt</span></span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">JP</span> WAIT                 <span class="co">; Loop back after returning from ISR</span></span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a><span class="co">; --- Interrupt Service Routine (IM 1) ---</span></span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a><span class="bu">ORG</span> <span class="bn">0x0038</span></span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ISR:</span></span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">IN</span> A<span class="op">,</span> <span class="op">(</span>UART_RX<span class="op">)</span>         <span class="co">; Read character from UART RX</span></span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">OUT</span> <span class="op">(</span>UART_TX<span class="op">),</span> A        <span class="co">; Echo it back to UART TX</span></span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>    EI                      <span class="co">; Re-enable interrupts</span></span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>    RETI                    <span class="co">; Return from interrupt</span></span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a><span class="pp">END</span></span></code></pre></div>
+<p>After initialising the stack and setting interrupt mode 1 with
+<code>IM 1</code>, the program enables maskable interrupts with
+<code>EI</code> and enters a <code>HALT</code> instruction.
+<code>HALT</code> suspends execution and puts the Z80 into a low-power
+wait state: the CPU stops fetching instructions, but remains fully
+operational and ready to respond to interrupts.</p>
+<p>When the host sends a character over the UART, the RP2040 asserts the
+<code>/INT</code> signal. The Z80 detects the interrupt, pushes the
+current <code>PC</code> (Program Counter) onto the stack, disables
+interrupts, and jumps to the fixed address <code>0x0038</code>: the
+<strong>IM 1 interrupt vector</strong>.</p>
+<p>The ISR reads the incoming character from the UART RX port with
+<code>IN A, (UART_RX)</code> and immediately sends it back with
+<code>OUT (UART_TX), A</code>. <code>EI</code> re-enables interrupts
+before <code>RETI</code> returns, restoring the program counter from the
+stack and resuming execution at <code>HALT</code>.</p>
+<p>Note that <strong>interrupts are automatically disabled</strong> when
+the Z80 enters an ISR, this prevents a second interrupt from
+interrupting the handler itself. <code>EI</code> before
+<code>RETI</code> re-enables them, but the effect is delayed by one
+instruction, so RETI always executes before any new interrupt is
+serviced.</p>
+<h2 id="recommended-resources">6.8 Recommended Resources</h2>
+<h3 id="official-documentation-1">Official Documentation</h3>
+<ul>
+<li><a href="https://www.zilog.com/docs/z80/um0080.pdf">Z80 CPU User
+Manual</a> - Zilog Inc. (official reference, freely available as PDF at
+zilog.com)</li>
+<li><a href="https://www.zilog.com/docs/z80/ps0178.pdf">Z84C00 Product
+Specification</a> - Zilog Inc. (datasheet for the CMOS variant used on
+this board)</li>
+</ul>
+<h3 id="books">Books</h3>
+<ul>
+<li><a
+href="https://acpc.me/ACME/LITTERATURE/LIVRES/%5BENG%5DENGLISH/OSBORNE/Z80_Assembly_Language_programming(Lance_LEVENTHAL_1979).pdf">Z80
+Assembly Language Programming</a> - Lance A. Leventhal (classic
+textbook, covers the instruction set in depth with practical
+examples)</li>
+<li><a href="http://www.z80.info/zip/z80-documented.pdf">The
+Undocumented Z80 Documented</a> - Sean Young (covers undocumented
+opcodes, flag behavior edge cases, and internal CPU behavior not
+described in the official manual)</li>
+</ul>
+<h3 id="online-resources">Online Resources</h3>
+<ul>
+<li><a href="https://clrhome.org/table/">ClrHome Z80 Reference</a> -
+(interactive opcode table with cycle counts and flag effects)</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li><a href="https://www.nongnu.org/z80asm/">z80asm</a> - assembler used
+in the examples in this chapter</li>
+<li><a href="https://www.oshonsoft.com/z80.php">Z80 Simulator IDE</a> -
+a cool simulator by <em>OshonSoft</em> that can be used to test the
+programs</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h1 id="chapter-7---schematics-kicad-reference">Chapter 7 - Schematics
+&amp; KiCad Reference</h1>
+<h2 id="pcb-overview">7.1 PCB Overview</h2>
+<p>The Z80DevBoard is a <strong>4-layer PCB</strong> measuring <em>219 ×
+108.5 mm</em>, designed to be both functional and readable.</p>
+<p>Component placement follows a logical layout: the Z80 occupies the
+center of the board, the RP2040 module sits to the top-right, and the
+two SRAM chips are placed directly above the Z80. The USB-C connector is
+located in the top-left corner. The LED matrices are distributed around
+the Z80: the data bus matrices (read and write) are to the left, the
+address bus matrices run along the right side, and the control signal
+LEDs (such as MREQ, M1, and HALT) are placed close to their respective
+Z80 pins for clarity. The expansion connectors are located on the
+bottom-right, keeping them accessible for daughter boards.</p>
+<p><img src="../../images/Z80DevBoard_FinishedBoard.png"
+alt="Top view of the Z80DevBoard" /><br />
+<em>Top view of the Z80DevBoard</em></p>
+<p>The silkscreen includes labels for every Z80 pin, every expansion
+pin, and all the onboard buttons and switches, making the board
+self-documenting and easy to use without referring to this manual.</p>
+<p><img src="../../images/Z80DevBoard_FinishedBoard_Back.png"
+alt="Bottom view of the Z80DevBoard" /><br />
+<em>Bottom view of the Z80DevBoard</em></p>
+<h2 id="schematic">7.2 Schematic</h2>
+<p>The full schematic is available in <code>Z80DevBoard.kicad_sch</code>
+and can be opened with KiCad 10.0 or later. The images below show the
+main sections of the schematic for reference.</p>
+<p><img src="../../images/screenshot_circuits.png"
+alt="Full schematic" /><br />
+<em>Full schematic</em></p>
+<p><img src="../../images/screenshot_circuits_z80.png" alt="Z80 CPU" /><br />
+<em>Z80 CPU</em></p>
+<p><img src="../../images/screenshot_circuits_rp2040.png"
+alt="RP2040" /><br />
+<em>RP2040</em></p>
+<p><img src="../../images/power_clock_circuits.png"
+alt="Power supply and clock" /><br />
+<em>Power supply and clock</em></p>
+<p><img src="../../images/shift_registers_data_bus_circuits.png"
+alt="Shift registers and Data bus" /><br />
+<em>Shift registers and Data bus</em></p>
+<p><img src="../../images/sram_flash_circuits.png"
+alt="SRAM and flash" /><br />
+<em>SRAM and flash</em></p>
+<h2 id="pcb-layout">7.3 PCB Layout</h2>
+<p>The PCB layout was designed in KiCad with attention to <strong>signal
+integrity</strong>, <strong>routing clarity</strong>, and <strong>ease
+of hand-assembly</strong>. The board uses <strong>4 layers</strong>:
+<em>F.Cu</em> and <em>B.Cu</em> for general signal routing,
+<em>In1.Cu</em> for the power distribution network (5V and 3.3V), and
+<em>In2.Cu</em> as a solid ground plane.</p>
+<p><img src="../../images/screenshot_pcb_FCu.png"
+alt="Front copper layer (F.Cu)" /><br />
+<em>Front copper layer (F.Cu)</em></p>
+<p><img src="../../images/screenshot_pcb_In1Cu.png"
+alt="Inner layer In1.Cu" /><br />
+<em>Inner layer In1.Cu</em></p>
+<p><img src="../../images/screenshot_pcb_In2Cu.png"
+alt="Inner layer In2.Cu" /><br />
+<em>Inner layer In2.Cu</em></p>
+<p><img src="../../images/screenshot_pcb_BCu.png"
+alt="Back copper layer (B.Cu)" /><br />
+<em>Back copper layer (B.Cu)</em></p>
+<p><img src="../../images/screenshot_pcb_only_layers.png"
+alt="All layers combined" /><br />
+<em>All layers combined</em></p>
+<h2 id="d-render">7.4 3D Render</h2>
+<p>KiCad’s built-in 3D viewer was used to generate a render of the
+assembled board, useful for previewing component placement before
+manufacturing and for visualizing the board without needing a physical
+unit on hand.</p>
+<p><img src="../../images/screenshot_3d_front.png"
+alt="3D render - top view" /><br />
+<em>3D render - top view</em></p>
+<p><img src="../../images/screenshot_3d_back.png"
+alt="3D render - bottom view" /><br />
+<em>3D render - bottom view</em></p>
+<h2 id="the-real-board">7.5 The Real Board</h2>
+<p>Photos of the assembled, manufactured Z80DevBoard, shown here for
+reference alongside the 3D render and schematics.</p>
+<p><img src="../../images/Z80DevBoard_FinishedBoard.png"
+alt="Assembled Z80DevBoard - top view" /><br />
+<em>Assembled Z80DevBoard - top view</em></p>
+<p><img src="../../images/Z80DevBoard_FinishedBoard_Back.png"
+alt="Assembled Z80DevBoard - bottom view" /><br />
+<em>Assembled Z80DevBoard - bottom view</em></p>
+<h2 id="design-choices">7.6 Design Choices</h2>
+<p>This section explains the reasoning behind some of the key hardware
+decisions made on the Z80DevBoard.</p>
+<h3 id="why-the-z84c00">Why the Z84C00?</h3>
+<p>The <em>CMOS</em> variant of the Z80 was chosen specifically because
+<strong>it supports full static operation</strong>, meaning <strong>the
+clock can be slowed down</strong> to DC without losing register state.
+This is <strong>what makes manual clocking possible</strong>: stepping
+through a program one cycle at a time would simply <strong>not work with
+the original <em>NMOS Z80</em></strong>, which requires a
+<strong>minimum clock frequency to function</strong> correctly.</p>
+<h3 id="why-asynchronous-sram">Why asynchronous SRAM?</h3>
+<p>Asynchronous <em>SRAM</em> was chosen for <strong>simpler, more
+direct memory access from both the Z80 and the RP2040</strong>. Since it
+doesn’t rely on a shared clock to coordinate read and write operations,
+both processors can access it independently, each governed by its own
+timing: the Z80 through its native bus protocol, and the RP2040 through
+the shift registers.</p>
+<h3 id="why-the-rp2040">Why the RP2040?</h3>
+<p>The RP2040 was chosen as a <strong>modern microcontroller</strong>
+that offers a <strong>rich set of advanced features</strong> (PIO, dual
+cores, ample SRAM, USB) at a low cost, making it an ideal companion
+processor for managing the Z80 environment without requiring custom
+ASICs or excessive support circuitry.</p>
+<h3 id="why-shift-registers-and-bus-transceivers">Why shift registers
+and bus transceivers?</h3>
+<p><strong>Shift registers</strong> allow the RP2040 to control the full
+Z80 address bus and data bus <strong>using only a handful of GPIO
+pins</strong>, instead of dedicating 24 pins directly to bus signals.
+<strong>Bus transceivers</strong> handle the <strong>voltage difference
+between the Z80’s <em>5V</em> logic and the RP2040’s <em>3.3V</em>
+logic</strong>, allowing the two to communicate safely.</p>
+<h3 id="why-the-led-matrices">Why the LED matrices?</h3>
+<p>The LED matrices let you <strong>observe the Z80’s bus activity in
+real time</strong>, without needing a computer, an oscilloscope, or a
+logic analyzer connected. This was a deliberate choice to <strong>keep
+the board self-contained and immediately readable</strong>.</p>
+<h3 id="why-the-buttons">Why the buttons?</h3>
+<ul>
+<li><em>Z80BOOT</em> - Enters mass storage mode to load a new Z80
+program.</li>
+<li><em>RP2040BOOT</em> - Enters mass storage mode to flash custom
+RP2040 firmware.</li>
+<li><em>Z80RESET</em> - Manually resets the CPU without need to reload
+the program.</li>
+<li><em>Z80WAIT</em> - Halts the Z80 mid-execution, useful when running
+on the automatic clock.</li>
+<li><em>Z80CLOCK</em> - Manually advances the clock by one cycle, used
+in manual clock mode.</li>
+</ul>
+<h3 id="why-swd-and-swclk">Why SWD and SWCLK?</h3>
+<p>The <strong><em>SWD</em> debug interface</strong> enables
+<strong>advanced debugging of the RP2040</strong> like setting
+breakpoints, inspecting memory and stepping through code, which becomes
+<strong>essential for custom firmware development</strong>.</p>
+<h3 id="why-expansion-pins">Why expansion pins?</h3>
+<p>The expansion connectors are there to <strong>support advanced
+projects</strong> beyond the board’s default functionality: custom I/O
+handling, hardware actions triggered by interrupts, or entirely new
+peripherals built on top of the existing platform.</p>
+<h3 id="why-usb-c">Why USB-C?</h3>
+<p>USB-C is the modern standard, present on virtually every laptop and
+workstation today, eliminating the need for adapters or legacy
+cables.</p>
+
+<div class="page-break"></div>
+
+<h1 id="chapter-8---conclusions">Chapter 8 - Conclusions</h1>
+<h2 id="what-you-have-learned">8.1 What You Have Learned</h2>
+<p>If you have worked through this documentation and run your first
+programs on the Z80DevBoard, you have touched on a remarkable amount of
+<strong>fundamental computer science and electronics</strong>, knowledge
+that goes far beyond the Z80 itself.</p>
+<h3 id="computer-architecture">Computer Architecture</h3>
+<p>The <em>Z80</em> sits at the <strong>root of decades of processor
+design</strong>.</p>
+<p>Understanding how it fetches instructions, manages its registers, and
+communicates over its buses gives you <strong>a foundation that
+transfers directly to modern CPU architectures</strong>: the same core
+concepts of instruction cycles, addressing modes, and bus protocols
+still underpin the processors running in today’s computers and embedded
+systems. Having worked with a real, observable Z80, you now have the
+conceptual tools to <strong>understand how any computer actually
+works</strong> beneath its layers of abstraction.</p>
+<h3 id="programming-at-the-lowest-level">Programming at the Lowest
+Level</h3>
+<p>You have <strong>written, assembled, and executed real Z80
+assembly</strong>: moving data between registers and memory,
+implementing sorting algorithms, handling interrupts, and controlling
+I/O directly through hardware ports. These are <strong>the same
+fundamental operations every higher-level programming language</strong>
+ultimately compiles down to: you have seen, firsthand, <strong>what a
+computer is truly doing</strong> when it runs a program.</p>
+<h3 id="electronics-and-pcb-design">Electronics and PCB Design</h3>
+<p>By studying the <strong>technical documentation</strong> in depth
+(the schematics, the PCB layout, the design choices behind every
+component), you have also <strong>gained insight into how the board
+itself was engineered</strong>. Concepts like voltage level shifting,
+bus arbitration, decoupling, and layer stack-up are not just abstract
+electronics theory here; they are the real reasons specific components
+were chosen and specific traces were routed the way they were on the
+board in front of you.</p>
+<h3 id="the-educational-value-of-hands-on-hardware">The Educational
+Value of Hands-On Hardware</h3>
+<blockquote>
+<p><em>This is what the Z80DevBoard was built for: not just to run code,
+but to make the invisible visible.</em></p>
+</blockquote>
+<p>Watching a real address bus toggle on the LED matrices, stepping
+through a real clock cycle, and tracing a signal from its schematic
+symbol to its physical pin on the board <strong>turns abstract textbook
+concepts into something you can see</strong>, touch, and
+<strong>understand at a level that no simulator alone could fully
+provide</strong>.</p>
+<h2 id="where-to-go-next">8.2 Where to Go Next</h2>
+<p>The Z80DevBoard is a starting point, not a destination. Here are some
+directions worth exploring:</p>
+<h3 id="on-the-software-side">On the software side:</h3>
+<ul>
+<li>Implement a small operating system kernel, even a simple task
+switcher teaches a great deal</li>
+<li>Write a <em>BASIC</em> interpreter in Z80 assembly, the same
+approach <em>Microsoft</em> took for early 8-bit computers</li>
+<li>Write a custom interpreter in Z80 assembly, (more creative than a
+<em>BASIC</em> interpreter)</li>
+<li>Explore the <em>undocumented Z80 opcodes</em>, the processor has
+hidden instructions that most official documentation omits</li>
+</ul>
+<h3 id="on-the-hardware-side">On the hardware side:</h3>
+<ul>
+<li>Design and build your own expansion board, putting <a
+href="advanced.md#55-developing-an-expansion-board">5.5 Developing an
+Expansion Board</a> into practice</li>
+<li>Write custom <em>RP2040 firmware</em> to implement new serial
+commands or virtual peripherals</li>
+<li>Add a real-time clock, a display, or an SD card interface via the
+expansion connectors</li>
+<li>Study the <em>KiCad</em> files in depth and propose your own
+improvements to the hardware design</li>
+</ul>
+<h3 id="on-the-theory-side">On the theory side:</h3>
+<ul>
+<li>Study the Z80 machine cycle timing diagrams in the official
+datasheet: every nanosecond is specified</li>
+<li>Read about historical Z80-based systems: the <em>ZX Spectrum</em>,
+the <em>TRS-80</em>, the <em>Amstrad CPC</em>, the <em>MSX</em>
+standard</li>
+<li>Compare the Z80’s architecture to a modern processor and identify
+what changed, and what didn’t</li>
+</ul>
+<h2 id="contributing">8.3 Contributing</h2>
+<p>The Z80DevBoard is released under open licenses: the hardware under
+<strong>CERN OHL S v2.0</strong>, and the firmware and documentation
+under the <strong>MIT License</strong>.</p>
+<p>This means: - You are free to use, study, modify, and manufacture the
+hardware - If you distribute modified versions of the hardware, you must
+release your changes under the same CERN OHL S v2.0 terms - The firmware
+and documentation can be freely reused, modified, and redistributed
+under the MIT License - Attribution to the original project is
+appreciated</p>
+<p>Contributions are welcome via the GitHub repository: - <strong>Bug
+reports and corrections</strong> - open an issue - <strong>Hardware
+improvements</strong> - submit a pull request against the KiCad project
+- <strong>Firmware features</strong> - submit a pull request against the
+firmware source - <strong>Documentation additions</strong> - submit a
+pull request against the documentation</p>
+<p>Repository: <a
+href="https://github.com/gianluca-rainis/Z80DevBoard">github.com/gianluca-rainis/Z80DevBoard</a></p>
+<h2 id="acknowledgements">8.4 Acknowledgements</h2>
+<p>The Z80DevBoard draws on decades of publicly available documentation,
+open-source tooling, and community knowledge:</p>
+<ul>
+<li><strong>Zilog</strong> - for producing and documenting the Z80 so
+thoroughly</li>
+<li><strong>Raspberry Pi Ltd</strong> - for the RP2040 and the Pico
+SDK</li>
+<li><strong>The KiCad team</strong> - truly excellent open-source PCB
+design software, free for everyone</li>
+<li><strong>Hack Club</strong> - for fostering a community of young
+makers and giving projects like this a place to grow</li>
+<li><strong>Every student, teacher, and hobbyist</strong> who kept 8-bit
+computing alive and worth caring about</li>
+</ul>
+<blockquote>
+<p><em>A special thanks goes to</em> <strong><a
+href="https://www.pcbway.com">PCBWay</a></strong><em>, whose sponsorship
+made the manufacturing of this board possible in the first place.</em>
+<a href="https://www.pcbway.com"><img src="../../images/pcbway.png"
+alt="PCBWay" /></a> <em>Their precision, reliability, and genuinely
+helpful technical staff turned a KiCad design file into a real, working
+board. Without them, this project would still be a set of schematics on
+a screen.</em></p>
+</blockquote>
+<p>This documentation, and the board it describes, would not exist in
+this form without all of the above.</p>
+</body>
+</html>
