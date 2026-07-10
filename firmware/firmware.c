@@ -113,7 +113,7 @@ void resetZ80() {
 
 // Read the Z80 program from the USB to the RAM.
 void readZ80ProgramFromUsb(uint8_t *prog_buf) {
-    mscDiskInit();
+    /* mscDiskInit();
 
     showLogs?printf("[LOG] MSC disk ready.\n"):null;
     showLogs?printf("[INFO] Copy PROGRAM.BIN on the Z80DevBoard drive.\n"):null;
@@ -128,7 +128,7 @@ void readZ80ProgramFromUsb(uint8_t *prog_buf) {
     
     mscDiskRead(prog_buf);
 
-    showLogs?printf("[LOG] Program received from USB disk.\n"):null;
+    showLogs?printf("[LOG] Program received from USB disk.\n"):null; */
 }
 
 // Load the Z80 program from the USB to the flash memory.
