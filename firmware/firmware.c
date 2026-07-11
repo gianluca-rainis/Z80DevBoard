@@ -4,6 +4,15 @@
 #include "tusb.h"
 #include <stdlib.h>
 
+/* DEMO PROGRAM: This part of the code is part of a demo for the Z80DevBoard.
+It is not intended to be used as a production firmware.
+*/
+#include "demo/HelloWorld.h"
+#include "demo/NumberSequence.h"
+
+#define CURRENT_DEMO_PROGRAM 0
+/* END DEMO PROGRAM PART */
+
 bool wasSerialConnected = false;
 bool showLogs = false;
 
@@ -140,6 +149,22 @@ void Z80ProgramLoadHandler() {
     // TEMP
     memset(prog_buf, 0x00, FLASH_LAST_32K_SIZE);
     // END_TEMP
+
+    /* DEMO PROGRAM: This part of the code is part of a demo for the Z80DevBoard.
+    It is not intended to be used as a production firmware.
+    */
+   switch (CURRENT_DEMO_PROGRAM) {
+        case 0:
+            memcpy(prog_buf, HelloWorld_bin, HelloWorld_bin_len);
+            break;
+        case 1:
+            memcpy(prog_buf, NumberSequence_bin, NumberSequence_bin_len);
+            break;
+        default:
+            memcpy(prog_buf, HelloWorld_bin, HelloWorld_bin_len);
+            break;
+    }
+    /* END DEMO PROGRAM PART */
     
     saveZ80ProgramInFlash(prog_buf);
 
