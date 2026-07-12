@@ -53,13 +53,13 @@
     bool releaseBusReq();
 
     // Ram operations
-    bool accessRamAddress(uint16_t address);
-    uint8_t readRamCell();
-    bool writeRamCell(uint8_t data);
+    bool accessRamAddress(uint16_t address, bool force);
+    uint8_t readRamCell(bool force);
+    bool writeRamCell(uint8_t data, bool force);
 
     // Z80 operations
     void resetZ80();
-    void loadZ80ProgramInRam();
+    void loadZ80ProgramInRam(bool force);
 
     // Support functions
     void printSerialBanner();

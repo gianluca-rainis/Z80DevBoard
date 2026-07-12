@@ -87,8 +87,31 @@ static bool parseHex8(const char *str, uint8_t *out) {
     return true;
 }
 
+// Check for the "--force" flag in the command
+static bool extractForce(char *args) {
+    if (args == NULL)
+    {
+        return false;
+    }
+
+    char *pos = strstr(args, "--force");
+
+    if (pos == NULL)
+    {
+        return false;
+    }
+
+    for (int i = 0; i < 7; i++)
+    {
+        pos[i] = ' ';
+    }
+
+    return true;
+}
+
 // Handle command: read <addrstart> [addrend]
 static void cmdRead(char *args) {
+    bool force = extractForce(args);
     char *token = strtok(args, " ");
 
     if (token == NULL) {
@@ -122,10 +145,12 @@ static void cmdRead(char *args) {
         }
     }
 
-    for (uint16_t addr = addr_start; ; addr++) {
-        accessRamAddress(addr);
+    force?printf("[WARNING] Force flag detected. Forcing reading of RAM. Remember that this operation can cause unexpected behavior!\n"):null;
 
-        uint8_t val = readRamCell();
+    for (uint16_t addr = addr_start; ; addr++) {
+        accessRamAddress(addr, force);
+
+        uint8_t val = readRamCell(force);
 
         printf("%02X", val);
 
@@ -141,6 +166,7 @@ static void cmdRead(char *args) {
 
 // Handle command: write <addr> <value>
 static void cmdWrite(char *args) {
+    bool force = extractForce(args);
     char *token = strtok(args, " ");
 
     if (token == NULL) {
@@ -173,13 +199,15 @@ static void cmdWrite(char *args) {
         return;
     }
 
-    accessRamAddress(addr);
-    writeRamCell(val);
+    force?printf("[WARNING] Force flag detected. Forcing writing of the given value in RAM. Remember that this operation can cause unexpected behavior!\n"):null;
+
+    accessRamAddress(addr, force);
+    writeRamCell(val, force);
 
     // Read back to confirm
-    accessRamAddress(addr);
+    accessRamAddress(addr, force);
 
-    uint8_t readback = readRamCell();
+    uint8_t readback = readRamCell(force);
 
     printf("%02X\n", readback);
 }
@@ -202,12 +230,27 @@ static void cmdLogs(char *args) {
     }
 }
 
+// Handle command: reload
+static void cmdZ80ProgramReload(char *args) {
+    bool force = extractForce(args);
+    char *token = strtok(args, " ");
+
+    showLogs?printf("[LOG] Reloading Z80 program in RAM...\n"):null;
+
+    force?printf("[WARNING] Force flag detected. Forcing reload of Z80 program in RAM. Remember that this operation can cause unexpected behavior!\n"):null;
+
+    loadZ80ProgramInRam(force);
+
+    showLogs?printf("[LOG] Reload Z80 program in RAM completed.\n"):null;
+}
+
 // Handle command: help
 static void cmdHelp(char *args) {
     printf("Available commands:\n");
-    printf("\tread <addrstart> [addrend] - Read bytes from RAM, from a single address or from a range.\n");
-    printf("\twrite <addr> <value> - Write a byte to RAM in the given address.\n");
+    printf("\tread <addrstart> [addrend] [--force] - Read bytes from RAM, from a single address or from a range.\n");
+    printf("\twrite <addr> <value> [--force] - Write a byte to RAM in the given address.\n");
     printf("\tlogs [on/off] - Turn on or off the logs. If no argument is provided, the logs will be toggled.\n");
+    printf("\treload [--force] - Reload the Z80 program in RAM.\n");
     printf("\thelp - Show this help message.\n");
 }
 
@@ -236,6 +279,9 @@ void uartProcessCommand(const char *cmd) {
     }
     else if (strcmp(verb, "logs") == 0) {
         cmdLogs(args);
+    }
+    else if (strcmp(verb, "reload") == 0) {
+        cmdZ80ProgramReload(args);
     }
     else if (strcmp(verb, "help") == 0) {
         cmdHelp(args);

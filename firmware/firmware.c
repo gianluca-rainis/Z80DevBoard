@@ -1,7 +1,7 @@
 #include "firmware.h"
 #include "uart.h"
-#include "mscDisk.h"
-#include "tusb.h"
+/* #include "mscDisk.h"
+#include "tusb.h" */
 #include <stdlib.h>
 
 /* DEMO PROGRAM: This part of the code is part of a demo for the Z80DevBoard.
@@ -58,8 +58,8 @@ bool releaseBusReq() {
 }
 
 // Access the RAM at the given address.
-bool accessRamAddress(uint16_t address) {
-    if (!sendBusReqAndWaitBusAck()) {
+bool accessRamAddress(uint16_t address, bool force) {
+    if (!sendBusReqAndWaitBusAck() && !force) {
         return false;
     }
 
@@ -74,10 +74,10 @@ bool accessRamAddress(uint16_t address) {
 }
 
 // Read a byte from the RAM.
-uint8_t readRamCell() {
+uint8_t readRamCell(bool force) {
     uint8_t data = 0;
 
-    if (!sendBusReqAndWaitBusAck()) {
+    if (!sendBusReqAndWaitBusAck() && !force) {
         return 0;
     }
 
@@ -95,8 +95,8 @@ uint8_t readRamCell() {
 }
 
 // Write a byte to the RAM.
-bool writeRamCell(uint8_t data) {
-    if (!sendBusReqAndWaitBusAck()) {
+bool writeRamCell(uint8_t data, bool force) {
+    if (!sendBusReqAndWaitBusAck() && !force) {
         return false;
     }
 
@@ -174,7 +174,7 @@ void Z80ProgramLoadHandler() {
 }
 
 // Load the Z80 program from the flash memory to the RAM.
-void loadZ80ProgramInRam() {
+void loadZ80ProgramInRam(bool force) {
     uint8_t *ram_buf = malloc(FLASH_LAST_32K_SIZE);
 
     loadZ80ProgramFromFlash(ram_buf);
@@ -183,11 +183,11 @@ void loadZ80ProgramInRam() {
     {
         uint8_t data = ram_buf[i];
 
-        if (!accessRamAddress((uint16_t)i)) {
+        if (!accessRamAddress((uint16_t)i, force)) {
             break;
         }
 
-        if (!writeRamCell(data)) {
+        if (!writeRamCell(data, force)) {
             break;
         }
     }
@@ -271,7 +271,7 @@ void setup() {
 
     uartInitUsb();
 
-    bool connectedSerial = tud_cdc_connected();
+    bool connectedSerial = stdio_usb_connected();
     
     if (connectedSerial && !wasSerialConnected) {
         printSerialBanner();
@@ -289,7 +289,7 @@ void setup() {
 
     wasSerialConnected?printf("[SYSTEM] Loading Z80 Program in RAM...\n"):null;
 
-    loadZ80ProgramInRam();
+    loadZ80ProgramInRam(false);
 
     wasSerialConnected?printf("[SYSTEM] Z80 Program Loaded in RAM!\n"):null;
 }
