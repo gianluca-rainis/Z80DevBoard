@@ -179,15 +179,17 @@ void loadZ80ProgramInRam(bool force) {
 
     loadZ80ProgramFromFlash(ram_buf);
 
+    sendBusReqAndWaitBusAck();
+
     for (uint32_t i = 0; i < FLASH_LAST_32K_SIZE; i++)
     {
         uint8_t data = ram_buf[i];
 
-        if (!accessRamAddress((uint16_t)i, force)) {
+        if (!accessRamAddress((uint16_t)i, true)) {
             break;
         }
 
-        if (!writeRamCell(data, force)) {
+        if (!writeRamCell(data, true)) {
             break;
         }
     }
