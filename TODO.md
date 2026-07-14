@@ -12,6 +12,7 @@ Things to fix for the **Z80DevBoard *v2.0.0***
 - [ ] Improve automatic clock generator
 - [ ] Made the expansion pins socket footprint bigger
 - [ ] Made the SWD and SWCLK pins footprint bigger
+- [ ] Add a connection between a GPIO of the RP2040 and the CLK of the Z80
 
 ## Firmware improvements
 - [ ] Add a log buffer to print all the previous logs once the board is connected (TO VERIFY SIZE OF THE BUFFER - RISK TOO BIG BUFFER OR BUFFER OVERFLOW)

@@ -58,11 +58,7 @@ bool releaseBusReq() {
 }
 
 // Access the RAM at the given address.
-bool accessRamAddress(uint16_t address, bool force) {
-    if (!sendBusReqAndWaitBusAck() && !force) {
-        return false;
-    }
-
+bool accessRamAddress(uint16_t address) {
     for (int i = 15; i >= 0; i--)
     {
         gpio_put(GPIO_RAM_ADDRESS, ((address >> i) & 1));
@@ -74,12 +70,8 @@ bool accessRamAddress(uint16_t address, bool force) {
 }
 
 // Read a byte from the RAM.
-uint8_t readRamCell(bool force) {
+uint8_t readRamCell() {
     uint8_t data = 0;
-
-    if (!sendBusReqAndWaitBusAck() && !force) {
-        return 0;
-    }
 
     gpio_put(GPIO_RAM_OPERATION, 0);
     sleep_us(1); // Wait for the RAM to prepare the data
@@ -95,11 +87,7 @@ uint8_t readRamCell(bool force) {
 }
 
 // Write a byte to the RAM.
-bool writeRamCell(uint8_t data, bool force) {
-    if (!sendBusReqAndWaitBusAck() && !force) {
-        return false;
-    }
-
+bool writeRamCell(uint8_t data) {
     gpio_put(GPIO_RAM_OPERATION, 1);
     sleep_us(1); // Wait for the RAM to prepare the data
 
@@ -174,22 +162,32 @@ void Z80ProgramLoadHandler() {
 }
 
 // Load the Z80 program from the flash memory to the RAM.
-void loadZ80ProgramInRam(bool force) {
+void loadZ80ProgramInRam() {
     uint8_t *ram_buf = malloc(FLASH_LAST_32K_SIZE);
 
     loadZ80ProgramFromFlash(ram_buf);
 
-    sendBusReqAndWaitBusAck();
+    if (!sendBusReqAndWaitBusAck())
+    {
+        printf("[ERROR] BUSACK not recived. Aborting Z80 program loading in RAM.\n");
+        
+        free(ram_buf);
+
+        releaseBusReq();
+        resetZ80();
+        
+        return;
+    }
 
     for (uint32_t i = 0; i < FLASH_LAST_32K_SIZE; i++)
     {
         uint8_t data = ram_buf[i];
 
-        if (!accessRamAddress((uint16_t)i, true)) {
+        if (!accessRamAddress((uint16_t)i)) {
             break;
         }
 
-        if (!writeRamCell(data, true)) {
+        if (!writeRamCell(data)) {
             break;
         }
     }
@@ -291,7 +289,7 @@ void setup() {
 
     wasSerialConnected?printf("[SYSTEM] Loading Z80 Program in RAM...\n"):null;
 
-    loadZ80ProgramInRam(false);
+    loadZ80ProgramInRam();
 
     wasSerialConnected?printf("[SYSTEM] Z80 Program Loaded in RAM!\n"):null;
 }
