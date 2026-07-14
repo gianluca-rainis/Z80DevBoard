@@ -1,5 +1,5 @@
 # TODO
-Things to fix for the Z80DevBoard v2.0.0
+Things to fix for the **Z80DevBoard *v2.0.0***
 
 ## Critical fixes
 - [ ] Fix the Clock Switch footprint
@@ -12,3 +12,6 @@ Things to fix for the Z80DevBoard v2.0.0
 - [ ] Improve automatic clock generator
 - [ ] Made the expansion pins socket footprint bigger
 - [ ] Made the SWD and SWCLK pins footprint bigger
+
+## Firmware improvements
+- [ ] Add a log buffer to print all the previous logs once the board is connected (TO VERIFY SIZE OF THE BUFFER - RISK TOO BIG BUFFER OR BUFFER OVERFLOW)
