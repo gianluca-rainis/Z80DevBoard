@@ -3,10 +3,10 @@
 #include "class/msc/msc_device.h"
 
 // FAT12: 64 sectors of 512 byte (32KB)
-#define DISK_BLOCK_NUM 64 // The number of sectors
-#define DISK_BLOCK_SIZE 512 // The size of each sector (bytes)
+#define DISK_BLOCK_NUM 64       // The number of sectors
+#define DISK_BLOCK_SIZE 512     // The size of each sector (bytes)
 
-static uint8_t msc_disk[DISK_BLOCK_NUM][DISK_BLOCK_SIZE]; // The disk image in memory
+static uint8_t msc_disk[DISK_BLOCK_NUM][DISK_BLOCK_SIZE];   // The disk image in memory
 static bool disk_written = false;
 
 // Boot sector FAT12
@@ -73,8 +73,8 @@ uint8_t tud_msc_get_maxlun_cb(void) {
 }
 
 void tud_msc_inquiry_cb(uint8_t lun, uint8_t vendor_id[8], uint8_t product_id[16], uint8_t product_rev[4]) {
-    memcpy(vendor_id, "Z80DEVBD", 8);
-    memcpy(product_id, "Z80DevBoard     ", 16);
+    memcpy(vendor_id, "Z80DEVB", 8);
+    memcpy(product_id, "Z80DevBoard_1.8", 16);
     memcpy(product_rev, Z80DEVBOARD_VERSION_4BYTE, 4);
 }
 

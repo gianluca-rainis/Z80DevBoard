@@ -10,16 +10,16 @@
     #define Z80DEVBOARD_VERSION_4BYTE "1.8 "
     #define Z80DEVBOARD_FIRMWARE_VERSION "1.0.0"
 
-    #define GPIO_Z80_PROGRAM_LOAD 0
-    #define GPIO_RAM_ADDRESS 1
-    #define GPIO_RAM_DATA 2
-    #define GPIO_SHIFT_CLOCK 3
-    #define GPIO_RAM_OPERATION 4
-    #define GPIO_Z80_RESET 5
-    #define GPIO_RAM_DATA_READ 6
-    #define GPIO_RAM_DATA_SHIFT 7
-    #define GPIO_Z80_BUSREQ 10
-    #define GPIO_Z80_BUSACK 11
+    #define GPIO_Z80_PROGRAM_LOAD 0     // Input 0 save Z80 new program from USB to flash
+    #define GPIO_RAM_ADDRESS 1          // Output of the address of the RAM (serial 16 bit)
+    #define GPIO_RAM_DATA 2             // Output of the data of the RAM (serial 8 bit)
+    #define GPIO_SHIFT_CLOCK 3          // Output of the rotation clock of the shift registers
+    #define GPIO_RAM_OPERATION 4        // Output of the direction of the operation to RAM (1 for write, 0 for read)
+    #define GPIO_Z80_RESET 5            // Output of the RESET signal to Z80
+    #define GPIO_RAM_DATA_READ 6        // Input of the byte of data read from RAM (serial 8 bit)
+    #define GPIO_RAM_DATA_SHIFT 7       // Output of the moment when read the RAM (0 for read, 1 for shift)
+    #define GPIO_Z80_BUSREQ 10          // Output of the BUSREQ signal to Z80
+    #define GPIO_Z80_BUSACK 11          // Input of the BUSACK signal from Z80
 
     #define GPIO_EXPANSION_1 12
     #define GPIO_EXPANSION_2 13
@@ -41,8 +41,8 @@
     #define GPIO_EXPANSION_ADC3 29
 
     // Variables
-    extern bool wasSerialConnected; // Flag to check if the serial was connected at least once
-    extern bool showLogs; // Flag to check if the logs are enabled by the user
+    extern bool wasSerialConnected;     // Flag to check if the serial was connected at least once
+    extern bool showLogs;               // Flag to check if the logs are enabled by the user
 
     // Main functions
     void setup();

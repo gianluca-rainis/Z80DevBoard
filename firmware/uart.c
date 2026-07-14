@@ -56,10 +56,10 @@ bool uartReadLine(char *buf, size_t max_len) {
 
     buf[i] = '\0';
 
-    return i > 0; // Return true if we read any characters
+    return i > 0; // Return true if read any characters
 }
 
-// Parse a hex string (0xXXXX) into a uint16_t.
+// Parse a hex string (0xXXXX) into a uint16_t
 static bool parseHex16(const char *str, uint16_t *out) {
     char *end;
     unsigned long val = strtoul(str, &end, 16);
@@ -73,7 +73,7 @@ static bool parseHex16(const char *str, uint16_t *out) {
     return true;
 }
 
-// Parse a hex string (0xXX) into a uint8_t.
+// Parse a hex string (0xXX) into a uint8_t
 static bool parseHex8(const char *str, uint8_t *out) {
     char *end;
     unsigned long val = strtoul(str, &end, 16);

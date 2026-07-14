@@ -7,7 +7,7 @@
 #ifndef Z80DEVBOARD_UART
     #define Z80DEVBOARD_UART
 
-    #define UART_CMD_MAX_LEN 64
+    #define UART_CMD_MAX_LEN 64     // The max length of the command's string
  
     // UART functions
     void uartInitUsb();

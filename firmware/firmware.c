@@ -224,7 +224,7 @@ void setup() {
     gpio_init(GPIO_RAM_OPERATION);
     gpio_set_dir(GPIO_RAM_OPERATION, GPIO_OUT);
     gpio_init(GPIO_Z80_RESET);
-    gpio_set_dir(GPIO_Z80_RESET, GPIO_OUT); // Default to output, but will be used also as input
+    gpio_set_dir(GPIO_Z80_RESET, GPIO_OUT); // Default to output, but may be used also as input
     gpio_init(GPIO_RAM_DATA_READ);
     gpio_set_dir(GPIO_RAM_DATA_READ, GPIO_IN);
     gpio_init(GPIO_RAM_DATA_SHIFT);
