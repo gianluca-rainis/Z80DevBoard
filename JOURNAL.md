@@ -220,3 +220,19 @@ Added Chapter *5.3 Writing Custom RP2040 Firmware*.
 Implemented `uart.c` and `uart.h` for the firmware: *USB CDC* serial interface, *command parser*, `read` and `write` handlers.
 
 **Total time spent: ~15h**
+
+# July 9-13: Intensive Debugging and issue diagnostic
+Created a pdf of the whole documentation in A5 format.
+
+Added the option to force the execution of a command from serial.
+Fixed several bugs in the firmware, like the somethimes never released BUSREQ.
+Remade the whole send BUSREQ / await BUSACK / release BUSREQ logics.
+Removed the force option from the serial commands.
+Reorganized some comments.
+
+Discovered some hardware issues after a lot of hardware debug, like the flash connected to 5V instead to 3v3, the wrong footprint for the switch and the misconnected manual clock for the Z80.
+Also, most some of these with temporary connections and signal bypasses.
+
+Created the `TODO.md` file to have a list of the fixes to do for the *Z80DevBoard v2.0.0*.
+
+**Total time spent: ~20h**
