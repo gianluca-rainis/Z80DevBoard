@@ -2,8 +2,8 @@
 Things to fix for the **Z80DevBoard *v2.0.0***
 
 ## Critical fixes
-- [ ] Fix the Clock Switch footprint
-- [ ] The flash must be connected to 3v3, not Vcc
+- [x] Fix the Clock Switch footprint
+- [x] The flash must be connected to 3v3, not Vcc
 
 ## Hardware improvements
 - [ ] RP2040 alimentation capacitors close to the RP2040's pins
