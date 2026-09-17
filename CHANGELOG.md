@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 ### Changed
+- The RP2040 with an RP2350A.
 
 ### Removed
 
