@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-09-17")
+		(date "2026-09-18")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -13024,7 +13024,7 @@
 		)
 		(uuid "2a328403-85c9-414b-a77f-6fddb5207ae7")
 	)
-	(text "RP2040 Z80 Connections"
+	(text "RP2350 Z80 Connections"
 		(exclude_from_sim no)
 		(at 198.628 189.992 0)
 		(effects
@@ -13128,7 +13128,7 @@
 		)
 		(uuid "84209ee6-7971-4ea8-8ae6-b62f39a3044b")
 	)
-	(text "RP2040 SW Pins"
+	(text "RP2350 SW Pins"
 		(exclude_from_sim no)
 		(at 429.26 380.492 0)
 		(effects
@@ -14179,7 +14179,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 77.47) (xy 93.98 77.47)
+			(xy 88.9 86.36) (xy 93.98 86.36)
 		)
 		(stroke
 			(width 0)
@@ -14369,7 +14369,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 72.39) (xy 93.98 72.39)
+			(xy 85.09 81.28) (xy 93.98 81.28)
 		)
 		(stroke
 			(width 0)
@@ -16599,7 +16599,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 72.39) (xy 64.77 72.39)
+			(xy 63.5 81.28) (xy 64.77 81.28)
 		)
 		(stroke
 			(width 0)
@@ -24383,7 +24383,7 @@
 	)
 	(global_label "Z80_MANUAL_CLOCK"
 		(shape output)
-		(at 88.9 77.47 270)
+		(at 88.9 86.36 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -24393,7 +24393,7 @@
 		)
 		(uuid "e8893a22-6ded-4662-ae1c-f14fc5b88a41")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 99.5052 90)
+			(at 88.9 108.3952 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24791,7 +24791,7 @@
 	)
 	(global_label "CLOCK_Z80"
 		(shape input)
-		(at 104.14 74.93 0)
+		(at 104.14 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -24801,7 +24801,7 @@
 		)
 		(uuid "f0798937-31ae-4a8c-97e6-624e19882a18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.8899 74.93 0)
+			(at 117.8899 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25427,7 +25427,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Nidec_CAS-120A1")
-		(at 99.06 74.93 180)
+		(at 99.06 83.82 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25438,7 +25438,7 @@
 		(fields_autoplaced yes)
 		(uuid "01f20d19-a4fc-491b-a698-62b2f89bce7b")
 		(property "Reference" "SW5"
-			(at 99.06 66.04 0)
+			(at 99.06 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25448,7 +25448,7 @@
 			)
 		)
 		(property "Value" "SW_Nidec_CAS-120A1"
-			(at 99.06 68.58 0)
+			(at 99.06 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25458,7 +25458,7 @@
 			)
 		)
 		(property "Footprint" "customFootprints:SW_Slide-03_Wuerth-WS-SLTV"
-			(at 99.06 64.77 0)
+			(at 99.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25469,7 +25469,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cas.pdf"
-			(at 99.06 67.31 0)
+			(at 99.06 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25480,7 +25480,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 99.06 74.93 0)
+			(at 99.06 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25678,7 +25678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 79.502 332.74 90)
 			(hide yes)
 			(show_name no)
@@ -25760,7 +25760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 54.102 332.74 90)
 			(hide yes)
 			(show_name no)
@@ -25840,7 +25840,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 322.58 384.81 0)
 			(hide yes)
 			(show_name no)
@@ -25957,7 +25957,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 213.6648 288.29 0)
 			(hide yes)
 			(show_name no)
@@ -26038,7 +26038,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 22.86 68.2752 0)
 			(hide yes)
 			(show_name no)
@@ -26351,7 +26351,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 279.4 376.428 90)
 			(hide yes)
 			(show_name no)
@@ -26995,7 +26995,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 39.6748 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -27152,7 +27152,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 279.4 363.728 90)
 			(hide yes)
 			(show_name no)
@@ -27231,7 +27231,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 431.8 328.168 90)
 			(hide yes)
 			(show_name no)
@@ -27388,7 +27388,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 365.76 366.268 90)
 			(hide yes)
 			(show_name no)
@@ -27438,7 +27438,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 80.01 0)
+		(at 74.93 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27449,7 +27449,7 @@
 		(fields_autoplaced yes)
 		(uuid "13ced3eb-0512-4a85-b177-3aedff6d80fa")
 		(property "Reference" "#PWR0124"
-			(at 74.93 86.36 0)
+			(at 74.93 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27460,7 +27460,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 85.09 0)
+			(at 74.93 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27470,7 +27470,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 80.01 0)
+			(at 74.93 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27481,7 +27481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 80.01 0)
+			(at 74.93 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27492,7 +27492,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 80.01 0)
+			(at 74.93 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27545,7 +27545,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 368.808 90)
 			(hide yes)
 			(show_name no)
@@ -27793,7 +27793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 45.72 368.3 0)
 			(hide yes)
 			(show_name no)
@@ -28325,7 +28325,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 365.76 368.808 90)
 			(hide yes)
 			(show_name no)
@@ -28506,7 +28506,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2_MiddlePushTravel_H2.5mm"
 			(at 204.47 287.02 0)
 			(hide yes)
 			(show_name no)
@@ -28799,7 +28799,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 279.4 381.508 90)
 			(hide yes)
 			(show_name no)
@@ -28881,7 +28881,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 31.242 332.74 90)
 			(hide yes)
 			(show_name no)
@@ -29128,7 +29128,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 366.268 90)
 			(hide yes)
 			(show_name no)
@@ -29207,7 +29207,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 365.76 371.348 90)
 			(hide yes)
 			(show_name no)
@@ -30024,7 +30024,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
 			(at 22.86 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -30341,7 +30341,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 73.9648 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -30589,7 +30589,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 219.71 317.5 0)
 			(hide yes)
 			(show_name no)
@@ -31224,7 +31224,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 373.888 90)
 			(hide yes)
 			(show_name no)
@@ -31535,7 +31535,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 72.39 0)
+		(at 63.5 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -31546,7 +31546,7 @@
 		(fields_autoplaced yes)
 		(uuid "4149d6d3-f009-49f6-b170-ad7e39b03c4b")
 		(property "Reference" "#PWR0123"
-			(at 63.5 78.74 0)
+			(at 63.5 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31557,7 +31557,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 77.47 0)
+			(at 63.5 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31567,7 +31567,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 72.39 0)
+			(at 63.5 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31578,7 +31578,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 72.39 0)
+			(at 63.5 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31589,7 +31589,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 72.39 0)
+			(at 63.5 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31642,7 +31642,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 193.04 249.428 90)
 			(hide yes)
 			(show_name no)
@@ -31721,7 +31721,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 279.4 373.888 90)
 			(hide yes)
 			(show_name no)
@@ -31979,7 +31979,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 334.01 37.338 90)
 			(hide yes)
 			(show_name no)
@@ -32412,7 +32412,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 62.5348 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -32492,7 +32492,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2_MiddlePushTravel_H2.5mm"
 			(at 204.47 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -32652,7 +32652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 104.902 332.74 90)
 			(hide yes)
 			(show_name no)
@@ -32888,7 +32888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 436.88 359.918 90)
 			(hide yes)
 			(show_name no)
@@ -33125,7 +33125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 279.4 378.968 90)
 			(hide yes)
 			(show_name no)
@@ -34114,7 +34114,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 256.54 331.47 0)
 			(hide yes)
 			(show_name no)
@@ -34464,7 +34464,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 436.88 371.348 90)
 			(hide yes)
 			(show_name no)
@@ -34621,7 +34621,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 156.718 284.48 90)
 			(hide yes)
 			(show_name no)
@@ -34701,7 +34701,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 236.22 384.81 0)
 			(hide yes)
 			(show_name no)
@@ -34819,7 +34819,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
 			(at 68.58 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -34978,7 +34978,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+		(property "Footprint" "Package_SO:SO-20_5.3x12.6mm_P1.27mm"
 			(at 262.89 374.65 0)
 			(hide yes)
 			(show_name no)
@@ -35267,7 +35267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 363.728 90)
 			(hide yes)
 			(show_name no)
@@ -35437,7 +35437,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 373.888 90)
 			(hide yes)
 			(show_name no)
@@ -35828,7 +35828,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 203.2 319.278 90)
 			(hide yes)
 			(show_name no)
@@ -35909,7 +35909,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 211.1248 322.58 0)
 			(hide yes)
 			(show_name no)
@@ -35991,7 +35991,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 130.302 332.74 90)
 			(hide yes)
 			(show_name no)
@@ -36072,7 +36072,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 30.48 76.5048 0)
 			(hide yes)
 			(show_name no)
@@ -36152,7 +36152,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 402.59 372.11 0)
 			(hide yes)
 			(show_name no)
@@ -36347,7 +36347,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 461.01 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -36551,7 +36551,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical"
 			(at 379.73 306.07 0)
 			(hide yes)
 			(show_name no)
@@ -36736,7 +36736,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 74.93 64.77 0)
+		(at 74.93 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36747,7 +36747,7 @@
 		(fields_autoplaced yes)
 		(uuid "6c32f0e6-599c-45db-8377-650ab4b0b5ab")
 		(property "Reference" "#PWR051"
-			(at 74.93 68.58 0)
+			(at 74.93 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36758,7 +36758,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 74.93 59.69 0)
+			(at 74.93 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36768,7 +36768,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 64.77 0)
+			(at 74.93 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36779,7 +36779,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 64.77 0)
+			(at 74.93 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36790,7 +36790,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 74.93 64.77 0)
+			(at 74.93 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37564,7 +37564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+		(property "Footprint" "Package_SO:SO-20_5.3x12.6mm_P1.27mm"
 			(at 173.99 374.65 0)
 			(hide yes)
 			(show_name no)
@@ -37775,7 +37775,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 381.508 90)
 			(hide yes)
 			(show_name no)
@@ -37932,7 +37932,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 366.268 90)
 			(hide yes)
 			(show_name no)
@@ -38359,7 +38359,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 378.968 90)
 			(hide yes)
 			(show_name no)
@@ -38855,7 +38855,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 319.278 90)
 			(hide yes)
 			(show_name no)
@@ -39012,7 +39012,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 365.76 378.968 90)
 			(hide yes)
 			(show_name no)
@@ -39192,7 +39192,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 154.94 316.738 90)
 			(hide yes)
 			(show_name no)
@@ -39352,7 +39352,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
 			(at 91.44 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -39429,7 +39429,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 222.25 281.94 0)
 			(hide yes)
 			(show_name no)
@@ -40293,7 +40293,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 381.508 90)
 			(hide yes)
 			(show_name no)
@@ -40703,7 +40703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CustomFootprints:Inductor"
+		(property "Footprint" "customFootprints:Inductor"
 			(at 377.19 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -40942,7 +40942,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 376.428 90)
 			(hide yes)
 			(show_name no)
@@ -41021,7 +41021,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 205.74 283.718 90)
 			(hide yes)
 			(show_name no)
@@ -41360,7 +41360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 461.01 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -41481,7 +41481,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 363.728 90)
 			(hide yes)
 			(show_name no)
@@ -41561,7 +41561,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
 			(at 340.36 307.34 0)
 			(hide yes)
 			(show_name no)
@@ -42081,7 +42081,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 365.76 363.728 90)
 			(hide yes)
 			(show_name no)
@@ -42464,7 +42464,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 378.968 90)
 			(hide yes)
 			(show_name no)
@@ -42544,7 +42544,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2_MiddlePushTravel_H2.5mm"
 			(at 163.83 309.88 0)
 			(hide yes)
 			(show_name no)
@@ -42947,7 +42947,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 365.76 376.428 90)
 			(hide yes)
 			(show_name no)
@@ -43263,7 +43263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
 			(at 45.72 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -43587,7 +43587,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 213.6648 254 0)
 			(hide yes)
 			(show_name no)
@@ -43936,7 +43936,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2_MiddlePushTravel_H2.5mm"
 			(at 162.56 283.21 0)
 			(hide yes)
 			(show_name no)
@@ -45065,7 +45065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 371.348 90)
 			(hide yes)
 			(show_name no)
@@ -45314,7 +45314,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 461.01 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -45614,7 +45614,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 340.36 74.168 90)
 			(hide yes)
 			(show_name no)
@@ -45784,7 +45784,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 431.8 336.042 90)
 			(hide yes)
 			(show_name no)
@@ -46265,7 +46265,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 371.348 90)
 			(hide yes)
 			(show_name no)
@@ -46578,7 +46578,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.72 75.692 90)
 			(hide yes)
 			(show_name no)
@@ -47205,7 +47205,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 279.4 368.808 90)
 			(hide yes)
 			(show_name no)
@@ -47287,7 +47287,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+		(property "Footprint" "Package_SO:SO-20_5.3x12.6mm_P1.27mm"
 			(at 349.25 374.65 0)
 			(hide yes)
 			(show_name no)
@@ -47420,7 +47420,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 365.76 381.508 90)
 			(hide yes)
 			(show_name no)
@@ -47499,7 +47499,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 513.08 327.152 90)
 			(hide yes)
 			(show_name no)
@@ -47578,7 +47578,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 279.4 366.268 90)
 			(hide yes)
 			(show_name no)
@@ -47747,7 +47747,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 205.74 249.428 90)
 			(hide yes)
 			(show_name no)
@@ -48614,7 +48614,7 @@
 	)
 	(symbol
 		(lib_id "Oscillator:ASCO")
-		(at 74.93 72.39 0)
+		(at 74.93 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -48624,7 +48624,7 @@
 		(dnp no)
 		(uuid "dfc2e491-5845-4cd4-972a-75b8c0970d6f")
 		(property "Reference" "Y4"
-			(at 79.248 62.738 0)
+			(at 79.248 71.628 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48634,7 +48634,7 @@
 			)
 		)
 		(property "Value" "ASCO"
-			(at 79.248 65.278 0)
+			(at 79.248 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48644,7 +48644,7 @@
 			)
 		)
 		(property "Footprint" "Oscillator:Oscillator_SMD_SiT_PQFN-4Pin_5.0x3.2mm"
-			(at 77.47 81.28 0)
+			(at 77.47 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48655,7 +48655,7 @@
 			)
 		)
 		(property "Datasheet" "https://abracon.com/Oscillators/ASCO.pdf"
-			(at 69.215 69.215 0)
+			(at 69.215 78.105 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48666,7 +48666,7 @@
 			)
 		)
 		(property "Description" "Crystal Clock Oscillator, Abracon ASCO"
-			(at 74.93 72.39 0)
+			(at 74.93 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48728,7 +48728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 431.8 316.738 90)
 			(hide yes)
 			(show_name no)
@@ -49053,7 +49053,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 46.99 257.048 90)
 			(hide yes)
 			(show_name no)
@@ -49627,7 +49627,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+		(property "Footprint" "Package_SO:SO-20_5.3x12.6mm_P1.27mm"
 			(at 106.68 374.65 0)
 			(hide yes)
 			(show_name no)
@@ -50073,7 +50073,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 163.83 302.768 90)
 			(hide yes)
 			(show_name no)
@@ -50590,7 +50590,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 340.36 71.628 90)
 			(hide yes)
 			(show_name no)
@@ -50747,7 +50747,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 279.4 371.348 90)
 			(hide yes)
 			(show_name no)
@@ -50829,7 +50829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 155.702 332.74 90)
 			(hide yes)
 			(show_name no)
@@ -51065,7 +51065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 190.5 368.808 90)
 			(hide yes)
 			(show_name no)
@@ -51144,7 +51144,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 123.19 376.428 90)
 			(hide yes)
 			(show_name no)
@@ -51582,7 +51582,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 515.62 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -51782,7 +51782,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 45.72 391.16 0)
 			(hide yes)
 			(show_name no)
@@ -51897,7 +51897,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 365.76 373.888 90)
 			(hide yes)
 			(show_name no)
@@ -52132,7 +52132,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 552.45 360.172 90)
 			(hide yes)
 			(show_name no)
@@ -52401,7 +52401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 222.25 247.65 0)
 			(hide yes)
 			(show_name no)
@@ -52612,7 +52612,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 193.04 283.718 90)
 			(hide yes)
 			(show_name no)
