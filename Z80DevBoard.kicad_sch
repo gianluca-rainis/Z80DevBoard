@@ -14019,6 +14019,16 @@
 	)
 	(wire
 		(pts
+			(xy 369.57 138.43) (xy 419.1 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "181f3c9d-bb83-4cda-9b2c-9b5c33cb2f58")
+	)
+	(wire
+		(pts
 			(xy 214.63 288.29) (xy 214.63 281.94)
 		)
 		(stroke
@@ -14219,7 +14229,7 @@
 	)
 	(wire
 		(pts
-			(xy 400.05 36.83) (xy 417.83 36.83)
+			(xy 400.05 36.83) (xy 419.1 36.83)
 		)
 		(stroke
 			(width 0)
@@ -14676,6 +14686,16 @@
 			(type default)
 		)
 		(uuid "5d468bb8-dec6-4a7e-b487-2dac0389e2c8")
+	)
+	(wire
+		(pts
+			(xy 369.57 130.81) (xy 369.57 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e95229d-46d6-46c7-a372-634ebf2f8260")
 	)
 	(wire
 		(pts
@@ -15689,6 +15709,16 @@
 	)
 	(wire
 		(pts
+			(xy 419.1 138.43) (xy 419.1 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b15b217f-8652-48fb-b9fe-efafb224f377")
+	)
+	(wire
+		(pts
 			(xy 435.61 46.99) (xy 450.85 46.99)
 		)
 		(stroke
@@ -16667,16 +16697,6 @@
 		)
 		(uuid "fed5fe63-c016-4ab5-a4ab-0111dba71994")
 	)
-	(wire
-		(pts
-			(xy 369.57 132.08) (xy 369.57 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fef40d2a-f447-4b29-baea-87d8dbdcdaca")
-	)
 	(global_label "USB_DP"
 		(shape bidirectional)
 		(at 529.59 337.82 90)
@@ -16906,30 +16926,6 @@
 		(uuid "088a034d-95ad-4693-8ff5-ca03a8fa39c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 322.9815 307.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "VREG_PGND"
-		(shape bidirectional)
-		(at 369.57 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "091849ae-88ac-4124-af13-a1fa2bbbe974")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.5878 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18946,30 +18942,6 @@
 		(uuid "46737987-c387-4c89-966a-980bed5fe0a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 306.5757 308.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "VREG_PGND"
-		(shape bidirectional)
-		(at 417.83 36.83 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "46cbec72-9b72-4b3f-b632-8a7ebebd8dcc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 417.83 21.8478 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
