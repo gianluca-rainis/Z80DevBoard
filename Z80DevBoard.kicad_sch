@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Z80DevBoard")
-		(date "2026-09-18")
+		(date "2026-10-06")
 		(company "Gianluca Rainis")
 		(comment 1 "gianluca-rainis on GitHub")
 	)
@@ -12784,7 +12784,7 @@
 	)
 	(rectangle
 		(start 406.4 298.45)
-		(end 464.82 345.44)
+		(end 468.63 345.44)
 		(stroke
 			(width 0)
 			(type default)
@@ -12946,7 +12946,7 @@
 	)
 	(rectangle
 		(start 15.24 57.15)
-		(end 119.38 114.3)
+		(end 114.3 114.3)
 		(stroke
 			(width 0)
 			(type default)
@@ -14189,7 +14189,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 86.36) (xy 93.98 86.36)
+			(xy 83.82 88.9) (xy 87.63 88.9)
 		)
 		(stroke
 			(width 0)
@@ -14379,7 +14379,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 81.28) (xy 93.98 81.28)
+			(xy 83.82 83.82) (xy 87.63 83.82)
 		)
 		(stroke
 			(width 0)
@@ -16626,16 +16626,6 @@
 			(type default)
 		)
 		(uuid "fcef1329-9173-4cfe-b9ad-e8becfa41243")
-	)
-	(wire
-		(pts
-			(xy 63.5 81.28) (xy 64.77 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd9223bc-df33-47ca-84c3-ad378db42b3f")
 	)
 	(wire
 		(pts
@@ -19793,7 +19783,7 @@
 			)
 		)
 	)
-	(global_label "CLOCK_Z80"
+	(global_label "RP_AUTO_CLK_Z80"
 		(shape input)
 		(at 447.04 327.66 0)
 		(fields_autoplaced yes)
@@ -19805,7 +19795,7 @@
 		)
 		(uuid "5a89a9ad-3df6-4450-b5d1-25dd416024f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 460.7899 327.66 0)
+			(at 467.3818 327.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24355,7 +24345,7 @@
 	)
 	(global_label "Z80_MANUAL_CLOCK"
 		(shape output)
-		(at 88.9 86.36 270)
+		(at 83.82 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -24365,7 +24355,7 @@
 		)
 		(uuid "e8893a22-6ded-4662-ae1c-f14fc5b88a41")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 108.3952 90)
+			(at 61.7848 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24763,7 +24753,7 @@
 	)
 	(global_label "CLOCK_Z80"
 		(shape input)
-		(at 104.14 83.82 0)
+		(at 97.79 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -24773,7 +24763,7 @@
 		)
 		(uuid "f0798937-31ae-4a8c-97e6-624e19882a18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.8899 83.82 0)
+			(at 111.5399 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24966,6 +24956,30 @@
 		(uuid "f6ae99cb-ec7b-40b5-989e-eb27c58d65d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 139.7764 288.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "RP_AUTO_CLK_Z80"
+		(shape output)
+		(at 83.82 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f7eaf82f-6959-4080-b793-78f32f6c3769")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.4782 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25399,7 +25413,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Nidec_CAS-120A1")
-		(at 99.06 83.82 180)
+		(at 92.71 86.36 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25410,7 +25424,7 @@
 		(fields_autoplaced yes)
 		(uuid "01f20d19-a4fc-491b-a698-62b2f89bce7b")
 		(property "Reference" "SW5"
-			(at 99.06 74.93 0)
+			(at 92.71 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25420,7 +25434,7 @@
 			)
 		)
 		(property "Value" "SW_Nidec_CAS-120A1"
-			(at 99.06 77.47 0)
+			(at 92.71 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25430,7 +25444,7 @@
 			)
 		)
 		(property "Footprint" "customFootprints:SW_Slide-03_Wuerth-WS-SLTV"
-			(at 99.06 73.66 0)
+			(at 92.71 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25441,7 +25455,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cas.pdf"
-			(at 99.06 76.2 0)
+			(at 92.71 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25452,7 +25466,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 99.06 83.82 0)
+			(at 92.71 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27403,84 +27417,6 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 74.93 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13ced3eb-0512-4a85-b177-3aedff6d80fa")
-		(property "Reference" "#PWR0124"
-			(at 74.93 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 74.93 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "da2c14b7-2240-4eeb-a793-e02bfd4d2bc3")
-		)
-		(instances
-			(project "Z80DevBoard"
-				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -31658,84 +31594,6 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "D46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.5 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4149d6d3-f009-49f6-b170-ad7e39b03c4b")
-		(property "Reference" "#PWR0123"
-			(at 63.5 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ee185837-2c0a-49cd-ad7f-3b1ef5a478fc")
-		)
-		(instances
-			(project "Z80DevBoard"
-				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -37017,84 +36875,6 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 74.93 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c32f0e6-599c-45db-8377-650ab4b0b5ab")
-		(property "Reference" "#PWR051"
-			(at 74.93 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 74.93 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 74.93 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "81f09ff1-c3c3-4576-8fa7-e2e376bb8a51")
-		)
-		(instances
-			(project "Z80DevBoard"
-				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -48738,91 +48518,6 @@
 			(project "Z80DevBoard"
 				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
 					(reference "D38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Oscillator:ASCO")
-		(at 74.93 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dfc2e491-5845-4cd4-972a-75b8c0970d6f")
-		(property "Reference" "Y4"
-			(at 79.248 71.628 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ASCO"
-			(at 79.248 74.168 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_SiT_PQFN-4Pin_5.0x3.2mm"
-			(at 77.47 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://abracon.com/Oscillators/ASCO.pdf"
-			(at 69.215 78.105 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Crystal Clock Oscillator, Abracon ASCO"
-			(at 74.93 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "c568f043-ad9f-46ae-8ed5-bfffec9e51fa")
-		)
-		(pin "2"
-			(uuid "2395254e-6ed1-416f-8a6b-3cd35e2e624d")
-		)
-		(pin "1"
-			(uuid "96b220c6-9520-4295-8f8c-882743f35a4e")
-		)
-		(pin "3"
-			(uuid "028b3c78-52b8-4a9e-8937-5be1d4b21660")
-		)
-		(instances
-			(project "Z80DevBoard"
-				(path "/e1d3a7c4-9081-48b0-8f4d-5da429793ec4"
-					(reference "Y4")
 					(unit 1)
 				)
 			)
